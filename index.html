@@ -3,182 +3,617 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>JEV Football — Kupony TOP3 / TOP4 / TOP5</title>
+  <meta name="description" content="JEV Football - aktualne kupony oraz transparentne wyniki historyczne.">
+  <title>JEV Football — Kupony i wyniki</title>
   <style>
-    :root {
-      --bg:#0b1020;
-      --card:#121a2f;
-      --card2:#18223c;
-      --text:#edf2ff;
-      --muted:#9aa8c7;
-      --line:#263556;
-      --accent:#7dd3fc;
-      --ok:#86efac;
+    :root{
+      --bg:#08101f;
+      --panel:#101a2f;
+      --panel2:#16223b;
+      --panel3:#0d1729;
+      --text:#eef4ff;
+      --muted:#95a5c5;
+      --line:#273858;
+      --accent:#78d7ff;
+      --accent2:#a9e8ff;
+      --good:#86efac;
+      --bad:#fca5a5;
       --warn:#fde68a;
+      --shadow:0 14px 38px rgba(0,0,0,.20);
     }
-    * { box-sizing:border-box; }
-    body {
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
       margin:0;
-      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      background:linear-gradient(180deg,#0b1020,#0e1528 45%,#0b1020);
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
       color:var(--text);
+      background:
+        radial-gradient(circle at 15% -10%,rgba(56,189,248,.10),transparent 28rem),
+        linear-gradient(180deg,#08101f,#0a1222 48%,#08101f);
     }
-    .wrap { max-width:1100px; margin:0 auto; padding:28px 18px 60px; }
-    header { display:flex; gap:18px; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; margin-bottom:24px; }
-    h1 { margin:0; font-size:clamp(26px,4vw,42px); }
-    .sub { color:var(--muted); margin-top:6px; }
-    .stamp { color:var(--muted); font-size:14px; }
-    .league {
-      background:rgba(18,26,47,.94);
+    .wrap{max-width:1200px;margin:0 auto;padding:28px 18px 70px}
+    header{
+      display:flex;justify-content:space-between;align-items:flex-end;
+      gap:18px;flex-wrap:wrap;margin-bottom:24px
+    }
+    h1{font-size:clamp(28px,4vw,44px);margin:0;letter-spacing:-.03em}
+    h2{font-size:clamp(22px,3vw,30px);margin:0}
+    h3{margin:0;font-size:18px}
+    .subtitle,.muted{color:var(--muted)}
+    .subtitle{margin-top:6px}
+    .update{font-size:13px;color:var(--muted);text-align:right}
+    .section{margin-top:34px}
+    .section-head{
+      display:flex;justify-content:space-between;align-items:end;gap:16px;
+      flex-wrap:wrap;margin-bottom:15px
+    }
+    .section-note{font-size:13px;color:var(--muted)}
+    .panel{
+      background:rgba(16,26,47,.93);
       border:1px solid var(--line);
       border-radius:18px;
-      padding:18px;
-      margin:18px 0;
+      box-shadow:var(--shadow);
     }
-    .league h2 { margin:0 0 14px; font-size:22px; }
-    .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
-    .coupon {
-      background:var(--card2);
-      border:1px solid var(--line);
-      border-radius:14px;
-      padding:14px;
-      min-width:0;
+    .loading,.error,.empty{
+      padding:20px;border:1px solid var(--line);border-radius:14px;
+      background:var(--panel);color:var(--muted)
     }
-    .coupon-head {
-      display:flex; justify-content:space-between; gap:12px; align-items:center; margin-bottom:12px;
+    .error{color:var(--bad)}
+
+    /* Current coupons */
+    .league{padding:18px;margin:16px 0}
+    .league-title{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:14px}
+    .coupon-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .coupon{
+      background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:14px;min-width:0
     }
-    .badge {
-      display:inline-block; border:1px solid #37507c; color:var(--accent);
-      border-radius:999px; padding:4px 9px; font-weight:700; font-size:13px;
+    .coupon-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}
+    .badge{
+      display:inline-flex;align-items:center;gap:6px;padding:4px 9px;
+      border:1px solid #38547f;border-radius:999px;color:var(--accent);
+      font-size:12px;font-weight:800;letter-spacing:.02em
     }
-    .odds { font-weight:800; font-size:18px; color:var(--ok); }
-    .leg { padding:10px 0; border-top:1px solid var(--line); }
-    .leg:first-of-type { border-top:0; }
-    .match { font-weight:700; line-height:1.25; }
-    .pick { color:var(--accent); margin-top:4px; }
-    .meta { color:var(--muted); font-size:12px; margin-top:4px; line-height:1.45; }
-    .empty, .error {
-      background:var(--card); border:1px solid var(--line); border-radius:14px;
-      padding:18px; color:var(--muted);
+    .combined{font-size:18px;font-weight:800;color:var(--good)}
+    .leg{border-top:1px solid var(--line);padding:10px 0}
+    .leg:first-of-type{border-top:0}
+    .match{font-weight:750;line-height:1.3}
+    .pick{color:var(--accent2);margin-top:4px;font-size:14px}
+    .meta{color:var(--muted);font-size:12px;margin-top:4px;line-height:1.45}
+
+    /* Period tabs */
+    .tabs{display:flex;gap:8px;flex-wrap:wrap}
+    .tab{
+      border:1px solid var(--line);background:var(--panel3);color:var(--muted);
+      border-radius:999px;padding:9px 13px;font-weight:750;cursor:pointer;
+      min-height:40px
     }
-    footer { color:var(--muted); margin-top:26px; font-size:12px; }
-    @media (max-width:850px) { .grid { grid-template-columns:1fr; } }
+    .tab:hover{border-color:#3c567f;color:var(--text)}
+    .tab.active{background:rgba(120,215,255,.13);border-color:#4d8eaa;color:var(--accent)}
+    .tab:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+    /* KPI */
+    .kpis{
+      display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;margin:14px 0
+    }
+    .kpi{padding:14px;background:var(--panel);border:1px solid var(--line);border-radius:14px}
+    .kpi-label{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+    .kpi-value{font-size:clamp(20px,3vw,29px);font-weight:850;margin-top:5px;letter-spacing:-.03em}
+    .kpi-sub{font-size:12px;color:var(--muted);margin-top:4px}
+    .positive{color:var(--good)}
+    .negative{color:var(--bad)}
+
+    /* Variant */
+    .variant-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+    .variant{padding:16px}
+    .variant-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+    .variant-profit{font-size:24px;font-weight:850;margin:12px 0 5px}
+    .mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+    .mini{background:var(--panel3);border-radius:10px;padding:9px}
+    .mini b{display:block;font-size:14px}
+    .mini span{font-size:11px;color:var(--muted)}
+
+    /* Chart */
+    .chart-panel{padding:16px;margin-top:14px}
+    .chart-wrap{position:relative;height:320px;margin-top:12px}
+    canvas{display:block;width:100%;height:100%}
+    .chart-legend{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:12px}
+
+    /* Tables */
+    .table-panel{padding:0;overflow:hidden;margin-top:14px}
+    .table-scroll{overflow-x:auto}
+    table{width:100%;border-collapse:collapse;min-width:760px}
+    th,td{padding:11px 12px;border-bottom:1px solid var(--line);text-align:left;font-size:13px}
+    th{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.06em;background:var(--panel3)}
+    tr:last-child td{border-bottom:0}
+    td.num,th.num{text-align:right}
+    .result{
+      font-weight:800;font-size:11px;border-radius:999px;padding:4px 8px;display:inline-block
+    }
+    .win{background:rgba(134,239,172,.12);color:var(--good);border:1px solid rgba(134,239,172,.25)}
+    .loss{background:rgba(252,165,165,.10);color:var(--bad);border:1px solid rgba(252,165,165,.22)}
+    .sample{
+      font-size:10px;padding:3px 6px;border-radius:999px;
+      color:var(--warn);border:1px solid rgba(253,230,138,.28);margin-left:5px
+    }
+    .footer{
+      margin-top:34px;padding-top:18px;border-top:1px solid var(--line);
+      color:var(--muted);font-size:12px;line-height:1.6
+    }
+    .footer strong{color:var(--text)}
+    @media(max-width:1000px){
+      .kpis{grid-template-columns:repeat(3,1fr)}
+      .coupon-grid,.variant-grid{grid-template-columns:1fr}
+    }
+    @media(max-width:620px){
+      .wrap{padding:20px 12px 55px}
+      .kpis{grid-template-columns:repeat(2,1fr)}
+      .chart-wrap{height:250px}
+      .update{text-align:left}
+    }
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <header>
+<main class="wrap">
+  <header>
+    <div>
+      <h1>JEV Football</h1>
+      <div class="subtitle">Aktualne kupony i transparentny track record</div>
+    </div>
+    <div class="update" id="globalUpdate">Ładowanie danych…</div>
+  </header>
+
+  <section class="section" id="currentSection">
+    <div class="section-head">
       <div>
-        <h1>JEV Football</h1>
-        <div class="sub">Kupony TOP3 / TOP4 / TOP5 per liga</div>
+        <h2>AKTUALNE KUPONY</h2>
+        <div class="section-note">TOP3 / TOP4 / TOP5 generowane automatycznie per liga</div>
       </div>
-      <div class="stamp" id="stamp">Ładowanie danych…</div>
-    </header>
+    </div>
+    <div id="currentCoupons" class="loading">Pobieranie aktualnych kuponów…</div>
+  </section>
 
-    <section id="content" class="empty">Pobieranie latest_coupons.json…</section>
+  <section class="section" id="resultsSection">
+    <div class="section-head">
+      <div>
+        <h2>WYNIKI</h2>
+        <div class="section-note" id="dataRange">Ładowanie historii…</div>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Zakres wyników">
+        <button class="tab active" data-period="ALL" type="button">OD POCZĄTKU</button>
+        <button class="tab" data-period="LAST_30_DAYS" type="button">30 DNI</button>
+        <button class="tab" data-period="LAST_7_DAYS" type="button">7 DNI</button>
+        <button class="tab" data-period="THIS_MONTH" type="button">TEN MIESIĄC</button>
+      </div>
+    </div>
 
-    <footer>
-      Dane publikowane automatycznie z lokalnego pipeline JEV. Wyniki modelu mają charakter badawczy.
-    </footer>
-  </main>
+    <div id="resultsError" hidden class="error"></div>
 
-  <script>
-    const esc = (v) => String(v ?? "")
-      .replaceAll("&","&amp;").replaceAll("<","&lt;")
-      .replaceAll(">","&gt;").replaceAll('"',"&quot;");
+    <div class="kpis" id="kpis"></div>
 
-    const pct = (v) => {
-      const n = Number(v);
-      return Number.isFinite(n) ? (n * 100).toFixed(1) + "%" : "n/a";
-    };
+    <div class="section-head" style="margin-top:24px">
+      <div>
+        <h3>TOP3 / TOP4 / TOP5</h3>
+        <div class="section-note">Wyniki całych kuponów, stawka bazowa 1u na kupon</div>
+      </div>
+    </div>
+    <div class="variant-grid" id="variants"></div>
 
-    const dec = (v) => {
-      const n = Number(v);
-      return Number.isFinite(n) ? n.toFixed(2) : "n/a";
-    };
+    <div class="panel chart-panel">
+      <div class="chart-legend">
+        <div>
+          <h3>Skumulowany profit</h3>
+          <div class="section-note">Każdy punkt = jeden rozliczony kupon</div>
+        </div>
+        <div id="chartEnd"></div>
+      </div>
+      <div class="chart-wrap">
+        <canvas id="profitChart" aria-label="Wykres skumulowanego profitu"></canvas>
+      </div>
+    </div>
 
-    async function load() {
-      const content = document.getElementById("content");
-      const stamp = document.getElementById("stamp");
+    <div class="section-head" style="margin-top:24px">
+      <div>
+        <h3>Wyniki per liga</h3>
+        <div class="section-note">LOW SAMPLE = mniej niż 10 rozliczonych kuponów</div>
+      </div>
+    </div>
+    <div class="panel table-panel">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Liga</th>
+              <th class="num">N</th>
+              <th class="num">WR</th>
+              <th class="num">Profit</th>
+              <th class="num">ROI</th>
+              <th class="num">PF</th>
+              <th class="num">Avg odds</th>
+              <th class="num">Max DD</th>
+            </tr>
+          </thead>
+          <tbody id="leagueRows"></tbody>
+        </table>
+      </div>
+    </div>
 
-      try {
-        const res = await fetch("./latest_coupons.json?ts=" + Date.now(), {cache:"no-store"});
-        if (!res.ok) throw new Error("HTTP " + res.status);
+    <div class="section-head" style="margin-top:24px">
+      <div>
+        <h3>Ostatnie rozliczone kupony</h3>
+        <div class="section-note">20 najnowszych kuponów z wybranego okresu</div>
+      </div>
+    </div>
+    <div class="panel table-panel">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Liga</th>
+              <th>Wariant</th>
+              <th class="num">Kurs</th>
+              <th>Wynik</th>
+              <th class="num">Profit</th>
+            </tr>
+          </thead>
+          <tbody id="recentRows"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
 
-        const data = await res.json();
-        const rows = Array.isArray(data.coupons) ? data.coupons : [];
+  <div class="footer">
+    <strong>Metodyka:</strong> każdy TOP3 / TOP4 / TOP5 jest traktowany jako jeden cały kupon.
+    Jeżeli choć jedna noga kuponu przegrywa, wynik całego kuponu wynosi −1u.
+    Profit w PLN jest tylko przeliczeniem przy wskazanej stawce na cały kupon.
+    Wyniki historyczne nie gwarantują przyszłych rezultatów.
+  </div>
+</main>
 
-        stamp.textContent = data.generated_at
-          ? "Aktualizacja: " + data.generated_at.replace("T"," ")
-          : "Aktualizacja: brak daty";
+<script>
+(() => {
+  "use strict";
 
-        if (!rows.length) {
-          content.className = "empty";
-          content.textContent = "Brak aktualnych kuponów.";
-          return;
-        }
+  const $ = (s) => document.querySelector(s);
+  const $$ = (s) => [...document.querySelectorAll(s)];
+  const esc = (v) => String(v ?? "")
+    .replaceAll("&","&amp;").replaceAll("<","&lt;")
+    .replaceAll(">","&gt;").replaceAll('"',"&quot;");
 
-        const byLeague = {};
-        for (const r of rows) {
-          const league = r.coupon_league || "UNKNOWN";
-          const variant = r.coupon_variant || "UNKNOWN";
-          byLeague[league] ??= {};
-          byLeague[league][variant] ??= [];
-          byLeague[league][variant].push(r);
-        }
+  const pct = (v, digits=1) => {
+    const n = Number(v);
+    return Number.isFinite(n) ? (n * 100).toFixed(digits) + "%" : "—";
+  };
+  const num = (v, digits=2) => {
+    const n = Number(v);
+    return Number.isFinite(n) ? n.toFixed(digits) : "—";
+  };
+  const signed = (v, digits=2, suffix="") => {
+    const n = Number(v);
+    if (!Number.isFinite(n)) return "—";
+    return (n > 0 ? "+" : "") + n.toFixed(digits) + suffix;
+  };
+  const pfText = (m) => {
+    if (!m) return "—";
+    if (m.pf_infinite) return "∞";
+    return Number.isFinite(Number(m.pf)) ? Number(m.pf).toFixed(2) : "—";
+  };
+  const profitClass = (v) => Number(v) > 0 ? "positive" : Number(v) < 0 ? "negative" : "";
+  const dateText = (v) => {
+    if (!v) return "—";
+    const d = new Date(v);
+    if (Number.isNaN(d.getTime())) return String(v).slice(0,10);
+    return new Intl.DateTimeFormat("pl-PL",{year:"numeric",month:"2-digit",day:"2-digit"}).format(d);
+  };
 
-        const leagues = Object.keys(byLeague).sort();
-        const html = [];
+  let summary = null;
+  let couponsData = null;
+  let currentPeriod = "ALL";
 
-        for (const league of leagues) {
-          html.push(`<section class="league"><h2>${esc(league)}</h2><div class="grid">`);
+  async function getJson(path) {
+    const r = await fetch(path + "?v=" + Date.now(), {cache:"no-store"});
+    if (!r.ok) throw new Error(path + " → HTTP " + r.status);
+    return r.json();
+  }
 
-          const variants = ["TOP3","TOP4","TOP5"];
-          for (const variant of variants) {
-            const legs = (byLeague[league][variant] || [])
-              .sort((a,b) => Number(a.coupon_leg_no||0) - Number(b.coupon_leg_no||0));
+  async function loadCurrent() {
+    const box = $("#currentCoupons");
+    try {
+      const data = await getJson("./latest_coupons.json");
+      const rows = Array.isArray(data.coupons) ? data.coupons : [];
+      $("#globalUpdate").textContent = data.generated_at
+        ? "Aktualizacja kuponów: " + data.generated_at.replace("T"," ")
+        : "Aktualizacja: brak daty";
 
-            if (!legs.length) continue;
-
-            const combined = legs[0]?.coupon_combined_odds;
-            html.push(`
-              <article class="coupon">
-                <div class="coupon-head">
-                  <span class="badge">${esc(variant)}</span>
-                  <span class="odds">kurs ${dec(combined)}</span>
-                </div>
-            `);
-
-            for (const leg of legs) {
-              html.push(`
-                <div class="leg">
-                  <div class="match">${esc(leg.coupon_leg_no)}. ${esc(leg.match)}</div>
-                  <div class="pick">${esc(leg.market)} / ${esc(leg.choice)} @ ${dec(leg.odds)}</div>
-                  <div class="meta">
-                    P ${pct(leg.model_probability)} ·
-                    edge ${pct(leg.edge)} ·
-                    margin ${pct(leg.margin)}
-                  </div>
-                </div>
-              `);
-            }
-
-            html.push(`</article>`);
-          }
-
-          html.push(`</div></section>`);
-        }
-
-        content.className = "";
-        content.innerHTML = html.join("");
-      } catch (err) {
-        content.className = "error";
-        content.textContent = "Nie udało się wczytać latest_coupons.json: " + err.message;
-        stamp.textContent = "Błąd odczytu danych";
+      if (!rows.length) {
+        box.className = "empty";
+        box.textContent = "Brak aktualnych kuponów.";
+        return;
       }
+
+      const grouped = {};
+      for (const r of rows) {
+        const league = r.coupon_league || "UNKNOWN";
+        const variant = r.coupon_variant || "UNKNOWN";
+        grouped[league] ??= {};
+        grouped[league][variant] ??= [];
+        grouped[league][variant].push(r);
+      }
+
+      const out = [];
+      for (const league of Object.keys(grouped).sort()) {
+        out.push(`<section class="panel league">
+          <div class="league-title"><h3>${esc(league)}</h3></div>
+          <div class="coupon-grid">`);
+
+        for (const variant of ["TOP3","TOP4","TOP5"]) {
+          const legs = (grouped[league][variant] || [])
+            .sort((a,b) => Number(a.coupon_leg_no||0)-Number(b.coupon_leg_no||0));
+          if (!legs.length) continue;
+
+          out.push(`<article class="coupon">
+            <div class="coupon-head">
+              <span class="badge">${esc(variant)}</span>
+              <span class="combined">kurs ${num(legs[0].coupon_combined_odds)}</span>
+            </div>`);
+
+          for (const leg of legs) {
+            out.push(`<div class="leg">
+              <div class="match">${esc(leg.coupon_leg_no)}. ${esc(leg.match)}</div>
+              <div class="pick">${esc(leg.market)} / ${esc(leg.choice)} @ ${num(leg.odds)}</div>
+              <div class="meta">P ${pct(leg.model_probability)} · edge ${pct(leg.edge)} · margin ${pct(leg.margin)}</div>
+            </div>`);
+          }
+          out.push(`</article>`);
+        }
+        out.push(`</div></section>`);
+      }
+
+      box.className = "";
+      box.innerHTML = out.join("");
+    } catch (e) {
+      box.className = "error";
+      box.textContent = "Nie udało się wczytać aktualnych kuponów: " + e.message;
+    }
+  }
+
+  function renderKPIs(m) {
+    const stake = Number(summary?.stake_model?.display_stake_pln || 0);
+    const cards = [
+      ["Kupony", m.n, `${m.wins} WIN / ${m.losses} LOSS`, ""],
+      ["WR", pct(m.wr), "trafione całe kupony", ""],
+      ["Profit", signed(m.profit_u,2,"u"), stake ? signed(m.profit_pln,2," zł") + ` przy ${stake.toFixed(2)} zł/kupon` : "", profitClass(m.profit_u)],
+      ["ROI", pct(m.roi), "profit / suma stawek", profitClass(m.roi)],
+      ["PF", pfText(m), "gross profit / gross loss", ""],
+      ["Max DD", num(m.max_drawdown_u,2) + "u", `Max LS: ${m.max_losing_streak}`, ""]
+    ];
+
+    $("#kpis").innerHTML = cards.map(([label,value,sub,cls]) => `
+      <div class="kpi">
+        <div class="kpi-label">${label}</div>
+        <div class="kpi-value ${cls}">${value}</div>
+        <div class="kpi-sub">${sub}</div>
+      </div>`).join("");
+  }
+
+  function renderVariants(vmap) {
+    const root = $("#variants");
+    root.innerHTML = ["TOP3","TOP4","TOP5"].map(v => {
+      const m = vmap?.[v];
+      if (!m || !m.n) {
+        return `<div class="panel variant">
+          <div class="variant-top"><span class="badge">${v}</span></div>
+          <div class="muted" style="margin-top:14px">Brak rozliczonych kuponów w tym okresie.</div>
+        </div>`;
+      }
+      return `<div class="panel variant">
+        <div class="variant-top">
+          <span class="badge">${v}</span>
+          <span class="muted">N=${m.n}</span>
+        </div>
+        <div class="variant-profit ${profitClass(m.profit_u)}">${signed(m.profit_u,2,"u")}</div>
+        <div class="muted">${signed(m.profit_pln,2," zł")}</div>
+        <div class="mini-grid">
+          <div class="mini"><b>${pct(m.wr)}</b><span>WR</span></div>
+          <div class="mini"><b>${pct(m.roi)}</b><span>ROI</span></div>
+          <div class="mini"><b>${pfText(m)}</b><span>PF</span></div>
+          <div class="mini"><b>${num(m.avg_odds)}</b><span>Avg odds</span></div>
+          <div class="mini"><b>${num(m.max_drawdown_u)}u</b><span>Max DD</span></div>
+          <div class="mini"><b>${m.max_losing_streak}</b><span>Max LS</span></div>
+        </div>
+      </div>`;
+    }).join("");
+  }
+
+  function renderLeagues(leagues) {
+    const rows = Object.entries(leagues || {})
+      .map(([league,obj]) => [league,obj.overall])
+      .sort((a,b) => Number(b[1]?.profit_u||0)-Number(a[1]?.profit_u||0));
+
+    $("#leagueRows").innerHTML = rows.length ? rows.map(([league,m]) => `
+      <tr>
+        <td><strong>${esc(league)}</strong>${m.n < 10 ? '<span class="sample">LOW SAMPLE</span>' : ''}</td>
+        <td class="num">${m.n}</td>
+        <td class="num">${pct(m.wr)}</td>
+        <td class="num ${profitClass(m.profit_u)}">${signed(m.profit_u,2,"u")}</td>
+        <td class="num ${profitClass(m.roi)}">${pct(m.roi)}</td>
+        <td class="num">${pfText(m)}</td>
+        <td class="num">${num(m.avg_odds)}</td>
+        <td class="num">${num(m.max_drawdown_u)}u</td>
+      </tr>`).join("") :
+      `<tr><td colspan="8" class="muted">Brak danych dla tego okresu.</td></tr>`;
+  }
+
+  function periodCoupons(period) {
+    const rows = Array.isArray(couponsData?.coupons) ? couponsData.coupons : [];
+    if (period === "ALL") return rows;
+
+    const valid = rows.map(r => ({...r, __d:new Date(r.date)}))
+      .filter(r => !Number.isNaN(r.__d.getTime()));
+    if (!valid.length) return [];
+
+    const maxMs = Math.max(...valid.map(r => r.__d.getTime()));
+    const maxD = new Date(maxMs);
+
+    if (period === "LAST_7_DAYS") {
+      const start = new Date(maxD); start.setDate(start.getDate()-6); start.setHours(0,0,0,0);
+      return valid.filter(r => r.__d >= start);
+    }
+    if (period === "LAST_30_DAYS") {
+      const start = new Date(maxD); start.setDate(start.getDate()-29); start.setHours(0,0,0,0);
+      return valid.filter(r => r.__d >= start);
+    }
+    if (period === "THIS_MONTH") {
+      return valid.filter(r => r.__d.getFullYear()===maxD.getFullYear() && r.__d.getMonth()===maxD.getMonth());
+    }
+    return rows;
+  }
+
+  function renderRecent(period) {
+    const rows = periodCoupons(period)
+      .sort((a,b) => new Date(b.date)-new Date(a.date))
+      .slice(0,20);
+
+    $("#recentRows").innerHTML = rows.length ? rows.map(r => `
+      <tr>
+        <td>${dateText(r.date)}</td>
+        <td><strong>${esc(r.league)}</strong></td>
+        <td>${esc(r.variant)}</td>
+        <td class="num">${num(r.combined_odds)}</td>
+        <td><span class="result ${r.result==="WIN"?"win":"loss"}">${esc(r.result)}</span></td>
+        <td class="num ${profitClass(r.profit_u)}">${signed(r.profit_u,2,"u")}</td>
+      </tr>`).join("") :
+      `<tr><td colspan="6" class="muted">Brak rozliczonych kuponów w tym okresie.</td></tr>`;
+  }
+
+  function drawChart(points) {
+    const canvas = $("#profitChart");
+    const ctx = canvas.getContext("2d");
+    const rect = canvas.getBoundingClientRect();
+    const dpr = Math.max(1, window.devicePixelRatio || 1);
+    canvas.width = Math.round(rect.width*dpr);
+    canvas.height = Math.round(rect.height*dpr);
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+
+    const W = rect.width, H = rect.height;
+    ctx.clearRect(0,0,W,H);
+
+    if (!points || !points.length) {
+      ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue("--muted");
+      ctx.font = "14px system-ui";
+      ctx.fillText("Brak danych do wykresu.", 14, 28);
+      $("#chartEnd").textContent = "";
+      return;
     }
 
-    load();
-  </script>
+    const vals = points.map(p => Number(p.cumulative_profit_u)).filter(Number.isFinite);
+    const minV = Math.min(0,...vals);
+    const maxV = Math.max(0,...vals);
+    const span = Math.max(1, maxV-minV);
+    const pad = {l:52,r:18,t:18,b:34};
+    const cw = Math.max(1,W-pad.l-pad.r);
+    const ch = Math.max(1,H-pad.t-pad.b);
+    const x = i => pad.l + (points.length===1 ? cw/2 : i/(points.length-1)*cw);
+    const y = v => pad.t + (maxV-v)/span*ch;
+
+    const css = getComputedStyle(document.documentElement);
+    const line = css.getPropertyValue("--line").trim();
+    const muted = css.getPropertyValue("--muted").trim();
+    const accent = css.getPropertyValue("--accent").trim();
+    const good = css.getPropertyValue("--good").trim();
+
+    ctx.strokeStyle = line;
+    ctx.lineWidth = 1;
+    ctx.fillStyle = muted;
+    ctx.font = "11px system-ui";
+    ctx.textAlign = "right";
+    ctx.textBaseline = "middle";
+
+    for (let i=0;i<=4;i++) {
+      const v = maxV - (span*i/4);
+      const yy = y(v);
+      ctx.beginPath(); ctx.moveTo(pad.l,yy); ctx.lineTo(W-pad.r,yy); ctx.stroke();
+      ctx.fillText(v.toFixed(1)+"u", pad.l-7, yy);
+    }
+
+    if (minV < 0 && maxV > 0) {
+      ctx.strokeStyle = muted;
+      ctx.beginPath(); ctx.moveTo(pad.l,y(0)); ctx.lineTo(W-pad.r,y(0)); ctx.stroke();
+    }
+
+    ctx.strokeStyle = good || accent;
+    ctx.lineWidth = 2.5;
+    ctx.beginPath();
+    points.forEach((p,i) => {
+      const xx=x(i), yy=y(Number(p.cumulative_profit_u)||0);
+      if(i===0) ctx.moveTo(xx,yy); else ctx.lineTo(xx,yy);
+    });
+    ctx.stroke();
+
+    const last = points[points.length-1];
+    ctx.fillStyle = good || accent;
+    ctx.beginPath();
+    ctx.arc(x(points.length-1),y(Number(last.cumulative_profit_u)||0),4,0,Math.PI*2);
+    ctx.fill();
+
+    ctx.fillStyle = muted;
+    ctx.textAlign="left";
+    ctx.textBaseline="top";
+    const firstDate = points[0]?.date ? dateText(points[0].date) : "";
+    const lastDate = last?.date ? dateText(last.date) : "";
+    ctx.fillText(firstDate,pad.l,H-pad.b+10);
+    ctx.textAlign="right";
+    ctx.fillText(lastDate,W-pad.r,H-pad.b+10);
+
+    $("#chartEnd").innerHTML =
+      `Koniec okresu: <strong class="${profitClass(last.cumulative_profit_u)}">${signed(last.cumulative_profit_u,2,"u")}</strong>`;
+  }
+
+  function renderPeriod(period) {
+    currentPeriod = period;
+    const p = summary?.periods?.[period];
+    if (!p) return;
+
+    $$(".tab").forEach(btn => {
+      btn.classList.toggle("active", btn.dataset.period===period);
+      btn.setAttribute("aria-selected", btn.dataset.period===period ? "true" : "false");
+    });
+
+    renderKPIs(p.overall);
+    renderVariants(p.variants);
+    renderLeagues(p.leagues);
+    renderRecent(period);
+    drawChart(p.cumulative_profit || []);
+  }
+
+  async function loadResults() {
+    try {
+      [summary,couponsData] = await Promise.all([
+        getJson("./results_summary.json"),
+        getJson("./results_coupons.json")
+      ]);
+
+      const dr = summary?.data_range || {};
+      $("#dataRange").textContent =
+        `Zakres danych: ${dr.from || "—"} → ${dr.to || "—"} · ${dr.settled_coupons ?? 0} rozliczonych kuponów`;
+
+      renderPeriod("ALL");
+
+      $$(".tab").forEach(btn => btn.addEventListener("click", () => renderPeriod(btn.dataset.period)));
+      window.addEventListener("resize", () => {
+        const pts = summary?.periods?.[currentPeriod]?.cumulative_profit || [];
+        drawChart(pts);
+      });
+    } catch (e) {
+      const box = $("#resultsError");
+      box.hidden = false;
+      box.textContent = "Nie udało się wczytać wyników: " + e.message;
+    }
+  }
+
+  loadCurrent();
+  loadResults();
+})();
+</script>
 </body>
 </html>
