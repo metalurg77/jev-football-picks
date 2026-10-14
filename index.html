@@ -396,16 +396,77 @@
       </div>`).join("");
   }
 
+
+  function calcMetricsFromRows(rows) {
+    const sorted = [...rows].sort((a,b) => new Date(a.date)-new Date(b.date));
+    const n = sorted.length;
+    const wins = sorted.filter(r => String(r.result).toUpperCase()==="WIN").length;
+    const losses = sorted.filter(r => String(r.result).toUpperCase()==="LOSS").length;
+    const profits = sorted.map(r => Number(r.profit_u)).filter(Number.isFinite);
+    const profit_u = profits.reduce((a,b)=>a+b,0);
+    const stakePln = Number(summary?.stake_model?.display_stake_pln || couponsData?.stake_pln || 0);
+    const grossProfit = profits.filter(x=>x>0).reduce((a,b)=>a+b,0);
+    const grossLoss = Math.abs(profits.filter(x=>x<0).reduce((a,b)=>a+b,0));
+    const odds = sorted.map(r=>Number(r.combined_odds)).filter(Number.isFinite);
+
+    let eq = 0, peak = 0, maxDD = 0, ls = 0, maxLS = 0;
+    for (const r of sorted) {
+      const p = Number(r.profit_u) || 0;
+      eq += p;
+      peak = Math.max(peak, eq);
+      maxDD = Math.max(maxDD, peak-eq);
+      if (String(r.result).toUpperCase()==="LOSS") {
+        ls += 1;
+        maxLS = Math.max(maxLS, ls);
+      } else {
+        ls = 0;
+      }
+    }
+
+    return {
+      n,
+      wins,
+      losses,
+      wr: n ? wins/n : null,
+      profit_u,
+      profit_pln: profit_u * stakePln,
+      roi: n ? profit_u/n : null,
+      pf: grossLoss > 0 ? grossProfit/grossLoss : null,
+      pf_infinite: grossLoss===0 && grossProfit>0,
+      avg_odds: odds.length ? odds.reduce((a,b)=>a+b,0)/odds.length : null,
+      median_odds: odds.length ? [...odds].sort((a,b)=>a-b)[Math.floor(odds.length/2)] : null,
+      max_drawdown_u: maxDD,
+      max_losing_streak: maxLS
+    };
+  }
+
+  function normalizeVariantName(v) {
+    const s = String(v ?? "").toUpperCase();
+    const m = s.match(/TOP[345]/);
+    return m ? m[0] : s;
+  }
+
   function renderVariants(vmap) {
     const root = $("#variants");
+    const rows = periodCoupons(currentPeriod);
+
     root.innerHTML = ["TOP3","TOP4","TOP5"].map(v => {
-      const m = vmap?.[v];
+      let m = vmap?.[v];
+
+      // Fallback: licz bezpośrednio z results_coupons.json.
+      // Dzięki temu działa także dla nazw E1_TOP3, SP2_TOP4 itd.
+      if (!m || !m.n) {
+        const vr = rows.filter(r => normalizeVariantName(r.variant) === v);
+        if (vr.length) m = calcMetricsFromRows(vr);
+      }
+
       if (!m || !m.n) {
         return `<div class="panel variant">
           <div class="variant-top"><span class="badge">${v}</span></div>
           <div class="muted" style="margin-top:14px">Brak rozliczonych kuponów w tym okresie.</div>
         </div>`;
       }
+
       return `<div class="panel variant">
         <div class="variant-top">
           <span class="badge">${v}</span>
