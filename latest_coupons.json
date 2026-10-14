@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-14T10:06:36",
-  "source": "20261014_100625_LEAGUE_TOP345_coupons.csv",
+  "generated_at": "2026-10-14T10:34:51",
+  "source": "20261014_103440_LEAGUE_TOP345_coupons.csv",
   "coupons": [
     {
-      "coupon_run": "20261014_100625",
+      "coupon_run": "20261014_103440",
       "coupon_league": "E1",
       "coupon_variant": "TOP3",
       "coupon_leg_no": 1,
@@ -16,10 +16,10 @@
       "market_probability": 0.4198486665683809,
       "edge": 0.560151333431619,
       "margin": 0.97,
-      "coupon_combined_odds": 8.918784
+      "coupon_combined_odds": 5.569536
     },
     {
-      "coupon_run": "20261014_100625",
+      "coupon_run": "20261014_103440",
       "coupon_league": "E1",
       "coupon_variant": "TOP3",
       "coupon_leg_no": 2,
@@ -32,26 +32,26 @@
       "market_probability": 0.5594944136126935,
       "edge": 0.4405055863873065,
       "margin": 1.0,
-      "coupon_combined_odds": 8.918784
+      "coupon_combined_odds": 5.569536
     },
     {
-      "coupon_run": "20261014_100625",
+      "coupon_run": "20261014_103440",
       "coupon_league": "E1",
       "coupon_variant": "TOP3",
       "coupon_leg_no": 3,
       "match": "Norwich - Southampton",
-      "market": "1X2",
-      "choice": "HOME",
-      "model_probability": 0.77,
-      "jev_confidence": 0.66,
-      "odds": 2.37,
-      "market_probability": 0.3966170548897098,
-      "edge": 0.3733829451102902,
-      "margin": 0.54,
-      "coupon_combined_odds": 8.918784
+      "market": "TOTAL_25",
+      "choice": "OVER_2_5",
+      "model_probability": 0.99,
+      "jev_confidence": 0.98,
+      "odds": 1.48,
+      "market_probability": 0.6318407960199005,
+      "edge": 0.3581592039800995,
+      "margin": 0.98,
+      "coupon_combined_odds": 5.569536
     },
     {
-      "coupon_run": "20261014_100625",
+      "coupon_run": "20261014_103440",
       "coupon_league": "E1",
       "coupon_variant": "TOP4",
       "coupon_leg_no": 1,
@@ -64,10 +64,10 @@
       "market_probability": 0.4198486665683809,
       "edge": 0.560151333431619,
       "margin": 0.97,
-      "coupon_combined_odds": 15.25112064
+      "coupon_combined_odds": 9.52390656
     },
     {
-      "coupon_run": "20261014_100625",
+      "coupon_run": "20261014_103440",
       "coupon_league": "E1",
       "coupon_variant": "TOP4",
       "coupon_leg_no": 2,
@@ -80,39 +80,39 @@
       "market_probability": 0.5594944136126935,
       "edge": 0.4405055863873065,
       "margin": 1.0,
-      "coupon_combined_odds": 15.25112064
+      "coupon_combined_odds": 9.52390656
     },
     {
-      "coupon_run": "20261014_100625",
+      "coupon_run": "20261014_103440",
       "coupon_league": "E1",
       "coupon_variant": "TOP4",
       "coupon_leg_no": 3,
       "match": "Norwich - Southampton",
-      "market": "1X2",
-      "choice": "HOME",
-      "model_probability": 0.77,
-      "jev_confidence": 0.66,
-      "odds": 2.37,
-      "market_probability": 0.3966170548897098,
-      "edge": 0.3733829451102902,
-      "margin": 0.54,
-      "coupon_combined_odds": 15.25112064
+      "market": "TOTAL_25",
+      "choice": "OVER_2_5",
+      "model_probability": 0.99,
+      "jev_confidence": 0.98,
+      "odds": 1.48,
+      "market_probability": 0.6318407960199005,
+      "edge": 0.3581592039800995,
+      "margin": 0.98,
+      "coupon_combined_odds": 9.52390656
     },
     {
-      "coupon_run": "20261014_100625",
+      "coupon_run": "20261014_103440",
       "coupon_league": "E1",
       "coupon_variant": "TOP4",
       "coupon_leg_no": 4,
       "match": "QPR - Derby",
       "market": "1X2",
       "choice": "HOME",
-      "model_probability": 0.82,
-      "jev_confidence": 0.73,
+      "model_probability": 0.79,
+      "jev_confidence": 0.69,
       "odds": 1.71,
       "market_probability": 0.5485468550635603,
-      "edge": 0.2714531449364397,
-      "margin": 0.6399999999999999,
-      "coupon_combined_odds": 15.25112064
+      "edge": 0.2414531449364397,
+      "margin": 0.5800000000000001,
+      "coupon_combined_odds": 9.52390656
     }
   ]
 }
