@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>JEV Football — Kupony TOP3 / TOP4 / TOP5</title>
+  <style>
+    :root {
+      --bg:#0b1020;
+      --card:#121a2f;
+      --card2:#18223c;
+      --text:#edf2ff;
+      --muted:#9aa8c7;
+      --line:#263556;
+      --accent:#7dd3fc;
+      --ok:#86efac;
+      --warn:#fde68a;
+    }
+    * { box-sizing:border-box; }
+    body {
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:linear-gradient(180deg,#0b1020,#0e1528 45%,#0b1020);
+      color:var(--text);
+    }
+    .wrap { max-width:1100px; margin:0 auto; padding:28px 18px 60px; }
+    header { display:flex; gap:18px; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; margin-bottom:24px; }
+    h1 { margin:0; font-size:clamp(26px,4vw,42px); }
+    .sub { color:var(--muted); margin-top:6px; }
+    .stamp { color:var(--muted); font-size:14px; }
+    .league {
+      background:rgba(18,26,47,.94);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:18px;
+      margin:18px 0;
+    }
+    .league h2 { margin:0 0 14px; font-size:22px; }
+    .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+    .coupon {
+      background:var(--card2);
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:14px;
+      min-width:0;
+    }
+    .coupon-head {
+      display:flex; justify-content:space-between; gap:12px; align-items:center; margin-bottom:12px;
+    }
+    .badge {
+      display:inline-block; border:1px solid #37507c; color:var(--accent);
+      border-radius:999px; padding:4px 9px; font-weight:700; font-size:13px;
+    }
+    .odds { font-weight:800; font-size:18px; color:var(--ok); }
+    .leg { padding:10px 0; border-top:1px solid var(--line); }
+    .leg:first-of-type { border-top:0; }
+    .match { font-weight:700; line-height:1.25; }
+    .pick { color:var(--accent); margin-top:4px; }
+    .meta { color:var(--muted); font-size:12px; margin-top:4px; line-height:1.45; }
+    .empty, .error {
+      background:var(--card); border:1px solid var(--line); border-radius:14px;
+      padding:18px; color:var(--muted);
+    }
+    footer { color:var(--muted); margin-top:26px; font-size:12px; }
+    @media (max-width:850px) { .grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div>
+        <h1>JEV Football</h1>
+        <div class="sub">Kupony TOP3 / TOP4 / TOP5 per liga</div>
+      </div>
+      <div class="stamp" id="stamp">Ładowanie danych…</div>
+    </header>
+
+    <section id="content" class="empty">Pobieranie latest_coupons.json…</section>
+
+    <footer>
+      Dane publikowane automatycznie z lokalnego pipeline JEV. Wyniki modelu mają charakter badawczy.
+    </footer>
+  </main>
+
+  <script>
+    const esc = (v) => String(v ?? "")
+      .replaceAll("&","&amp;").replaceAll("<","&lt;")
+      .replaceAll(">","&gt;").replaceAll('"',"&quot;");
+
+    const pct = (v) => {
+      const n = Number(v);
+      return Number.isFinite(n) ? (n * 100).toFixed(1) + "%" : "n/a";
+    };
+
+    const dec = (v) => {
+      const n = Number(v);
+      return Number.isFinite(n) ? n.toFixed(2) : "n/a";
+    };
+
+    async function load() {
+      const content = document.getElementById("content");
+      const stamp = document.getElementById("stamp");
+
+      try {
+        const res = await fetch("./latest_coupons.json?ts=" + Date.now(), {cache:"no-store"});
+        if (!res.ok) throw new Error("HTTP " + res.status);
+
+        const data = await res.json();
+        const rows = Array.isArray(data.coupons) ? data.coupons : [];
+
+        stamp.textContent = data.generated_at
+          ? "Aktualizacja: " + data.generated_at.replace("T"," ")
+          : "Aktualizacja: brak daty";
+
+        if (!rows.length) {
+          content.className = "empty";
+          content.textContent = "Brak aktualnych kuponów.";
+          return;
+        }
+
+        const byLeague = {};
+        for (const r of rows) {
+          const league = r.coupon_league || "UNKNOWN";
+          const variant = r.coupon_variant || "UNKNOWN";
+          byLeague[league] ??= {};
+          byLeague[league][variant] ??= [];
+          byLeague[league][variant].push(r);
+        }
+
+        const leagues = Object.keys(byLeague).sort();
+        const html = [];
+
+        for (const league of leagues) {
+          html.push(`<section class="league"><h2>${esc(league)}</h2><div class="grid">`);
+
+          const variants = ["TOP3","TOP4","TOP5"];
+          for (const variant of variants) {
+            const legs = (byLeague[league][variant] || [])
+              .sort((a,b) => Number(a.coupon_leg_no||0) - Number(b.coupon_leg_no||0));
+
+            if (!legs.length) continue;
+
+            const combined = legs[0]?.coupon_combined_odds;
+            html.push(`
+              <article class="coupon">
+                <div class="coupon-head">
+                  <span class="badge">${esc(variant)}</span>
+                  <span class="odds">kurs ${dec(combined)}</span>
+                </div>
+            `);
+
+            for (const leg of legs) {
+              html.push(`
+                <div class="leg">
+                  <div class="match">${esc(leg.coupon_leg_no)}. ${esc(leg.match)}</div>
+                  <div class="pick">${esc(leg.market)} / ${esc(leg.choice)} @ ${dec(leg.odds)}</div>
+                  <div class="meta">
+                    P ${pct(leg.model_probability)} ·
+                    edge ${pct(leg.edge)} ·
+                    margin ${pct(leg.margin)}
+                  </div>
+                </div>
+              `);
+            }
+
+            html.push(`</article>`);
+          }
+
+          html.push(`</div></section>`);
+        }
+
+        content.className = "";
+        content.innerHTML = html.join("");
+      } catch (err) {
+        content.className = "error";
+        content.textContent = "Nie udało się wczytać latest_coupons.json: " + err.message;
+        stamp.textContent = "Błąd odczytu danych";
+      }
+    }
+
+    load();
+  </script>
+</body>
+</html>
