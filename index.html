@@ -276,6 +276,33 @@
 
   const $ = (s) => document.querySelector(s);
   const $$ = (s) => [...document.querySelectorAll(s)];
+
+  const LEAGUE_NAMES = {
+    B1:  "Belgia — First Division A",
+    D1:  "Niemcy — Bundesliga",
+    D2:  "Niemcy — 2. Bundesliga",
+    E0:  "Anglia — Premier League",
+    E1:  "Anglia — Championship",
+    E2:  "Anglia — League One",
+    E3:  "Anglia — League Two",
+    EC:  "Anglia — National League",
+    F1:  "Francja — Ligue 1",
+    F2:  "Francja — Ligue 2",
+    G1:  "Grecja — Super League",
+    I1:  "Włochy — Serie A",
+    I2:  "Włochy — Serie B",
+    N1:  "Holandia — Eredivisie",
+    P1:  "Portugalia — Primeira Liga",
+    SC0: "Szkocja — Premiership",
+    SC1: "Szkocja — Championship",
+    SC2: "Szkocja — League One",
+    SC3: "Szkocja — League Two",
+    SP1: "Hiszpania — La Liga",
+    SP2: "Hiszpania — Segunda División",
+    T1:  "Turcja — Süper Lig"
+  };
+
+  const leagueName = (code) => LEAGUE_NAMES[String(code ?? "").toUpperCase()] || String(code ?? "");
   const esc = (v) => String(v ?? "")
     .replaceAll("&","&amp;").replaceAll("<","&lt;")
     .replaceAll(">","&gt;").replaceAll('"',"&quot;");
@@ -343,7 +370,7 @@
       const out = [];
       for (const league of Object.keys(grouped).sort()) {
         out.push(`<section class="panel league">
-          <div class="league-title"><h3>${esc(league)}</h3></div>
+          <div class="league-title"><h3>${esc(leagueName(league))}</h3></div>
           <div class="coupon-grid">`);
 
         for (const variant of ["TOP3","TOP4","TOP5"]) {
@@ -493,7 +520,7 @@
 
     $("#leagueRows").innerHTML = rows.length ? rows.map(([league,m]) => `
       <tr>
-        <td><strong>${esc(league)}</strong>${m.n < 10 ? '<span class="sample">LOW SAMPLE</span>' : ''}</td>
+        <td><strong>${esc(leagueName(league))}</strong>${m.n < 10 ? '<span class="sample">LOW SAMPLE</span>' : ''}</td>
         <td class="num">${m.n}</td>
         <td class="num">${pct(m.wr)}</td>
         <td class="num ${profitClass(m.profit_u)}">${signed(m.profit_u,2,"u")}</td>
@@ -538,7 +565,7 @@
     $("#recentRows").innerHTML = rows.length ? rows.map(r => `
       <tr>
         <td>${dateText(r.date)}</td>
-        <td><strong>${esc(r.league)}</strong></td>
+        <td><strong>${esc(leagueName(r.league))}</strong></td>
         <td>${esc(r.variant)}</td>
         <td class="num">${num(r.combined_odds)}</td>
         <td><span class="result ${r.result==="WIN"?"win":"loss"}">${esc(r.result)}</span></td>
