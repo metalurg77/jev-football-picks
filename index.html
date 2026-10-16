@@ -169,6 +169,7 @@
         <div class="section-note">
           TOP3 / TOP4 / TOP5 generowane automatycznie per liga
           · <strong id="currentCouponCount">Aktywne kupony: —</strong>
+          · <span id="currentCouponBreakdown">TOP3: — · TOP4: — · TOP5: —</span>
         </div>
       </div>
     </div>
@@ -354,14 +355,35 @@
 
       // Jeden kupon = unikalna kombinacja run + liga + wariant.
       // Nie liczymy pojedynczych legów jako osobnych kuponów.
-      const activeCouponKeys = new Set(
-        rows.map(r => [
+      const activeCouponKeys = new Set();
+      const activeByVariant = {
+        TOP3: new Set(),
+        TOP4: new Set(),
+        TOP5: new Set()
+      };
+
+      rows.forEach(r => {
+        const variant = normalizeVariantName(r.coupon_variant || "UNKNOWN");
+        const key = [
           r.coupon_run || "",
           r.coupon_league || "UNKNOWN",
-          normalizeVariantName(r.coupon_variant || "UNKNOWN")
-        ].join("|"))
-      );
-      $("#currentCouponCount").textContent = `Aktywne kupony: ${activeCouponKeys.size}`;
+          variant
+        ].join("|");
+
+        activeCouponKeys.add(key);
+
+        if (activeByVariant[variant]) {
+          activeByVariant[variant].add(key);
+        }
+      });
+
+      $("#currentCouponCount").textContent =
+        `Aktywne kupony: ${activeCouponKeys.size}`;
+
+      $("#currentCouponBreakdown").textContent =
+        `TOP3: ${activeByVariant.TOP3.size} · ` +
+        `TOP4: ${activeByVariant.TOP4.size} · ` +
+        `TOP5: ${activeByVariant.TOP5.size}`;
 
       $("#globalUpdate").textContent = data.generated_at
         ? "Aktualizacja kuponów: " + data.generated_at.replace("T"," ")
@@ -415,6 +437,7 @@
       box.innerHTML = out.join("");
     } catch (e) {
       $("#currentCouponCount").textContent = "Aktywne kupony: —";
+      $("#currentCouponBreakdown").textContent = "TOP3: — · TOP4: — · TOP5: —";
       box.className = "error";
       box.textContent = "Nie udało się wczytać aktualnych kuponów: " + e.message;
     }
