@@ -166,7 +166,10 @@
     <div class="section-head">
       <div>
         <h2>AKTUALNE KUPONY</h2>
-        <div class="section-note">TOP3 / TOP4 / TOP5 generowane automatycznie per liga</div>
+        <div class="section-note">
+          TOP3 / TOP4 / TOP5 generowane automatycznie per liga
+          · <strong id="currentCouponCount">Aktywne kupony: —</strong>
+        </div>
       </div>
     </div>
     <div id="currentCoupons" class="loading">Pobieranie aktualnych kuponów…</div>
@@ -348,6 +351,18 @@
     try {
       const data = await getJson("./latest_coupons.json");
       const rows = Array.isArray(data.coupons) ? data.coupons : [];
+
+      // Jeden kupon = unikalna kombinacja run + liga + wariant.
+      // Nie liczymy pojedynczych legów jako osobnych kuponów.
+      const activeCouponKeys = new Set(
+        rows.map(r => [
+          r.coupon_run || "",
+          r.coupon_league || "UNKNOWN",
+          normalizeVariantName(r.coupon_variant || "UNKNOWN")
+        ].join("|"))
+      );
+      $("#currentCouponCount").textContent = `Aktywne kupony: ${activeCouponKeys.size}`;
+
       $("#globalUpdate").textContent = data.generated_at
         ? "Aktualizacja kuponów: " + data.generated_at.replace("T"," ")
         : "Aktualizacja: brak daty";
@@ -399,6 +414,7 @@
       box.className = "";
       box.innerHTML = out.join("");
     } catch (e) {
+      $("#currentCouponCount").textContent = "Aktywne kupony: —";
       box.className = "error";
       box.textContent = "Nie udało się wczytać aktualnych kuponów: " + e.message;
     }
