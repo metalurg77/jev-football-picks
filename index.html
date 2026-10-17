@@ -208,7 +208,7 @@
         <div class="section-note">
           TOP3 / TOP4 / TOP5 generowane automatycznie per liga
           · <strong id="currentCouponCount">Aktywne kupony: —</strong>
-          · <span id="currentCouponBreakdown">TOP3: — · TOP4: — · TOP5: —</span>
+          · <span id="currentCouponBreakdown">TOP3: — · TOP4: — · TOP5: — · NOWE: — · ZMIENIONE: — · BEZ ZMIAN: — · USUNIĘTE: —</span>
           · <span style="color:var(--good);font-weight:700">NOWY</span> = wcześniej nie istniał
           · <span style="color:#fbbf24;font-weight:700">ZMIENIONY</span> = zmienił się skład
         </div>
@@ -437,6 +437,7 @@
       const statusByKey = {};
       let newCount = 0;
       let changedCount = 0;
+      let unchangedCount = 0;
 
       for (const [key, current] of Object.entries(currentGrouped)) {
         if (!hasPreviousSnapshot) {
@@ -454,8 +455,13 @@
           changedCount++;
         } else {
           statusByKey[key] = "UNCHANGED";
+          unchangedCount++;
         }
       }
+
+      const removedCount = hasPreviousSnapshot
+        ? Object.keys(previousGrouped).filter(key => !currentGrouped[key]).length
+        : 0;
 
       const activeCouponKeys = new Set();
       const activeByVariant = {
@@ -481,7 +487,9 @@
         `TOP3: ${activeByVariant.TOP3.size} · ` +
         `TOP4: ${activeByVariant.TOP4.size} · ` +
         `TOP5: ${activeByVariant.TOP5.size}` +
-        (hasPreviousSnapshot ? ` · NOWE: ${newCount} · ZMIENIONE: ${changedCount}` : "");
+        (hasPreviousSnapshot
+          ? ` · NOWE: ${newCount} · ZMIENIONE: ${changedCount} · BEZ ZMIAN: ${unchangedCount} · USUNIĘTE: ${removedCount}`
+          : "");
 
       $("#globalUpdate").textContent = data.generated_at
         ? "Aktualizacja kuponów: " + data.generated_at.replace("T"," ")
@@ -553,7 +561,7 @@
 
     } catch (e) {
       $("#currentCouponCount").textContent = "Aktywne kupony: —";
-      $("#currentCouponBreakdown").textContent = "TOP3: — · TOP4: — · TOP5: —";
+      $("#currentCouponBreakdown").textContent = "TOP3: — · TOP4: — · TOP5: — · NOWE: — · ZMIENIONE: — · BEZ ZMIAN: — · USUNIĘTE: —";
       box.className = "error";
       box.textContent = "Nie udało się wczytać aktualnych kuponów: " + e.message;
     }
