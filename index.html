@@ -65,9 +65,20 @@
     .league-title{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:14px}
     .coupon-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
     .coupon{
-      background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:14px;min-width:0
+      background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:14px;min-width:0;
+      transition:border-color .15s ease,box-shadow .15s ease,transform .15s ease
+    }
+    .coupon.fresh{
+      border-color:#36d98b;
+      box-shadow:0 0 0 1px rgba(54,217,139,.18),0 10px 28px rgba(0,0,0,.20);
+      background:linear-gradient(180deg,rgba(54,217,139,.08),rgba(16,26,47,.96) 42%)
     }
     .coupon-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}
+    .coupon-head-left{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+    .fresh-tag{
+      display:inline-flex;align-items:center;padding:4px 8px;border-radius:999px;
+      background:#36d98b;color:#07150f;font-size:11px;font-weight:900;letter-spacing:.05em
+    }
     .badge{
       display:inline-flex;align-items:center;gap:6px;padding:4px 9px;
       border:1px solid #38547f;border-radius:999px;color:var(--accent);
@@ -170,6 +181,7 @@
           TOP3 / TOP4 / TOP5 generowane automatycznie per liga
           · <strong id="currentCouponCount">Aktywne kupony: —</strong>
           · <span id="currentCouponBreakdown">TOP3: — · TOP4: — · TOP5: —</span>
+          · <span style="color:var(--good);font-weight:700">NOWE = najnowsze uruchomienie</span>
         </div>
       </div>
     </div>
@@ -353,6 +365,14 @@
       const data = await getJson("./latest_coupons.json");
       const rows = Array.isArray(data.coupons) ? data.coupons : [];
 
+      // Najnowszy run oznaczamy jako NOWE. Format run_id YYYYMMDD_HHMMSS
+      // sortuje się prawidłowo również jako tekst.
+      const latestRun = rows
+        .map(r => String(r.coupon_run || ""))
+        .filter(Boolean)
+        .sort()
+        .at(-1) || "";
+
       // Jeden kupon = unikalna kombinacja run + liga + wariant.
       // Nie liczymy pojedynczych legów jako osobnych kuponów.
       const activeCouponKeys = new Set();
@@ -415,9 +435,15 @@
             .sort((a,b) => Number(a.coupon_leg_no||0)-Number(b.coupon_leg_no||0));
           if (!legs.length) continue;
 
-          out.push(`<article class="coupon">
+          const couponRun = String(legs[0].coupon_run || "");
+          const isFresh = latestRun && couponRun === latestRun;
+
+          out.push(`<article class="coupon${isFresh ? " fresh" : ""}">
             <div class="coupon-head">
-              <span class="badge">${esc(variant)}</span>
+              <div class="coupon-head-left">
+                <span class="badge">${esc(variant)}</span>
+                ${isFresh ? `<span class="fresh-tag">NOWE</span>` : ``}
+              </div>
               <span class="combined">kurs ${num(legs[0].coupon_combined_odds)}</span>
             </div>`);
 
