@@ -208,7 +208,7 @@
         <div class="section-note">
           TOP3 / TOP4 / TOP5 generowane automatycznie per liga
           · <strong id="currentCouponCount">Aktywne kupony: —</strong>
-          · <span id="currentCouponBreakdown">TOP3: — · TOP4: — · TOP5: — · NOWE: — · ZMIENIONE: — · BEZ ZMIAN: — · USUNIĘTE: —</span>
+          · <span id="currentCouponBreakdown">TOP3: — · TOP4: — · TOP5: —</span>
           · <span style="color:var(--good);font-weight:700">NOWY</span> = wcześniej nie istniał
           · <span style="color:#fbbf24;font-weight:700">ZMIENIONY</span> = zmienił się skład
         </div>
@@ -439,6 +439,12 @@
       let changedCount = 0;
       let unchangedCount = 0;
 
+      const statusByVariant = {
+        TOP3: {NEW:0, CHANGED:0, UNCHANGED:0, REMOVED:0},
+        TOP4: {NEW:0, CHANGED:0, UNCHANGED:0, REMOVED:0},
+        TOP5: {NEW:0, CHANGED:0, UNCHANGED:0, REMOVED:0}
+      };
+
       for (const [key, current] of Object.entries(currentGrouped)) {
         if (!hasPreviousSnapshot) {
           statusByKey[key] = "UNCHANGED";
@@ -447,21 +453,33 @@
 
         const previous = previousGrouped[key];
 
+        const variant = current.variant;
+
         if (!previous) {
           statusByKey[key] = "NEW";
           newCount++;
+          if (statusByVariant[variant]) statusByVariant[variant].NEW++;
         } else if (legSignature(current.legs) !== legSignature(previous.legs)) {
           statusByKey[key] = "CHANGED";
           changedCount++;
+          if (statusByVariant[variant]) statusByVariant[variant].CHANGED++;
         } else {
           statusByKey[key] = "UNCHANGED";
           unchangedCount++;
+          if (statusByVariant[variant]) statusByVariant[variant].UNCHANGED++;
         }
       }
 
-      const removedCount = hasPreviousSnapshot
-        ? Object.keys(previousGrouped).filter(key => !currentGrouped[key]).length
-        : 0;
+      let removedCount = 0;
+      if (hasPreviousSnapshot) {
+        for (const [key, previous] of Object.entries(previousGrouped)) {
+          if (!currentGrouped[key]) {
+            removedCount++;
+            const variant = previous.variant;
+            if (statusByVariant[variant]) statusByVariant[variant].REMOVED++;
+          }
+        }
+      }
 
       const activeCouponKeys = new Set();
       const activeByVariant = {
@@ -483,12 +501,23 @@
       $("#currentCouponCount").textContent =
         `Aktywne kupony: ${activeCouponKeys.size}`;
 
-      $("#currentCouponBreakdown").textContent =
+      $("#currentCouponBreakdown").innerHTML =
         `TOP3: ${activeByVariant.TOP3.size} · ` +
         `TOP4: ${activeByVariant.TOP4.size} · ` +
         `TOP5: ${activeByVariant.TOP5.size}` +
         (hasPreviousSnapshot
-          ? ` · NOWE: ${newCount} · ZMIENIONE: ${changedCount} · BEZ ZMIAN: ${unchangedCount} · USUNIĘTE: ${removedCount}`
+          ? `<br>` +
+            `<span style="color:var(--good);font-weight:700">NOWE</span> ` +
+            `TOP3: ${statusByVariant.TOP3.NEW} · TOP4: ${statusByVariant.TOP4.NEW} · TOP5: ${statusByVariant.TOP5.NEW}` +
+            `<br>` +
+            `<span style="color:#fbbf24;font-weight:700">ZMIENIONE</span> ` +
+            `TOP3: ${statusByVariant.TOP3.CHANGED} · TOP4: ${statusByVariant.TOP4.CHANGED} · TOP5: ${statusByVariant.TOP5.CHANGED}` +
+            `<br>` +
+            `BEZ ZMIAN ` +
+            `TOP3: ${statusByVariant.TOP3.UNCHANGED} · TOP4: ${statusByVariant.TOP4.UNCHANGED} · TOP5: ${statusByVariant.TOP5.UNCHANGED}` +
+            `<br>` +
+            `USUNIĘTE ` +
+            `TOP3: ${statusByVariant.TOP3.REMOVED} · TOP4: ${statusByVariant.TOP4.REMOVED} · TOP5: ${statusByVariant.TOP5.REMOVED}`
           : "");
 
       $("#globalUpdate").textContent = data.generated_at
@@ -561,7 +590,7 @@
 
     } catch (e) {
       $("#currentCouponCount").textContent = "Aktywne kupony: —";
-      $("#currentCouponBreakdown").textContent = "TOP3: — · TOP4: — · TOP5: — · NOWE: — · ZMIENIONE: — · BEZ ZMIAN: — · USUNIĘTE: —";
+      $("#currentCouponBreakdown").textContent = "TOP3: — · TOP4: — · TOP5: —";
       box.className = "error";
       box.textContent = "Nie udało się wczytać aktualnych kuponów: " + e.message;
     }
