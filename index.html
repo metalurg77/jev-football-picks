@@ -189,6 +189,62 @@
       gap:8px;
     }
 
+  
+    /* Locked history */
+    .history-summary{
+      display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:10px;margin:14px 0
+    }
+    .history-kpi{
+      background:var(--panel);border:1px solid var(--line);
+      border-radius:12px;padding:12px
+    }
+    .history-kpi .label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+    .history-kpi .value{font-size:22px;font-weight:850;margin-top:4px}
+    .history-filters{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 14px}
+    .history-filter{
+      border:1px solid var(--line);background:var(--panel3);color:var(--muted);
+      border-radius:999px;padding:7px 11px;font-weight:750;cursor:pointer;font-size:12px
+    }
+    .history-filter.active{color:var(--accent);border-color:#4d8eaa;background:rgba(120,215,255,.12)}
+    .history-list{display:grid;gap:10px}
+    .history-item{
+      background:rgba(16,26,47,.93);border:1px solid var(--line);border-radius:14px;
+      overflow:hidden
+    }
+    .history-item summary{
+      list-style:none;cursor:pointer;padding:12px 14px;
+      display:grid;grid-template-columns:140px 1fr 70px 100px 100px 110px;
+      gap:10px;align-items:center
+    }
+    .history-item summary::-webkit-details-marker{display:none}
+    .history-item[open] summary{border-bottom:1px solid var(--line)}
+    .history-date{color:var(--muted);font-size:12px}
+    .history-league{font-weight:800}
+    .history-variant{color:var(--accent);font-weight:800}
+    .history-odds{text-align:right;font-weight:800;color:var(--good)}
+    .history-status{text-align:center}
+    .history-profit{text-align:right;font-weight:800}
+    .history-legs{padding:8px 14px 14px}
+    .history-leg{
+      display:grid;grid-template-columns:1fr 180px 80px;gap:10px;
+      padding:9px 0;border-bottom:1px solid var(--line);font-size:13px
+    }
+    .history-leg:last-child{border-bottom:0}
+    .history-leg-pick{color:var(--accent2)}
+    .history-leg-odds{text-align:right}
+    .status-unsettled{
+      background:rgba(253,230,138,.10);color:var(--warn);
+      border:1px solid rgba(253,230,138,.25)
+    }
+    @media(max-width:820px){
+      .history-summary{grid-template-columns:repeat(2,1fr)}
+      .history-item summary{grid-template-columns:100px 1fr 60px 80px}
+      .history-status,.history-profit{grid-column:auto}
+      .history-leg{grid-template-columns:1fr}
+      .history-leg-odds{text-align:left}
+    }
+
   </style>
 </head>
 <body>
@@ -215,6 +271,33 @@
       </div>
     </div>
     <div id="currentCoupons" class="loading">Pobieranie aktualnych kuponów…</div>
+  </section>
+
+  <section class="section" id="lockedHistorySection">
+    <div class="section-head">
+      <div>
+        <h2>HISTORIA ZALOCKOWANYCH KUPONÓW</h2>
+        <div class="section-note">
+          Każdy kupon, który został publicznie opublikowany, pozostaje tutaj na stałe.
+          Zmiana późniejszego kuponu nie usuwa wcześniejszej wersji.
+        </div>
+      </div>
+    </div>
+
+    <div id="lockedHistorySummary" class="history-summary"></div>
+
+    <div class="history-filters" id="lockedHistoryFilters">
+      <button class="history-filter active" data-history-filter="ALL" type="button">WSZYSTKIE</button>
+      <button class="history-filter" data-history-filter="TOP3" type="button">TOP3</button>
+      <button class="history-filter" data-history-filter="TOP4" type="button">TOP4</button>
+      <button class="history-filter" data-history-filter="TOP5" type="button">TOP5</button>
+      <button class="history-filter" data-history-filter="WIN" type="button">WIN</button>
+      <button class="history-filter" data-history-filter="LOSS" type="button">LOSS</button>
+      <button class="history-filter" data-history-filter="UNSETTLED" type="button">OCZEKUJĄCE</button>
+    </div>
+
+    <div id="lockedHistoryMeta" class="section-note" style="margin-bottom:10px"></div>
+    <div id="lockedHistory" class="loading">Pobieranie historii zalockowanych kuponów…</div>
   </section>
 
   <section class="section" id="resultsSection">
@@ -381,6 +464,9 @@
   let summary = null;
   let couponsData = null;
   let currentPeriod = "ALL";
+
+  let lockedHistoryData = null;
+  let lockedHistoryFilter = "ALL";
 
   async function getJson(path) {
     const r = await fetch(path + "?v=" + Date.now(), {cache:"no-store"});
@@ -849,6 +935,118 @@
       `Koniec okresu: <strong class="${profitClass(last.cumulative_profit_u)}">${signed(last.cumulative_profit_u,2,"u")}</strong>`;
   }
 
+
+  function statusBadge(status) {
+    const s = String(status || "UNSETTLED").toUpperCase();
+    if (s === "WIN") return `<span class="result win">WIN</span>`;
+    if (s === "LOSS") return `<span class="result loss">LOSS</span>`;
+    return `<span class="result status-unsettled">OCZEKUJE</span>`;
+  }
+
+  function renderLockedHistory() {
+    const box = $("#lockedHistory");
+    const meta = $("#lockedHistoryMeta");
+    const data = lockedHistoryData;
+
+    if (!data || !Array.isArray(data.coupons)) {
+      box.className = "error";
+      box.textContent = "Brak danych historii LOCK.";
+      return;
+    }
+
+    const all = data.coupons;
+    let rows = all;
+
+    if (lockedHistoryFilter === "TOP3" || lockedHistoryFilter === "TOP4" || lockedHistoryFilter === "TOP5") {
+      rows = all.filter(r => String(r.variant).toUpperCase() === lockedHistoryFilter);
+    } else if (lockedHistoryFilter === "WIN" || lockedHistoryFilter === "LOSS" || lockedHistoryFilter === "UNSETTLED") {
+      rows = all.filter(r => String(r.status).toUpperCase() === lockedHistoryFilter);
+    }
+
+    meta.textContent = `Pokazano ${rows.length} z ${all.length} zalockowanych kuponów`;
+
+    if (!rows.length) {
+      box.className = "empty";
+      box.textContent = "Brak kuponów dla wybranego filtra.";
+      return;
+    }
+
+    const html = rows.map(c => {
+      const profit = Number(c.profit_1u);
+      const profitTxt = Number.isFinite(profit) ? signed(profit,2,"u") : "—";
+      const pClass = Number.isFinite(profit) ? profitClass(profit) : "";
+
+      const legs = (c.legs || []).map(l => `
+        <div class="history-leg">
+          <div>
+            <div class="match">${esc(l.leg_no)}. ${esc(l.match)}</div>
+            <div class="meta">${esc(l.match_date || "—")}</div>
+          </div>
+          <div class="history-leg-pick">${esc(l.market)} / ${esc(l.choice)}</div>
+          <div class="history-leg-odds">@ ${num(l.odds)}</div>
+        </div>
+      `).join("");
+
+      return `
+        <details class="history-item">
+          <summary>
+            <div class="history-date">${esc(String(c.locked_at || "—").replace("T"," "))}</div>
+            <div class="history-league">${esc(leagueName(c.league))}</div>
+            <div class="history-variant">${esc(c.variant)}</div>
+            <div class="history-status">${statusBadge(c.status)}</div>
+            <div class="history-odds">kurs ${num(c.combined_odds)}</div>
+            <div class="history-profit ${pClass}">${profitTxt}</div>
+          </summary>
+          <div class="history-legs">${legs}</div>
+        </details>
+      `;
+    }).join("");
+
+    box.className = "history-list";
+    box.innerHTML = html;
+  }
+
+  async function loadLockedHistory() {
+    const box = $("#lockedHistory");
+
+    try {
+      lockedHistoryData = await getJson("./locked_coupons.json");
+      const s = lockedHistoryData?.summary || {};
+
+      $("#lockedHistorySummary").innerHTML = `
+        <div class="history-kpi">
+          <div class="label">Zalockowane łącznie</div>
+          <div class="value">${s.total ?? 0}</div>
+        </div>
+        <div class="history-kpi">
+          <div class="label">WIN</div>
+          <div class="value positive">${s.win ?? 0}</div>
+        </div>
+        <div class="history-kpi">
+          <div class="label">LOSS</div>
+          <div class="value negative">${s.loss ?? 0}</div>
+        </div>
+        <div class="history-kpi">
+          <div class="label">Oczekujące</div>
+          <div class="value">${s.unsettled ?? 0}</div>
+        </div>
+      `;
+
+      renderLockedHistory();
+
+      $$(".history-filter").forEach(btn => {
+        btn.addEventListener("click", () => {
+          lockedHistoryFilter = btn.dataset.historyFilter;
+          $$(".history-filter").forEach(x => x.classList.toggle("active", x === btn));
+          renderLockedHistory();
+        });
+      });
+    } catch (e) {
+      box.className = "error";
+      box.textContent = "Nie udało się wczytać historii zalockowanych kuponów: " + e.message;
+    }
+  }
+
   function renderPeriod(period) {
     currentPeriod = period;
     const p = summary?.periods?.[period];
@@ -892,6 +1090,7 @@
   }
 
   loadCurrent();
+  loadLockedHistory();
   loadResults();
 })();
 </script>
