@@ -65,20 +65,9 @@
     .league-title{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:14px}
     .coupon-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
     .coupon{
-      background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:14px;min-width:0;
-      transition:border-color .15s ease,box-shadow .15s ease,transform .15s ease
-    }
-    .coupon.fresh{
-      border-color:#36d98b;
-      box-shadow:0 0 0 1px rgba(54,217,139,.18),0 10px 28px rgba(0,0,0,.20);
-      background:linear-gradient(180deg,rgba(54,217,139,.08),rgba(16,26,47,.96) 42%)
+      background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:14px;min-width:0
     }
     .coupon-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}
-    .coupon-head-left{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
-    .fresh-tag{
-      display:inline-flex;align-items:center;padding:4px 8px;border-radius:999px;
-      background:#36d98b;color:#07150f;font-size:11px;font-weight:900;letter-spacing:.05em
-    }
     .badge{
       display:inline-flex;align-items:center;gap:6px;padding:4px 9px;
       border:1px solid #38547f;border-radius:999px;color:var(--accent);
@@ -162,6 +151,22 @@
       .update{text-align:left}
     }
   
+    .coupon.fresh {
+      border-color:#34d399;
+      background:linear-gradient(180deg, rgba(52,211,153,.06), rgba(52,211,153,.015));
+      box-shadow:inset 0 0 0 1px rgba(52,211,153,.06);
+    }
+    .fresh-tag {
+      display:inline-flex;
+      align-items:center;
+      padding:3px 8px;
+      border-radius:999px;
+      font-size:11px;
+      font-weight:800;
+      letter-spacing:.04em;
+      color:#06291f;
+      background:#34d399;
+    }
     .coupon.changed {
       border-color:#f59e0b;
       background:linear-gradient(180deg, rgba(245,158,11,.06), rgba(245,158,11,.015));
@@ -177,6 +182,11 @@
       letter-spacing:.04em;
       color:#111827;
       background:#fbbf24;
+    }
+    .coupon-head-left {
+      display:flex;
+      align-items:center;
+      gap:8px;
     }
 
   </style>
@@ -199,7 +209,8 @@
           TOP3 / TOP4 / TOP5 generowane automatycznie per liga
           · <strong id="currentCouponCount">Aktywne kupony: —</strong>
           · <span id="currentCouponBreakdown">TOP3: — · TOP4: — · TOP5: —</span>
-          · <span style="color:var(--good);font-weight:700">NOWY</span> = wcześniej nie istniał · <span style="color:#fbbf24;font-weight:700">ZMIENIONY</span> = zmienił się skład
+          · <span style="color:var(--good);font-weight:700">NOWY</span> = wcześniej nie istniał
+          · <span style="color:#fbbf24;font-weight:700">ZMIENIONY</span> = zmienił się skład
         </div>
       </div>
     </div>
@@ -393,7 +404,7 @@
       ].join("~"))
       .join("||");
 
-    const groupCoupons = rows => {
+    const groupCouponRows = rows => {
       const grouped = {};
       for (const r of rows) {
         const league = r.coupon_league || "UNKNOWN";
@@ -411,21 +422,22 @@
 
       let previousRows = [];
       let hasPreviousSnapshot = false;
+
       try {
         const previousData = await getJson("./previous_coupons.json");
         previousRows = Array.isArray(previousData.coupons) ? previousData.coupons : [];
         hasPreviousSnapshot = true;
       } catch (_) {
-        // Pierwsze uruchomienie po wdrożeniu może nie mieć jeszcze snapshotu.
+        // Jeśli brak previous_coupons.json, strona nadal działa.
       }
 
-      const currentGrouped = groupCoupons(rows);
-      const previousGrouped = groupCoupons(previousRows);
+      const currentGrouped = groupCouponRows(rows);
+      const previousGrouped = groupCouponRows(previousRows);
 
+      const statusByKey = {};
       let newCount = 0;
       let changedCount = 0;
 
-      const statusByKey = {};
       for (const [key, current] of Object.entries(currentGrouped)) {
         if (!hasPreviousSnapshot) {
           statusByKey[key] = "UNCHANGED";
@@ -433,6 +445,7 @@
         }
 
         const previous = previousGrouped[key];
+
         if (!previous) {
           statusByKey[key] = "NEW";
           newCount++;
@@ -454,8 +467,11 @@
       rows.forEach(r => {
         const variant = normalizeVariantName(r.coupon_variant || "UNKNOWN");
         const key = couponKey(r.coupon_league, variant);
+
         activeCouponKeys.add(key);
-        if (activeByVariant[variant]) activeByVariant[variant].add(key);
+        if (activeByVariant[variant]) {
+          activeByVariant[variant].add(key);
+        }
       });
 
       $("#currentCouponCount").textContent =
@@ -495,10 +511,12 @@
         for (const variant of ["TOP3","TOP4","TOP5"]) {
           const legs = (grouped[league][variant] || [])
             .sort((a,b) => Number(a.coupon_leg_no||0)-Number(b.coupon_leg_no||0));
+
           if (!legs.length) continue;
 
           const key = couponKey(league, variant);
           const status = statusByKey[key] || "UNCHANGED";
+
           const cssClass =
             status === "NEW" ? " fresh" :
             status === "CHANGED" ? " changed" : "";
@@ -523,19 +541,292 @@
               <div class="meta">P ${pct(leg.model_probability)} · edge ${pct(leg.edge)} · margin ${pct(leg.margin)}</div>
             </div>`);
           }
+
           out.push(`</article>`);
         }
+
         out.push(`</div></section>`);
       }
 
       box.className = "";
       box.innerHTML = out.join("");
+
     } catch (e) {
       $("#currentCouponCount").textContent = "Aktywne kupony: —";
       $("#currentCouponBreakdown").textContent = "TOP3: — · TOP4: — · TOP5: —";
       box.className = "error";
       box.textContent = "Nie udało się wczytać aktualnych kuponów: " + e.message;
     }
+  }
+
+  function renderKPIs(m) {
+    const stake = Number(summary?.stake_model?.display_stake_pln || 0);
+    const cards = [
+      ["Kupony", m.n, `${m.wins} WIN / ${m.losses} LOSS`, ""],
+      ["WR", pct(m.wr), "trafione całe kupony", ""],
+      ["Profit", signed(m.profit_u,2,"u"), stake ? signed(m.profit_pln,2," zł") + ` przy ${stake.toFixed(2)} zł/kupon` : "", profitClass(m.profit_u)],
+      ["ROI", pct(m.roi), "profit / suma stawek", profitClass(m.roi)],
+      ["PF", pfText(m), "gross profit / gross loss", ""],
+      ["Max DD", num(m.max_drawdown_u,2) + "u", `Max LS: ${m.max_losing_streak}`, ""]
+    ];
+
+    $("#kpis").innerHTML = cards.map(([label,value,sub,cls]) => `
+      <div class="kpi">
+        <div class="kpi-label">${label}</div>
+        <div class="kpi-value ${cls}">${value}</div>
+        <div class="kpi-sub">${sub}</div>
+      </div>`).join("");
+  }
+
+
+  function calcMetricsFromRows(rows) {
+    const sorted = [...rows].sort((a,b) => new Date(a.date)-new Date(b.date));
+    const n = sorted.length;
+    const wins = sorted.filter(r => String(r.result).toUpperCase()==="WIN").length;
+    const losses = sorted.filter(r => String(r.result).toUpperCase()==="LOSS").length;
+    const profits = sorted.map(r => Number(r.profit_u)).filter(Number.isFinite);
+    const profit_u = profits.reduce((a,b)=>a+b,0);
+    const stakePln = Number(summary?.stake_model?.display_stake_pln || couponsData?.stake_pln || 0);
+    const grossProfit = profits.filter(x=>x>0).reduce((a,b)=>a+b,0);
+    const grossLoss = Math.abs(profits.filter(x=>x<0).reduce((a,b)=>a+b,0));
+    const odds = sorted.map(r=>Number(r.combined_odds)).filter(Number.isFinite);
+
+    let eq = 0, peak = 0, maxDD = 0, ls = 0, maxLS = 0;
+    for (const r of sorted) {
+      const p = Number(r.profit_u) || 0;
+      eq += p;
+      peak = Math.max(peak, eq);
+      maxDD = Math.max(maxDD, peak-eq);
+      if (String(r.result).toUpperCase()==="LOSS") {
+        ls += 1;
+        maxLS = Math.max(maxLS, ls);
+      } else {
+        ls = 0;
+      }
+    }
+
+    return {
+      n,
+      wins,
+      losses,
+      wr: n ? wins/n : null,
+      profit_u,
+      profit_pln: profit_u * stakePln,
+      roi: n ? profit_u/n : null,
+      pf: grossLoss > 0 ? grossProfit/grossLoss : null,
+      pf_infinite: grossLoss===0 && grossProfit>0,
+      avg_odds: odds.length ? odds.reduce((a,b)=>a+b,0)/odds.length : null,
+      median_odds: odds.length ? [...odds].sort((a,b)=>a-b)[Math.floor(odds.length/2)] : null,
+      max_drawdown_u: maxDD,
+      max_losing_streak: maxLS
+    };
+  }
+
+  function normalizeVariantName(v) {
+    const s = String(v ?? "").toUpperCase();
+    const m = s.match(/TOP[345]/);
+    return m ? m[0] : s;
+  }
+
+  function renderVariants(vmap) {
+    const root = $("#variants");
+    const rows = periodCoupons(currentPeriod);
+
+    root.innerHTML = ["TOP3","TOP4","TOP5"].map(v => {
+      let m = vmap?.[v];
+
+      // Fallback: licz bezpośrednio z results_coupons.json.
+      // Dzięki temu działa także dla nazw E1_TOP3, SP2_TOP4 itd.
+      if (!m || !m.n) {
+        const vr = rows.filter(r => normalizeVariantName(r.variant) === v);
+        if (vr.length) m = calcMetricsFromRows(vr);
+      }
+
+      if (!m || !m.n) {
+        return `<div class="panel variant">
+          <div class="variant-top"><span class="badge">${v}</span></div>
+          <div class="muted" style="margin-top:14px">Brak rozliczonych kuponów w tym okresie.</div>
+        </div>`;
+      }
+
+      return `<div class="panel variant">
+        <div class="variant-top">
+          <span class="badge">${v}</span>
+          <span class="muted">N=${m.n}</span>
+        </div>
+        <div class="variant-profit ${profitClass(m.profit_u)}">${signed(m.profit_u,2,"u")}</div>
+        <div class="muted">${signed(m.profit_pln,2," zł")}</div>
+        <div class="mini-grid">
+          <div class="mini"><b>${pct(m.wr)}</b><span>WR</span></div>
+          <div class="mini"><b>${pct(m.roi)}</b><span>ROI</span></div>
+          <div class="mini"><b>${pfText(m)}</b><span>PF</span></div>
+          <div class="mini"><b>${num(m.avg_odds)}</b><span>Avg odds</span></div>
+          <div class="mini"><b>${num(m.max_drawdown_u)}u</b><span>Max DD</span></div>
+          <div class="mini"><b>${m.max_losing_streak}</b><span>Max LS</span></div>
+        </div>
+      </div>`;
+    }).join("");
+  }
+
+  function renderLeagues(leagues) {
+    const rows = Object.entries(leagues || {})
+      .map(([league,obj]) => [league,obj.overall])
+      .sort((a,b) => Number(b[1]?.profit_u||0)-Number(a[1]?.profit_u||0));
+
+    $("#leagueRows").innerHTML = rows.length ? rows.map(([league,m]) => `
+      <tr>
+        <td><strong>${esc(leagueName(league))}</strong>${m.n < 10 ? '<span class="sample">LOW SAMPLE</span>' : ''}</td>
+        <td class="num">${m.n}</td>
+        <td class="num">${pct(m.wr)}</td>
+        <td class="num ${profitClass(m.profit_u)}">${signed(m.profit_u,2,"u")}</td>
+        <td class="num ${profitClass(m.roi)}">${pct(m.roi)}</td>
+        <td class="num">${pfText(m)}</td>
+        <td class="num">${num(m.avg_odds)}</td>
+        <td class="num">${num(m.max_drawdown_u)}u</td>
+      </tr>`).join("") :
+      `<tr><td colspan="8" class="muted">Brak danych dla tego okresu.</td></tr>`;
+  }
+
+  function periodCoupons(period) {
+    const rows = Array.isArray(couponsData?.coupons) ? couponsData.coupons : [];
+    if (period === "ALL") return rows;
+
+    const valid = rows.map(r => ({...r, __d:new Date(r.date)}))
+      .filter(r => !Number.isNaN(r.__d.getTime()));
+    if (!valid.length) return [];
+
+    const maxMs = Math.max(...valid.map(r => r.__d.getTime()));
+    const maxD = new Date(maxMs);
+
+    if (period === "LAST_7_DAYS") {
+      const start = new Date(maxD); start.setDate(start.getDate()-6); start.setHours(0,0,0,0);
+      return valid.filter(r => r.__d >= start);
+    }
+    if (period === "LAST_30_DAYS") {
+      const start = new Date(maxD); start.setDate(start.getDate()-29); start.setHours(0,0,0,0);
+      return valid.filter(r => r.__d >= start);
+    }
+    if (period === "THIS_MONTH") {
+      return valid.filter(r => r.__d.getFullYear()===maxD.getFullYear() && r.__d.getMonth()===maxD.getMonth());
+    }
+    return rows;
+  }
+
+  function renderRecent(period) {
+    const rows = periodCoupons(period)
+      .sort((a,b) => new Date(b.date)-new Date(a.date))
+      .slice(0,20);
+
+    $("#recentRows").innerHTML = rows.length ? rows.map(r => `
+      <tr>
+        <td>${dateText(r.date)}</td>
+        <td><strong>${esc(leagueName(r.league))}</strong></td>
+        <td>${esc(r.variant)}</td>
+        <td class="num">${num(r.combined_odds)}</td>
+        <td><span class="result ${r.result==="WIN"?"win":"loss"}">${esc(r.result)}</span></td>
+        <td class="num ${profitClass(r.profit_u)}">${signed(r.profit_u,2,"u")}</td>
+      </tr>`).join("") :
+      `<tr><td colspan="6" class="muted">Brak rozliczonych kuponów w tym okresie.</td></tr>`;
+  }
+
+  function drawChart(points) {
+    const canvas = $("#profitChart");
+    const ctx = canvas.getContext("2d");
+    const rect = canvas.getBoundingClientRect();
+    const dpr = Math.max(1, window.devicePixelRatio || 1);
+    canvas.width = Math.round(rect.width*dpr);
+    canvas.height = Math.round(rect.height*dpr);
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+
+    const W = rect.width, H = rect.height;
+    ctx.clearRect(0,0,W,H);
+
+    if (!points || !points.length) {
+      ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue("--muted");
+      ctx.font = "14px system-ui";
+      ctx.fillText("Brak danych do wykresu.", 14, 28);
+      $("#chartEnd").textContent = "";
+      return;
+    }
+
+    const vals = points.map(p => Number(p.cumulative_profit_u)).filter(Number.isFinite);
+    const minV = Math.min(0,...vals);
+    const maxV = Math.max(0,...vals);
+    const span = Math.max(1, maxV-minV);
+    const pad = {l:52,r:18,t:18,b:34};
+    const cw = Math.max(1,W-pad.l-pad.r);
+    const ch = Math.max(1,H-pad.t-pad.b);
+    const x = i => pad.l + (points.length===1 ? cw/2 : i/(points.length-1)*cw);
+    const y = v => pad.t + (maxV-v)/span*ch;
+
+    const css = getComputedStyle(document.documentElement);
+    const line = css.getPropertyValue("--line").trim();
+    const muted = css.getPropertyValue("--muted").trim();
+    const accent = css.getPropertyValue("--accent").trim();
+    const good = css.getPropertyValue("--good").trim();
+
+    ctx.strokeStyle = line;
+    ctx.lineWidth = 1;
+    ctx.fillStyle = muted;
+    ctx.font = "11px system-ui";
+    ctx.textAlign = "right";
+    ctx.textBaseline = "middle";
+
+    for (let i=0;i<=4;i++) {
+      const v = maxV - (span*i/4);
+      const yy = y(v);
+      ctx.beginPath(); ctx.moveTo(pad.l,yy); ctx.lineTo(W-pad.r,yy); ctx.stroke();
+      ctx.fillText(v.toFixed(1)+"u", pad.l-7, yy);
+    }
+
+    if (minV < 0 && maxV > 0) {
+      ctx.strokeStyle = muted;
+      ctx.beginPath(); ctx.moveTo(pad.l,y(0)); ctx.lineTo(W-pad.r,y(0)); ctx.stroke();
+    }
+
+    ctx.strokeStyle = good || accent;
+    ctx.lineWidth = 2.5;
+    ctx.beginPath();
+    points.forEach((p,i) => {
+      const xx=x(i), yy=y(Number(p.cumulative_profit_u)||0);
+      if(i===0) ctx.moveTo(xx,yy); else ctx.lineTo(xx,yy);
+    });
+    ctx.stroke();
+
+    const last = points[points.length-1];
+    ctx.fillStyle = good || accent;
+    ctx.beginPath();
+    ctx.arc(x(points.length-1),y(Number(last.cumulative_profit_u)||0),4,0,Math.PI*2);
+    ctx.fill();
+
+    ctx.fillStyle = muted;
+    ctx.textAlign="left";
+    ctx.textBaseline="top";
+    const firstDate = points[0]?.date ? dateText(points[0].date) : "";
+    const lastDate = last?.date ? dateText(last.date) : "";
+    ctx.fillText(firstDate,pad.l,H-pad.b+10);
+    ctx.textAlign="right";
+    ctx.fillText(lastDate,W-pad.r,H-pad.b+10);
+
+    $("#chartEnd").innerHTML =
+      `Koniec okresu: <strong class="${profitClass(last.cumulative_profit_u)}">${signed(last.cumulative_profit_u,2,"u")}</strong>`;
+  }
+
+  function renderPeriod(period) {
+    currentPeriod = period;
+    const p = summary?.periods?.[period];
+    if (!p) return;
+
+    $$(".tab").forEach(btn => {
+      btn.classList.toggle("active", btn.dataset.period===period);
+      btn.setAttribute("aria-selected", btn.dataset.period===period ? "true" : "false");
+    });
+
+    renderKPIs(p.overall);
+    renderVariants(p.variants);
+    renderLeagues(p.leagues);
+    renderRecent(period);
+    drawChart(p.cumulative_profit || []);
   }
 
   async function loadResults() {
