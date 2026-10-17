@@ -214,7 +214,7 @@
     }
     .history-item summary{
       list-style:none;cursor:pointer;padding:12px 14px;
-      display:grid;grid-template-columns:140px 1fr 70px 100px 100px 110px;
+      display:grid;grid-template-columns:170px 1fr 70px 100px 100px 110px;
       gap:10px;align-items:center
     }
     .history-item summary::-webkit-details-marker{display:none}
@@ -990,14 +990,26 @@
       return `
         <details class="history-item">
           <summary>
-            <div class="history-date">${esc(String(c.locked_at || "—").replace("T"," "))}</div>
+            <div class="history-date">
+              <div>${esc(String(c.last_published_at || c.locked_at || "—").replace("T"," "))}</div>
+              <div class="meta">
+                publikacje: ${(c.publications || []).length || 1}
+              </div>
+            </div>
             <div class="history-league">${esc(leagueName(c.league))}</div>
             <div class="history-variant">${esc(c.variant)}</div>
             <div class="history-status">${statusBadge(c.status)}</div>
             <div class="history-odds">kurs ${num(c.combined_odds)}</div>
             <div class="history-profit ${pClass}">${profitTxt}</div>
           </summary>
-          <div class="history-legs">${legs}</div>
+          <div class="history-legs">
+            <div class="meta" style="margin-bottom:8px">
+              Pierwsza publikacja: ${esc(String(c.first_published_at || c.locked_at || "—").replace("T"," "))}
+              · Ostatnia publikacja: ${esc(String(c.last_published_at || c.locked_at || "—").replace("T"," "))}
+              · ID: ${esc((c.publications && c.publications.length) ? c.publications[c.publications.length - 1].publication_id : c.lock_id)}
+            </div>
+            ${legs}
+          </div>
         </details>
       `;
     }).join("");
