@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="JEV Football - aktualne kupony oraz transparentne wyniki historyczne.">
-  <title>JEV Football â€” Kupony i wyniki</title>
+  <title>JEV Football — Kupony i wyniki</title>
   <style>
     :root{
       --bg:#08101f;
@@ -340,7 +340,7 @@
     }
 
   
-    /* ===== Settled coupon expandable details ===== */
+    /* ===== Settled coupon clickable details V2 ===== */
     #recentRows tr.settled-clickable {
       cursor:pointer;
       transition:background .15s ease;
@@ -413,6 +413,7 @@
       .settled-leg{grid-template-columns:1fr 1fr}
       .settled-detail{padding-left:14px}
     }
+
   </style>
 </head>
 <body>
@@ -422,7 +423,7 @@
       <h1>JEV Football</h1>
       <div class="subtitle">Aktualne kupony i transparentny track record</div>
     </div>
-    <div class="update" id="globalUpdate">Ĺadowanie danychâ€¦</div>
+    <div class="update" id="globalUpdate">Ładowanie danych…</div>
   </header>
 
   <section class="section" id="currentSection">
@@ -431,23 +432,23 @@
         <h2>AKTUALNE KUPONY</h2>
         <div class="section-note">
           TOP3 / TOP4 / TOP5 generowane automatycznie per liga
-          Â· <strong id="currentCouponCount">Aktywne kupony: â€”</strong>
-          Â· <span id="currentCouponBreakdown">TOP3: â€” Â· TOP4: â€” Â· TOP5: â€”</span>
-          Â· <span style="color:var(--good);font-weight:700">NOWY</span> = wczeĹ›niej nie istniaĹ‚
-          Â· <span style="color:#fbbf24;font-weight:700">ZMIENIONY</span> = zmieniĹ‚ siÄ™ skĹ‚ad
+          · <strong id="currentCouponCount">Aktywne kupony: —</strong>
+          · <span id="currentCouponBreakdown">TOP3: — · TOP4: — · TOP5: —</span>
+          · <span style="color:var(--good);font-weight:700">NOWY</span> = wcześniej nie istniał
+          · <span style="color:#fbbf24;font-weight:700">ZMIENIONY</span> = zmienił się skład
         </div>
       </div>
     </div>
-    <div id="currentCoupons" class="loading">Pobieranie aktualnych kuponĂłwâ€¦</div>
+    <div id="currentCoupons" class="loading">Pobieranie aktualnych kuponów…</div>
   </section>
 
   <section class="section" id="lockedHistorySection">
     <div class="section-head">
       <div>
-        <h2>HISTORIA ZALOCKOWANYCH KUPONĂ“W</h2>
+        <h2>HISTORIA ZALOCKOWANYCH KUPONÓW</h2>
         <div class="section-note">
-          KaĹĽdy kupon, ktĂłry zostaĹ‚ publicznie opublikowany, pozostaje tutaj na staĹ‚e.
-          Zmiana pĂłĹşniejszego kuponu nie usuwa wczeĹ›niejszej wersji.
+          Każdy kupon, który został publicznie opublikowany, pozostaje tutaj na stałe.
+          Zmiana późniejszego kuponu nie usuwa wcześniejszej wersji.
         </div>
       </div>
     </div>
@@ -461,24 +462,24 @@
       <button class="history-filter" data-history-filter="TOP5" type="button">TOP5</button>
       <button class="history-filter" data-history-filter="WIN" type="button">WIN</button>
       <button class="history-filter" data-history-filter="LOSS" type="button">LOSS</button>
-      <button class="history-filter" data-history-filter="UNSETTLED" type="button">OCZEKUJÄ„CE</button>
+      <button class="history-filter" data-history-filter="UNSETTLED" type="button">OCZEKUJĄCE</button>
     </div>
 
     <div id="lockedHistoryMeta" class="section-note" style="margin-bottom:10px"></div>
-    <div id="lockedHistory" class="loading">Pobieranie historii zalockowanych kuponĂłwâ€¦</div>
+    <div id="lockedHistory" class="loading">Pobieranie historii zalockowanych kuponów…</div>
   </section>
 
   <section class="section" id="resultsSection">
     <div class="section-head">
       <div>
         <h2>WYNIKI</h2>
-        <div class="section-note" id="dataRange">Ĺadowanie historiiâ€¦</div>
+        <div class="section-note" id="dataRange">Ładowanie historii…</div>
       </div>
-      <div class="tabs" role="tablist" aria-label="Zakres wynikĂłw">
-        <button class="tab active" data-period="ALL" type="button">OD POCZÄ„TKU</button>
+      <div class="tabs" role="tablist" aria-label="Zakres wyników">
+        <button class="tab active" data-period="ALL" type="button">OD POCZĄTKU</button>
         <button class="tab" data-period="LAST_30_DAYS" type="button">30 DNI</button>
         <button class="tab" data-period="LAST_7_DAYS" type="button">7 DNI</button>
-        <button class="tab" data-period="THIS_MONTH" type="button">TEN MIESIÄ„C</button>
+        <button class="tab" data-period="THIS_MONTH" type="button">TEN MIESIĄC</button>
       </div>
     </div>
 
@@ -489,7 +490,7 @@
     <div class="section-head" style="margin-top:24px">
       <div>
         <h3>TOP3 / TOP4 / TOP5</h3>
-        <div class="section-note">Wyniki caĹ‚ych kuponĂłw, stawka bazowa 1u na kupon</div>
+        <div class="section-note">Wyniki całych kuponów, stawka bazowa 1u na kupon</div>
       </div>
     </div>
     <div class="variant-grid" id="variants"></div>
@@ -498,7 +499,7 @@
       <div class="chart-legend">
         <div>
           <h3>Skumulowany profit</h3>
-          <div class="section-note">KaĹĽdy punkt = jeden rozliczony kupon</div>
+          <div class="section-note">Każdy punkt = jeden rozliczony kupon</div>
         </div>
         <div id="chartEnd"></div>
       </div>
@@ -510,7 +511,7 @@
     <div class="section-head" style="margin-top:24px">
       <div>
         <h3>Wyniki per liga</h3>
-        <div class="section-note">LOW SAMPLE = mniej niĹĽ 10 rozliczonych kuponĂłw</div>
+        <div class="section-note">LOW SAMPLE = mniej niż 10 rozliczonych kuponów</div>
       </div>
     </div>
     <div class="panel table-panel">
@@ -536,7 +537,7 @@
     <div class="section-head" style="margin-top:24px">
       <div>
         <h3>Ostatnie rozliczone kupony</h3>
-        <div class="section-note">20 najnowszych kuponĂłw z wybranego okresu</div>
+        <div class="section-note">20 najnowszych kuponów z wybranego okresu</div>
       </div>
     </div>
     <div class="panel table-panel">
@@ -559,10 +560,10 @@
   </section>
 
   <div class="footer">
-    <strong>Metodyka:</strong> kaĹĽdy TOP3 / TOP4 / TOP5 jest traktowany jako jeden caĹ‚y kupon.
-    JeĹĽeli choÄ‡ jedna noga kuponu przegrywa, wynik caĹ‚ego kuponu wynosi â’1u.
-    Profit w PLN jest tylko przeliczeniem przy wskazanej stawce na caĹ‚y kupon.
-    Wyniki historyczne nie gwarantujÄ… przyszĹ‚ych rezultatĂłw.
+    <strong>Metodyka:</strong> każdy TOP3 / TOP4 / TOP5 jest traktowany jako jeden cały kupon.
+    Jeżeli choć jedna noga kuponu przegrywa, wynik całego kuponu wynosi −1u.
+    Profit w PLN jest tylko przeliczeniem przy wskazanej stawce na cały kupon.
+    Wyniki historyczne nie gwarantują przyszłych rezultatów.
   </div>
 </main>
 
@@ -574,28 +575,28 @@
   const $$ = (s) => [...document.querySelectorAll(s)];
 
   const LEAGUE_NAMES = {
-    B1:  "Belgia â€” First Division A",
-    D1:  "Niemcy â€” Bundesliga",
-    D2:  "Niemcy â€” 2. Bundesliga",
-    E0:  "Anglia â€” Premier League",
-    E1:  "Anglia â€” Championship",
-    E2:  "Anglia â€” League One",
-    E3:  "Anglia â€” League Two",
-    EC:  "Anglia â€” National League",
-    F1:  "Francja â€” Ligue 1",
-    F2:  "Francja â€” Ligue 2",
-    G1:  "Grecja â€” Super League",
-    I1:  "WĹ‚ochy â€” Serie A",
-    I2:  "WĹ‚ochy â€” Serie B",
-    N1:  "Holandia â€” Eredivisie",
-    P1:  "Portugalia â€” Primeira Liga",
-    SC0: "Szkocja â€” Premiership",
-    SC1: "Szkocja â€” Championship",
-    SC2: "Szkocja â€” League One",
-    SC3: "Szkocja â€” League Two",
-    SP1: "Hiszpania â€” La Liga",
-    SP2: "Hiszpania â€” Segunda DivisiĂłn",
-    T1:  "Turcja â€” SĂĽper Lig"
+    B1:  "Belgia — First Division A",
+    D1:  "Niemcy — Bundesliga",
+    D2:  "Niemcy — 2. Bundesliga",
+    E0:  "Anglia — Premier League",
+    E1:  "Anglia — Championship",
+    E2:  "Anglia — League One",
+    E3:  "Anglia — League Two",
+    EC:  "Anglia — National League",
+    F1:  "Francja — Ligue 1",
+    F2:  "Francja — Ligue 2",
+    G1:  "Grecja — Super League",
+    I1:  "Włochy — Serie A",
+    I2:  "Włochy — Serie B",
+    N1:  "Holandia — Eredivisie",
+    P1:  "Portugalia — Primeira Liga",
+    SC0: "Szkocja — Premiership",
+    SC1: "Szkocja — Championship",
+    SC2: "Szkocja — League One",
+    SC3: "Szkocja — League Two",
+    SP1: "Hiszpania — La Liga",
+    SP2: "Hiszpania — Segunda División",
+    T1:  "Turcja — Süper Lig"
   };
 
   const leagueName = (code) => LEAGUE_NAMES[String(code ?? "").toUpperCase()] || String(code ?? "");
@@ -605,25 +606,25 @@
 
   const pct = (v, digits=1) => {
     const n = Number(v);
-    return Number.isFinite(n) ? (n * 100).toFixed(digits) + "%" : "â€”";
+    return Number.isFinite(n) ? (n * 100).toFixed(digits) + "%" : "—";
   };
   const num = (v, digits=2) => {
     const n = Number(v);
-    return Number.isFinite(n) ? n.toFixed(digits) : "â€”";
+    return Number.isFinite(n) ? n.toFixed(digits) : "—";
   };
   const signed = (v, digits=2, suffix="") => {
     const n = Number(v);
-    if (!Number.isFinite(n)) return "â€”";
+    if (!Number.isFinite(n)) return "—";
     return (n > 0 ? "+" : "") + n.toFixed(digits) + suffix;
   };
   const pfText = (m) => {
-    if (!m) return "â€”";
-    if (m.pf_infinite) return "âž";
-    return Number.isFinite(Number(m.pf)) ? Number(m.pf).toFixed(2) : "â€”";
+    if (!m) return "—";
+    if (m.pf_infinite) return "∞";
+    return Number.isFinite(Number(m.pf)) ? Number(m.pf).toFixed(2) : "—";
   };
   const profitClass = (v) => Number(v) > 0 ? "positive" : Number(v) < 0 ? "negative" : "";
   const dateText = (v) => {
-    if (!v) return "â€”";
+    if (!v) return "—";
     const d = new Date(v);
     if (Number.isNaN(d.getTime())) return String(v).slice(0,10);
     return new Intl.DateTimeFormat("pl-PL",{year:"numeric",month:"2-digit",day:"2-digit"}).format(d);
@@ -638,7 +639,7 @@
 
   async function getJson(path) {
     const r = await fetch(path + "?v=" + Date.now(), {cache:"no-store"});
-    if (!r.ok) throw new Error(path + " â†’ HTTP " + r.status);
+    if (!r.ok) throw new Error(path + " → HTTP " + r.status);
     return r.json();
   }
 
@@ -675,8 +676,8 @@
       const render = () => {
         section.classList.toggle("collapsed", !isOpen);
         button.setAttribute("aria-expanded", isOpen ? "true" : "false");
-        button.querySelector(".chevron").textContent = isOpen ? "â–Ľ" : "â–¶";
-        button.querySelector(".toggle-label").textContent = isOpen ? "ZWIĹ" : "ROZWIĹ";
+        button.querySelector(".chevron").textContent = isOpen ? "▼" : "▶";
+        button.querySelector(".toggle-label").textContent = isOpen ? "ZWIŃ" : "ROZWIŃ";
       };
 
       button.addEventListener("click", (ev) => {
@@ -734,7 +735,7 @@
         previousRows = Array.isArray(previousData.coupons) ? previousData.coupons : [];
         hasPreviousSnapshot = true;
       } catch (_) {
-        // JeĹ›li brak previous_coupons.json, strona nadal dziaĹ‚a.
+        // Jeśli brak previous_coupons.json, strona nadal działa.
       }
 
       const currentGrouped = groupCouponRows(rows);
@@ -808,31 +809,31 @@
         `Aktywne kupony: ${activeCouponKeys.size}`;
 
       $("#currentCouponBreakdown").innerHTML =
-        `TOP3: ${activeByVariant.TOP3.size} Â· ` +
-        `TOP4: ${activeByVariant.TOP4.size} Â· ` +
+        `TOP3: ${activeByVariant.TOP3.size} · ` +
+        `TOP4: ${activeByVariant.TOP4.size} · ` +
         `TOP5: ${activeByVariant.TOP5.size}` +
         (hasPreviousSnapshot
           ? `<br>` +
             `<span style="color:var(--good);font-weight:700">NOWE</span> ` +
-            `TOP3: ${statusByVariant.TOP3.NEW} Â· TOP4: ${statusByVariant.TOP4.NEW} Â· TOP5: ${statusByVariant.TOP5.NEW}` +
+            `TOP3: ${statusByVariant.TOP3.NEW} · TOP4: ${statusByVariant.TOP4.NEW} · TOP5: ${statusByVariant.TOP5.NEW}` +
             `<br>` +
             `<span style="color:#fbbf24;font-weight:700">ZMIENIONE</span> ` +
-            `TOP3: ${statusByVariant.TOP3.CHANGED} Â· TOP4: ${statusByVariant.TOP4.CHANGED} Â· TOP5: ${statusByVariant.TOP5.CHANGED}` +
+            `TOP3: ${statusByVariant.TOP3.CHANGED} · TOP4: ${statusByVariant.TOP4.CHANGED} · TOP5: ${statusByVariant.TOP5.CHANGED}` +
             `<br>` +
             `BEZ ZMIAN ` +
-            `TOP3: ${statusByVariant.TOP3.UNCHANGED} Â· TOP4: ${statusByVariant.TOP4.UNCHANGED} Â· TOP5: ${statusByVariant.TOP5.UNCHANGED}` +
+            `TOP3: ${statusByVariant.TOP3.UNCHANGED} · TOP4: ${statusByVariant.TOP4.UNCHANGED} · TOP5: ${statusByVariant.TOP5.UNCHANGED}` +
             `<br>` +
-            `USUNIÄTE ` +
-            `TOP3: ${statusByVariant.TOP3.REMOVED} Â· TOP4: ${statusByVariant.TOP4.REMOVED} Â· TOP5: ${statusByVariant.TOP5.REMOVED}`
+            `USUNIĘTE ` +
+            `TOP3: ${statusByVariant.TOP3.REMOVED} · TOP4: ${statusByVariant.TOP4.REMOVED} · TOP5: ${statusByVariant.TOP5.REMOVED}`
           : "");
 
       $("#globalUpdate").textContent = data.generated_at
-        ? "Aktualizacja kuponĂłw: " + data.generated_at.replace("T"," ")
+        ? "Aktualizacja kuponów: " + data.generated_at.replace("T"," ")
         : "Aktualizacja: brak daty";
 
       if (!rows.length) {
         box.className = "empty";
-        box.textContent = "Brak aktualnych kuponĂłw.";
+        box.textContent = "Brak aktualnych kuponów.";
         return;
       }
 
@@ -881,7 +882,7 @@
             out.push(`<div class="leg">
               <div class="match">${esc(leg.coupon_leg_no)}. ${esc(leg.match)}</div>
               <div class="pick">${esc(leg.market)} / ${esc(leg.choice)} @ ${num(leg.odds)}</div>
-              <div class="meta">P ${pct(leg.model_probability)} Â· edge ${pct(leg.edge)} Â· margin ${pct(leg.margin)}</div>
+              <div class="meta">P ${pct(leg.model_probability)} · edge ${pct(leg.edge)} · margin ${pct(leg.margin)}</div>
             </div>`);
           }
 
@@ -895,10 +896,10 @@
       box.innerHTML = out.join("");
 
     } catch (e) {
-      $("#currentCouponCount").textContent = "Aktywne kupony: â€”";
-      $("#currentCouponBreakdown").textContent = "TOP3: â€” Â· TOP4: â€” Â· TOP5: â€”";
+      $("#currentCouponCount").textContent = "Aktywne kupony: —";
+      $("#currentCouponBreakdown").textContent = "TOP3: — · TOP4: — · TOP5: —";
       box.className = "error";
-      box.textContent = "Nie udaĹ‚o siÄ™ wczytaÄ‡ aktualnych kuponĂłw: " + e.message;
+      box.textContent = "Nie udało się wczytać aktualnych kuponów: " + e.message;
     }
   }
 
@@ -906,8 +907,8 @@
     const stake = Number(summary?.stake_model?.display_stake_pln || 0);
     const cards = [
       ["Kupony", m.n, `${m.wins} WIN / ${m.losses} LOSS`, ""],
-      ["WR", pct(m.wr), "trafione caĹ‚e kupony", ""],
-      ["Profit", signed(m.profit_u,2,"u"), stake ? signed(m.profit_pln,2," zĹ‚") + ` przy ${stake.toFixed(2)} zĹ‚/kupon` : "", profitClass(m.profit_u)],
+      ["WR", pct(m.wr), "trafione całe kupony", ""],
+      ["Profit", signed(m.profit_u,2,"u"), stake ? signed(m.profit_pln,2," zł") + ` przy ${stake.toFixed(2)} zł/kupon` : "", profitClass(m.profit_u)],
       ["ROI", pct(m.roi), "profit / suma stawek", profitClass(m.roi)],
       ["PF", pfText(m), "gross profit / gross loss", ""],
       ["Max DD", num(m.max_drawdown_u,2) + "u", `Max LS: ${m.max_losing_streak}`, ""]
@@ -978,8 +979,8 @@
     root.innerHTML = ["TOP3","TOP4","TOP5"].map(v => {
       let m = vmap?.[v];
 
-      // Fallback: licz bezpoĹ›rednio z results_coupons.json.
-      // DziÄ™ki temu dziaĹ‚a takĹĽe dla nazw E1_TOP3, SP2_TOP4 itd.
+      // Fallback: licz bezpośrednio z results_coupons.json.
+      // Dzięki temu działa także dla nazw E1_TOP3, SP2_TOP4 itd.
       if (!m || !m.n) {
         const vr = rows.filter(r => normalizeVariantName(r.variant) === v);
         if (vr.length) m = calcMetricsFromRows(vr);
@@ -988,7 +989,7 @@
       if (!m || !m.n) {
         return `<div class="panel variant">
           <div class="variant-top"><span class="badge">${v}</span></div>
-          <div class="muted" style="margin-top:14px">Brak rozliczonych kuponĂłw w tym okresie.</div>
+          <div class="muted" style="margin-top:14px">Brak rozliczonych kuponów w tym okresie.</div>
         </div>`;
       }
 
@@ -998,7 +999,7 @@
           <span class="muted">N=${m.n}</span>
         </div>
         <div class="variant-profit ${profitClass(m.profit_u)}">${signed(m.profit_u,2,"u")}</div>
-        <div class="muted">${signed(m.profit_pln,2," zĹ‚")}</div>
+        <div class="muted">${signed(m.profit_pln,2," zł")}</div>
         <div class="mini-grid">
           <div class="mini"><b>${pct(m.wr)}</b><span>WR</span></div>
           <div class="mini"><b>${pct(m.roi)}</b><span>ROI</span></div>
@@ -1055,100 +1056,93 @@
     return rows;
   }
 
+
+  function findLockedCouponForResult(r) {
+    const all = Array.isArray(lockedHistoryData?.coupons) ? lockedHistoryData.coupons : [];
+
+    const rid = String(r.lock_id || r.slate_id || r.coupon_id || "");
+    if (rid) {
+      const exact = all.find(c => String(c.lock_id || "") === rid);
+      if (exact) return exact;
+    }
+
+    const rv = normalizeVariantName(r.variant);
+    const ro = Number(r.combined_odds);
+    const rd = String(r.date || "").slice(0,10);
+
+    return all.find(c => {
+      const cv = normalizeVariantName(c.variant);
+      const co = Number(c.combined_odds);
+      const cd = String(c.first_published_at || c.locked_at || "").slice(0,10);
+
+      return String(c.league) === String(r.league)
+        && cv === rv
+        && (!Number.isFinite(ro) || !Number.isFinite(co) || Math.abs(ro-co) < 0.0001)
+        && (!rd || !cd || rd === cd);
+    }) || null;
+  }
+
+  function resultMetricPct(v) {
+    const n = Number(v);
+    return Number.isFinite(n) ? (n*100).toFixed(1) + "%" : "—";
+  }
+
+  function settledCouponDetailHtml(r) {
+    const c = findLockedCouponForResult(r);
+
+    if (!c || !Array.isArray(c.legs) || !c.legs.length) {
+      return `<div class="settled-detail muted">
+        Brak szczegółów nóg dla tego kuponu w historii LOCK.
+      </div>`;
+    }
+
+    const legs = c.legs.map((l, i) => {
+      const mp = Number(l.model_probability);
+      const edge = Number(l.edge);
+      const marketP = Number.isFinite(mp) && Number.isFinite(edge) ? mp - edge : NaN;
+
+      return `
+        <div class="settled-leg">
+          <div>
+            <div class="sl-match">${esc(i+1)}. ${esc(l.match || "—")}</div>
+            <div class="meta">${esc(l.match_date || "—")}</div>
+          </div>
+          <div class="sl-pick">${esc(l.market || "—")} / ${esc(l.choice || "—")}</div>
+          <div class="metric-box"><span>Kurs</span><b>${num(l.odds)}</b></div>
+          <div class="metric-box"><span>Model P</span><b>${resultMetricPct(l.model_probability)}</b></div>
+          <div class="metric-box"><span>Market P</span><b>${resultMetricPct(marketP)}</b></div>
+          <div class="metric-box"><span>Edge</span><b>${resultMetricPct(l.edge)}</b></div>
+          <div class="metric-box"><span>Margin</span><b>${resultMetricPct(l.margin)}</b></div>
+        </div>`;
+    }).join("");
+
+    return `<div class="settled-detail">
+      <div class="settled-detail-head">
+        <strong>${esc(leagueName(c.league))} · ${esc(c.variant)}</strong>
+        <span>kurs kuponu: ${num(c.combined_odds)}</span>
+        <span>wynik: ${esc(c.status || r.result || "—")}</span>
+        <span>profit: ${signed(r.profit_u,2,"u")}</span>
+        <span>publikacje: ${(c.publications || []).length || 1}</span>
+      </div>
+      ${legs}
+    </div>`;
+  }
+
   function renderRecent(period) {
     const rows = periodCoupons(period)
       .sort((a,b) => new Date(b.date)-new Date(a.date))
       .slice(0,20);
 
-    const findLockedCoupon = (r) => {
-      const all = Array.isArray(lockedHistoryData?.coupons) ? lockedHistoryData.coupons : [];
-
-      // Najpewniejsze powiązanie: lock_id.
-      const rid = String(r.lock_id || r.slate_id || r.coupon_id || "");
-      if (rid) {
-        const exact = all.find(c => String(c.lock_id || "") === rid);
-        if (exact) return exact;
-      }
-
-      // Fallback dla starszych rekordów: liga + wariant + kurs + data publikacji/locka.
-      const rv = normalizeVariantName(r.variant);
-      const ro = Number(r.combined_odds);
-      const rd = String(r.date || "").slice(0,10);
-
-      return all.find(c => {
-        const cv = normalizeVariantName(c.variant);
-        const co = Number(c.combined_odds);
-        const cd = String(c.first_published_at || c.locked_at || "").slice(0,10);
-        return String(c.league) === String(r.league)
-          && cv === rv
-          && (!Number.isFinite(ro) || !Number.isFinite(co) || Math.abs(ro-co) < 0.0001)
-          && (!rd || !cd || rd === cd);
-      }) || null;
-    };
-
-    const metricPct = (v) => {
-      const n = Number(v);
-      return Number.isFinite(n) ? (n*100).toFixed(1) + "%" : "—";
-    };
-
-    const detailHtml = (r, idx) => {
-      const c = findLockedCoupon(r);
-      if (!c || !Array.isArray(c.legs) || !c.legs.length) {
-        return `
-          <tr class="settled-detail-row" id="settledDetail${idx}" hidden>
-            <td colspan="6">
-              <div class="settled-detail muted">
-                Brak szczegółów nóg dla tego starszego kuponu.
-              </div>
-            </td>
-          </tr>`;
-      }
-
-      const legs = c.legs.map((l, i) => {
-        const mp = Number(l.model_probability);
-        const edge = Number(l.edge);
-        const marketP = Number.isFinite(mp) && Number.isFinite(edge) ? mp - edge : NaN;
-
-        return `
-          <div class="settled-leg">
-            <div>
-              <div class="sl-match">${esc(i+1)}. ${esc(l.match || "—")}</div>
-              <div class="meta">${esc(l.match_date || "—")}</div>
-            </div>
-            <div class="sl-pick">${esc(l.market || "—")} / ${esc(l.choice || "—")}</div>
-            <div class="metric-box"><span>Kurs</span><b>${num(l.odds)}</b></div>
-            <div class="metric-box"><span>Model P</span><b>${metricPct(l.model_probability)}</b></div>
-            <div class="metric-box"><span>Market P</span><b>${metricPct(marketP)}</b></div>
-            <div class="metric-box"><span>Edge</span><b>${metricPct(l.edge)}</b></div>
-            <div class="metric-box"><span>Margin</span><b>${metricPct(l.margin)}</b></div>
-          </div>`;
-      }).join("");
-
-      return `
-        <tr class="settled-detail-row" id="settledDetail${idx}" hidden>
-          <td colspan="6">
-            <div class="settled-detail">
-              <div class="settled-detail-head">
-                <strong>${esc(leagueName(c.league))} · ${esc(c.variant)}</strong>
-                <span>kurs kuponu: ${num(c.combined_odds)}</span>
-                <span>wynik: ${esc(c.status || r.result || "—")}</span>
-                <span>profit: ${signed(r.profit_u,2,"u")}</span>
-                <span>publikacje: ${(c.publications || []).length || 1}</span>
-              </div>
-              ${legs}
-            </div>
-          </td>
-        </tr>`;
-    };
+    const tbody = $("#recentRows");
 
     if (!rows.length) {
-      $("#recentRows").innerHTML =
+      tbody.innerHTML =
         `<tr><td colspan="6" class="muted">Brak rozliczonych kuponów w tym okresie.</td></tr>`;
       return;
     }
 
-    $("#recentRows").innerHTML = rows.map((r, idx) => `
-      <tr class="settled-clickable" data-detail-id="settledDetail${idx}" tabindex="0"
+    tbody.innerHTML = rows.map((r, idx) => `
+      <tr class="settled-clickable" data-result-index="${idx}" tabindex="0"
           title="Kliknij, aby zobaczyć skład kuponu i metryki">
         <td>${dateText(r.date)}</td>
         <td><strong>${esc(leagueName(r.league))}</strong></td>
@@ -1157,26 +1151,36 @@
         <td><span class="result ${r.result==="WIN"?"win":"loss"}">${esc(r.result)}</span></td>
         <td class="num ${profitClass(r.profit_u)}">${signed(r.profit_u,2,"u")}</td>
       </tr>
-      ${detailHtml(r, idx)}
+      <tr class="settled-detail-row" data-detail-index="${idx}" hidden>
+        <td colspan="6"></td>
+      </tr>
     `).join("");
 
-    $("#recentRows tr.settled-clickable").forEach(row => {
-      const toggle = () => {
-        const detail = document.getElementById(row.dataset.detailId);
-        if (!detail) return;
-        const open = detail.hidden;
-        detail.hidden = !open;
-        row.classList.toggle("open", open);
-      };
-      row.addEventListener("click", toggle);
-      row.addEventListener("keydown", e => {
+    const toggleRow = (mainRow) => {
+      const idx = Number(mainRow.dataset.resultIndex);
+      const detailRow = tbody.querySelector(`tr[data-detail-index="${idx}"]`);
+      if (!detailRow) return;
+
+      const willOpen = detailRow.hidden;
+      if (willOpen) {
+        detailRow.querySelector("td").innerHTML = settledCouponDetailHtml(rows[idx]);
+      }
+
+      detailRow.hidden = !willOpen;
+      mainRow.classList.toggle("open", willOpen);
+    };
+
+    tbody.querySelectorAll("tr.settled-clickable").forEach(mainRow => {
+      mainRow.addEventListener("click", () => toggleRow(mainRow));
+      mainRow.addEventListener("keydown", e => {
         if (e.key === "Enter" || e.key === " ") {
           e.preventDefault();
-          toggle();
+          toggleRow(mainRow);
         }
       });
     });
   }
+
   function drawChart(points) {
     const canvas = $("#profitChart");
     const ctx = canvas.getContext("2d");
@@ -1288,24 +1292,24 @@
       rows = all.filter(r => String(r.status).toUpperCase() === lockedHistoryFilter);
     }
 
-    meta.textContent = `Pokazano ${rows.length} z ${all.length} zalockowanych kuponĂłw`;
+    meta.textContent = `Pokazano ${rows.length} z ${all.length} zalockowanych kuponów`;
 
     if (!rows.length) {
       box.className = "empty";
-      box.textContent = "Brak kuponĂłw dla wybranego filtra.";
+      box.textContent = "Brak kuponów dla wybranego filtra.";
       return;
     }
 
     const html = rows.map(c => {
       const profit = Number(c.profit_1u);
-      const profitTxt = Number.isFinite(profit) ? signed(profit,2,"u") : "â€”";
+      const profitTxt = Number.isFinite(profit) ? signed(profit,2,"u") : "—";
       const pClass = Number.isFinite(profit) ? profitClass(profit) : "";
 
       const legs = (c.legs || []).map(l => `
         <div class="history-leg">
           <div>
             <div class="match">${esc(l.leg_no)}. ${esc(l.match)}</div>
-            <div class="meta">${esc(l.match_date || "â€”")}</div>
+            <div class="meta">${esc(l.match_date || "—")}</div>
           </div>
           <div class="history-leg-pick">${esc(l.market)} / ${esc(l.choice)}</div>
           <div class="history-leg-odds">@ ${num(l.odds)}</div>
@@ -1316,7 +1320,7 @@
         <details class="history-item">
           <summary>
             <div class="history-date">
-              <div>${esc(String(c.last_published_at || c.locked_at || "â€”").replace("T"," "))}</div>
+              <div>${esc(String(c.last_published_at || c.locked_at || "—").replace("T"," "))}</div>
               <div class="meta">
                 publikacje: ${(c.publications || []).length || 1}
               </div>
@@ -1329,9 +1333,9 @@
           </summary>
           <div class="history-legs">
             <div class="meta" style="margin-bottom:8px">
-              Pierwsza publikacja: ${esc(String(c.first_published_at || c.locked_at || "â€”").replace("T"," "))}
-              Â· Ostatnia publikacja: ${esc(String(c.last_published_at || c.locked_at || "â€”").replace("T"," "))}
-              Â· ID: ${esc((c.publications && c.publications.length) ? c.publications[c.publications.length - 1].publication_id : c.lock_id)}
+              Pierwsza publikacja: ${esc(String(c.first_published_at || c.locked_at || "—").replace("T"," "))}
+              · Ostatnia publikacja: ${esc(String(c.last_published_at || c.locked_at || "—").replace("T"," "))}
+              · ID: ${esc((c.publications && c.publications.length) ? c.publications[c.publications.length - 1].publication_id : c.lock_id)}
             </div>
             ${legs}
           </div>
@@ -1352,7 +1356,7 @@
 
       $("#lockedHistorySummary").innerHTML = `
         <div class="history-kpi">
-          <div class="label">Zalockowane Ĺ‚Ä…cznie</div>
+          <div class="label">Zalockowane łącznie</div>
           <div class="value">${s.total ?? 0}</div>
         </div>
         <div class="history-kpi">
@@ -1364,7 +1368,7 @@
           <div class="value negative">${s.loss ?? 0}</div>
         </div>
         <div class="history-kpi">
-          <div class="label">OczekujÄ…ce</div>
+          <div class="label">Oczekujące</div>
           <div class="value">${s.unsettled ?? 0}</div>
         </div>
       `;
@@ -1380,7 +1384,7 @@
       });
     } catch (e) {
       box.className = "error";
-      box.textContent = "Nie udaĹ‚o siÄ™ wczytaÄ‡ historii zalockowanych kuponĂłw: " + e.message;
+      box.textContent = "Nie udało się wczytać historii zalockowanych kuponów: " + e.message;
     }
   }
 
@@ -1410,7 +1414,7 @@
 
       const dr = summary?.data_range || {};
       $("#dataRange").textContent =
-        `Zakres danych: ${dr.from || "â€”"} â†’ ${dr.to || "â€”"} Â· ${dr.settled_coupons ?? 0} rozliczonych kuponĂłw`;
+        `Zakres danych: ${dr.from || "—"} → ${dr.to || "—"} · ${dr.settled_coupons ?? 0} rozliczonych kuponów`;
 
       renderPeriod("ALL");
 
@@ -1422,7 +1426,7 @@
     } catch (e) {
       const box = $("#resultsError");
       box.hidden = false;
-      box.textContent = "Nie udaĹ‚o siÄ™ wczytaÄ‡ wynikĂłw: " + e.message;
+      box.textContent = "Nie udało się wczytać wyników: " + e.message;
     }
   }
 
