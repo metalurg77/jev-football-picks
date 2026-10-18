@@ -882,7 +882,7 @@
             out.push(`<div class="leg">
               <div class="match">${esc(leg.coupon_leg_no)}. ${esc(leg.match)}</div>
               <div class="pick">${esc(leg.market)} / ${esc(leg.choice)} @ ${num(leg.odds)}</div>
-              <div class="meta">P ${pct(leg.model_probability)} · edge ${pct(leg.edge)} · margin ${pct(leg.margin)}</div>
+              <div class="meta">P ${pct(leg.model_probability)} · Market P ${pct(leg.market_probability)} · edge ${pct(leg.edge)} · margin ${pct(leg.margin)}</div>
             </div>`);
           }
 
