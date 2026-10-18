@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-18T08:00:38",
+  "generated_at": "2026-10-18T11:42:48",
   "source": "jev_official_slate_coupon_settled.csv",
   "stake_pln": 2.0,
   "coupons": [
     {
       "coupon_id": "20261014_103440_E1_TOP4_a890c368",
-      "date": null,
+      "date": "2026-10-14T10:34:52",
       "league": "E1",
       "variant": "TOP4",
       "result": "LOSS",
@@ -33,7 +33,7 @@
     },
     {
       "coupon_id": "20261014_103440_E1_TOP3_25bbc3dc",
-      "date": null,
+      "date": "2026-10-14T10:34:52",
       "league": "E1",
       "variant": "TOP3",
       "result": "LOSS",
@@ -60,7 +60,7 @@
     },
     {
       "coupon_id": "20261014_100625_E1_TOP4_6ffb7e14",
-      "date": null,
+      "date": "2026-10-14T10:21:40",
       "league": "E1",
       "variant": "TOP4",
       "result": "LOSS",
@@ -87,7 +87,7 @@
     },
     {
       "coupon_id": "20261014_100625_E1_TOP3_e66354c1",
-      "date": null,
+      "date": "2026-10-14T10:21:40",
       "league": "E1",
       "variant": "TOP3",
       "result": "LOSS",
