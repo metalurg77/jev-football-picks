@@ -414,6 +414,24 @@
       .settled-detail{padding-left:14px}
     }
 
+  
+    /* ===== EXPERIMENTAL FILTERED TOP2 V1 ===== */
+    #experimentalSection{border-left:3px solid #f59e0b}
+    .exp-strategy{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}
+    .exp-chip{
+      display:inline-flex;align-items:center;padding:4px 8px;
+      border:1px solid rgba(245,158,11,.35);border-radius:999px;
+      color:#fde68a;background:rgba(245,158,11,.08);
+      font-size:11px;font-weight:750
+    }
+    .exp-date{color:var(--muted);font-size:12px;margin:0 0 10px}
+    .exp-badge{
+      display:inline-flex;align-items:center;gap:6px;padding:4px 9px;
+      border:1px solid rgba(245,158,11,.45);border-radius:999px;
+      color:#fde68a;font-size:12px;font-weight:850;letter-spacing:.02em
+    }
+    .exp-note{color:#fde68a;font-size:11px;font-weight:750}
+
   </style>
 </head>
 <body>
@@ -440,6 +458,27 @@
       </div>
     </div>
     <div id="currentCoupons" class="loading">Pobieranie aktualnych kuponów…</div>
+  </section>
+
+
+  <section class="section" id="experimentalSection">
+    <div class="section-head">
+      <div>
+        <h2>EKSPERYMENTALNE KUPONY — FILTERED TOP2</h2>
+        <div class="section-note">
+          Osobny moduł RESEARCH / OOS — nie wchodzi do starego LOCK ani starego settlementu.
+          · <strong id="experimentalCouponCount">Kupony: —</strong>
+        </div>
+        <div class="exp-strategy">
+          <span class="exp-chip">MARKET 1X2</span>
+          <span class="exp-chip">ODDS 1.90–2.40</span>
+          <span class="exp-chip">EDGE 50–65%</span>
+          <span class="exp-chip">MARGIN ≥95%</span>
+          <span class="exp-chip">DISJOINT BALANCED TOP2</span>
+        </div>
+      </div>
+    </div>
+    <div id="experimentalCoupons" class="loading">Pobieranie eksperymentalnych kuponów…</div>
   </section>
 
   <section class="section" id="lockedHistorySection">
@@ -1388,6 +1427,104 @@
     }
   }
 
+
+  // ===== EXPERIMENTAL FILTERED TOP2 V1 =====
+  async function loadExperimental() {
+    const box = $("#experimentalCoupons");
+
+    try {
+      const data = await getJson("./experimental_coupons.json");
+      const rows = Array.isArray(data.coupons) ? data.coupons : [];
+
+      const grouped = {};
+      for (const r of rows) {
+        const id = String(
+          r.coupon_id ||
+          `${r.coupon_run || "RUN"}|${r.coupon_slate_date || r.exp_match_date || ""}|${r.coupon_variant || ""}`
+        );
+        grouped[id] ??= [];
+        grouped[id].push(r);
+      }
+
+      const coupons = Object.entries(grouped)
+        .map(([id, legs]) => {
+          legs.sort((a,b) => Number(a.coupon_leg_no||0) - Number(b.coupon_leg_no||0));
+          return {id, legs};
+        })
+        .sort((a,b) => {
+          const da = String(a.legs[0]?.coupon_slate_date || a.legs[0]?.exp_match_date || "");
+          const db = String(b.legs[0]?.coupon_slate_date || b.legs[0]?.exp_match_date || "");
+          return db.localeCompare(da) || a.id.localeCompare(b.id);
+        });
+
+      $("#experimentalCouponCount").textContent = `Kupony: ${coupons.length}`;
+
+      if (!coupons.length) {
+        box.className = "empty";
+        box.textContent = "Brak typów spełniających filtr eksperymentalny.";
+        return;
+      }
+
+      const byDate = {};
+      for (const c of coupons) {
+        const d = String(c.legs[0]?.coupon_slate_date || c.legs[0]?.exp_match_date || "NO_DATE");
+        byDate[d] ??= [];
+        byDate[d].push(c);
+      }
+
+      const out = [];
+      for (const date of Object.keys(byDate).sort().reverse()) {
+        out.push(`<section class="panel league">
+          <div class="league-title">
+            <div>
+              <h3>${esc(date)}</h3>
+              <div class="exp-date">Globalny koszyk między ligami · każdy typ użyty maks. 1 raz</div>
+            </div>
+          </div>
+          <div class="coupon-grid">`);
+
+        for (const c of byDate[date]) {
+          const legs = c.legs;
+          const first = legs[0] || {};
+          const variant = String(first.coupon_variant || "GLOBAL_FILT_TOP2");
+          const isSingle = variant.includes("SINGLE");
+          const label = isSingle ? "SINGLE" : "TOP2";
+          const combined = first.coupon_combined_odds;
+
+          out.push(`<article class="coupon">
+            <div class="coupon-head">
+              <div class="coupon-head-left">
+                <span class="exp-badge">${esc(label)}</span>
+                <span class="exp-note">RESEARCH</span>
+              </div>
+              <span class="combined">kurs ${num(combined)}</span>
+            </div>`);
+
+          for (const leg of legs) {
+            const league = leg.exp_league || leg.league_run || leg.coupon_league || "";
+            out.push(`<div class="leg">
+              <div class="match">${esc(leg.coupon_leg_no)}. [${esc(league)}] ${esc(leg.match)}</div>
+              <div class="pick">${esc(leg.market)} / ${esc(leg.choice)} @ ${num(leg.odds)}</div>
+              <div class="meta">P ${pct(leg.model_probability)} · Market P ${pct(leg.market_probability)} · edge ${pct(leg.edge)} · margin ${pct(leg.margin)}</div>
+            </div>`);
+          }
+
+          out.push(`</article>`);
+        }
+
+        out.push(`</div></section>`);
+      }
+
+      box.className = "";
+      box.innerHTML = out.join("");
+    } catch (e) {
+      $("#experimentalCouponCount").textContent = "Kupony: —";
+      box.className = "error";
+      box.textContent = "Nie udało się wczytać eksperymentalnych kuponów: " + e.message;
+    }
+  }
+
+
   function renderPeriod(period) {
     currentPeriod = period;
     const p = summary?.periods?.[period];
@@ -1432,6 +1569,7 @@
 
   initCollapsibleSections();
   loadCurrent();
+  loadExperimental();
   loadLockedHistory();
   loadResults();
 })();

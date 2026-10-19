@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-18T14:00:31",
+  "generated_at": "2026-10-19T15:54:42",
   "source": "jev_official_slate_coupon_settled.csv",
   "stake_model": {
     "unit_stake_u": 1.0,
@@ -8,610 +8,98 @@
     "profit_pln_formula": "profit_u * display_stake_pln"
   },
   "data_range": {
-    "from": "2026-10-14",
-    "to": "2026-10-14",
-    "settled_coupons": 4
+    "from": null,
+    "to": null,
+    "settled_coupons": 0
   },
   "periods": {
     "ALL": {
       "overall": {
-        "n": 4,
+        "n": 0,
         "wins": 0,
-        "losses": 4,
-        "wr": 0.0,
-        "profit_u": -4.0,
-        "profit_pln": -8.0,
+        "losses": 0,
+        "wr": null,
+        "profit_u": 0.0,
+        "profit_pln": 0.0,
         "stake_pln": 2.0,
-        "total_staked_pln": 8.0,
-        "roi": -1.0,
-        "pf": 0.0,
+        "total_staked_pln": 0.0,
+        "roi": null,
+        "pf": null,
         "pf_infinite": false,
-        "avg_odds": 9.8158368,
-        "median_odds": 9.221345280000001,
-        "max_drawdown_u": 4.0,
-        "max_losing_streak": 4
+        "avg_odds": null,
+        "median_odds": null,
+        "max_drawdown_u": 0.0,
+        "max_losing_streak": 0
       },
-      "variants": {
-        "TOP3": {
-          "n": 2,
-          "wins": 0,
-          "losses": 2,
-          "wr": 0.0,
-          "profit_u": -2.0,
-          "profit_pln": -4.0,
-          "stake_pln": 2.0,
-          "total_staked_pln": 4.0,
-          "roi": -1.0,
-          "pf": 0.0,
-          "pf_infinite": false,
-          "avg_odds": 7.244160000000001,
-          "median_odds": 7.244160000000001,
-          "max_drawdown_u": 2.0,
-          "max_losing_streak": 2
-        },
-        "TOP4": {
-          "n": 2,
-          "wins": 0,
-          "losses": 2,
-          "wr": 0.0,
-          "profit_u": -2.0,
-          "profit_pln": -4.0,
-          "stake_pln": 2.0,
-          "total_staked_pln": 4.0,
-          "roi": -1.0,
-          "pf": 0.0,
-          "pf_infinite": false,
-          "avg_odds": 12.3875136,
-          "median_odds": 12.3875136,
-          "max_drawdown_u": 2.0,
-          "max_losing_streak": 2
-        }
-      },
-      "leagues": {
-        "E1": {
-          "overall": {
-            "n": 4,
-            "wins": 0,
-            "losses": 4,
-            "wr": 0.0,
-            "profit_u": -4.0,
-            "profit_pln": -8.0,
-            "stake_pln": 2.0,
-            "total_staked_pln": 8.0,
-            "roi": -1.0,
-            "pf": 0.0,
-            "pf_infinite": false,
-            "avg_odds": 9.8158368,
-            "median_odds": 9.221345280000001,
-            "max_drawdown_u": 4.0,
-            "max_losing_streak": 4
-          },
-          "variants": {
-            "TOP3": {
-              "n": 2,
-              "wins": 0,
-              "losses": 2,
-              "wr": 0.0,
-              "profit_u": -2.0,
-              "profit_pln": -4.0,
-              "stake_pln": 2.0,
-              "total_staked_pln": 4.0,
-              "roi": -1.0,
-              "pf": 0.0,
-              "pf_infinite": false,
-              "avg_odds": 7.244160000000001,
-              "median_odds": 7.244160000000001,
-              "max_drawdown_u": 2.0,
-              "max_losing_streak": 2
-            },
-            "TOP4": {
-              "n": 2,
-              "wins": 0,
-              "losses": 2,
-              "wr": 0.0,
-              "profit_u": -2.0,
-              "profit_pln": -4.0,
-              "stake_pln": 2.0,
-              "total_staked_pln": 4.0,
-              "roi": -1.0,
-              "pf": 0.0,
-              "pf_infinite": false,
-              "avg_odds": 12.3875136,
-              "median_odds": 12.3875136,
-              "max_drawdown_u": 2.0,
-              "max_losing_streak": 2
-            }
-          }
-        }
-      },
-      "cumulative_profit": [
-        {
-          "date": "2026-10-14T10:21:40",
-          "league": "E1",
-          "variant": "TOP3",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -1.0,
-          "cumulative_profit_pln": -2.0
-        },
-        {
-          "date": "2026-10-14T10:21:40",
-          "league": "E1",
-          "variant": "TOP4",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -2.0,
-          "cumulative_profit_pln": -4.0
-        },
-        {
-          "date": "2026-10-14T10:34:52",
-          "league": "E1",
-          "variant": "TOP3",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -3.0,
-          "cumulative_profit_pln": -6.0
-        },
-        {
-          "date": "2026-10-14T10:34:52",
-          "league": "E1",
-          "variant": "TOP4",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -4.0,
-          "cumulative_profit_pln": -8.0
-        }
-      ]
+      "variants": {},
+      "leagues": {},
+      "cumulative_profit": []
     },
     "LAST_7_DAYS": {
       "overall": {
-        "n": 4,
+        "n": 0,
         "wins": 0,
-        "losses": 4,
-        "wr": 0.0,
-        "profit_u": -4.0,
-        "profit_pln": -8.0,
+        "losses": 0,
+        "wr": null,
+        "profit_u": 0.0,
+        "profit_pln": 0.0,
         "stake_pln": 2.0,
-        "total_staked_pln": 8.0,
-        "roi": -1.0,
-        "pf": 0.0,
+        "total_staked_pln": 0.0,
+        "roi": null,
+        "pf": null,
         "pf_infinite": false,
-        "avg_odds": 9.8158368,
-        "median_odds": 9.221345280000001,
-        "max_drawdown_u": 4.0,
-        "max_losing_streak": 4
+        "avg_odds": null,
+        "median_odds": null,
+        "max_drawdown_u": 0.0,
+        "max_losing_streak": 0
       },
-      "variants": {
-        "TOP3": {
-          "n": 2,
-          "wins": 0,
-          "losses": 2,
-          "wr": 0.0,
-          "profit_u": -2.0,
-          "profit_pln": -4.0,
-          "stake_pln": 2.0,
-          "total_staked_pln": 4.0,
-          "roi": -1.0,
-          "pf": 0.0,
-          "pf_infinite": false,
-          "avg_odds": 7.244160000000001,
-          "median_odds": 7.244160000000001,
-          "max_drawdown_u": 2.0,
-          "max_losing_streak": 2
-        },
-        "TOP4": {
-          "n": 2,
-          "wins": 0,
-          "losses": 2,
-          "wr": 0.0,
-          "profit_u": -2.0,
-          "profit_pln": -4.0,
-          "stake_pln": 2.0,
-          "total_staked_pln": 4.0,
-          "roi": -1.0,
-          "pf": 0.0,
-          "pf_infinite": false,
-          "avg_odds": 12.3875136,
-          "median_odds": 12.3875136,
-          "max_drawdown_u": 2.0,
-          "max_losing_streak": 2
-        }
-      },
-      "leagues": {
-        "E1": {
-          "overall": {
-            "n": 4,
-            "wins": 0,
-            "losses": 4,
-            "wr": 0.0,
-            "profit_u": -4.0,
-            "profit_pln": -8.0,
-            "stake_pln": 2.0,
-            "total_staked_pln": 8.0,
-            "roi": -1.0,
-            "pf": 0.0,
-            "pf_infinite": false,
-            "avg_odds": 9.8158368,
-            "median_odds": 9.221345280000001,
-            "max_drawdown_u": 4.0,
-            "max_losing_streak": 4
-          },
-          "variants": {
-            "TOP3": {
-              "n": 2,
-              "wins": 0,
-              "losses": 2,
-              "wr": 0.0,
-              "profit_u": -2.0,
-              "profit_pln": -4.0,
-              "stake_pln": 2.0,
-              "total_staked_pln": 4.0,
-              "roi": -1.0,
-              "pf": 0.0,
-              "pf_infinite": false,
-              "avg_odds": 7.244160000000001,
-              "median_odds": 7.244160000000001,
-              "max_drawdown_u": 2.0,
-              "max_losing_streak": 2
-            },
-            "TOP4": {
-              "n": 2,
-              "wins": 0,
-              "losses": 2,
-              "wr": 0.0,
-              "profit_u": -2.0,
-              "profit_pln": -4.0,
-              "stake_pln": 2.0,
-              "total_staked_pln": 4.0,
-              "roi": -1.0,
-              "pf": 0.0,
-              "pf_infinite": false,
-              "avg_odds": 12.3875136,
-              "median_odds": 12.3875136,
-              "max_drawdown_u": 2.0,
-              "max_losing_streak": 2
-            }
-          }
-        }
-      },
-      "cumulative_profit": [
-        {
-          "date": "2026-10-14T10:21:40",
-          "league": "E1",
-          "variant": "TOP3",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -1.0,
-          "cumulative_profit_pln": -2.0
-        },
-        {
-          "date": "2026-10-14T10:21:40",
-          "league": "E1",
-          "variant": "TOP4",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -2.0,
-          "cumulative_profit_pln": -4.0
-        },
-        {
-          "date": "2026-10-14T10:34:52",
-          "league": "E1",
-          "variant": "TOP3",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -3.0,
-          "cumulative_profit_pln": -6.0
-        },
-        {
-          "date": "2026-10-14T10:34:52",
-          "league": "E1",
-          "variant": "TOP4",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -4.0,
-          "cumulative_profit_pln": -8.0
-        }
-      ]
+      "variants": {},
+      "leagues": {},
+      "cumulative_profit": []
     },
     "LAST_30_DAYS": {
       "overall": {
-        "n": 4,
+        "n": 0,
         "wins": 0,
-        "losses": 4,
-        "wr": 0.0,
-        "profit_u": -4.0,
-        "profit_pln": -8.0,
+        "losses": 0,
+        "wr": null,
+        "profit_u": 0.0,
+        "profit_pln": 0.0,
         "stake_pln": 2.0,
-        "total_staked_pln": 8.0,
-        "roi": -1.0,
-        "pf": 0.0,
+        "total_staked_pln": 0.0,
+        "roi": null,
+        "pf": null,
         "pf_infinite": false,
-        "avg_odds": 9.8158368,
-        "median_odds": 9.221345280000001,
-        "max_drawdown_u": 4.0,
-        "max_losing_streak": 4
+        "avg_odds": null,
+        "median_odds": null,
+        "max_drawdown_u": 0.0,
+        "max_losing_streak": 0
       },
-      "variants": {
-        "TOP3": {
-          "n": 2,
-          "wins": 0,
-          "losses": 2,
-          "wr": 0.0,
-          "profit_u": -2.0,
-          "profit_pln": -4.0,
-          "stake_pln": 2.0,
-          "total_staked_pln": 4.0,
-          "roi": -1.0,
-          "pf": 0.0,
-          "pf_infinite": false,
-          "avg_odds": 7.244160000000001,
-          "median_odds": 7.244160000000001,
-          "max_drawdown_u": 2.0,
-          "max_losing_streak": 2
-        },
-        "TOP4": {
-          "n": 2,
-          "wins": 0,
-          "losses": 2,
-          "wr": 0.0,
-          "profit_u": -2.0,
-          "profit_pln": -4.0,
-          "stake_pln": 2.0,
-          "total_staked_pln": 4.0,
-          "roi": -1.0,
-          "pf": 0.0,
-          "pf_infinite": false,
-          "avg_odds": 12.3875136,
-          "median_odds": 12.3875136,
-          "max_drawdown_u": 2.0,
-          "max_losing_streak": 2
-        }
-      },
-      "leagues": {
-        "E1": {
-          "overall": {
-            "n": 4,
-            "wins": 0,
-            "losses": 4,
-            "wr": 0.0,
-            "profit_u": -4.0,
-            "profit_pln": -8.0,
-            "stake_pln": 2.0,
-            "total_staked_pln": 8.0,
-            "roi": -1.0,
-            "pf": 0.0,
-            "pf_infinite": false,
-            "avg_odds": 9.8158368,
-            "median_odds": 9.221345280000001,
-            "max_drawdown_u": 4.0,
-            "max_losing_streak": 4
-          },
-          "variants": {
-            "TOP3": {
-              "n": 2,
-              "wins": 0,
-              "losses": 2,
-              "wr": 0.0,
-              "profit_u": -2.0,
-              "profit_pln": -4.0,
-              "stake_pln": 2.0,
-              "total_staked_pln": 4.0,
-              "roi": -1.0,
-              "pf": 0.0,
-              "pf_infinite": false,
-              "avg_odds": 7.244160000000001,
-              "median_odds": 7.244160000000001,
-              "max_drawdown_u": 2.0,
-              "max_losing_streak": 2
-            },
-            "TOP4": {
-              "n": 2,
-              "wins": 0,
-              "losses": 2,
-              "wr": 0.0,
-              "profit_u": -2.0,
-              "profit_pln": -4.0,
-              "stake_pln": 2.0,
-              "total_staked_pln": 4.0,
-              "roi": -1.0,
-              "pf": 0.0,
-              "pf_infinite": false,
-              "avg_odds": 12.3875136,
-              "median_odds": 12.3875136,
-              "max_drawdown_u": 2.0,
-              "max_losing_streak": 2
-            }
-          }
-        }
-      },
-      "cumulative_profit": [
-        {
-          "date": "2026-10-14T10:21:40",
-          "league": "E1",
-          "variant": "TOP3",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -1.0,
-          "cumulative_profit_pln": -2.0
-        },
-        {
-          "date": "2026-10-14T10:21:40",
-          "league": "E1",
-          "variant": "TOP4",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -2.0,
-          "cumulative_profit_pln": -4.0
-        },
-        {
-          "date": "2026-10-14T10:34:52",
-          "league": "E1",
-          "variant": "TOP3",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -3.0,
-          "cumulative_profit_pln": -6.0
-        },
-        {
-          "date": "2026-10-14T10:34:52",
-          "league": "E1",
-          "variant": "TOP4",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -4.0,
-          "cumulative_profit_pln": -8.0
-        }
-      ]
+      "variants": {},
+      "leagues": {},
+      "cumulative_profit": []
     },
     "THIS_MONTH": {
       "overall": {
-        "n": 4,
+        "n": 0,
         "wins": 0,
-        "losses": 4,
-        "wr": 0.0,
-        "profit_u": -4.0,
-        "profit_pln": -8.0,
+        "losses": 0,
+        "wr": null,
+        "profit_u": 0.0,
+        "profit_pln": 0.0,
         "stake_pln": 2.0,
-        "total_staked_pln": 8.0,
-        "roi": -1.0,
-        "pf": 0.0,
+        "total_staked_pln": 0.0,
+        "roi": null,
+        "pf": null,
         "pf_infinite": false,
-        "avg_odds": 9.8158368,
-        "median_odds": 9.221345280000001,
-        "max_drawdown_u": 4.0,
-        "max_losing_streak": 4
+        "avg_odds": null,
+        "median_odds": null,
+        "max_drawdown_u": 0.0,
+        "max_losing_streak": 0
       },
-      "variants": {
-        "TOP3": {
-          "n": 2,
-          "wins": 0,
-          "losses": 2,
-          "wr": 0.0,
-          "profit_u": -2.0,
-          "profit_pln": -4.0,
-          "stake_pln": 2.0,
-          "total_staked_pln": 4.0,
-          "roi": -1.0,
-          "pf": 0.0,
-          "pf_infinite": false,
-          "avg_odds": 7.244160000000001,
-          "median_odds": 7.244160000000001,
-          "max_drawdown_u": 2.0,
-          "max_losing_streak": 2
-        },
-        "TOP4": {
-          "n": 2,
-          "wins": 0,
-          "losses": 2,
-          "wr": 0.0,
-          "profit_u": -2.0,
-          "profit_pln": -4.0,
-          "stake_pln": 2.0,
-          "total_staked_pln": 4.0,
-          "roi": -1.0,
-          "pf": 0.0,
-          "pf_infinite": false,
-          "avg_odds": 12.3875136,
-          "median_odds": 12.3875136,
-          "max_drawdown_u": 2.0,
-          "max_losing_streak": 2
-        }
-      },
-      "leagues": {
-        "E1": {
-          "overall": {
-            "n": 4,
-            "wins": 0,
-            "losses": 4,
-            "wr": 0.0,
-            "profit_u": -4.0,
-            "profit_pln": -8.0,
-            "stake_pln": 2.0,
-            "total_staked_pln": 8.0,
-            "roi": -1.0,
-            "pf": 0.0,
-            "pf_infinite": false,
-            "avg_odds": 9.8158368,
-            "median_odds": 9.221345280000001,
-            "max_drawdown_u": 4.0,
-            "max_losing_streak": 4
-          },
-          "variants": {
-            "TOP3": {
-              "n": 2,
-              "wins": 0,
-              "losses": 2,
-              "wr": 0.0,
-              "profit_u": -2.0,
-              "profit_pln": -4.0,
-              "stake_pln": 2.0,
-              "total_staked_pln": 4.0,
-              "roi": -1.0,
-              "pf": 0.0,
-              "pf_infinite": false,
-              "avg_odds": 7.244160000000001,
-              "median_odds": 7.244160000000001,
-              "max_drawdown_u": 2.0,
-              "max_losing_streak": 2
-            },
-            "TOP4": {
-              "n": 2,
-              "wins": 0,
-              "losses": 2,
-              "wr": 0.0,
-              "profit_u": -2.0,
-              "profit_pln": -4.0,
-              "stake_pln": 2.0,
-              "total_staked_pln": 4.0,
-              "roi": -1.0,
-              "pf": 0.0,
-              "pf_infinite": false,
-              "avg_odds": 12.3875136,
-              "median_odds": 12.3875136,
-              "max_drawdown_u": 2.0,
-              "max_losing_streak": 2
-            }
-          }
-        }
-      },
-      "cumulative_profit": [
-        {
-          "date": "2026-10-14T10:21:40",
-          "league": "E1",
-          "variant": "TOP3",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -1.0,
-          "cumulative_profit_pln": -2.0
-        },
-        {
-          "date": "2026-10-14T10:21:40",
-          "league": "E1",
-          "variant": "TOP4",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -2.0,
-          "cumulative_profit_pln": -4.0
-        },
-        {
-          "date": "2026-10-14T10:34:52",
-          "league": "E1",
-          "variant": "TOP3",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -3.0,
-          "cumulative_profit_pln": -6.0
-        },
-        {
-          "date": "2026-10-14T10:34:52",
-          "league": "E1",
-          "variant": "TOP4",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -4.0,
-          "cumulative_profit_pln": -8.0
-        }
-      ]
+      "variants": {},
+      "leagues": {},
+      "cumulative_profit": []
     }
   }
 }

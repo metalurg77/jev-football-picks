@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-10-19T15:54:45",
+  "source": "20261019_155258_EXP_FILTERED_TOP2_coupons.csv",
+  "experimental": true,
+  "strategy": {
+    "market": "1X2",
+    "odds_min": 1.9,
+    "odds_max": 2.4,
+    "edge_min": 0.5,
+    "edge_max": 0.65,
+    "margin_min": 0.95,
+    "builder": "DISJOINT_BALANCED_TOP2"
+  },
+  "coupons": [
+    {
+      "coupon_run": "20261019_155258",
+      "coupon_id": "EXP_20261019_155258_20261019_SINGLE_001",
+      "coupon_league": "GLOBAL",
+      "coupon_variant": "GLOBAL_FILT_SINGLE",
+      "coupon_leg_no": 1,
+      "coupon_slate_date": "2026-10-19",
+      "exp_match_date": "2026-10-19",
+      "exp_league": "T1",
+      "match": "Trabzonspor - Besiktas",
+      "market": "1X2",
+      "choice": "AWAY",
+      "model_probability": 1.0,
+      "jev_confidence": 1.0,
+      "odds": 2.17,
+      "market_probability": 0.4220263043792455,
+      "edge": 0.5779736956207544,
+      "margin": 1.0,
+      "coupon_combined_odds": 2.17,
+      "experimental": true,
+      "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
+    }
+  ]
+}
