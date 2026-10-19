@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-10-19T15:54:47",
+  "generated_at": "2026-10-19T16:10:09",
   "summary": {
     "total": 154,
     "win": 0,
-    "loss": 0,
-    "unsettled": 154,
+    "loss": 4,
+    "unsettled": 150,
     "TOP3": 51,
     "TOP4": 54,
     "TOP5": 49
   },
   "publications": [
+    {
+      "publication_id": "PUB_20261019_161007",
+      "published_at": "2026-10-19T16:10:07",
+      "source_generated_at": "2026-10-19T16:10:05",
+      "coupon_count": 0,
+      "items": []
+    },
     {
       "publication_id": "PUB_20261019_155445",
       "published_at": "2026-10-19T15:54:45",
@@ -11060,10 +11067,10 @@
       "league": "E1",
       "variant": "TOP3",
       "combined_odds": 5.569536,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 1,
       "legs_count": 3,
       "legs": [
         {
@@ -11111,10 +11118,10 @@
       "league": "E1",
       "variant": "TOP4",
       "combined_odds": 9.52390656,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 3,
+      "lost_legs": 1,
       "legs_count": 4,
       "legs": [
         {
@@ -11173,10 +11180,10 @@
       "league": "E1",
       "variant": "TOP3",
       "combined_odds": 8.918784,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 1,
       "legs_count": 3,
       "legs": [
         {
@@ -11224,10 +11231,10 @@
       "league": "E1",
       "variant": "TOP4",
       "combined_odds": 15.25112064,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 3,
+      "lost_legs": 1,
       "legs_count": 4,
       "legs": [
         {

@@ -432,6 +432,38 @@
     }
     .exp-note{color:#fde68a;font-size:11px;font-weight:750}
 
+  
+    /* ===== EXPERIMENTAL LOCK HISTORY V1 ===== */
+    .exp-lock-list{display:grid;gap:10px;margin-top:12px}
+    .exp-lock-item{
+      background:rgba(13,23,41,.88);
+      border:1px solid rgba(245,158,11,.28);
+      border-radius:12px;overflow:hidden
+    }
+    .exp-lock-item summary{
+      list-style:none;cursor:pointer;padding:11px 13px;
+      display:grid;grid-template-columns:150px 1fr 90px 95px 150px;
+      gap:10px;align-items:center
+    }
+    .exp-lock-item summary::-webkit-details-marker{display:none}
+    .exp-lock-item[open] summary{border-bottom:1px solid var(--line)}
+    .exp-lock-date{color:var(--muted);font-size:12px}
+    .exp-lock-variant{color:#fde68a;font-weight:850}
+    .exp-lock-odds{text-align:right;color:var(--good);font-weight:850}
+    .exp-lock-origin{text-align:right;color:var(--muted);font-size:11px}
+    .exp-lock-legs{padding:8px 13px 13px}
+    .exp-lock-leg{
+      display:grid;grid-template-columns:1fr 180px 80px;gap:10px;
+      padding:9px 0;border-bottom:1px solid var(--line);font-size:13px
+    }
+    .exp-lock-leg:last-child{border-bottom:0}
+    .exp-lock-pick{color:var(--accent2)}
+    @media(max-width:820px){
+      .exp-lock-item summary{grid-template-columns:90px 1fr 75px}
+      .exp-lock-origin{grid-column:1/-1;text-align:left}
+      .exp-lock-leg{grid-template-columns:1fr}
+    }
+
   </style>
 </head>
 <body>
@@ -479,6 +511,17 @@
       </div>
     </div>
     <div id="experimentalCoupons" class="loading">Pobieranie eksperymentalnych kuponów…</div>
+
+    <div class="section-head" style="margin-top:22px">
+      <div>
+        <h3>LOCK — HISTORIA EKSPERYMENTALNA</h3>
+        <div class="section-note">
+          Każdy unikalny kupon eksperymentalny zapisany append-only.
+          · <strong id="experimentalLockedCount">LOCK: —</strong>
+        </div>
+      </div>
+    </div>
+    <div id="experimentalLocked" class="loading">Pobieranie historii EXP LOCK…</div>
   </section>
 
   <section class="section" id="lockedHistorySection">
@@ -1525,6 +1568,62 @@
   }
 
 
+
+  // ===== EXPERIMENTAL LOCK HISTORY V1 =====
+  async function loadExperimentalLocked() {
+    const box = $("#experimentalLocked");
+    try {
+      const data = await getJson("./experimental_locked_coupons.json");
+      const rows = Array.isArray(data.coupons) ? data.coupons : [];
+
+      $("#experimentalLockedCount").textContent = `LOCK: ${rows.length}`;
+
+      if (!rows.length) {
+        box.className = "empty";
+        box.textContent = "Brak zalockowanych kuponów eksperymentalnych.";
+        return;
+      }
+
+      const out = [];
+      out.push('<div class="exp-lock-list">');
+
+      for (const c of rows) {
+        const legs = Array.isArray(c.legs) ? c.legs : [];
+        const label = String(c.variant || "").includes("SINGLE") ? "SINGLE" : "TOP2";
+
+        out.push(`<details class="exp-lock-item">
+          <summary>
+            <span class="exp-lock-date">${esc(c.slate_date || "NO_DATE")}</span>
+            <span class="exp-lock-variant">${esc(label)}</span>
+            <span>${esc(c.legs_count)} leg</span>
+            <span class="exp-lock-odds">kurs ${num(c.combined_odds)}</span>
+            <span class="exp-lock-origin">${esc(c.lock_origin || "LIVE")}</span>
+          </summary>
+          <div class="exp-lock-legs">`);
+
+        for (const leg of legs) {
+          const league = leg.exp_league || leg.league_run || "";
+          out.push(`<div class="exp-lock-leg">
+            <div><strong>[${esc(league)}] ${esc(leg.match)}</strong></div>
+            <div class="exp-lock-pick">${esc(leg.market)} / ${esc(leg.choice)}</div>
+            <div>@ ${num(leg.odds)}</div>
+          </div>`);
+        }
+
+        out.push(`</div></details>`);
+      }
+
+      out.push("</div>");
+      box.className = "";
+      box.innerHTML = out.join("");
+    } catch (e) {
+      $("#experimentalLockedCount").textContent = "LOCK: —";
+      box.className = "error";
+      box.textContent = "Nie udało się wczytać EXP LOCK: " + e.message;
+    }
+  }
+
+
   function renderPeriod(period) {
     currentPeriod = period;
     const p = summary?.periods?.[period];
@@ -1570,6 +1669,7 @@
   initCollapsibleSections();
   loadCurrent();
   loadExperimental();
+  loadExperimentalLocked();
   loadLockedHistory();
   loadResults();
 })();
