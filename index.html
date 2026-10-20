@@ -464,6 +464,21 @@
       .exp-lock-leg{grid-template-columns:1fr}
     }
 
+  
+  /* JEV PUBLICATION AUDIT V1 */
+  #publicationAuditSection{border-left:3px solid #38bdf8}
+  .pub-day,.pub-run,.pub-coupon{border:1px solid var(--line);border-radius:12px;background:var(--panel3);margin:10px 0;overflow:hidden}
+  .pub-day>summary,.pub-run>summary,.pub-coupon>summary{cursor:pointer;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:13px 15px;font-weight:700}
+  .pub-day>summary:hover,.pub-run>summary:hover,.pub-coupon>summary:hover{background:rgba(120,215,255,.06)}
+  .pub-run{margin:8px 12px;background:var(--panel2)}
+  .pub-coupon{margin:7px 10px;background:var(--panel3)}
+  .pub-stats{display:flex;flex-wrap:wrap;gap:8px;color:var(--muted);font-size:12px}
+  .pub-stats>span{padding:4px 8px;background:rgba(120,215,255,.07);border:1px solid var(--line);border-radius:8px}
+  .pub-list{padding:0 12px 12px}.pub-leg{border-top:1px solid var(--line);padding:7px 12px;font-size:12px;color:var(--muted)}
+  .pub-count{color:var(--accent);font-weight:850}
+  .pub-note{margin-top:12px;color:var(--muted);font-size:12px;line-height:1.5}
+  .pub-empty{color:var(--muted);padding:12px;font-size:13px}
+
   </style>
 </head>
 <body>
@@ -524,6 +539,17 @@
     <div id="experimentalLocked" class="loading">Pobieranie historii EXP LOCK…</div>
   </section>
 
+    <!-- JEV PUBLICATION AUDIT V1 -->
+  <section class="section" id="publicationAuditSection">
+    <div class="section-head">
+      <div>
+        <h2>HISTORIA PUBLIKACJI — DZIEŃ PO DNIU</h2>
+        <div class="section-note">Rzeczywiste publikacje PUB, nowe i powtórzone kupony. Rozwiń dzień, publikację i kupon.</div>
+      </div>
+    </div>
+    <div id="publicationAudit" class="loading">Pobieranie rejestru publikacji…</div>
+  </section>
+  <!-- /JEV PUBLICATION AUDIT V1 -->
   <section class="section" id="lockedHistorySection">
     <div class="section-head">
       <div>
@@ -1674,5 +1700,67 @@
   loadResults();
 })();
 </script>
+
+<script>
+/* JEV PUBLICATION AUDIT V1 — independent of existing site JavaScript */
+(() => {
+ 'use strict';
+ const box = document.getElementById('publicationAudit');
+ if (!box) return;
+ const esc = v => String(v ?? '—').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+ const dayOf = v => String(v || '').slice(0, 10);
+ const when = v => String(v || '').replace('T',' ').slice(0,19) || '—';
+ const pubKey = p => String(p.publication_id || p.published_at || '');
+ function couponKey(item) {
+   // Fingerprint distinguishes changed compositions. lock_id is reliable fallback.
+   return String(item.composition_fingerprint || item.lock_fingerprint || item.lock_id || '');
+ }
+ function render(data) {
+   const pubs = Array.isArray(data.publications) ? [...data.publications] : [];
+   const coupons = Array.isArray(data.coupons) ? data.coupons : [];
+   const couponById = new Map(coupons.map(c => [String(c.lock_id), c]));
+   const days = ['2026-10-16','2026-10-17','2026-10-18','2026-10-19'];
+   const seen = new Set();
+   // Count new coupons in chronological order across ALL recorded publications.
+   const annotated = pubs.sort((a,b) => when(a.published_at).localeCompare(when(b.published_at)) || pubKey(a).localeCompare(pubKey(b))).map(p => {
+     const items = Array.isArray(p.items) ? p.items : [];
+     let fresh = 0, repeated = 0;
+     const itemsWithFlag = items.map(item => {
+       const k = couponKey(item);
+       const isNew = k ? !seen.has(k) : null;
+       if (k) seen.add(k);
+       if (isNew === true) fresh++;
+       if (isNew === false) repeated++;
+       return {...item, isNew};
+     });
+     return {...p, auditItems:itemsWithFlag, fresh, repeated};
+   });
+   // Other days are left available: keeps the history useful as new PUB entries arrive.
+   const daySet = new Set([...days, ...annotated.map(p => dayOf(p.published_at)).filter(Boolean)]);
+   const orderedDays = [...daySet].sort((a,b)=>b.localeCompare(a));
+   const html = orderedDays.map(day => {
+     const group = annotated.filter(p => dayOf(p.published_at) === day).reverse();
+     const count = group.reduce((s,p)=>s+p.auditItems.length,0);
+     const fresh = group.reduce((s,p)=>s+p.fresh,0);
+     const repeated = group.reduce((s,p)=>s+p.repeated,0);
+     const rows = group.map((p,i) => {
+       const pubNo = group.length-i;
+       const items = p.auditItems.map(item => {
+         const coupon = couponById.get(String(item.lock_id)) || {};
+         const legs = (Array.isArray(coupon.legs) ? coupon.legs : []).map(l => `<div class="pub-leg">${esc(l.leg_no)}. ${esc(l.match)} · ${esc(l.market)} / ${esc(l.choice)} · kurs ${esc(l.odds)}</div>`).join('');
+         const flag = item.isNew === true ? 'NOWY' : item.isNew === false ? 'POWTÓRZONY' : 'BRAK ID';
+         return `<details class="pub-coupon"><summary><span>${esc(item.league)} · ${esc(item.variant)} · ${flag}</span><span class="pub-stats"><span>${esc(coupon.status || '—')}</span><span>kurs ${esc(coupon.combined_odds ?? '—')}</span></span></summary><div class="pub-list"><div class="pub-note">LOCK: ${esc(item.lock_id)}</div>${legs || '<div class="pub-empty">Nie znaleziono szczegółów kuponu w historii LOCK.</div>'}</div></details>`;
+       }).join('');
+       return `<details class="pub-run"><summary><span>PUB ${pubNo} · ${esc(when(p.published_at).slice(11,19))}</span><span class="pub-stats"><span>Kupony: <b>${p.auditItems.length}</b></span><span>Nowe: ${p.fresh}</span><span>Ponowne: ${p.repeated}</span></span></summary><div class="pub-list"><div class="pub-note">${esc(p.publication_id)} · źródło: ${esc(when(p.source_generated_at))}</div>${items || '<div class="pub-empty">Publikacja bez kuponów.</div>'}</div></details>`;
+     }).join('');
+     return `<details class="pub-day" ${days.includes(day) ? 'open' : ''}><summary><span>${esc(day.split('-').reverse().join('.'))}</span><span class="pub-stats"><span>Publikacje: <strong class="pub-count">${group.length}</strong></span><span>Pozycje: ${count}</span><span>Nowe: ${fresh}</span><span>Ponowne: ${repeated}</span></span></summary><div class="pub-list">${rows || '<div class="pub-empty">Brak zarejestrowanych publikacji tego dnia.</div>'}</div></details>`;
+   }).join('');
+   box.className='';
+   box.innerHTML=html+'<p class="pub-note">Publikacje to zapisane rekordy PUB (również puste). „Pozycje” liczą kupony pokazane w publikacjach; „Nowe” to pierwsze wystąpienia kompozycji, „Ponowne” — kolejne wystąpienia. Nie są to daty rozegrania meczów. Dane pochodzą wyłącznie z locked_coupons.json.</p>';
+ }
+ fetch('./locked_coupons.json?v='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(render).catch(e=>{box.className='error';box.textContent='Brak danych publikacji: '+e.message});
+})();
+</script>
+
 </body>
 </html>
