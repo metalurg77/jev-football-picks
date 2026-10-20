@@ -1,15 +1,59 @@
 {
-  "generated_at": "2026-10-20T12:14:46",
+  "generated_at": "2026-10-20T14:00:31",
   "summary": {
-    "total": 154,
+    "total": 160,
     "win": 8,
     "loss": 146,
-    "unsettled": 0,
-    "TOP3": 51,
-    "TOP4": 54,
-    "TOP5": 49
+    "unsettled": 6,
+    "TOP3": 53,
+    "TOP4": 56,
+    "TOP5": 51
   },
   "publications": [
+    {
+      "publication_id": "PUB_20261020_140030",
+      "published_at": "2026-10-20T14:00:30",
+      "source_generated_at": "2026-10-20T14:00:29",
+      "coupon_count": 6,
+      "items": [
+        {
+          "league": "E2",
+          "variant": "TOP3",
+          "lock_id": "20261020_140015_E2_TOP3_de7a9874",
+          "composition_fingerprint": "de7a9874923605e639cb987a"
+        },
+        {
+          "league": "E2",
+          "variant": "TOP4",
+          "lock_id": "20261020_140015_E2_TOP4_70c31b9b",
+          "composition_fingerprint": "70c31b9bcf5043097642fd6c"
+        },
+        {
+          "league": "E2",
+          "variant": "TOP5",
+          "lock_id": "20261020_140015_E2_TOP5_7439eec7",
+          "composition_fingerprint": "7439eec7d4dfad0949c27e59"
+        },
+        {
+          "league": "E3",
+          "variant": "TOP3",
+          "lock_id": "20261020_140015_E3_TOP3_dcb7d435",
+          "composition_fingerprint": "dcb7d435b5a5614d0dd8cfa9"
+        },
+        {
+          "league": "E3",
+          "variant": "TOP4",
+          "lock_id": "20261020_140015_E3_TOP4_e59a3313",
+          "composition_fingerprint": "e59a33134be6ffe9a93066c0"
+        },
+        {
+          "league": "E3",
+          "variant": "TOP5",
+          "lock_id": "20261020_140015_E3_TOP5_055923a7",
+          "composition_fingerprint": "055923a71c566c8e3b990f4b"
+        }
+      ]
+    },
     {
       "publication_id": "PUB_20261020_121445",
       "published_at": "2026-10-20T12:14:45",
@@ -936,6 +980,414 @@
     }
   ],
   "coupons": [
+    {
+      "lock_id": "20261020_140015_E2_TOP3_de7a9874",
+      "locked_at": "2026-10-20 14:00:18",
+      "source_run": "20261020_140015",
+      "league": "E2",
+      "variant": "TOP3",
+      "combined_odds": 12.719399999999998,
+      "status": "UNSETTLED",
+      "profit_1u": null,
+      "won_legs": 0,
+      "lost_legs": 0,
+      "legs_count": 3,
+      "legs": [
+        {
+          "leg_no": 1,
+          "match": "Stevenage - Plymouth",
+          "match_date": "2026-10-20",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 2.55,
+          "model_probability": 0.99,
+          "edge": 0.6238940003237011,
+          "margin": 0.98
+        },
+        {
+          "leg_no": 2,
+          "match": "Cambridge - Wycombe",
+          "match_date": "2026-10-20",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 2.32,
+          "model_probability": 1.0,
+          "edge": 0.597064363187634,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 3,
+          "match": "Notts County - Sheffield Weds",
+          "match_date": "2026-10-20",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 2.15,
+          "model_probability": 0.99,
+          "edge": 0.5552846350603771,
+          "margin": 0.98
+        }
+      ],
+      "publications": [
+        {
+          "publication_id": "PUB_20261020_140030",
+          "published_at": "2026-10-20T14:00:30",
+          "source_generated_at": "2026-10-20T14:00:29"
+        }
+      ],
+      "first_published_at": "2026-10-20T14:00:30",
+      "last_published_at": "2026-10-20T14:00:30"
+    },
+    {
+      "lock_id": "20261020_140015_E2_TOP4_70c31b9b",
+      "locked_at": "2026-10-20 14:00:18",
+      "source_run": "20261020_140015",
+      "league": "E2",
+      "variant": "TOP4",
+      "combined_odds": 26.456352,
+      "status": "UNSETTLED",
+      "profit_1u": null,
+      "won_legs": 0,
+      "lost_legs": 0,
+      "legs_count": 4,
+      "legs": [
+        {
+          "leg_no": 1,
+          "match": "Stevenage - Plymouth",
+          "match_date": "2026-10-20",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 2.55,
+          "model_probability": 0.99,
+          "edge": 0.6238940003237011,
+          "margin": 0.98
+        },
+        {
+          "leg_no": 2,
+          "match": "Cambridge - Wycombe",
+          "match_date": "2026-10-20",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 2.32,
+          "model_probability": 1.0,
+          "edge": 0.597064363187634,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 3,
+          "match": "Notts County - Sheffield Weds",
+          "match_date": "2026-10-20",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 2.15,
+          "model_probability": 0.99,
+          "edge": 0.5552846350603771,
+          "margin": 0.98
+        },
+        {
+          "leg_no": 4,
+          "match": "AFC Wimbledon - Mansfield",
+          "match_date": "2026-10-20",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 2.08,
+          "model_probability": 0.99,
+          "edge": 0.5419862129069489,
+          "margin": 0.98
+        }
+      ],
+      "publications": [
+        {
+          "publication_id": "PUB_20261020_140030",
+          "published_at": "2026-10-20T14:00:30",
+          "source_generated_at": "2026-10-20T14:00:29"
+        }
+      ],
+      "first_published_at": "2026-10-20T14:00:30",
+      "last_published_at": "2026-10-20T14:00:30"
+    },
+    {
+      "lock_id": "20261020_140015_E2_TOP5_7439eec7",
+      "locked_at": "2026-10-20 14:00:18",
+      "source_run": "20261020_140015",
+      "league": "E2",
+      "variant": "TOP5",
+      "combined_odds": 52.38357696,
+      "status": "UNSETTLED",
+      "profit_1u": null,
+      "won_legs": 0,
+      "lost_legs": 0,
+      "legs_count": 5,
+      "legs": [
+        {
+          "leg_no": 1,
+          "match": "Stevenage - Plymouth",
+          "match_date": "2026-10-20",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 2.55,
+          "model_probability": 0.99,
+          "edge": 0.6238940003237011,
+          "margin": 0.98
+        },
+        {
+          "leg_no": 2,
+          "match": "Cambridge - Wycombe",
+          "match_date": "2026-10-20",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 2.32,
+          "model_probability": 1.0,
+          "edge": 0.597064363187634,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 3,
+          "match": "Notts County - Sheffield Weds",
+          "match_date": "2026-10-20",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 2.15,
+          "model_probability": 0.99,
+          "edge": 0.5552846350603771,
+          "margin": 0.98
+        },
+        {
+          "leg_no": 4,
+          "match": "AFC Wimbledon - Mansfield",
+          "match_date": "2026-10-20",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 2.08,
+          "model_probability": 0.99,
+          "edge": 0.5419862129069489,
+          "margin": 0.98
+        },
+        {
+          "leg_no": 5,
+          "match": "Burton - Bradford",
+          "match_date": "2026-10-20",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 1.98,
+          "model_probability": 1.0,
+          "edge": 0.5276848755109624,
+          "margin": 1.0
+        }
+      ],
+      "publications": [
+        {
+          "publication_id": "PUB_20261020_140030",
+          "published_at": "2026-10-20T14:00:30",
+          "source_generated_at": "2026-10-20T14:00:29"
+        }
+      ],
+      "first_published_at": "2026-10-20T14:00:30",
+      "last_published_at": "2026-10-20T14:00:30"
+    },
+    {
+      "lock_id": "20261020_140015_E3_TOP3_dcb7d435",
+      "locked_at": "2026-10-20 14:00:18",
+      "source_run": "20261020_140015",
+      "league": "E3",
+      "variant": "TOP3",
+      "combined_odds": 13.480795999999998,
+      "status": "UNSETTLED",
+      "profit_1u": null,
+      "won_legs": 0,
+      "lost_legs": 0,
+      "legs_count": 3,
+      "legs": [
+        {
+          "leg_no": 1,
+          "match": "Bristol Rvs - Salford",
+          "match_date": "2026-10-20",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 2.54,
+          "model_probability": 1.0,
+          "edge": 0.6331033279466931,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 2,
+          "match": "Crawley Town - Shrewsbury",
+          "match_date": "2026-10-20",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 2.38,
+          "model_probability": 1.0,
+          "edge": 0.6086578076945396,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 3,
+          "match": "Gillingham - Port Vale",
+          "match_date": "2026-10-20",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 2.23,
+          "model_probability": 1.0,
+          "edge": 0.5826549179154825,
+          "margin": 1.0
+        }
+      ],
+      "publications": [
+        {
+          "publication_id": "PUB_20261020_140030",
+          "published_at": "2026-10-20T14:00:30",
+          "source_generated_at": "2026-10-20T14:00:29"
+        }
+      ],
+      "first_published_at": "2026-10-20T14:00:30",
+      "last_published_at": "2026-10-20T14:00:30"
+    },
+    {
+      "lock_id": "20261020_140015_E3_TOP4_e59a3313",
+      "locked_at": "2026-10-20 14:00:18",
+      "source_run": "20261020_140015",
+      "league": "E3",
+      "variant": "TOP4",
+      "combined_odds": 30.466598959999992,
+      "status": "UNSETTLED",
+      "profit_1u": null,
+      "won_legs": 0,
+      "lost_legs": 0,
+      "legs_count": 4,
+      "legs": [
+        {
+          "leg_no": 1,
+          "match": "Bristol Rvs - Salford",
+          "match_date": "2026-10-20",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 2.54,
+          "model_probability": 1.0,
+          "edge": 0.6331033279466931,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 2,
+          "match": "Crawley Town - Shrewsbury",
+          "match_date": "2026-10-20",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 2.38,
+          "model_probability": 1.0,
+          "edge": 0.6086578076945396,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 3,
+          "match": "Gillingham - Port Vale",
+          "match_date": "2026-10-20",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 2.23,
+          "model_probability": 1.0,
+          "edge": 0.5826549179154825,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 4,
+          "match": "Northampton - Tranmere",
+          "match_date": "2026-10-20",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 2.26,
+          "model_probability": 0.99,
+          "edge": 0.5780175481075047,
+          "margin": 0.98
+        }
+      ],
+      "publications": [
+        {
+          "publication_id": "PUB_20261020_140030",
+          "published_at": "2026-10-20T14:00:30",
+          "source_generated_at": "2026-10-20T14:00:29"
+        }
+      ],
+      "first_published_at": "2026-10-20T14:00:30",
+      "last_published_at": "2026-10-20T14:00:30"
+    },
+    {
+      "lock_id": "20261020_140015_E3_TOP5_055923a7",
+      "locked_at": "2026-10-20 14:00:18",
+      "source_run": "20261020_140015",
+      "league": "E3",
+      "variant": "TOP5",
+      "combined_odds": 66.4171857328,
+      "status": "UNSETTLED",
+      "profit_1u": null,
+      "won_legs": 0,
+      "lost_legs": 0,
+      "legs_count": 5,
+      "legs": [
+        {
+          "leg_no": 1,
+          "match": "Bristol Rvs - Salford",
+          "match_date": "2026-10-20",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 2.54,
+          "model_probability": 1.0,
+          "edge": 0.6331033279466931,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 2,
+          "match": "Crawley Town - Shrewsbury",
+          "match_date": "2026-10-20",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 2.38,
+          "model_probability": 1.0,
+          "edge": 0.6086578076945396,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 3,
+          "match": "Gillingham - Port Vale",
+          "match_date": "2026-10-20",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 2.23,
+          "model_probability": 1.0,
+          "edge": 0.5826549179154825,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 4,
+          "match": "Northampton - Tranmere",
+          "match_date": "2026-10-20",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 2.26,
+          "model_probability": 0.99,
+          "edge": 0.5780175481075047,
+          "margin": 0.98
+        },
+        {
+          "leg_no": 5,
+          "match": "Cheltenham - Fleetwood Town",
+          "match_date": "2026-10-20",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 2.18,
+          "model_probability": 1.0,
+          "edge": 0.5725904414071614,
+          "margin": 1.0
+        }
+      ],
+      "publications": [
+        {
+          "publication_id": "PUB_20261020_140030",
+          "published_at": "2026-10-20T14:00:30",
+          "source_generated_at": "2026-10-20T14:00:29"
+        }
+      ],
+      "first_published_at": "2026-10-20T14:00:30",
+      "last_published_at": "2026-10-20T14:00:30"
+    },
     {
       "lock_id": "20261018_140021_F1_TOP3_1ae1085c",
       "locked_at": "2026-10-18 14:00:22",
