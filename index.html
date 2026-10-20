@@ -480,6 +480,20 @@
   .pub-empty{color:var(--muted);padding:12px;font-size:13px}
 
   </style>
+<style>
+/* JEV TOP COUNTERS V1 */
+#jevTopStats{margin:14px 0 20px}
+.jev-top-title{font-weight:800;margin:12px 0 8px}
+.jev-top-table{width:100%;border-collapse:collapse;font-size:13px;max-width:940px}
+.jev-top-table th,.jev-top-table td{padding:9px 11px;text-align:right;border-bottom:1px solid var(--line,#334155)}
+.jev-top-table th:first-child,.jev-top-table td:first-child{text-align:left}
+.jev-top-table th{color:var(--muted,#94a3b8);font-size:12px}
+.jev-top-table .jev-good{color:#4ade80;font-weight:700}
+.jev-top-table .jev-bad{color:#fb7185;font-weight:700}
+.jev-top-note{font-size:12px;color:var(--muted,#94a3b8);margin-top:10px;line-height:1.5}
+.jev-top-day{margin:12px 0;border:1px solid var(--line,#334155);border-radius:10px;padding:10px}
+.jev-top-day summary{cursor:pointer;font-weight:700}
+</style>
 </head>
 <body>
 <main class="wrap">
@@ -1784,5 +1798,47 @@
 })();
 </script>
 
+<script>
+/* JEV TOP COUNTERS V1: independent of pre-existing publication audit and settlement code. */
+(()=>{
+ 'use strict';
+ const target=document.getElementById('publicationAudit');
+ if(!target)return;
+ const root=document.createElement('div');root.id='jevTopStats';
+ target.parentNode.insertBefore(root,target);
+ const h=s=>String(s??'');
+ const e=s=>h(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const variants=['TOP3','TOP4','TOP5'];
+ function tally(arr){const out=Object.fromEntries(variants.map(v=>[v,{total:0,win:0,loss:0,unsettled:0}]));
+   arr.forEach(c=>{const v=h(c.variant).toUpperCase();if(!out[v])return;
+     const z=out[v];z.total++;
+     const status=h(c.status).toUpperCase();if(status==='WIN')z.win++;else if(status==='LOSS')z.loss++;else z.unsettled++;
+   });return out;}
+ function rows(c){const tot={total:0,win:0,loss:0,unsettled:0};
+   const r=variants.map(v=>{const x=c[v];Object.keys(tot).forEach(k=>tot[k]+=x[k]);
+    return `<tr><td><strong>${v}</strong></td><td>${x.total}</td><td class="jev-good">${x.win}</td><td class="jev-bad">${x.loss}</td><td>${x.unsettled}</td></tr>`;});
+   r.push(`<tr><td><strong>RAZEM</strong></td><td><strong>${tot.total}</strong></td><td class="jev-good">${tot.win}</td><td class="jev-bad">${tot.loss}</td><td>${tot.unsettled}</td></tr>`);
+   return `<table class="jev-top-table"><thead><tr><th>Wariant</th><th>Kupony LOCK</th><th>WIN</th><th>LOSS</th><th>UNSETTLED</th></tr></thead><tbody>${r.join('')}</tbody></table>`;
+ }
+ function dayOf(c){return h(c.first_published_at||c.locked_at).slice(0,10);}
+ function render(data){const raw=Array.isArray(data.coupons)?data.coupons:[];
+   const map=new Map();raw.forEach(c=>{const id=h(c.lock_id);if(id&&!map.has(id))map.set(id,c);});
+   const all=[...map.values()].filter(c=>variants.includes(h(c.variant).toUpperCase()));
+   const groups=new Map();all.forEach(c=>{const d=dayOf(c);if(!/^\d{4}-\d{2}-\d{2}$/.test(d))return;
+       if(!groups.has(d))groups.set(d,[]);groups.get(d).push(c);});
+   const dates=[...new Set(['2026-10-14','2026-10-16','2026-10-17','2026-10-18','2026-10-19',...groups.keys()])].sort().reverse();
+   const headline=`<div class="jev-top-title">TOP3 / TOP4 / TOP5 — wyniki kuponów LOCK</div>`;
+   const parts=dates.map(d=>{const items=groups.get(d)||[];
+     const day=d.split('-').reverse().join('.');
+     return `<details class="jev-top-day" ${d==='2026-10-16'?'open':''}><summary>${e(day)} — ${items.length} kuponów LOCK · TOP3 / TOP4 / TOP5</summary>${rows(tally(items))}</details>`;
+   });
+   root.innerHTML=headline+`<div class="jev-top-title">Łącznie (${all.length} unikalnych kuponów)</div>`+rows(tally(all))+parts.join('')+
+      `<div class="jev-top-note">WIN/LOSS dotyczy całego kuponu (nie pojedynczych meczów). Każdy lock_id liczony tylko raz, także przy powtórnych publikacjach. Data oznacza first_published_at (ew. locked_at). Historyczny LOCK nie jest kompletnym dowodem liczby kuponów widocznych w publikacji; np. oryginalny snapshot 16.10 zawierał 57 wygenerowanych wariantów. Statusy i liczby są aktualizowane z locked_coupons.json.</div>`;
+ }
+ fetch('locked_coupons.json?top_audit='+Date.now(),{cache:'no-store'})
+ .then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()})
+ .then(render).catch(err=>{root.textContent='Nie udalo sie pobrac licznikow TOP: '+err.message;});
+})();
+</script>
 </body>
 </html>
