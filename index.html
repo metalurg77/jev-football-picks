@@ -1702,63 +1702,85 @@
 </script>
 
 <script>
-/* JEV PUBLICATION AUDIT V1 — independent of existing site JavaScript */
+/* JEV PUBLICATION AUDIT V2 — real PUB snapshots + independently archived LOCK coupons */
 (() => {
  'use strict';
  const box = document.getElementById('publicationAudit');
  if (!box) return;
- const esc = v => String(v ?? '—').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
- const dayOf = v => String(v || '').slice(0, 10);
- const when = v => String(v || '').replace('T',' ').slice(0,19) || '—';
- const pubKey = p => String(p.publication_id || p.published_at || '');
- function couponKey(item) {
-   // Fingerprint distinguishes changed compositions. lock_id is reliable fallback.
-   return String(item.composition_fingerprint || item.lock_fingerprint || item.lock_id || '');
- }
+ const esc = v => String(v ?? '—').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+ const when = v => String(v || '').replace('T',' ').slice(0,19);
+ const date = v => when(v).slice(0,10);
+ const fmtDay = v => v.split('-').reverse().join('.');
+ const fingerprint = x => String(x.composition_fingerprint || x.lock_fingerprint || x.lock_id || '');
+ const validDate = v => /^\d{4}-\d{2}-\d{2}$/.test(v);
+ const couponId = x => String(x.lock_id || '');
+ const detail = (item, couponsById) => {
+   const c=couponsById.get(couponId(item)) || item;
+   const legs=(Array.isArray(c.legs)?c.legs:[]).map(l=>`<div class="pub-leg">${esc(l.leg_no)}. ${esc(l.match)} · ${esc(l.market)} / ${esc(l.choice)} · kurs ${esc(l.odds)}</div>`).join('');
+   const flag=item.isNew===true?'NOWY':item.isNew===false?'PONOWNY':'BRAK ID';
+   return `<details class="pub-coupon"><summary><span>${esc(c.league||item.league)} · ${esc(c.variant||item.variant)} · ${flag}</span><span class="pub-stats"><span>${esc(c.status||'—')}</span><span>kurs ${esc(c.combined_odds??'—')}</span></span></summary><div class="pub-list"><div class="pub-note">LOCK: ${esc(c.lock_id||item.lock_id)}</div>${legs||'<div class="pub-empty">Brak szczegółów nóg.</div>'}</div></details>`;
+ };
  function render(data) {
-   const pubs = Array.isArray(data.publications) ? [...data.publications] : [];
-   const coupons = Array.isArray(data.coupons) ? data.coupons : [];
-   const couponById = new Map(coupons.map(c => [String(c.lock_id), c]));
-   const days = ['2026-10-16','2026-10-17','2026-10-18','2026-10-19'];
-   const seen = new Set();
-   // Count new coupons in chronological order across ALL recorded publications.
-   const annotated = pubs.sort((a,b) => when(a.published_at).localeCompare(when(b.published_at)) || pubKey(a).localeCompare(pubKey(b))).map(p => {
-     const items = Array.isArray(p.items) ? p.items : [];
-     let fresh = 0, repeated = 0;
-     const itemsWithFlag = items.map(item => {
-       const k = couponKey(item);
-       const isNew = k ? !seen.has(k) : null;
-       if (k) seen.add(k);
-       if (isNew === true) fresh++;
-       if (isNew === false) repeated++;
-       return {...item, isNew};
-     });
-     return {...p, auditItems:itemsWithFlag, fresh, repeated};
+   const pubs=Array.isArray(data.publications)?data.publications:[];
+   const locks=Array.isArray(data.coupons)?data.coupons:[];
+   const couponsById=new Map(locks.map(x=>[couponId(x),x]));
+   const realIds=new Set();
+   const rows=pubs.map(p=>{
+     const items=Array.isArray(p.items)?p.items:[];
+     items.forEach(x=>{if(couponId(x))realIds.add(couponId(x));});
+     return {...p,_items:items,_time:when(p.published_at),_source:'PUB'};
    });
-   // Other days are left available: keeps the history useful as new PUB entries arrive.
-   const daySet = new Set([...days, ...annotated.map(p => dayOf(p.published_at)).filter(Boolean)]);
-   const orderedDays = [...daySet].sort((a,b)=>b.localeCompare(a));
-   const html = orderedDays.map(day => {
-     const group = annotated.filter(p => dayOf(p.published_at) === day).reverse();
-     const count = group.reduce((s,p)=>s+p.auditItems.length,0);
-     const fresh = group.reduce((s,p)=>s+p.fresh,0);
-     const repeated = group.reduce((s,p)=>s+p.repeated,0);
-     const rows = group.map((p,i) => {
-       const pubNo = group.length-i;
-       const items = p.auditItems.map(item => {
-         const coupon = couponById.get(String(item.lock_id)) || {};
-         const legs = (Array.isArray(coupon.legs) ? coupon.legs : []).map(l => `<div class="pub-leg">${esc(l.leg_no)}. ${esc(l.match)} · ${esc(l.market)} / ${esc(l.choice)} · kurs ${esc(l.odds)}</div>`).join('');
-         const flag = item.isNew === true ? 'NOWY' : item.isNew === false ? 'POWTÓRZONY' : 'BRAK ID';
-         return `<details class="pub-coupon"><summary><span>${esc(item.league)} · ${esc(item.variant)} · ${flag}</span><span class="pub-stats"><span>${esc(coupon.status || '—')}</span><span>kurs ${esc(coupon.combined_odds ?? '—')}</span></span></summary><div class="pub-list"><div class="pub-note">LOCK: ${esc(item.lock_id)}</div>${legs || '<div class="pub-empty">Nie znaleziono szczegółów kuponu w historii LOCK.</div>'}</div></details>`;
-       }).join('');
-       return `<details class="pub-run"><summary><span>PUB ${pubNo} · ${esc(when(p.published_at).slice(11,19))}</span><span class="pub-stats"><span>Kupony: <b>${p.auditItems.length}</b></span><span>Nowe: ${p.fresh}</span><span>Ponowne: ${p.repeated}</span></span></summary><div class="pub-list"><div class="pub-note">${esc(p.publication_id)} · źródło: ${esc(when(p.source_generated_at))}</div>${items || '<div class="pub-empty">Publikacja bez kuponów.</div>'}</div></details>`;
-     }).join('');
-     return `<details class="pub-day" ${days.includes(day) ? 'open' : ''}><summary><span>${esc(day.split('-').reverse().join('.'))}</span><span class="pub-stats"><span>Publikacje: <strong class="pub-count">${group.length}</strong></span><span>Pozycje: ${count}</span><span>Nowe: ${fresh}</span><span>Ponowne: ${repeated}</span></span></summary><div class="pub-list">${rows || '<div class="pub-empty">Brak zarejestrowanych publikacji tego dnia.</div>'}</div></details>`;
-   }).join('');
+   // Legacy LOCK data did not retain corresponding PUB snapshots. Do NOT claim they were real PUB events.
+   // Group missing coupons by first_published_at (fallback locked_at), then source_run.
+   const legacy=new Map();
+   locks.forEach(c=>{
+     const id=couponId(c);
+     if(!id || realIds.has(id))return;
+     const ts=when(c.first_published_at||c.locked_at);
+     if(!validDate(date(ts)))return;
+     const run=String(c.source_run||'');
+     const key=ts+'|'+run;
+     if(!legacy.has(key))legacy.set(key,{_time:ts,_source:'LOCK',source_run:run,_items:[]});
+     legacy.get(key)._items.push(c);
+   });
+   rows.push(...legacy.values());
+   rows.sort((a,b)=>a._time.localeCompare(b._time) || String(a.publication_id||a.source_run||'').localeCompare(String(b.publication_id||b.source_run||'')));
+   const seen=new Set();
+   rows.forEach(r=>{
+     r.fresh=0;r.repeated=0;
+     r.auditItems=r._items.map(x=>{
+       const c=couponsById.get(couponId(x))||x;
+       const key=fingerprint(c);
+       const isNew=key?!seen.has(key):null;
+       if(key)seen.add(key);
+       if(isNew===true)r.fresh++;
+       if(isNew===false)r.repeated++;
+       return {...x,isNew};
+     });
+   });
+   const days=new Set(['2026-10-14','2026-10-16','2026-10-17','2026-10-18','2026-10-19',...rows.map(r=>date(r._time)).filter(validDate)]);
    box.className='';
-   box.innerHTML=html+'<p class="pub-note">Publikacje to zapisane rekordy PUB (również puste). „Pozycje” liczą kupony pokazane w publikacjach; „Nowe” to pierwsze wystąpienia kompozycji, „Ponowne” — kolejne wystąpienia. Nie są to daty rozegrania meczów. Dane pochodzą wyłącznie z locked_coupons.json.</p>';
+   box.innerHTML=[...days].sort((a,b)=>b.localeCompare(a)).map(day=>{
+     const group=rows.filter(r=>date(r._time)===day).reverse();
+     const nPUB=group.filter(r=>r._source==='PUB').length;
+     const nLegacy=group.length-nPUB;
+     const num=group.reduce((t,r)=>t+r.auditItems.length,0);
+     const news=group.reduce((t,r)=>t+r.fresh,0);
+     const repeats=group.reduce((t,r)=>t+r.repeated,0);
+     const runs=group.map((r,i)=>{
+       const isPub=r._source==='PUB';
+       const seq=group.slice(i+1).filter(x=>x._source==='PUB').length+1;
+       const tag=isPub?`PUB ${seq}`:'LOCK · brak PUB';
+       const source=isPub?`ID: ${esc(r.publication_id||'—')}`:`Archiwalny LOCK · source_run: ${esc(r.source_run||'—')} · dokładna liczba publikacji nieustalona`;
+       const items=r.auditItems.map(x=>detail(x,couponsById)).join('');
+       return `<details class="pub-run"><summary><span>${tag} · ${esc(r._time.slice(11,19))}</span><span class="pub-stats"><span>Kupony: ${r.auditItems.length}</span><span>Nowe: ${r.fresh}</span><span>Ponowne: ${r.repeated}</span></span></summary><div class="pub-list"><div class="pub-note">${source}</div>${items||'<div class="pub-empty">Publikacja bez kuponów.</div>'}</div></details>`;
+     }).join('');
+     return `<details class="pub-day" ${['2026-10-14','2026-10-16','2026-10-17','2026-10-18','2026-10-19'].includes(day)?'open':''}><summary><span>${esc(fmtDay(day))}</span><span class="pub-stats"><span>Publikacje PUB: <b>${nPUB}</b></span>${nLegacy?`<span>Archiwalne grupy LOCK: <b>${nLegacy}</b></span>`:''}<span>Pozycje: ${num}</span><span>Nowe: ${news}</span><span>Ponowne: ${repeats}</span></span></summary><div class="pub-list">${runs||'<div class="pub-empty">Brak danych historycznych dla tego dnia.</div>'}</div></details>`;
+   }).join('')+'<p class="pub-note">PUB = rzeczywisty rekord publikacji. LOCK bez PUB = kupony zachowane w historii bez kompletnego rejestru publikacji; grupowanie po pierwszej dacie publikacji i source_run jest odtworzeniem i nie dowodzi liczby oryginalnych PUB. Nie używamy dat rozgrywania meczów.</p>';
  }
- fetch('./locked_coupons.json?v='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(render).catch(e=>{box.className='error';box.textContent='Brak danych publikacji: '+e.message});
+ fetch('./locked_coupons.json?v='+Date.now(),{cache:'no-store'})
+  .then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()})
+  .then(render).catch(e=>{box.className='error';box.textContent='Błąd historii publikacji: '+e.message});
 })();
 </script>
 
