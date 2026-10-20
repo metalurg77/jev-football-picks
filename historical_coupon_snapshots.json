@@ -1,0 +1,35 @@
+{
+  "schema": "jev-history-snapshots-v1",
+  "days": {
+    "2026-10-14": {
+      "commit": "be0c2a6",
+      "generated_at": "2026-10-14T15:08:29",
+      "source": "20261014_150816_LEAGUE_TOP345_coupons.csv",
+      "counts": {
+        "TOP3": 1,
+        "TOP4": 1,
+        "TOP5": 0
+      }
+    },
+    "2026-10-15": {
+      "commit": "ef14d13",
+      "generated_at": "2026-10-15T08:06:36",
+      "source": "20261015_080624_LEAGUE_TOP345_coupons.csv",
+      "counts": {
+        "TOP3": 0,
+        "TOP4": 0,
+        "TOP5": 0
+      }
+    },
+    "2026-10-16": {
+      "commit": "e94ef8b",
+      "generated_at": "2026-10-16T10:51:20",
+      "source": "20261016_105104_LEAGUE_TOP345_coupons.csv",
+      "counts": {
+        "TOP3": 19,
+        "TOP4": 19,
+        "TOP5": 19
+      }
+    }
+  }
+}
