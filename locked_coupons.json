@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T08:00:50",
+  "generated_at": "2026-10-26T14:00:42",
   "summary": {
     "total": 292,
     "win": 8,
@@ -10,6 +10,20 @@
     "TOP5": 93
   },
   "publications": [
+    {
+      "publication_id": "PUB_20261026_140038",
+      "published_at": "2026-10-26T14:00:38",
+      "source_generated_at": "2026-10-26T14:00:36",
+      "coupon_count": 1,
+      "items": [
+        {
+          "league": "T1",
+          "variant": "TOP3",
+          "lock_id": "20261026_080023_T1_TOP3_bfd946fb",
+          "composition_fingerprint": "bfd946fbd45115aa54864444"
+        }
+      ]
+    },
     {
       "publication_id": "PUB_20261026_080049",
       "published_at": "2026-10-26T08:00:49",
@@ -2104,10 +2118,15 @@
           "publication_id": "PUB_20261026_080049",
           "published_at": "2026-10-26T08:00:49",
           "source_generated_at": "2026-10-26T08:00:47"
+        },
+        {
+          "publication_id": "PUB_20261026_140038",
+          "published_at": "2026-10-26T14:00:38",
+          "source_generated_at": "2026-10-26T14:00:36"
         }
       ],
       "first_published_at": "2026-10-26T08:00:49",
-      "last_published_at": "2026-10-26T08:00:49"
+      "last_published_at": "2026-10-26T14:00:38"
     },
     {
       "lock_id": "20261025_080030_G1_TOP3_66ef988a",
