@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-10-25T14:00:41",
+  "generated_at": "2026-10-26T08:00:50",
   "summary": {
-    "total": 291,
+    "total": 292,
     "win": 8,
     "loss": 152,
-    "unsettled": 131,
-    "TOP3": 97,
+    "unsettled": 132,
+    "TOP3": 98,
     "TOP4": 101,
     "TOP5": 93
   },
   "publications": [
+    {
+      "publication_id": "PUB_20261026_080049",
+      "published_at": "2026-10-26T08:00:49",
+      "source_generated_at": "2026-10-26T08:00:47",
+      "coupon_count": 1,
+      "items": [
+        {
+          "league": "T1",
+          "variant": "TOP3",
+          "lock_id": "20261026_080023_T1_TOP3_bfd946fb",
+          "composition_fingerprint": "bfd946fbd45115aa54864444"
+        }
+      ]
+    },
     {
       "publication_id": "PUB_20261025_140039",
       "published_at": "2026-10-25T14:00:39",
@@ -2038,6 +2052,63 @@
     }
   ],
   "coupons": [
+    {
+      "lock_id": "20261026_080023_T1_TOP3_bfd946fb",
+      "locked_at": "2026-10-26 08:00:32",
+      "source_run": "20261026_080023",
+      "league": "T1",
+      "variant": "TOP3",
+      "combined_odds": 5.602752000000001,
+      "status": "UNSETTLED",
+      "profit_1u": null,
+      "won_legs": 0,
+      "lost_legs": 0,
+      "legs_count": 3,
+      "legs": [
+        {
+          "leg_no": 1,
+          "match": "Galatasaray - Fenerbahce",
+          "match_date": "2026-10-26",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 2.13,
+          "model_probability": 0.97,
+          "edge": 0.5386706511022117,
+          "margin": 0.94
+        },
+        {
+          "leg_no": 2,
+          "match": "Rizespor - Trabzonspor",
+          "match_date": "2026-10-26",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 1.92,
+          "model_probability": 1.0,
+          "edge": 0.5208926439526127,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 3,
+          "match": "Besiktas - Buyuksehyr",
+          "match_date": "2026-10-26",
+          "market": "TOTAL_25",
+          "choice": "OVER_2_5",
+          "odds": 1.37,
+          "model_probability": 1.0,
+          "edge": 0.3215962441314554,
+          "margin": 1.0
+        }
+      ],
+      "publications": [
+        {
+          "publication_id": "PUB_20261026_080049",
+          "published_at": "2026-10-26T08:00:49",
+          "source_generated_at": "2026-10-26T08:00:47"
+        }
+      ],
+      "first_published_at": "2026-10-26T08:00:49",
+      "last_published_at": "2026-10-26T08:00:49"
+    },
     {
       "lock_id": "20261025_080030_G1_TOP3_66ef988a",
       "locked_at": "2026-10-25 08:00:34",
