@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-10-26T14:00:42",
+  "generated_at": "2026-10-27T08:00:26",
   "summary": {
     "total": 292,
-    "win": 8,
-    "loss": 152,
-    "unsettled": 132,
+    "win": 20,
+    "loss": 270,
+    "unsettled": 2,
     "TOP3": 98,
     "TOP4": 101,
     "TOP5": 93
   },
   "publications": [
+    {
+      "publication_id": "PUB_20261027_080024",
+      "published_at": "2026-10-27T08:00:24",
+      "source_generated_at": "2026-10-27T08:00:22",
+      "coupon_count": 1,
+      "items": [
+        {
+          "league": "T1",
+          "variant": "TOP3",
+          "lock_id": "20261026_080023_T1_TOP3_bfd946fb",
+          "composition_fingerprint": "bfd946fbd45115aa54864444"
+        }
+      ]
+    },
     {
       "publication_id": "PUB_20261026_140038",
       "published_at": "2026-10-26T14:00:38",
@@ -2073,10 +2087,10 @@
       "league": "T1",
       "variant": "TOP3",
       "combined_odds": 5.602752000000001,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 1,
       "legs_count": 3,
       "legs": [
         {
@@ -2123,10 +2137,15 @@
           "publication_id": "PUB_20261026_140038",
           "published_at": "2026-10-26T14:00:38",
           "source_generated_at": "2026-10-26T14:00:36"
+        },
+        {
+          "publication_id": "PUB_20261027_080024",
+          "published_at": "2026-10-27T08:00:24",
+          "source_generated_at": "2026-10-27T08:00:22"
         }
       ],
       "first_published_at": "2026-10-26T08:00:49",
-      "last_published_at": "2026-10-26T14:00:38"
+      "last_published_at": "2026-10-27T08:00:24"
     },
     {
       "lock_id": "20261025_080030_G1_TOP3_66ef988a",
@@ -2135,10 +2154,10 @@
       "league": "G1",
       "variant": "TOP3",
       "combined_odds": 4.613760000000001,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 1,
       "legs_count": 3,
       "legs": [
         {
@@ -2197,10 +2216,10 @@
       "league": "SP1",
       "variant": "TOP3",
       "combined_odds": 7.399679999999999,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 1,
       "legs_count": 3,
       "legs": [
         {
@@ -2259,10 +2278,10 @@
       "league": "SP1",
       "variant": "TOP4",
       "combined_odds": 11.839488,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 2,
       "legs_count": 4,
       "legs": [
         {
@@ -2332,9 +2351,9 @@
       "league": "B1",
       "variant": "TOP3",
       "combined_odds": 4.37437,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
+      "status": "WIN",
+      "profit_1u": 3.37437,
+      "won_legs": 3,
       "lost_legs": 0,
       "legs_count": 3,
       "legs": [
@@ -2389,10 +2408,10 @@
       "league": "F1",
       "variant": "TOP3",
       "combined_odds": 8.8088,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 2,
       "legs_count": 3,
       "legs": [
         {
@@ -2446,10 +2465,10 @@
       "league": "F1",
       "variant": "TOP4",
       "combined_odds": 14.005992,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 3,
       "legs_count": 4,
       "legs": [
         {
@@ -2514,10 +2533,10 @@
       "league": "F1",
       "variant": "TOP5",
       "combined_odds": 21.709287600000003,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 3,
       "legs_count": 5,
       "legs": [
         {
@@ -2593,10 +2612,10 @@
       "league": "P1",
       "variant": "TOP3",
       "combined_odds": 7.01748,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 1,
       "legs_count": 3,
       "legs": [
         {
@@ -2650,10 +2669,10 @@
       "league": "P1",
       "variant": "TOP4",
       "combined_odds": 12.9121632,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 2,
       "legs_count": 4,
       "legs": [
         {
@@ -2718,10 +2737,10 @@
       "league": "P1",
       "variant": "TOP5",
       "combined_odds": 18.593515008,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 3,
+      "lost_legs": 2,
       "legs_count": 5,
       "legs": [
         {
@@ -2797,10 +2816,10 @@
       "league": "SP2",
       "variant": "TOP3",
       "combined_odds": 6.049464,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 2,
       "legs_count": 3,
       "legs": [
         {
@@ -2854,10 +2873,10 @@
       "league": "SP2",
       "variant": "TOP4",
       "combined_odds": 9.981615599999998,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 2,
       "legs_count": 4,
       "legs": [
         {
@@ -2922,9 +2941,9 @@
       "league": "T1",
       "variant": "TOP3",
       "combined_odds": 8.669952,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
+      "status": "WIN",
+      "profit_1u": 7.669952,
+      "won_legs": 3,
       "lost_legs": 0,
       "legs_count": 3,
       "legs": [
@@ -2979,10 +2998,10 @@
       "league": "T1",
       "variant": "TOP4",
       "combined_odds": 11.877834240000002,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 3,
+      "lost_legs": 1,
       "legs_count": 4,
       "legs": [
         {
@@ -3047,10 +3066,10 @@
       "league": "F1",
       "variant": "TOP3",
       "combined_odds": 10.268544,
-      "status": "UNSETTLED",
-      "profit_1u": null,
+      "status": "LOSS",
+      "profit_1u": -1.0,
       "won_legs": 0,
-      "lost_legs": 0,
+      "lost_legs": 3,
       "legs_count": 3,
       "legs": [
         {
@@ -3114,10 +3133,10 @@
       "league": "F1",
       "variant": "TOP4",
       "combined_odds": 17.969952,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 3,
       "legs_count": 4,
       "legs": [
         {
@@ -3187,9 +3206,9 @@
       "league": "B1",
       "variant": "TOP3",
       "combined_odds": 5.689969999999999,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
+      "status": "WIN",
+      "profit_1u": 4.689969999999999,
+      "won_legs": 3,
       "lost_legs": 0,
       "legs_count": 3,
       "legs": [
@@ -3244,9 +3263,9 @@
       "league": "B1",
       "variant": "TOP4",
       "combined_odds": 7.567660099999999,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
+      "status": "WIN",
+      "profit_1u": 6.567660099999999,
+      "won_legs": 4,
       "lost_legs": 0,
       "legs_count": 4,
       "legs": [
@@ -3312,10 +3331,10 @@
       "league": "D2",
       "variant": "TOP3",
       "combined_odds": 10.744578,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 1,
       "legs_count": 3,
       "legs": [
         {
@@ -3369,10 +3388,10 @@
       "league": "E0",
       "variant": "TOP3",
       "combined_odds": 11.2518,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 2,
       "legs_count": 3,
       "legs": [
         {
@@ -3426,10 +3445,10 @@
       "league": "E0",
       "variant": "TOP4",
       "combined_odds": 19.015542,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 3,
       "legs_count": 4,
       "legs": [
         {
@@ -3494,10 +3513,10 @@
       "league": "E0",
       "variant": "TOP5",
       "combined_odds": 39.74248278,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 3,
       "legs_count": 5,
       "legs": [
         {
@@ -3573,10 +3592,10 @@
       "league": "F1",
       "variant": "TOP5",
       "combined_odds": 28.57222368,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 4,
       "legs_count": 5,
       "legs": [
         {
@@ -3652,10 +3671,10 @@
       "league": "G1",
       "variant": "TOP4",
       "combined_odds": 5.121273600000001,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 3,
+      "lost_legs": 1,
       "legs_count": 4,
       "legs": [
         {
@@ -3720,10 +3739,10 @@
       "league": "I1",
       "variant": "TOP3",
       "combined_odds": 6.889584000000001,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 2,
       "legs_count": 3,
       "legs": [
         {
@@ -3777,10 +3796,10 @@
       "league": "I1",
       "variant": "TOP4",
       "combined_odds": 9.6454176,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 2,
       "legs_count": 4,
       "legs": [
         {
@@ -3845,10 +3864,10 @@
       "league": "I1",
       "variant": "TOP5",
       "combined_odds": 13.310676288,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 3,
+      "lost_legs": 2,
       "legs_count": 5,
       "legs": [
         {
@@ -3924,10 +3943,10 @@
       "league": "N1",
       "variant": "TOP3",
       "combined_odds": 9.98568,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 2,
       "legs_count": 3,
       "legs": [
         {
@@ -3981,10 +4000,10 @@
       "league": "N1",
       "variant": "TOP4",
       "combined_odds": 14.778806399999995,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 2,
       "legs_count": 4,
       "legs": [
         {
@@ -4049,10 +4068,10 @@
       "league": "N1",
       "variant": "TOP5",
       "combined_odds": 20.838117023999995,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 3,
+      "lost_legs": 2,
       "legs_count": 5,
       "legs": [
         {
@@ -4128,10 +4147,10 @@
       "league": "P1",
       "variant": "TOP3",
       "combined_odds": 7.01748,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 1,
       "legs_count": 3,
       "legs": [
         {
@@ -4185,10 +4204,10 @@
       "league": "P1",
       "variant": "TOP4",
       "combined_odds": 12.9121632,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 2,
       "legs_count": 4,
       "legs": [
         {
@@ -4253,10 +4272,10 @@
       "league": "P1",
       "variant": "TOP5",
       "combined_odds": 18.593515008,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 3,
+      "lost_legs": 2,
       "legs_count": 5,
       "legs": [
         {
@@ -4332,10 +4351,10 @@
       "league": "SP1",
       "variant": "TOP5",
       "combined_odds": 18.9431808,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 3,
       "legs_count": 5,
       "legs": [
         {
@@ -4411,10 +4430,10 @@
       "league": "SP2",
       "variant": "TOP3",
       "combined_odds": 6.573984,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 2,
       "legs_count": 3,
       "legs": [
         {
@@ -4468,10 +4487,10 @@
       "league": "SP2",
       "variant": "TOP4",
       "combined_odds": 11.37299232,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 3,
       "legs_count": 4,
       "legs": [
         {
@@ -4536,10 +4555,10 @@
       "league": "SP2",
       "variant": "TOP5",
       "combined_odds": 18.765437328,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 3,
       "legs_count": 5,
       "legs": [
         {
@@ -4615,9 +4634,9 @@
       "league": "T1",
       "variant": "TOP3",
       "combined_odds": 7.483968,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
+      "status": "WIN",
+      "profit_1u": 6.483968,
+      "won_legs": 3,
       "lost_legs": 0,
       "legs_count": 3,
       "legs": [
@@ -4672,10 +4691,10 @@
       "league": "T1",
       "variant": "TOP4",
       "combined_odds": 12.12402816,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 3,
+      "lost_legs": 1,
       "legs_count": 4,
       "legs": [
         {
@@ -4740,10 +4759,10 @@
       "league": "T1",
       "variant": "TOP5",
       "combined_odds": 16.609918579200002,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 3,
+      "lost_legs": 2,
       "legs_count": 5,
       "legs": [
         {
@@ -4819,10 +4838,10 @@
       "league": "B1",
       "variant": "TOP3",
       "combined_odds": 10.703049999999998,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 2,
       "legs_count": 3,
       "legs": [
         {
@@ -4881,10 +4900,10 @@
       "league": "B1",
       "variant": "TOP4",
       "combined_odds": 20.2287645,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 3,
       "legs_count": 4,
       "legs": [
         {
@@ -4954,10 +4973,10 @@
       "league": "B1",
       "variant": "TOP5",
       "combined_odds": 35.80491316499999,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 4,
       "legs_count": 5,
       "legs": [
         {
@@ -5038,10 +5057,10 @@
       "league": "D1",
       "variant": "TOP3",
       "combined_odds": 8.558207999999999,
-      "status": "UNSETTLED",
-      "profit_1u": null,
+      "status": "LOSS",
+      "profit_1u": -1.0,
       "won_legs": 0,
-      "lost_legs": 0,
+      "lost_legs": 3,
       "legs_count": 3,
       "legs": [
         {
@@ -5100,10 +5119,10 @@
       "league": "D1",
       "variant": "TOP4",
       "combined_odds": 14.720117759999995,
-      "status": "UNSETTLED",
-      "profit_1u": null,
+      "status": "LOSS",
+      "profit_1u": -1.0,
       "won_legs": 0,
-      "lost_legs": 0,
+      "lost_legs": 4,
       "legs_count": 4,
       "legs": [
         {
@@ -5173,10 +5192,10 @@
       "league": "D1",
       "variant": "TOP5",
       "combined_odds": 32.6786614272,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 4,
       "legs_count": 5,
       "legs": [
         {
@@ -5257,10 +5276,10 @@
       "league": "D2",
       "variant": "TOP3",
       "combined_odds": 9.437805,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 2,
       "legs_count": 3,
       "legs": [
         {
@@ -5319,10 +5338,10 @@
       "league": "D2",
       "variant": "TOP4",
       "combined_odds": 20.9519271,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 2,
       "legs_count": 4,
       "legs": [
         {
@@ -5392,10 +5411,10 @@
       "league": "E0",
       "variant": "TOP3",
       "combined_odds": 11.948339999999998,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 1,
       "legs_count": 3,
       "legs": [
         {
@@ -5454,10 +5473,10 @@
       "league": "E2",
       "variant": "TOP3",
       "combined_odds": 13.310388,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 2,
       "legs_count": 3,
       "legs": [
         {
@@ -5516,10 +5535,10 @@
       "league": "E2",
       "variant": "TOP4",
       "combined_odds": 27.15319152,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 3,
       "legs_count": 4,
       "legs": [
         {
@@ -5589,10 +5608,10 @@
       "league": "E3",
       "variant": "TOP3",
       "combined_odds": 12.646368,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 1,
       "legs_count": 3,
       "legs": [
         {
@@ -5651,10 +5670,10 @@
       "league": "E3",
       "variant": "TOP4",
       "combined_odds": 24.91334496,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 3,
+      "lost_legs": 1,
       "legs_count": 4,
       "legs": [
         {
@@ -5724,10 +5743,10 @@
       "league": "G1",
       "variant": "TOP3",
       "combined_odds": 9.1136,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 2,
       "legs_count": 3,
       "legs": [
         {
@@ -5786,10 +5805,10 @@
       "league": "G1",
       "variant": "TOP4",
       "combined_odds": 14.764032,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 2,
       "legs_count": 4,
       "legs": [
         {
@@ -5859,10 +5878,10 @@
       "league": "G1",
       "variant": "TOP5",
       "combined_odds": 23.6224512,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 3,
       "legs_count": 5,
       "legs": [
         {
@@ -5943,10 +5962,10 @@
       "league": "I1",
       "variant": "TOP3",
       "combined_odds": 9.554064,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 1,
       "legs_count": 3,
       "legs": [
         {
@@ -6005,10 +6024,10 @@
       "league": "I1",
       "variant": "TOP4",
       "combined_odds": 17.48393712,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 2,
       "legs_count": 4,
       "legs": [
         {
@@ -6078,10 +6097,10 @@
       "league": "I1",
       "variant": "TOP5",
       "combined_odds": 31.6459261872,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 3,
       "legs_count": 5,
       "legs": [
         {
@@ -6162,10 +6181,10 @@
       "league": "N1",
       "variant": "TOP3",
       "combined_odds": 10.03536,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 1,
       "legs_count": 3,
       "legs": [
         {
@@ -6224,10 +6243,10 @@
       "league": "P1",
       "variant": "TOP3",
       "combined_odds": 7.836792,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 2,
       "legs_count": 3,
       "legs": [
         {
@@ -6286,9 +6305,9 @@
       "league": "SC0",
       "variant": "TOP3",
       "combined_odds": 8.478252000000001,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
+      "status": "WIN",
+      "profit_1u": 7.478252000000001,
+      "won_legs": 3,
       "lost_legs": 0,
       "legs_count": 3,
       "legs": [
@@ -6348,9 +6367,9 @@
       "league": "SC0",
       "variant": "TOP4",
       "combined_odds": 13.9891158,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
+      "status": "WIN",
+      "profit_1u": 12.9891158,
+      "won_legs": 4,
       "lost_legs": 0,
       "legs_count": 4,
       "legs": [
@@ -6421,9 +6440,9 @@
       "league": "SC0",
       "variant": "TOP5",
       "combined_odds": 22.522476438,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
+      "status": "WIN",
+      "profit_1u": 21.522476438,
+      "won_legs": 5,
       "lost_legs": 0,
       "legs_count": 5,
       "legs": [
@@ -6505,10 +6524,10 @@
       "league": "SC2",
       "variant": "TOP3",
       "combined_odds": 5.995444,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 1,
       "legs_count": 3,
       "legs": [
         {
@@ -6567,10 +6586,10 @@
       "league": "SC2",
       "variant": "TOP4",
       "combined_odds": 9.77257372,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 1,
       "legs_count": 4,
       "legs": [
         {
@@ -6640,10 +6659,10 @@
       "league": "SC2",
       "variant": "TOP5",
       "combined_odds": 13.2907002592,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 3,
+      "lost_legs": 1,
       "legs_count": 5,
       "legs": [
         {
@@ -6724,10 +6743,10 @@
       "league": "E0",
       "variant": "TOP4",
       "combined_odds": 20.1926946,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 2,
       "legs_count": 4,
       "legs": [
         {
@@ -6792,10 +6811,10 @@
       "league": "E0",
       "variant": "TOP5",
       "combined_odds": 34.125653873999994,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 3,
       "legs_count": 5,
       "legs": [
         {
@@ -6871,10 +6890,10 @@
       "league": "E1",
       "variant": "TOP3",
       "combined_odds": 12.810111999999998,
-      "status": "UNSETTLED",
-      "profit_1u": null,
+      "status": "LOSS",
+      "profit_1u": -1.0,
       "won_legs": 0,
-      "lost_legs": 0,
+      "lost_legs": 3,
       "legs_count": 3,
       "legs": [
         {
@@ -6928,10 +6947,10 @@
       "league": "E1",
       "variant": "TOP4",
       "combined_odds": 24.9797184,
-      "status": "UNSETTLED",
-      "profit_1u": null,
+      "status": "LOSS",
+      "profit_1u": -1.0,
       "won_legs": 0,
-      "lost_legs": 0,
+      "lost_legs": 4,
       "legs_count": 4,
       "legs": [
         {
@@ -6996,10 +7015,10 @@
       "league": "E1",
       "variant": "TOP5",
       "combined_odds": 65.446862208,
-      "status": "UNSETTLED",
-      "profit_1u": null,
+      "status": "LOSS",
+      "profit_1u": -1.0,
       "won_legs": 0,
-      "lost_legs": 0,
+      "lost_legs": 5,
       "legs_count": 5,
       "legs": [
         {
@@ -7075,10 +7094,10 @@
       "league": "E2",
       "variant": "TOP5",
       "combined_odds": 54.5779149552,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 4,
       "legs_count": 5,
       "legs": [
         {
@@ -7154,10 +7173,10 @@
       "league": "E3",
       "variant": "TOP5",
       "combined_odds": 43.3492202304,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 3,
+      "lost_legs": 2,
       "legs_count": 5,
       "legs": [
         {
@@ -7233,10 +7252,10 @@
       "league": "EC",
       "variant": "TOP3",
       "combined_odds": 9.14474,
-      "status": "UNSETTLED",
-      "profit_1u": null,
+      "status": "LOSS",
+      "profit_1u": -1.0,
       "won_legs": 0,
-      "lost_legs": 0,
+      "lost_legs": 2,
       "legs_count": 3,
       "legs": [
         {
@@ -7290,10 +7309,10 @@
       "league": "EC",
       "variant": "TOP4",
       "combined_odds": 15.088821,
-      "status": "UNSETTLED",
-      "profit_1u": null,
+      "status": "LOSS",
+      "profit_1u": -1.0,
       "won_legs": 0,
-      "lost_legs": 0,
+      "lost_legs": 3,
       "legs_count": 4,
       "legs": [
         {
@@ -7358,10 +7377,10 @@
       "league": "EC",
       "variant": "TOP5",
       "combined_odds": 23.38767255,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 3,
       "legs_count": 5,
       "legs": [
         {
@@ -7437,10 +7456,10 @@
       "league": "F1",
       "variant": "TOP4",
       "combined_odds": 24.54182016,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 3,
       "legs_count": 4,
       "legs": [
         {
@@ -7505,10 +7524,10 @@
       "league": "F1",
       "variant": "TOP5",
       "combined_odds": 42.94818528,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 3,
       "legs_count": 5,
       "legs": [
         {
@@ -7584,10 +7603,10 @@
       "league": "F2",
       "variant": "TOP3",
       "combined_odds": 6.831301999999998,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 1,
       "legs_count": 3,
       "legs": [
         {
@@ -7641,10 +7660,10 @@
       "league": "I2",
       "variant": "TOP3",
       "combined_odds": 7.775443,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 1,
       "legs_count": 3,
       "legs": [
         {
@@ -7698,10 +7717,10 @@
       "league": "I2",
       "variant": "TOP4",
       "combined_odds": 13.60702525,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 3,
+      "lost_legs": 1,
       "legs_count": 4,
       "legs": [
         {
@@ -7766,10 +7785,10 @@
       "league": "N1",
       "variant": "TOP4",
       "combined_odds": 24.988046400000005,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 3,
+      "lost_legs": 1,
       "legs_count": 4,
       "legs": [
         {
@@ -7834,10 +7853,10 @@
       "league": "N1",
       "variant": "TOP5",
       "combined_odds": 40.73051563200001,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 3,
+      "lost_legs": 2,
       "legs_count": 5,
       "legs": [
         {
@@ -7913,10 +7932,10 @@
       "league": "P1",
       "variant": "TOP4",
       "combined_odds": 13.714386,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 3,
       "legs_count": 4,
       "legs": [
         {
@@ -7981,10 +8000,10 @@
       "league": "P1",
       "variant": "TOP5",
       "combined_odds": 26.46876498,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 4,
       "legs_count": 5,
       "legs": [
         {
@@ -8062,7 +8081,7 @@
       "combined_odds": 5.423544,
       "status": "UNSETTLED",
       "profit_1u": null,
-      "won_legs": 0,
+      "won_legs": 2,
       "lost_legs": 0,
       "legs_count": 3,
       "legs": [
@@ -8119,7 +8138,7 @@
       "combined_odds": 7.647197039999999,
       "status": "UNSETTLED",
       "profit_1u": null,
-      "won_legs": 0,
+      "won_legs": 3,
       "lost_legs": 0,
       "legs_count": 4,
       "legs": [
@@ -8185,10 +8204,10 @@
       "league": "SC1",
       "variant": "TOP5",
       "combined_odds": 12.5414031456,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 3,
+      "lost_legs": 1,
       "legs_count": 5,
       "legs": [
         {
@@ -8264,10 +8283,10 @@
       "league": "SP1",
       "variant": "TOP3",
       "combined_odds": 9.7008,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 1,
       "legs_count": 3,
       "legs": [
         {
@@ -8321,10 +8340,10 @@
       "league": "SP1",
       "variant": "TOP4",
       "combined_odds": 22.990896,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 3,
+      "lost_legs": 1,
       "legs_count": 4,
       "legs": [
         {
@@ -8389,10 +8408,10 @@
       "league": "SP1",
       "variant": "TOP5",
       "combined_odds": 37.70506944,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 4,
+      "lost_legs": 1,
       "legs_count": 5,
       "legs": [
         {
@@ -8468,10 +8487,10 @@
       "league": "SP2",
       "variant": "TOP3",
       "combined_odds": 7.881711999999999,
-      "status": "UNSETTLED",
-      "profit_1u": null,
+      "status": "LOSS",
+      "profit_1u": -1.0,
       "won_legs": 0,
-      "lost_legs": 0,
+      "lost_legs": 3,
       "legs_count": 3,
       "legs": [
         {
@@ -8525,10 +8544,10 @@
       "league": "SP2",
       "variant": "TOP4",
       "combined_odds": 15.448155519999998,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 3,
       "legs_count": 4,
       "legs": [
         {
@@ -8593,10 +8612,10 @@
       "league": "SP2",
       "variant": "TOP5",
       "combined_odds": 28.7335692672,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 3,
       "legs_count": 5,
       "legs": [
         {
@@ -8672,9 +8691,9 @@
       "league": "T1",
       "variant": "TOP3",
       "combined_odds": 8.220095999999998,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
+      "status": "WIN",
+      "profit_1u": 7.220095999999998,
+      "won_legs": 3,
       "lost_legs": 0,
       "legs_count": 3,
       "legs": [
@@ -8729,9 +8748,9 @@
       "league": "T1",
       "variant": "TOP4",
       "combined_odds": 15.042775679999997,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
+      "status": "WIN",
+      "profit_1u": 14.042775679999997,
+      "won_legs": 4,
       "lost_legs": 0,
       "legs_count": 4,
       "legs": [
@@ -8797,10 +8816,10 @@
       "league": "T1",
       "variant": "TOP5",
       "combined_odds": 24.369296601599995,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 4,
+      "lost_legs": 1,
       "legs_count": 5,
       "legs": [
         {
@@ -8876,10 +8895,10 @@
       "league": "D2",
       "variant": "TOP5",
       "combined_odds": 36.875391696,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 3,
+      "lost_legs": 2,
       "legs_count": 5,
       "legs": [
         {
@@ -8955,10 +8974,10 @@
       "league": "E0",
       "variant": "TOP4",
       "combined_odds": 25.091514,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 2,
       "legs_count": 4,
       "legs": [
         {
@@ -9023,10 +9042,10 @@
       "league": "E0",
       "variant": "TOP5",
       "combined_odds": 42.40465866,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 3,
       "legs_count": 5,
       "legs": [
         {
@@ -9102,10 +9121,10 @@
       "league": "E1",
       "variant": "TOP3",
       "combined_odds": 13.583136,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 2,
       "legs_count": 3,
       "legs": [
         {
@@ -9159,10 +9178,10 @@
       "league": "E1",
       "variant": "TOP4",
       "combined_odds": 31.51287552,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 3,
       "legs_count": 4,
       "legs": [
         {
@@ -9227,10 +9246,10 @@
       "league": "E1",
       "variant": "TOP5",
       "combined_odds": 61.450107264,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 4,
       "legs_count": 5,
       "legs": [
         {
@@ -9306,10 +9325,10 @@
       "league": "E2",
       "variant": "TOP5",
       "combined_odds": 68.69757454559999,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 4,
       "legs_count": 5,
       "legs": [
         {
@@ -9385,10 +9404,10 @@
       "league": "E3",
       "variant": "TOP5",
       "combined_odds": 50.0758233696,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 4,
+      "lost_legs": 1,
       "legs_count": 5,
       "legs": [
         {
@@ -9464,10 +9483,10 @@
       "league": "EC",
       "variant": "TOP3",
       "combined_odds": 9.7482,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 1,
       "legs_count": 3,
       "legs": [
         {
@@ -9521,10 +9540,10 @@
       "league": "EC",
       "variant": "TOP4",
       "combined_odds": 19.203954,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 2,
       "legs_count": 4,
       "legs": [
         {
@@ -9589,10 +9608,10 @@
       "league": "EC",
       "variant": "TOP5",
       "combined_odds": 31.6865241,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 2,
       "legs_count": 5,
       "legs": [
         {
@@ -9668,10 +9687,10 @@
       "league": "F1",
       "variant": "TOP5",
       "combined_odds": 42.94818528,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 3,
       "legs_count": 5,
       "legs": [
         {
@@ -9747,10 +9766,10 @@
       "league": "F2",
       "variant": "TOP3",
       "combined_odds": 10.596235999999998,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 2,
       "legs_count": 3,
       "legs": [
         {
@@ -9804,10 +9823,10 @@
       "league": "F2",
       "variant": "TOP4",
       "combined_odds": 17.695714119999995,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 2,
       "legs_count": 4,
       "legs": [
         {
@@ -9872,10 +9891,10 @@
       "league": "I2",
       "variant": "TOP3",
       "combined_odds": 11.019502,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 2,
       "legs_count": 3,
       "legs": [
         {
@@ -9929,10 +9948,10 @@
       "league": "I2",
       "variant": "TOP4",
       "combined_odds": 24.46329444000001,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 3,
       "legs_count": 4,
       "legs": [
         {
@@ -9997,10 +10016,10 @@
       "league": "I2",
       "variant": "TOP5",
       "combined_odds": 44.52319588080001,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 4,
       "legs_count": 5,
       "legs": [
         {
@@ -10076,10 +10095,10 @@
       "league": "N1",
       "variant": "TOP4",
       "combined_odds": 16.3576368,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 2,
       "legs_count": 4,
       "legs": [
         {
@@ -10144,10 +10163,10 @@
       "league": "N1",
       "variant": "TOP5",
       "combined_odds": 40.73051563200001,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 3,
+      "lost_legs": 2,
       "legs_count": 5,
       "legs": [
         {
@@ -10223,10 +10242,10 @@
       "league": "P1",
       "variant": "TOP4",
       "combined_odds": 15.12500856,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 3,
       "legs_count": 4,
       "legs": [
         {
@@ -10291,10 +10310,10 @@
       "league": "P1",
       "variant": "TOP5",
       "combined_odds": 26.46876498,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 4,
       "legs_count": 5,
       "legs": [
         {
@@ -10370,10 +10389,10 @@
       "league": "SC1",
       "variant": "TOP3",
       "combined_odds": 7.586505,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 1,
       "legs_count": 3,
       "legs": [
         {
@@ -10427,10 +10446,10 @@
       "league": "SC1",
       "variant": "TOP4",
       "combined_odds": 10.69697205,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 1,
       "legs_count": 4,
       "legs": [
         {
@@ -10495,10 +10514,10 @@
       "league": "SC1",
       "variant": "TOP5",
       "combined_odds": 17.543034161999998,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 2,
       "legs_count": 5,
       "legs": [
         {
@@ -10574,10 +10593,10 @@
       "league": "SP1",
       "variant": "TOP3",
       "combined_odds": 11.974425000000002,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 1,
       "legs_count": 3,
       "legs": [
         {
@@ -10631,10 +10650,10 @@
       "league": "SP1",
       "variant": "TOP4",
       "combined_odds": 22.990896000000003,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 3,
+      "lost_legs": 1,
       "legs_count": 4,
       "legs": [
         {
@@ -10699,10 +10718,10 @@
       "league": "SP1",
       "variant": "TOP5",
       "combined_odds": 40.69388592000001,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 3,
+      "lost_legs": 2,
       "legs_count": 5,
       "legs": [
         {
@@ -10778,10 +10797,10 @@
       "league": "SP2",
       "variant": "TOP3",
       "combined_odds": 8.887887999999998,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 2,
       "legs_count": 3,
       "legs": [
         {
@@ -10835,10 +10854,10 @@
       "league": "SP2",
       "variant": "TOP4",
       "combined_odds": 16.709229439999998,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 1,
+      "lost_legs": 3,
       "legs_count": 4,
       "legs": [
         {
@@ -10903,10 +10922,10 @@
       "league": "SP2",
       "variant": "TOP5",
       "combined_odds": 31.0791667584,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 2,
+      "lost_legs": 3,
       "legs_count": 5,
       "legs": [
         {
@@ -10982,9 +11001,9 @@
       "league": "T1",
       "variant": "TOP3",
       "combined_odds": 8.220095999999998,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
+      "status": "WIN",
+      "profit_1u": 7.220095999999998,
+      "won_legs": 3,
       "lost_legs": 0,
       "legs_count": 3,
       "legs": [
@@ -11039,9 +11058,9 @@
       "league": "T1",
       "variant": "TOP4",
       "combined_odds": 15.042775679999997,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
+      "status": "WIN",
+      "profit_1u": 14.042775679999997,
+      "won_legs": 4,
       "lost_legs": 0,
       "legs_count": 4,
       "legs": [
@@ -11107,10 +11126,10 @@
       "league": "T1",
       "variant": "TOP5",
       "combined_odds": 24.369296601599995,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
+      "status": "LOSS",
+      "profit_1u": -1.0,
+      "won_legs": 4,
+      "lost_legs": 1,
       "legs_count": 5,
       "legs": [
         {
