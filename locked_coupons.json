@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T08:00:42",
+  "generated_at": "2026-10-28T14:00:25",
   "summary": {
     "total": 315,
     "win": 20,
@@ -10,6 +10,62 @@
     "TOP5": 100
   },
   "publications": [
+    {
+      "publication_id": "PUB_20261028_140023",
+      "published_at": "2026-10-28T14:00:23",
+      "source_generated_at": "2026-10-28T14:00:21",
+      "coupon_count": 8,
+      "items": [
+        {
+          "league": "EC",
+          "variant": "TOP3",
+          "lock_id": "20261028_080016_EC_TOP3_26349509",
+          "composition_fingerprint": "26349509963bea0e3340f788"
+        },
+        {
+          "league": "I1",
+          "variant": "TOP3",
+          "lock_id": "20261028_080016_I1_TOP3_0801b62d",
+          "composition_fingerprint": "0801b62dbde96d0ecb2baa83"
+        },
+        {
+          "league": "I1",
+          "variant": "TOP4",
+          "lock_id": "20261028_080016_I1_TOP4_087e5cda",
+          "composition_fingerprint": "087e5cda76d7911bc0e02de6"
+        },
+        {
+          "league": "I1",
+          "variant": "TOP5",
+          "lock_id": "20261028_080016_I1_TOP5_9e7a6269",
+          "composition_fingerprint": "9e7a626972ae5d2de18473e0"
+        },
+        {
+          "league": "I2",
+          "variant": "TOP3",
+          "lock_id": "20261028_080016_I2_TOP3_4063dd28",
+          "composition_fingerprint": "4063dd2875baa7b9a2f9410f"
+        },
+        {
+          "league": "SC0",
+          "variant": "TOP3",
+          "lock_id": "20261028_080016_SC0_TOP3_a80a592a",
+          "composition_fingerprint": "a80a592a2690a71741f43560"
+        },
+        {
+          "league": "SC0",
+          "variant": "TOP4",
+          "lock_id": "20261028_080016_SC0_TOP4_27cea6be",
+          "composition_fingerprint": "27cea6be755ace198c5abb2c"
+        },
+        {
+          "league": "SC0",
+          "variant": "TOP5",
+          "lock_id": "20261028_080016_SC0_TOP5_1d2fa01f",
+          "composition_fingerprint": "1d2fa01f55197a8aef736d46"
+        }
+      ]
+    },
     {
       "publication_id": "PUB_20261028_080040",
       "published_at": "2026-10-28T08:00:40",
@@ -2286,10 +2342,15 @@
           "publication_id": "PUB_20261028_080040",
           "published_at": "2026-10-28T08:00:40",
           "source_generated_at": "2026-10-28T08:00:38"
+        },
+        {
+          "publication_id": "PUB_20261028_140023",
+          "published_at": "2026-10-28T14:00:23",
+          "source_generated_at": "2026-10-28T14:00:21"
         }
       ],
       "first_published_at": "2026-10-28T08:00:40",
-      "last_published_at": "2026-10-28T08:00:40"
+      "last_published_at": "2026-10-28T14:00:23"
     },
     {
       "lock_id": "20261028_080016_I1_TOP3_0801b62d",
@@ -2343,10 +2404,15 @@
           "publication_id": "PUB_20261028_080040",
           "published_at": "2026-10-28T08:00:40",
           "source_generated_at": "2026-10-28T08:00:38"
+        },
+        {
+          "publication_id": "PUB_20261028_140023",
+          "published_at": "2026-10-28T14:00:23",
+          "source_generated_at": "2026-10-28T14:00:21"
         }
       ],
       "first_published_at": "2026-10-28T08:00:40",
-      "last_published_at": "2026-10-28T08:00:40"
+      "last_published_at": "2026-10-28T14:00:23"
     },
     {
       "lock_id": "20261028_080016_I1_TOP4_087e5cda",
@@ -2411,10 +2477,15 @@
           "publication_id": "PUB_20261028_080040",
           "published_at": "2026-10-28T08:00:40",
           "source_generated_at": "2026-10-28T08:00:38"
+        },
+        {
+          "publication_id": "PUB_20261028_140023",
+          "published_at": "2026-10-28T14:00:23",
+          "source_generated_at": "2026-10-28T14:00:21"
         }
       ],
       "first_published_at": "2026-10-28T08:00:40",
-      "last_published_at": "2026-10-28T08:00:40"
+      "last_published_at": "2026-10-28T14:00:23"
     },
     {
       "lock_id": "20261028_080016_I1_TOP5_9e7a6269",
@@ -2490,10 +2561,15 @@
           "publication_id": "PUB_20261028_080040",
           "published_at": "2026-10-28T08:00:40",
           "source_generated_at": "2026-10-28T08:00:38"
+        },
+        {
+          "publication_id": "PUB_20261028_140023",
+          "published_at": "2026-10-28T14:00:23",
+          "source_generated_at": "2026-10-28T14:00:21"
         }
       ],
       "first_published_at": "2026-10-28T08:00:40",
-      "last_published_at": "2026-10-28T08:00:40"
+      "last_published_at": "2026-10-28T14:00:23"
     },
     {
       "lock_id": "20261028_080016_I2_TOP3_4063dd28",
@@ -2547,10 +2623,15 @@
           "publication_id": "PUB_20261028_080040",
           "published_at": "2026-10-28T08:00:40",
           "source_generated_at": "2026-10-28T08:00:38"
+        },
+        {
+          "publication_id": "PUB_20261028_140023",
+          "published_at": "2026-10-28T14:00:23",
+          "source_generated_at": "2026-10-28T14:00:21"
         }
       ],
       "first_published_at": "2026-10-28T08:00:40",
-      "last_published_at": "2026-10-28T08:00:40"
+      "last_published_at": "2026-10-28T14:00:23"
     },
     {
       "lock_id": "20261028_080016_SC0_TOP3_a80a592a",
@@ -2604,10 +2685,15 @@
           "publication_id": "PUB_20261028_080040",
           "published_at": "2026-10-28T08:00:40",
           "source_generated_at": "2026-10-28T08:00:38"
+        },
+        {
+          "publication_id": "PUB_20261028_140023",
+          "published_at": "2026-10-28T14:00:23",
+          "source_generated_at": "2026-10-28T14:00:21"
         }
       ],
       "first_published_at": "2026-10-28T08:00:40",
-      "last_published_at": "2026-10-28T08:00:40"
+      "last_published_at": "2026-10-28T14:00:23"
     },
     {
       "lock_id": "20261028_080016_SC0_TOP4_27cea6be",
@@ -2672,10 +2758,15 @@
           "publication_id": "PUB_20261028_080040",
           "published_at": "2026-10-28T08:00:40",
           "source_generated_at": "2026-10-28T08:00:38"
+        },
+        {
+          "publication_id": "PUB_20261028_140023",
+          "published_at": "2026-10-28T14:00:23",
+          "source_generated_at": "2026-10-28T14:00:21"
         }
       ],
       "first_published_at": "2026-10-28T08:00:40",
-      "last_published_at": "2026-10-28T08:00:40"
+      "last_published_at": "2026-10-28T14:00:23"
     },
     {
       "lock_id": "20261028_080016_SC0_TOP5_1d2fa01f",
@@ -2751,10 +2842,15 @@
           "publication_id": "PUB_20261028_080040",
           "published_at": "2026-10-28T08:00:40",
           "source_generated_at": "2026-10-28T08:00:38"
+        },
+        {
+          "publication_id": "PUB_20261028_140023",
+          "published_at": "2026-10-28T14:00:23",
+          "source_generated_at": "2026-10-28T14:00:21"
         }
       ],
       "first_published_at": "2026-10-28T08:00:40",
-      "last_published_at": "2026-10-28T08:00:40"
+      "last_published_at": "2026-10-28T14:00:23"
     },
     {
       "lock_id": "20261027_140021_E2_TOP3_ef370637",
