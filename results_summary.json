@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-27T14:00:44",
+  "generated_at": "2026-10-28T08:00:36",
   "source": "jev_official_slate_coupon_settled.csv",
   "stake_model": {
     "unit_stake_u": 1.0,
