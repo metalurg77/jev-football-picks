@@ -500,6 +500,33 @@
     #leagueRows .league-detail-wrap{padding-left:14px;overflow-x:auto}
   }
 
+
+  /* JEV CURRENT LEAGUE FILTER V2 */
+  .current-filter-bar{
+    display:flex; flex-wrap:wrap; align-items:center; gap:10px;
+    margin:12px 0 14px; padding:10px 12px;
+    border:1px solid var(--line); border-radius:12px;
+    background:rgba(15,23,42,.42);
+  }
+  .current-filter-bar label{
+    display:flex; align-items:center; gap:7px;
+    color:var(--muted); font-size:12px; font-weight:700;
+  }
+  .current-filter-bar select{
+    min-width:190px; border:1px solid var(--line); border-radius:9px;
+    background:var(--panel3); color:var(--text); padding:8px 10px;
+    font:inherit;
+  }
+  .current-filter-info{
+    margin-left:auto; color:var(--muted); font-size:12px; white-space:nowrap;
+  }
+  @media(max-width:720px){
+    .current-filter-bar{align-items:stretch}
+    .current-filter-bar label{width:100%;justify-content:space-between}
+    .current-filter-bar select{min-width:0;width:65%}
+    .current-filter-info{margin-left:0;width:100%}
+  }
+
 </style>
 <style>
 /* JEV TOP COUNTERS V1 */
@@ -539,7 +566,25 @@
         </div>
       </div>
     </div>
-    <div id="currentCoupons" class="loading">Pobieranie aktualnych kuponów…</div>
+    
+    <div class="current-filter-bar" id="currentFilterBar">
+      <label>
+        Liga
+        <select id="currentLeagueFilter" aria-label="Wybierz ligę">
+          <option value="ALL">Wszystkie ligi</option>
+        </select>
+      </label>
+      <label>
+        Sortuj ligi
+        <select id="currentLeagueSort" aria-label="Sortowanie lig">
+          <option value="AZ">A–Z</option>
+          <option value="ZA">Z–A</option>
+        </select>
+      </label>
+      <div class="current-filter-info" id="currentFilterInfo">Wszystkie ligi</div>
+    </div>
+
+<div id="currentCoupons" class="loading">Pobieranie aktualnych kuponów…</div>
   </section>
 
 
@@ -838,6 +883,77 @@
     });
   }
 
+
+
+  /* JEV CURRENT LEAGUE FILTER V2 */
+  function setupCurrentLeagueFilter() {
+    const box = document.querySelector("#currentCoupons");
+    const leagueFilter = document.querySelector("#currentLeagueFilter");
+    const leagueSort = document.querySelector("#currentLeagueSort");
+    const info = document.querySelector("#currentFilterInfo");
+
+    if (!box || !leagueFilter || !leagueSort) return;
+
+    const sections = [...box.querySelectorAll("section.panel.league")];
+    if (!sections.length) {
+      if (info) info.textContent = "Brak lig do filtrowania";
+      return;
+    }
+
+    const items = sections.map(section => {
+      const title = section.querySelector(".league-title h3")?.textContent?.trim()
+        || section.querySelector("h3")?.textContent?.trim()
+        || "UNKNOWN";
+      return {section, title};
+    });
+
+    const names = [...new Set(items.map(x => x.title))]
+      .sort((a,b) => a.localeCompare(b, "pl"));
+
+    const previous = leagueFilter.value || "ALL";
+    leagueFilter.innerHTML =
+      '<option value="ALL">Wszystkie ligi</option>' +
+      names.map(name => `<option value="${esc(name)}">${esc(name)}</option>`).join("");
+
+    if (previous === "ALL" || names.includes(previous)) {
+      leagueFilter.value = previous;
+    } else {
+      leagueFilter.value = "ALL";
+    }
+
+    const apply = () => {
+      const selected = leagueFilter.value || "ALL";
+      const sortMode = leagueSort.value || "AZ";
+
+      const visible = items.filter(x => selected === "ALL" || x.title === selected);
+      const ordered = [...visible].sort((a,b) => a.title.localeCompare(b.title, "pl"));
+      if (sortMode === "ZA") ordered.reverse();
+
+      for (const x of items) x.section.style.display = "none";
+      for (const x of ordered) {
+        x.section.style.display = "";
+        box.appendChild(x.section);
+      }
+
+      if (info) {
+        info.textContent = selected === "ALL"
+          ? `Widoczne ligi: ${ordered.length}`
+          : `Wybrano: ${selected}`;
+      }
+    };
+
+    if (!leagueFilter.dataset.jevBound) {
+      leagueFilter.addEventListener("change", apply);
+      leagueFilter.dataset.jevBound = "1";
+    }
+    if (!leagueSort.dataset.jevBound) {
+      leagueSort.addEventListener("change", apply);
+      leagueSort.dataset.jevBound = "1";
+    }
+
+    apply();
+  }
+
   async function loadCurrent() {
     const box = $("#currentCoupons");
 
@@ -1037,6 +1153,7 @@
 
       box.className = "";
       box.innerHTML = out.join("");
+      setupCurrentLeagueFilter();
 
     } catch (e) {
       $("#currentCouponCount").textContent = "Aktywne kupony: —";
