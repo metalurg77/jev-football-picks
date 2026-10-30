@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T14:00:24",
+  "generated_at": "2026-10-30T08:00:34",
   "summary": {
     "total": 315,
     "win": 21,
@@ -10,6 +10,13 @@
     "TOP5": 100
   },
   "publications": [
+    {
+      "publication_id": "PUB_20261030_080032",
+      "published_at": "2026-10-30T08:00:32",
+      "source_generated_at": "2026-10-30T08:00:30",
+      "coupon_count": 0,
+      "items": []
+    },
     {
       "publication_id": "PUB_20261029_140022",
       "published_at": "2026-10-29T14:00:22",
@@ -2376,7 +2383,7 @@
       "status": "LOSS",
       "profit_1u": -1.0,
       "won_legs": 1,
-      "lost_legs": 1,
+      "lost_legs": 2,
       "legs_count": 3,
       "legs": [
         {
@@ -2438,7 +2445,7 @@
       "status": "LOSS",
       "profit_1u": -1.0,
       "won_legs": 2,
-      "lost_legs": 1,
+      "lost_legs": 2,
       "legs_count": 4,
       "legs": [
         {
@@ -2511,7 +2518,7 @@
       "status": "LOSS",
       "profit_1u": -1.0,
       "won_legs": 2,
-      "lost_legs": 2,
+      "lost_legs": 3,
       "legs_count": 5,
       "legs": [
         {
@@ -3284,7 +3291,7 @@
       "status": "LOSS",
       "profit_1u": -1.0,
       "won_legs": 1,
-      "lost_legs": 1,
+      "lost_legs": 2,
       "legs_count": 3,
       "legs": [
         {
@@ -3341,7 +3348,7 @@
       "status": "LOSS",
       "profit_1u": -1.0,
       "won_legs": 2,
-      "lost_legs": 1,
+      "lost_legs": 2,
       "legs_count": 4,
       "legs": [
         {
@@ -3409,7 +3416,7 @@
       "status": "LOSS",
       "profit_1u": -1.0,
       "won_legs": 3,
-      "lost_legs": 1,
+      "lost_legs": 2,
       "legs_count": 5,
       "legs": [
         {
