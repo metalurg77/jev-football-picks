@@ -479,7 +479,28 @@
   .pub-note{margin-top:12px;color:var(--muted);font-size:12px;line-height:1.5}
   .pub-empty{color:var(--muted);padding:12px;font-size:13px}
 
-  </style>
+  
+  /* JEV LEAGUE VARIANT DRILLDOWN V1 */
+  #leagueRows .league-summary-row{cursor:pointer}
+  #leagueRows .league-name-cell{display:flex;align-items:center;gap:8px;min-width:230px}
+  #leagueRows .league-caret{display:inline-block;width:16px;color:var(--muted);font-size:11px;transition:transform .15s ease}
+  #leagueRows .league-summary-row[aria-expanded="true"] .league-caret{transform:rotate(90deg)}
+  #leagueRows .league-detail-row>td{padding:0!important;background:rgba(15,23,42,.28)}
+  #leagueRows .league-detail-wrap{padding:12px 14px 16px 36px}
+  #leagueRows .league-variant-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+  #leagueRows .league-variant-card{border:1px solid var(--line);border-radius:10px;padding:11px 12px;background:rgba(15,23,42,.55)}
+  #leagueRows .league-variant-head{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:9px}
+  #leagueRows .league-variant-n{color:var(--muted);font-size:11px}
+  #leagueRows .league-variant-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}
+  #leagueRows .league-variant-metric{padding:7px 8px;border-radius:8px;background:rgba(2,6,23,.32)}
+  #leagueRows .league-variant-metric b{display:block;font-size:12px;white-space:nowrap}
+  #leagueRows .league-variant-metric span{display:block;margin-top:2px;color:var(--muted);font-size:9px;text-transform:uppercase}
+  @media(max-width:900px){
+    #leagueRows .league-variant-grid{grid-template-columns:1fr}
+    #leagueRows .league-detail-wrap{padding-left:14px;overflow-x:auto}
+  }
+
+</style>
 <style>
 /* JEV TOP COUNTERS V1 */
 #jevTopStats{margin:14px 0 20px}
@@ -1139,9 +1160,59 @@
       .map(([league,obj]) => [league,obj.overall])
       .sort((a,b) => Number(b[1]?.profit_u||0)-Number(a[1]?.profit_u||0));
 
-    $("#leagueRows").innerHTML = rows.length ? rows.map(([league,m]) => `
-      <tr>
-        <td><strong>${esc(leagueName(league))}</strong>${m.n < 10 ? '<span class="sample">LOW SAMPLE</span>' : ''}</td>
+    const periodRows = periodCoupons(currentPeriod);
+
+    const variantCard = (league, variant) => {
+      const vr = periodRows.filter(r =>
+        String(r.league || "").toUpperCase() === String(league || "").toUpperCase() &&
+        normalizeVariantName(r.variant) === variant
+      );
+
+      if (!vr.length) {
+        return `<div class="league-variant-card">
+          <div class="league-variant-head">
+            <span class="badge">${variant}</span><span class="league-variant-n">N=0</span>
+          </div>
+          <div class="muted">Brak rozliczonych kuponów w tym okresie.</div>
+        </div>`;
+      }
+
+      const m = calcMetricsFromRows(vr);
+
+      return `<div class="league-variant-card">
+        <div class="league-variant-head">
+          <span class="badge">${variant}</span>
+          <span class="league-variant-n">N=${m.n}${m.n < 10 ? ' · LOW SAMPLE' : ''}</span>
+        </div>
+        <div class="league-variant-metrics">
+          <div class="league-variant-metric"><b>${m.wins}</b><span>WIN</span></div>
+          <div class="league-variant-metric"><b>${m.losses}</b><span>LOSS</span></div>
+          <div class="league-variant-metric"><b>${pct(m.wr)}</b><span>WR</span></div>
+          <div class="league-variant-metric"><b class="${profitClass(m.profit_u)}">${signed(m.profit_u,2,"u")}</b><span>Profit</span></div>
+          <div class="league-variant-metric"><b class="${profitClass(m.roi)}">${pct(m.roi)}</b><span>ROI</span></div>
+          <div class="league-variant-metric"><b>${pfText(m)}</b><span>PF</span></div>
+          <div class="league-variant-metric"><b>${num(m.avg_odds)}</b><span>Avg odds</span></div>
+          <div class="league-variant-metric"><b>${num(m.max_drawdown_u)}u</b><span>Max DD</span></div>
+        </div>
+      </div>`;
+    };
+
+    if (!rows.length) {
+      $("#leagueRows").innerHTML = `<tr><td colspan="8" class="muted">Brak danych dla tego okresu.</td></tr>`;
+      return;
+    }
+
+    $("#leagueRows").innerHTML = rows.map(([league,m], idx) => {
+      const detailId = `league-detail-${idx}`;
+      const details = ["TOP3","TOP4","TOP5"].map(v => variantCard(league, v)).join("");
+
+      return `<tr class="league-summary-row" data-detail-id="${detailId}" tabindex="0"
+        role="button" aria-expanded="false" aria-controls="${detailId}">
+        <td><div class="league-name-cell">
+          <span class="league-caret">▶</span>
+          <strong>${esc(leagueName(league))}</strong>
+          ${m.n < 10 ? '<span class="sample">LOW SAMPLE</span>' : ''}
+        </div></td>
         <td class="num">${m.n}</td>
         <td class="num">${pct(m.wr)}</td>
         <td class="num ${profitClass(m.profit_u)}">${signed(m.profit_u,2,"u")}</td>
@@ -1149,8 +1220,31 @@
         <td class="num">${pfText(m)}</td>
         <td class="num">${num(m.avg_odds)}</td>
         <td class="num">${num(m.max_drawdown_u)}u</td>
-      </tr>`).join("") :
-      `<tr><td colspan="8" class="muted">Brak danych dla tego okresu.</td></tr>`;
+      </tr>
+      <tr class="league-detail-row" id="${detailId}" hidden>
+        <td colspan="8"><div class="league-detail-wrap">
+          <div class="league-variant-grid">${details}</div>
+        </div></td>
+      </tr>`;
+    }).join("");
+
+    const toggleLeague = row => {
+      const detail = document.getElementById(row.dataset.detailId);
+      if (!detail) return;
+      const opening = detail.hidden;
+      detail.hidden = !opening;
+      row.setAttribute("aria-expanded", opening ? "true" : "false");
+    };
+
+    $$("#leagueRows .league-summary-row").forEach(row => {
+      row.addEventListener("click", () => toggleLeague(row));
+      row.addEventListener("keydown", e => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          toggleLeague(row);
+        }
+      });
+    });
   }
 
   function periodCoupons(period) {
