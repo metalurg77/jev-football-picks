@@ -527,6 +527,12 @@
     .current-filter-info{margin-left:0;width:100%}
   }
 
+/* JEV_EQUITY_V1 */
+.jev-equity-extra{margin:22px 0}.jev-equity-extra h3{font-size:18px}.jev-equity-extra h4{margin:0 0 6px;font-size:15px}
+.jev-equity-note{font-size:12px;color:var(--muted,#94a3b8)}.jev-equity-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.jev-equity-grid article{background:var(--panel,#101a2f);border:1px solid var(--line,#334155);border-radius:14px;padding:14px;min-width:0}
+.jev-equity-grid [id$="-summary"]{font-size:13px;font-weight:700;margin-bottom:8px}.jev-equity-grid svg{width:100%;height:auto;display:block}
+@media(max-width:720px){.jev-equity-grid{grid-template-columns:1fr}} /* /JEV_EQUITY_V1 */
 </style>
 <style>
 /* JEV TOP COUNTERS V1 */
@@ -696,6 +702,17 @@
       </div>
     </div>
 
+    <!-- JEV_EQUITY_V1 -->
+<div id="jevEquity4" class="jev-equity-extra">
+<h3>Krzywe kapitału — TOP3, TOP4, TOP5 i VALUE 2.00–2.49</h3>
+<p class="jev-equity-note">Wykresy kuponów: 1u na kupon; VALUE: 1u na unikalny typ. Wartości przed podatkami i kosztami.</p>
+<div class="jev-equity-grid">
+<article><h4>TOP3</h4><div id="jev-eq3-summary"></div><div id="jev-eq3-plot"></div></article>
+<article><h4>TOP4</h4><div id="jev-eq4-summary"></div><div id="jev-eq4-plot"></div></article>
+<article><h4>TOP5</h4><div id="jev-eq5-summary"></div><div id="jev-eq5-plot"></div></article>
+<article><h4>VALUE — kurs 2.00–2.49</h4><div id="jev-eqv-summary"></div><div id="jev-eqv-plot"></div></article>
+</div><p class="jev-equity-note" id="jev-eq-note">Kupony odświeżają się z results_coupons.json. VALUE aktualizuje się po ponownym eksporcie audytu V3 i publikacji.</p>
+</div><!-- /JEV_EQUITY_V1 -->
     <div class="section-head" style="margin-top:24px">
       <div>
         <h3>Wyniki per liga</h3>
@@ -2050,5 +2067,6 @@
  }).catch(err=>{root.textContent='Nie udało się wczytać liczników: '+err.message;});
 })();
 </script>
+<script defer src="./jev_equity_4.js"></script>
 </body>
 </html>

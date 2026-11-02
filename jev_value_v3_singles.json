@@ -1,0 +1,1030 @@
+{
+  "legs": [
+    {
+      "id": "2026-10-14|norwich - southampton|1x2|home",
+      "date": "2026-10-14",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-14|portsmouth - sheffield united|1x2|home",
+      "date": "2026-10-14",
+      "profit": 1.24
+    },
+    {
+      "id": "2026-10-16|annecy - nancy|1x2|away",
+      "date": "2026-10-16",
+      "profit": 1.33
+    },
+    {
+      "id": "2026-10-16|burnley - wolves|1x2|away",
+      "date": "2026-10-16",
+      "profit": 1.2
+    },
+    {
+      "id": "2026-10-16|corum - rizespor|1x2|home",
+      "date": "2026-10-16",
+      "profit": 1.02
+    },
+    {
+      "id": "2026-10-16|frosinone - sassuolo|1x2|home",
+      "date": "2026-10-16",
+      "profit": 1.31
+    },
+    {
+      "id": "2026-10-16|guingamp - pau fc|1x2|home",
+      "date": "2026-10-16",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-16|holstein kiel - hertha|1x2|away",
+      "date": "2026-10-16",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-16|la coruna - levante|1x2|home",
+      "date": "2026-10-16",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-16|le mans - toulouse|1x2|away",
+      "date": "2026-10-16",
+      "profit": 1.31
+    },
+    {
+      "id": "2026-10-17|birmingham - qpr|1x2|home",
+      "date": "2026-10-17",
+      "profit": 1.03
+    },
+    {
+      "id": "2026-10-17|brentford - liverpool|1x2|home",
+      "date": "2026-10-17",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-17|bristol city - sheffield united|1x2|home",
+      "date": "2026-10-17",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-17|derby - stoke|1x2|away",
+      "date": "2026-10-17",
+      "profit": 1.38
+    },
+    {
+      "id": "2026-10-17|dumbarton - stirling|1x2|home",
+      "date": "2026-10-17",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-17|dunfermline - livingston|1x2|away",
+      "date": "2026-10-17",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-17|east fife - alloa|1x2|home",
+      "date": "2026-10-17",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-17|eibar - mallorca|1x2|home",
+      "date": "2026-10-17",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-17|elgin - edinburgh city|1x2|home",
+      "date": "2026-10-17",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-17|everton - chelsea|1x2|away",
+      "date": "2026-10-17",
+      "profit": 1.12
+    },
+    {
+      "id": "2026-10-17|fleetwood town - rotherham|1x2|home",
+      "date": "2026-10-17",
+      "profit": 1.18
+    },
+    {
+      "id": "2026-10-17|greuther furth - braunschweig|1x2|home",
+      "date": "2026-10-17",
+      "profit": 1.11
+    },
+    {
+      "id": "2026-10-17|hannover - st pauli|1x2|home",
+      "date": "2026-10-17",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-17|kaiserslautern - bochum|1x2|home",
+      "date": "2026-10-17",
+      "profit": 1.15
+    },
+    {
+      "id": "2026-10-17|kelty hearts - forfar|1x2|home",
+      "date": "2026-10-17",
+      "profit": 1.0
+    },
+    {
+      "id": "2026-10-17|kilmarnock - motherwell|1x2|away",
+      "date": "2026-10-17",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-17|levadeiakos - volos nfc|1x2|home",
+      "date": "2026-10-17",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-17|leyton orient - blackpool|1x2|home",
+      "date": "2026-10-17",
+      "profit": 1.18
+    },
+    {
+      "id": "2026-10-17|mantova - palermo|1x2|away",
+      "date": "2026-10-17",
+      "profit": 1.13
+    },
+    {
+      "id": "2026-10-17|milton keynes dons - luton|1x2|away",
+      "date": "2026-10-17",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-17|newcastle - aston villa|1x2|home",
+      "date": "2026-10-17",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-17|peterhead - cove rangers|1x2|home",
+      "date": "2026-10-17",
+      "profit": 1.29
+    },
+    {
+      "id": "2026-10-17|pisa - cremonese|1x2|home",
+      "date": "2026-10-17",
+      "profit": 1.12
+    },
+    {
+      "id": "2026-10-17|port vale - chesterfield|1x2|away",
+      "date": "2026-10-17",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-17|red star - st etienne|1x2|away",
+      "date": "2026-10-17",
+      "profit": 1.19
+    },
+    {
+      "id": "2026-10-17|schalke 04 - mainz|1x2|away",
+      "date": "2026-10-17",
+      "profit": 1.21
+    },
+    {
+      "id": "2026-10-17|sociedad b - almeria|1x2|away",
+      "date": "2026-10-17",
+      "profit": 1.01
+    },
+    {
+      "id": "2026-10-17|spartans - stranraer|1x2|home",
+      "date": "2026-10-17",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-17|stenhousemuir - raith rvs|1x2|away",
+      "date": "2026-10-17",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-17|swansea - west ham|1x2|away",
+      "date": "2026-10-17",
+      "profit": 1.15
+    },
+    {
+      "id": "2026-10-17|swindon - walsall|1x2|away",
+      "date": "2026-10-17",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-17|tranmere - barnet|1x2|away",
+      "date": "2026-10-17",
+      "profit": 1.01
+    },
+    {
+      "id": "2026-10-17|valencia - ath bilbao|1x2|away",
+      "date": "2026-10-17",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-17|watford - charlton|1x2|home",
+      "date": "2026-10-17",
+      "profit": 1.47
+    },
+    {
+      "id": "2026-10-18|angers - marseille|1x2|away",
+      "date": "2026-10-18",
+      "profit": 1.07
+    },
+    {
+      "id": "2026-10-18|bournemouth - sunderland|1x2|home",
+      "date": "2026-10-18",
+      "profit": 1.04
+    },
+    {
+      "id": "2026-10-18|cesena - avellino|1x2|home",
+      "date": "2026-10-18",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-18|ceuta - oviedo|1x2|away",
+      "date": "2026-10-18",
+      "profit": 1.31
+    },
+    {
+      "id": "2026-10-18|fiorentina - como|1x2|away",
+      "date": "2026-10-18",
+      "profit": 1.06
+    },
+    {
+      "id": "2026-10-18|juve stabia - sudtirol|1x2|home",
+      "date": "2026-10-18",
+      "profit": 1.1
+    },
+    {
+      "id": "2026-10-18|karlsruhe - darmstadt|1x2|home",
+      "date": "2026-10-18",
+      "profit": 1.17
+    },
+    {
+      "id": "2026-10-18|kasimpasa - samsunspor|1x2|home",
+      "date": "2026-10-18",
+      "profit": 1.45
+    },
+    {
+      "id": "2026-10-18|kifisia - aris|1x2|away",
+      "date": "2026-10-18",
+      "profit": 1.27
+    },
+    {
+      "id": "2026-10-18|kocaelispor - goztep|1x2|away",
+      "date": "2026-10-18",
+      "profit": 1.3
+    },
+    {
+      "id": "2026-10-18|le havre - auxerre|1x2|home",
+      "date": "2026-10-18",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-18|leeds - man united|1x2|home",
+      "date": "2026-10-18",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-18|lorient - monaco|1x2|away",
+      "date": "2026-10-18",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-18|m'gladbach - hoffenheim|1x2|away",
+      "date": "2026-10-18",
+      "profit": 1.04
+    },
+    {
+      "id": "2026-10-18|malaga - sociedad|1x2|away",
+      "date": "2026-10-18",
+      "profit": 1.15
+    },
+    {
+      "id": "2026-10-18|paris fc - rennes|1x2|home",
+      "date": "2026-10-18",
+      "profit": 1.26
+    },
+    {
+      "id": "2026-10-19|parma - torino|1x2|away",
+      "date": "2026-10-19",
+      "profit": 1.46
+    },
+    {
+      "id": "2026-10-19|rodez - montpellier|1x2|away",
+      "date": "2026-10-19",
+      "profit": 1.39
+    },
+    {
+      "id": "2026-10-19|trabzonspor - besiktas|1x2|away",
+      "date": "2026-10-19",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-20|afc wimbledon - mansfield|1x2|away",
+      "date": "2026-10-20",
+      "profit": 1.08
+    },
+    {
+      "id": "2026-10-20|cambridge - wycombe|1x2|home",
+      "date": "2026-10-20",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-20|cheltenham - fleetwood town|1x2|away",
+      "date": "2026-10-20",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-20|crawley town - shrewsbury|1x2|away",
+      "date": "2026-10-20",
+      "profit": 1.38
+    },
+    {
+      "id": "2026-10-20|gillingham - port vale|1x2|away",
+      "date": "2026-10-20",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-20|northampton - tranmere|1x2|home",
+      "date": "2026-10-20",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-20|notts county - sheffield weds|1x2|away",
+      "date": "2026-10-20",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-24|aldershot - wealdstone|1x2|home",
+      "date": "2026-10-24",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-24|alverca - arouca|1x2|home",
+      "date": "2026-10-24",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-24|arezzo - benevento|1x2|away",
+      "date": "2026-10-24",
+      "profit": 1.33
+    },
+    {
+      "id": "2026-10-24|asteras tripolis - levadeiakos|1x2|home",
+      "date": "2026-10-24",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-24|avellino - padova|1x2|home",
+      "date": "2026-10-24",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-24|blackpool - mansfield|1x2|away",
+      "date": "2026-10-24",
+      "profit": 1.39
+    },
+    {
+      "id": "2026-10-24|bromley - peterboro|1x2|away",
+      "date": "2026-10-24",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-24|cambridge - plymouth|1x2|home",
+      "date": "2026-10-24",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-24|cardiff - birmingham|1x2|away",
+      "date": "2026-10-24",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-24|cordoba - eibar|1x2|home",
+      "date": "2026-10-24",
+      "profit": 1.12
+    },
+    {
+      "id": "2026-10-24|coventry - fulham|1x2|away",
+      "date": "2026-10-24",
+      "profit": 1.23
+    },
+    {
+      "id": "2026-10-24|den haag - heerenveen|1x2|away",
+      "date": "2026-10-24",
+      "profit": 1.02
+    },
+    {
+      "id": "2026-10-24|doncaster - sheffield weds|1x2|away",
+      "date": "2026-10-24",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-24|dundee united - aberdeen|1x2|home",
+      "date": "2026-10-24",
+      "profit": 1.14
+    },
+    {
+      "id": "2026-10-24|eastleigh - boston utd|1x2|home",
+      "date": "2026-10-24",
+      "profit": 1.1
+    },
+    {
+      "id": "2026-10-24|exeter - fleetwood town|1x2|home",
+      "date": "2026-10-24",
+      "profit": 1.46
+    },
+    {
+      "id": "2026-10-24|fc koln - schalke 04|1x2|home",
+      "date": "2026-10-24",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-24|leganes - mallorca|1x2|away",
+      "date": "2026-10-24",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-24|lens - paris fc|1x2|home",
+      "date": "2026-10-24",
+      "profit": 1.39
+    },
+    {
+      "id": "2026-10-24|lincoln - burnley|1x2|away",
+      "date": "2026-10-24",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-24|northampton - colchester|1x2|home",
+      "date": "2026-10-24",
+      "profit": 1.01
+    },
+    {
+      "id": "2026-10-24|paderborn - hamburg|1x2|home",
+      "date": "2026-10-24",
+      "profit": 1.22
+    },
+    {
+      "id": "2026-10-24|portsmouth - millwall|1x2|home",
+      "date": "2026-10-24",
+      "profit": 1.46
+    },
+    {
+      "id": "2026-10-24|raal la louviere - waregem|1x2|away",
+      "date": "2026-10-24",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-24|raith rvs - inverness c|1x2|home",
+      "date": "2026-10-24",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-24|samsunspor - amedspor|1x2|away",
+      "date": "2026-10-24",
+      "profit": 1.01
+    },
+    {
+      "id": "2026-10-24|santander - espanol|1x2|home",
+      "date": "2026-10-24",
+      "profit": 1.37
+    },
+    {
+      "id": "2026-10-24|stevenage - milton keynes dons|1x2|home",
+      "date": "2026-10-24",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-24|stoke - bristol city|1x2|home",
+      "date": "2026-10-24",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-24|valencia - villarreal|1x2|away",
+      "date": "2026-10-24",
+      "profit": 1.15
+    },
+    {
+      "id": "2026-10-24|virtus entella - mantova|1x2|home",
+      "date": "2026-10-24",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-24|westerlo - beveren|1x2|home",
+      "date": "2026-10-24",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-24|willem ii - cambuur|1x2|away",
+      "date": "2026-10-24",
+      "profit": 1.49
+    },
+    {
+      "id": "2026-10-25|angers - lorient|1x2|away",
+      "date": "2026-10-25",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-25|auxerre - le mans|1x2|home",
+      "date": "2026-10-25",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-25|az alkmaar - twente|1x2|home",
+      "date": "2026-10-25",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-25|braunschweig - hannover|1x2|away",
+      "date": "2026-10-25",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-25|celta - betis|1x2|away",
+      "date": "2026-10-25",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-25|crystal palace - newcastle|1x2|away",
+      "date": "2026-10-25",
+      "profit": 1.28
+    },
+    {
+      "id": "2026-10-25|for sittard - excelsior|1x2|home",
+      "date": "2026-10-25",
+      "profit": 1.3
+    },
+    {
+      "id": "2026-10-25|genoa - venezia|1x2|home",
+      "date": "2026-10-25",
+      "profit": 1.08
+    },
+    {
+      "id": "2026-10-25|gent - anderlecht|1x2|home",
+      "date": "2026-10-25",
+      "profit": 1.3
+    },
+    {
+      "id": "2026-10-25|goztep - corum|1x2|home",
+      "date": "2026-10-25",
+      "profit": 1.12
+    },
+    {
+      "id": "2026-10-25|hoffenheim - leverkusen|1x2|away",
+      "date": "2026-10-25",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-25|holstein kiel - dresden|1x2|home",
+      "date": "2026-10-25",
+      "profit": 1.22
+    },
+    {
+      "id": "2026-10-25|liverpool - brighton|1x2|home",
+      "date": "2026-10-25",
+      "profit": 1.09
+    },
+    {
+      "id": "2026-10-25|man united - bournemouth|1x2|home",
+      "date": "2026-10-25",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-25|monaco - lille|1x2|home",
+      "date": "2026-10-25",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-25|motherwell - hearts|1x2|away",
+      "date": "2026-10-25",
+      "profit": 1.13
+    },
+    {
+      "id": "2026-10-25|osnabruck - greuther furth|1x2|home",
+      "date": "2026-10-25",
+      "profit": 1.19
+    },
+    {
+      "id": "2026-10-25|psv eindhoven - feyenoord|1x2|home",
+      "date": "2026-10-25",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-25|rio ave - famalicao|1x2|away",
+      "date": "2026-10-25",
+      "profit": 1.02
+    },
+    {
+      "id": "2026-10-25|sunderland - leeds|1x2|away",
+      "date": "2026-10-25",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-25|verona - pisa|1x2|home",
+      "date": "2026-10-25",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-26|boulogne - reims|1x2|away",
+      "date": "2026-10-26",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-26|galatasaray - fenerbahce|1x2|home",
+      "date": "2026-10-26",
+      "profit": 1.13
+    },
+    {
+      "id": "2026-10-26|montpellier - red star|1x2|home",
+      "date": "2026-10-26",
+      "profit": 1.38
+    },
+    {
+      "id": "2026-10-26|walsall - salford|1x2|away",
+      "date": "2026-10-26",
+      "profit": 1.04
+    },
+    {
+      "id": "2026-10-27|ascoli - sampdoria|1x2|home",
+      "date": "2026-10-27",
+      "profit": 1.09
+    },
+    {
+      "id": "2026-10-27|hornchurch - yeovil|1x2|away",
+      "date": "2026-10-27",
+      "profit": 1.24
+    },
+    {
+      "id": "2026-10-27|mantova - cremonese|1x2|home",
+      "date": "2026-10-27",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-27|oxford - stockport|1x2|away",
+      "date": "2026-10-27",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-27|padova - sudtirol|1x2|home",
+      "date": "2026-10-27",
+      "profit": 1.35
+    },
+    {
+      "id": "2026-10-27|sassuolo - lazio|1x2|away",
+      "date": "2026-10-27",
+      "profit": 1.09
+    },
+    {
+      "id": "2026-10-27|sheffield weds - cambridge|1x2|home",
+      "date": "2026-10-27",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-27|tamworth - scunthorpe|1x2|home",
+      "date": "2026-10-27",
+      "profit": 1.15
+    },
+    {
+      "id": "2026-10-27|vicenza - modena|1x2|away",
+      "date": "2026-10-27",
+      "profit": 1.0
+    },
+    {
+      "id": "2026-10-28|aberdeen - falkirk|1x2|home",
+      "date": "2026-10-28",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-28|carrarese - arezzo|1x2|home",
+      "date": "2026-10-28",
+      "profit": 1.22
+    },
+    {
+      "id": "2026-10-28|hearts - rangers|1x2|away",
+      "date": "2026-10-28",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-28|juve stabia - verona|1x2|away",
+      "date": "2026-10-28",
+      "profit": 1.37
+    },
+    {
+      "id": "2026-10-28|parma - udinese|1x2|away",
+      "date": "2026-10-28",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-28|st johnstone - motherwell|1x2|home",
+      "date": "2026-10-28",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-28|st mirren - hibernian|1x2|away",
+      "date": "2026-10-28",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-29|fiorentina - atalanta|1x2|home",
+      "date": "2026-10-29",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-30|elversberg - mainz|1x2|away",
+      "date": "2026-10-30",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-30|grenoble - dijon|1x2|away",
+      "date": "2026-10-30",
+      "profit": 1.21
+    },
+    {
+      "id": "2026-10-30|sheffield united - wrexham|1x2|home",
+      "date": "2026-10-30",
+      "profit": 1.38
+    },
+    {
+      "id": "2026-10-31|accrington - northampton|1x2|home",
+      "date": "2026-10-31",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-31|altrincham - carlisle|1x2|away",
+      "date": "2026-10-31",
+      "profit": 1.17
+    },
+    {
+      "id": "2026-10-31|annecy - montpellier|1x2|away",
+      "date": "2026-10-31",
+      "profit": 1.24
+    },
+    {
+      "id": "2026-10-31|augsburg - freiburg|1x2|away",
+      "date": "2026-10-31",
+      "profit": 1.15
+    },
+    {
+      "id": "2026-10-31|barnsley - oxford|1x2|away",
+      "date": "2026-10-31",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-31|bolton - bristol city|1x2|away",
+      "date": "2026-10-31",
+      "profit": 1.34
+    },
+    {
+      "id": "2026-10-31|boston utd - scunthorpe|1x2|home",
+      "date": "2026-10-31",
+      "profit": 1.41
+    },
+    {
+      "id": "2026-10-31|bournemouth - leeds|1x2|home",
+      "date": "2026-10-31",
+      "profit": 1.11
+    },
+    {
+      "id": "2026-10-31|bradford - huddersfield|1x2|away",
+      "date": "2026-10-31",
+      "profit": 1.48
+    },
+    {
+      "id": "2026-10-31|brentford - nott'm forest|1x2|home",
+      "date": "2026-10-31",
+      "profit": 1.04
+    },
+    {
+      "id": "2026-10-31|celta b - cordoba|1x2|away",
+      "date": "2026-10-31",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-31|coventry - sunderland|1x2|away",
+      "date": "2026-10-31",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-31|crewe - barnet|1x2|away",
+      "date": "2026-10-31",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-31|darmstadt - magdeburg|1x2|away",
+      "date": "2026-10-31",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-31|eibar - almeria|1x2|away",
+      "date": "2026-10-31",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-31|forest green - harrogate|1x2|away",
+      "date": "2026-10-31",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-31|grimsby - york|1x2|home",
+      "date": "2026-10-31",
+      "profit": 1.28
+    },
+    {
+      "id": "2026-10-31|heerenveen - nijmegen|1x2|home",
+      "date": "2026-10-31",
+      "profit": 1.05
+    },
+    {
+      "id": "2026-10-31|kaiserslautern - hertha|1x2|away",
+      "date": "2026-10-31",
+      "profit": 1.23
+    },
+    {
+      "id": "2026-10-31|karlsruhe - heidenheim|1x2|away",
+      "date": "2026-10-31",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-31|kelty hearts - elgin|1x2|away",
+      "date": "2026-10-31",
+      "profit": 1.04
+    },
+    {
+      "id": "2026-10-31|kilmarnock - st johnstone|1x2|home",
+      "date": "2026-10-31",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-31|leyton orient - cambridge|1x2|away",
+      "date": "2026-10-31",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-31|lincoln - birmingham|1x2|away",
+      "date": "2026-10-31",
+      "profit": 1.12
+    },
+    {
+      "id": "2026-10-31|milton keynes dons - doncaster|1x2|home",
+      "date": "2026-10-31",
+      "profit": 1.04
+    },
+    {
+      "id": "2026-10-31|moreirense - estrela|1x2|away",
+      "date": "2026-10-31",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-31|peterhead - alloa|1x2|home",
+      "date": "2026-10-31",
+      "profit": 1.24
+    },
+    {
+      "id": "2026-10-31|plymouth - reading|1x2|home",
+      "date": "2026-10-31",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-31|sampdoria - virtus entella|1x2|home",
+      "date": "2026-10-31",
+      "profit": 1.24
+    },
+    {
+      "id": "2026-10-31|sociedad b - girona|1x2|away",
+      "date": "2026-10-31",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-31|solihull - kidderminster|1x2|home",
+      "date": "2026-10-31",
+      "profit": 1.45
+    },
+    {
+      "id": "2026-10-31|stranraer - clyde|1x2|home",
+      "date": "2026-10-31",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-31|sudtirol - cesena|1x2|home",
+      "date": "2026-10-31",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-31|swindon - rotherham|1x2|home",
+      "date": "2026-10-31",
+      "profit": 1.28
+    },
+    {
+      "id": "2026-10-31|tamworth - woking|1x2|home",
+      "date": "2026-10-31",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-10-31|troyes - le mans|1x2|home",
+      "date": "2026-10-31",
+      "profit": 1.32
+    },
+    {
+      "id": "2026-10-31|werder bremen - hoffenheim|1x2|away",
+      "date": "2026-10-31",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-11-01|arezzo - ascoli|1x2|away",
+      "date": "2026-11-01",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-11-01|ath bilbao - sociedad|1x2|home",
+      "date": "2026-11-01",
+      "profit": 1.12
+    },
+    {
+      "id": "2026-11-01|avellino - pisa|1x2|away",
+      "date": "2026-11-01",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-11-01|burgos - castellon|1x2|away",
+      "date": "2026-11-01",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-11-01|elche - valencia|1x2|home",
+      "date": "2026-11-01",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-11-01|eldense - granada|1x2|home",
+      "date": "2026-11-01",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-11-01|frosinone - torino|1x2|home",
+      "date": "2026-11-01",
+      "profit": 1.14
+    },
+    {
+      "id": "2026-11-01|getafe - sevilla|1x2|away",
+      "date": "2026-11-01",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-11-01|greuther furth - holstein kiel|1x2|home",
+      "date": "2026-11-01",
+      "profit": 1.44
+    },
+    {
+      "id": "2026-11-01|hannover - dresden|1x2|home",
+      "date": "2026-11-01",
+      "profit": 1.1
+    },
+    {
+      "id": "2026-11-01|juventus - napoli|1x2|home",
+      "date": "2026-11-01",
+      "profit": 1.25
+    },
+    {
+      "id": "2026-11-01|lecce - genoa|1x2|away",
+      "date": "2026-11-01",
+      "profit": 1.37
+    },
+    {
+      "id": "2026-11-01|liverpool - arsenal|1x2|away",
+      "date": "2026-11-01",
+      "profit": 1.33
+    },
+    {
+      "id": "2026-11-01|maritimo - santa clara|1x2|away",
+      "date": "2026-11-01",
+      "profit": 1.24
+    },
+    {
+      "id": "2026-11-01|panathinaikos - aek|1x2|home",
+      "date": "2026-11-01",
+      "profit": 1.19
+    },
+    {
+      "id": "2026-11-01|panetolikos - ofi crete|1x2|away",
+      "date": "2026-11-01",
+      "profit": 1.43
+    },
+    {
+      "id": "2026-11-01|paris fc - monaco|1x2|home",
+      "date": "2026-11-01",
+      "profit": 1.26
+    },
+    {
+      "id": "2026-11-01|st pauli - nurnberg|1x2|home",
+      "date": "2026-11-01",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-11-01|telstar - utrecht|1x2|away",
+      "date": "2026-11-01",
+      "profit": -1.0
+    },
+    {
+      "id": "2026-11-01|zwolle - den haag|1x2|home",
+      "date": "2026-11-01",
+      "profit": 1.17
+    }
+  ],
+  "source": "jev_value_v3_legs.csv"
+}
