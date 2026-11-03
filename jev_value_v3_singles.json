@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "source": "JEV VALUE AUTO V1 / Football-Data",
-  "generated_at": "2026-11-03T08:26:10+01:00",
+  "generated_at": "2026-11-03T14:01:04+01:00",
   "legs": [
     {
       "key": "2026-10-14|norwich - southampton|1x2|home",
@@ -2256,6 +2256,83 @@
       "choice": "HOME",
       "market": "1X2",
       "league": "N1",
+      "result": "WIN"
+    },
+    {
+      "key": "2026-11-02|gil vicente - guimaraes|1x2|away",
+      "date": "2026-11-02",
+      "profit": -1.0,
+      "odds": 2.46,
+      "match": "Gil Vicente - Guimaraes",
+      "choice": "AWAY",
+      "market": "1X2",
+      "league": "P1",
+      "result": "LOSS"
+    },
+    {
+      "key": "2026-11-02|kalamata - iraklis|1x2|home",
+      "date": "2026-11-02",
+      "profit": -1.0,
+      "odds": 2.19,
+      "match": "Kalamata - Iraklis",
+      "choice": "HOME",
+      "market": "1X2",
+      "league": "G1",
+      "result": "LOSS"
+    },
+    {
+      "key": "2026-11-02|la coruna - osasuna|1x2|home",
+      "date": "2026-11-02",
+      "profit": 1.13,
+      "odds": 2.13,
+      "match": "La Coruna - Osasuna",
+      "choice": "HOME",
+      "market": "1X2",
+      "league": "SP1",
+      "result": "WIN"
+    },
+    {
+      "key": "2026-11-02|lorient - brest|1x2|home",
+      "date": "2026-11-02",
+      "profit": -1.0,
+      "odds": 2.44,
+      "match": "Lorient - Brest",
+      "choice": "HOME",
+      "market": "1X2",
+      "league": "F1",
+      "result": "LOSS"
+    },
+    {
+      "key": "2026-11-02|newcastle - everton|1x2|home",
+      "date": "2026-11-02",
+      "profit": -1.0,
+      "odds": 2.28,
+      "match": "Newcastle - Everton",
+      "choice": "HOME",
+      "market": "1X2",
+      "league": "E0",
+      "result": "LOSS"
+    },
+    {
+      "key": "2026-11-02|red star - nancy|1x2|home",
+      "date": "2026-11-02",
+      "profit": -1.0,
+      "odds": 2.23,
+      "match": "Red Star - Nancy",
+      "choice": "HOME",
+      "market": "1X2",
+      "league": "F2",
+      "result": "LOSS"
+    },
+    {
+      "key": "2026-11-02|sassuolo - fiorentina|1x2|away",
+      "date": "2026-11-02",
+      "profit": 1.31,
+      "odds": 2.31,
+      "match": "Sassuolo - Fiorentina",
+      "choice": "AWAY",
+      "market": "1X2",
+      "league": "I1",
       "result": "WIN"
     }
   ]
