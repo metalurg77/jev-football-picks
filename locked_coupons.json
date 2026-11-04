@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-11-03T14:00:49",
+  "generated_at": "2026-11-04T08:00:39",
   "summary": {
-    "total": 463,
+    "total": 464,
     "win": 41,
     "loss": 416,
-    "unsettled": 6,
-    "TOP3": 157,
+    "unsettled": 7,
+    "TOP3": 158,
     "TOP4": 157,
     "TOP5": 149
   },
   "publications": [
+    {
+      "publication_id": "PUB_20261104_080037",
+      "published_at": "2026-11-04T08:00:37",
+      "source_generated_at": "2026-11-04T08:00:34",
+      "coupon_count": 1,
+      "items": [
+        {
+          "league": "E1",
+          "variant": "TOP3",
+          "lock_id": "20261104_080012_E1_TOP3_009f6b28",
+          "composition_fingerprint": "009f6b28673df02f620a730b"
+        }
+      ]
+    },
     {
       "publication_id": "PUB_20261103_140047",
       "published_at": "2026-11-03T14:00:47",
@@ -3811,6 +3825,63 @@
     }
   ],
   "coupons": [
+    {
+      "lock_id": "20261104_080012_E1_TOP3_009f6b28",
+      "locked_at": "2026-11-04 08:00:16",
+      "source_run": "20261104_080012",
+      "league": "E1",
+      "variant": "TOP3",
+      "combined_odds": 7.295507999999999,
+      "status": "UNSETTLED",
+      "profit_1u": null,
+      "won_legs": 0,
+      "lost_legs": 0,
+      "legs_count": 3,
+      "legs": [
+        {
+          "leg_no": 1,
+          "match": "Bristol City - Wolves",
+          "match_date": "2026-11-04",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 2.07,
+          "model_probability": 1.0,
+          "edge": 0.5473463573934896,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 2,
+          "match": "Cardiff - West Ham",
+          "match_date": "2026-11-04",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 1.98,
+          "model_probability": 1.0,
+          "edge": 0.5268845897264843,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 3,
+          "match": "Wrexham - Middlesbrough",
+          "match_date": "2026-11-04",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 1.78,
+          "model_probability": 1.0,
+          "edge": 0.4719490611984192,
+          "margin": 1.0
+        }
+      ],
+      "publications": [
+        {
+          "publication_id": "PUB_20261104_080037",
+          "published_at": "2026-11-04T08:00:37",
+          "source_generated_at": "2026-11-04T08:00:34"
+        }
+      ],
+      "first_published_at": "2026-11-04T08:00:37",
+      "last_published_at": "2026-11-04T08:00:37"
+    },
     {
       "lock_id": "20261103_140016_E1_TOP3_a1df2423",
       "locked_at": "2026-11-03 14:00:22",
