@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-04T14:00:20",
+  "generated_at": "2026-11-05T08:00:25",
   "source": "jev_official_slate_coupon_settled.csv",
   "stake_model": {
     "unit_stake_u": 1.0,
@@ -9,77 +9,77 @@
   },
   "data_range": {
     "from": "2026-10-14",
-    "to": "2026-11-02",
-    "settled_coupons": 457
+    "to": "2026-11-04",
+    "settled_coupons": 462
   },
   "periods": {
     "ALL": {
       "overall": {
-        "n": 457,
-        "wins": 41,
-        "losses": 416,
-        "wr": 0.08971553610503283,
-        "profit_u": 93.5344627076,
-        "profit_pln": 187.0689254152,
+        "n": 462,
+        "wins": 42,
+        "losses": 420,
+        "wr": 0.09090909090909091,
+        "profit_u": 98.8113917076,
+        "profit_pln": 197.6227834152,
         "stake_pln": 2.0,
-        "total_staked_pln": 914.0,
-        "roi": 0.20467059673435448,
-        "pf": 1.2248424584317308,
+        "total_staked_pln": 924.0,
+        "roi": 0.21387747122857143,
+        "pf": 1.2352652183514286,
         "pf_infinite": false,
-        "avg_odds": 21.09499520603851,
-        "median_odds": 16.49427022,
+        "avg_odds": 21.059573581202162,
+        "median_odds": 16.48664681,
         "max_drawdown_u": 148.33339859999998,
         "max_losing_streak": 73
       },
       "variants": {
         "TOP3": {
-          "n": 154,
-          "wins": 23,
-          "losses": 131,
-          "wr": 0.14935064935064934,
-          "profit_u": 51.12997700000001,
-          "profit_pln": 102.25995400000002,
+          "n": 157,
+          "wins": 24,
+          "losses": 133,
+          "wr": 0.15286624203821655,
+          "profit_u": 58.406906000000006,
+          "profit_pln": 116.81381200000001,
           "stake_pln": 2.0,
-          "total_staked_pln": 308.0,
-          "roi": 0.33201283766233775,
-          "pf": 1.3903051679389313,
+          "total_staked_pln": 314.0,
+          "roi": 0.3720185095541402,
+          "pf": 1.4391496691729322,
           "pf_infinite": false,
-          "avg_odds": 9.437726616883117,
-          "median_odds": 9.5084825,
+          "avg_odds": 9.436788789808917,
+          "median_odds": 9.53568,
           "max_drawdown_u": 39.838972,
           "max_losing_streak": 21
         },
         "TOP4": {
-          "n": 155,
+          "n": 156,
           "wins": 13,
-          "losses": 142,
-          "wr": 0.08387096774193549,
-          "profit_u": 39.8342899,
-          "profit_pln": 79.6685798,
+          "losses": 143,
+          "wr": 0.08333333333333333,
+          "profit_u": 38.8342899,
+          "profit_pln": 77.6685798,
           "stake_pln": 2.0,
-          "total_staked_pln": 310.0,
-          "roi": 0.2569954187096774,
-          "pf": 1.280523168309859,
+          "total_staked_pln": 312.0,
+          "roi": 0.24893775576923077,
+          "pf": 1.2715684608391606,
           "pf_infinite": false,
-          "avg_odds": 18.4608568043871,
-          "median_odds": 17.969952,
+          "avg_odds": 18.473614701217947,
+          "median_odds": 18.043872,
           "max_drawdown_u": 57.4944266,
           "max_losing_streak": 44
         },
         "TOP5": {
-          "n": 148,
+          "n": 149,
           "wins": 5,
-          "losses": 143,
-          "wr": 0.033783783783783786,
-          "profit_u": 2.570195807600001,
-          "profit_pln": 5.140391615200002,
+          "losses": 144,
+          "wr": 0.03355704697986577,
+          "profit_u": 1.570195807600001,
+          "profit_pln": 3.140391615200002,
           "stake_pln": 2.0,
-          "total_staked_pln": 296.0,
-          "roi": 0.017366187889189196,
-          "pf": 1.0179733972559442,
+          "total_staked_pln": 298.0,
+          "roi": 0.010538226896644303,
+          "pf": 1.0109041375527779,
           "pf_infinite": false,
-          "avg_odds": 35.98358179378108,
-          "median_odds": 35.338118388299996,
+          "avg_odds": 36.01384739010335,
+          "median_odds": 35.54344120799999,
           "max_drawdown_u": 81.477523562,
           "max_losing_streak": 65
         }
@@ -375,71 +375,71 @@
         },
         "E1": {
           "overall": {
-            "n": 26,
-            "wins": 10,
-            "losses": 16,
-            "wr": 0.38461538461538464,
-            "profit_u": 149.362347584,
-            "profit_pln": 298.724695168,
+            "n": 30,
+            "wins": 11,
+            "losses": 19,
+            "wr": 0.36666666666666664,
+            "profit_u": 155.639276584,
+            "profit_pln": 311.278553168,
             "stake_pln": 2.0,
-            "total_staked_pln": 52.0,
-            "roi": 5.744705676307692,
-            "pf": 10.335146724,
+            "total_staked_pln": 60.0,
+            "roi": 5.187975886133333,
+            "pf": 9.191540872842106,
             "pf_infinite": false,
-            "avg_odds": 23.999239902,
-            "median_odds": 18.5732352,
+            "avg_odds": 23.416563960260003,
+            "median_odds": 18.172745955,
             "max_drawdown_u": 9.0,
             "max_losing_streak": 9
           },
           "variants": {
             "TOP3": {
-              "n": 9,
-              "wins": 5,
-              "losses": 4,
-              "wr": 0.5555555555555556,
-              "profit_u": 40.87841400000001,
-              "profit_pln": 81.75682800000001,
+              "n": 11,
+              "wins": 6,
+              "losses": 5,
+              "wr": 0.5454545454545454,
+              "profit_u": 49.15534300000001,
+              "profit_pln": 98.31068600000002,
               "stake_pln": 2.0,
-              "total_staked_pln": 18.0,
-              "roi": 4.542046000000001,
-              "pf": 11.2196035,
+              "total_staked_pln": 22.0,
+              "roi": 4.468667545454546,
+              "pf": 10.8310686,
               "pf_infinite": false,
-              "avg_odds": 10.084442444444443,
-              "median_odds": 10.38751,
+              "avg_odds": 9.848401727272726,
+              "median_odds": 10.276929,
               "max_drawdown_u": 2.0,
               "max_losing_streak": 2
             },
             "TOP4": {
-              "n": 9,
+              "n": 10,
               "wins": 3,
-              "losses": 6,
-              "wr": 0.3333333333333333,
-              "profit_u": 50.9989924,
-              "profit_pln": 101.9979848,
+              "losses": 7,
+              "wr": 0.3,
+              "profit_u": 49.9989924,
+              "profit_pln": 99.9979848,
               "stake_pln": 2.0,
-              "total_staked_pln": 18.0,
-              "roi": 5.666554711111111,
-              "pf": 9.499832066666666,
+              "total_staked_pln": 20.0,
+              "roi": 4.9998992399999995,
+              "pf": 8.1427132,
               "pf_infinite": false,
-              "avg_odds": 19.623330413333335,
-              "median_odds": 21.2520672,
+              "avg_odds": 19.706106243,
+              "median_odds": 20.851577955,
               "max_drawdown_u": 3.0,
               "max_losing_streak": 3
             },
             "TOP5": {
-              "n": 8,
+              "n": 9,
               "wins": 2,
-              "losses": 6,
-              "wr": 0.25,
-              "profit_u": 57.48494118400001,
-              "profit_pln": 114.96988236800001,
+              "losses": 7,
+              "wr": 0.2222222222222222,
+              "profit_u": 56.48494118400001,
+              "profit_pln": 112.96988236800001,
               "stake_pln": 2.0,
-              "total_staked_pln": 16.0,
-              "roi": 7.185617648000001,
-              "pf": 10.580823530666668,
+              "total_staked_pln": 18.0,
+              "roi": 6.276104576000001,
+              "pf": 9.069277312,
               "pf_infinite": false,
-              "avg_odds": 44.5762852165,
-              "median_odds": 43.973446083,
+              "avg_odds": 44.122604153088886,
+              "median_odds": 40.870696846,
               "max_drawdown_u": 5.0,
               "max_losing_streak": 5
             }
@@ -447,39 +447,39 @@
         },
         "E2": {
           "overall": {
-            "n": 22,
+            "n": 23,
             "wins": 0,
-            "losses": 22,
+            "losses": 23,
             "wr": 0.0,
-            "profit_u": -22.0,
-            "profit_pln": -44.0,
+            "profit_u": -23.0,
+            "profit_pln": -46.0,
             "stake_pln": 2.0,
-            "total_staked_pln": 44.0,
+            "total_staked_pln": 46.0,
             "roi": -1.0,
             "pf": 0.0,
             "pf_infinite": false,
-            "avg_odds": 26.34817497668181,
-            "median_odds": 18.01519371,
-            "max_drawdown_u": 22.0,
-            "max_losing_streak": 22
+            "avg_odds": 25.663189282043476,
+            "median_odds": 17.8268664,
+            "max_drawdown_u": 23.0,
+            "max_losing_streak": 23
           },
           "variants": {
             "TOP3": {
-              "n": 7,
+              "n": 8,
               "wins": 0,
-              "losses": 7,
+              "losses": 8,
               "wr": 0.0,
-              "profit_u": -7.0,
-              "profit_pln": -14.0,
+              "profit_u": -8.0,
+              "profit_pln": -16.0,
               "stake_pln": 2.0,
-              "total_staked_pln": 14.0,
+              "total_staked_pln": 16.0,
               "roi": -1.0,
               "pf": 0.0,
               "pf_infinite": false,
-              "avg_odds": 10.654154285714286,
-              "median_odds": 9.636144,
-              "max_drawdown_u": 7.0,
-              "max_losing_streak": 7
+              "avg_odds": 10.646573,
+              "median_odds": 10.114823999999999,
+              "max_drawdown_u": 8.0,
+              "max_losing_streak": 8
             },
             "TOP4": {
               "n": 7,
@@ -5783,76 +5783,121 @@
           "profit_u": -1.0,
           "cumulative_profit_u": 93.53446270760001,
           "cumulative_profit_pln": 187.06892541520003
+        },
+        {
+          "date": "2026-11-03T14:00:22",
+          "league": "E1",
+          "variant": "TOP3",
+          "result": "WIN",
+          "profit_u": 9.276929,
+          "cumulative_profit_u": 102.81139170760001,
+          "cumulative_profit_pln": 205.62278341520002
+        },
+        {
+          "date": "2026-11-03T14:00:22",
+          "league": "E1",
+          "variant": "TOP4",
+          "result": "LOSS",
+          "profit_u": -1.0,
+          "cumulative_profit_u": 101.81139170760001,
+          "cumulative_profit_pln": 203.62278341520002
+        },
+        {
+          "date": "2026-11-03T14:00:22",
+          "league": "E1",
+          "variant": "TOP5",
+          "result": "LOSS",
+          "profit_u": -1.0,
+          "cumulative_profit_u": 100.81139170760001,
+          "cumulative_profit_pln": 201.62278341520002
+        },
+        {
+          "date": "2026-11-03T14:00:22",
+          "league": "E2",
+          "variant": "TOP3",
+          "result": "LOSS",
+          "profit_u": -1.0,
+          "cumulative_profit_u": 99.81139170760001,
+          "cumulative_profit_pln": 199.62278341520002
+        },
+        {
+          "date": "2026-11-04T08:00:16",
+          "league": "E1",
+          "variant": "TOP3",
+          "result": "LOSS",
+          "profit_u": -1.0,
+          "cumulative_profit_u": 98.81139170760001,
+          "cumulative_profit_pln": 197.62278341520002
         }
       ]
     },
     "LAST_7_DAYS": {
       "overall": {
-        "n": 167,
+        "n": 149,
         "wins": 21,
-        "losses": 146,
-        "wr": 0.12574850299401197,
-        "profit_u": 168.2142826096,
-        "profit_pln": 336.4285652192,
+        "losses": 128,
+        "wr": 0.14093959731543623,
+        "profit_u": 187.59944560960002,
+        "profit_pln": 375.19889121920005,
         "stake_pln": 2.0,
-        "total_staked_pln": 334.0,
-        "roi": 1.0072711533508982,
-        "pf": 2.1521526206136987,
+        "total_staked_pln": 298.0,
+        "roi": 1.2590566819436244,
+        "pf": 2.465620668825,
         "pf_infinite": false,
-        "avg_odds": 22.365007318851497,
+        "avg_odds": 22.66791555941208,
         "median_odds": 17.8268664,
-        "max_drawdown_u": 26.108234,
+        "max_drawdown_u": 19.0,
         "max_losing_streak": 19
       },
       "variants": {
         "TOP3": {
-          "n": 57,
+          "n": 51,
           "wins": 10,
-          "losses": 47,
-          "wr": 0.17543859649122806,
-          "profit_u": 37.332696,
-          "profit_pln": 74.665392,
+          "losses": 41,
+          "wr": 0.19607843137254902,
+          "profit_u": 44.717859000000004,
+          "profit_pln": 89.43571800000001,
           "stake_pln": 2.0,
-          "total_staked_pln": 114.0,
-          "roi": 0.6549595789473684,
-          "pf": 1.7943126808510639,
+          "total_staked_pln": 102.0,
+          "roi": 0.8768207647058824,
+          "pf": 2.090679487804878,
           "pf_infinite": false,
-          "avg_odds": 9.629130070175437,
-          "median_odds": 10.053609999999995,
-          "max_drawdown_u": 7.0,
-          "max_losing_streak": 7
+          "avg_odds": 9.720868372549019,
+          "median_odds": 10.218839999999998,
+          "max_drawdown_u": 6.0,
+          "max_losing_streak": 6
         },
         "TOP4": {
-          "n": 55,
+          "n": 49,
           "wins": 7,
-          "losses": 48,
-          "wr": 0.12727272727272726,
-          "profit_u": 57.833867240000004,
-          "profit_pln": 115.66773448000001,
+          "losses": 42,
+          "wr": 0.14285714285714285,
+          "profit_u": 63.833867240000004,
+          "profit_pln": 127.66773448000001,
           "stake_pln": 2.0,
-          "total_staked_pln": 110.0,
-          "roi": 1.0515248589090909,
-          "pf": 2.204872234166667,
+          "total_staked_pln": 98.0,
+          "roi": 1.302731984489796,
+          "pf": 2.519853981904762,
           "pf_infinite": false,
-          "avg_odds": 19.313184199090905,
+          "avg_odds": 19.531634302040814,
           "median_odds": 18.7408704,
-          "max_drawdown_u": 11.0,
-          "max_losing_streak": 11
+          "max_drawdown_u": 8.0,
+          "max_losing_streak": 8
         },
         "TOP5": {
-          "n": 55,
+          "n": 49,
           "wins": 4,
-          "losses": 51,
-          "wr": 0.07272727272727272,
-          "profit_u": 73.0477193696,
-          "profit_pln": 146.0954387392,
+          "losses": 45,
+          "wr": 0.08163265306122448,
+          "profit_u": 79.0477193696,
+          "profit_pln": 158.0954387392,
           "stake_pln": 2.0,
-          "total_staked_pln": 110.0,
-          "roi": 1.3281403521745454,
-          "pf": 2.4323082229333335,
+          "total_staked_pln": 98.0,
+          "roi": 1.613218762644898,
+          "pf": 2.756615985991111,
           "pf_infinite": false,
-          "avg_odds": 38.6158304963309,
-          "median_odds": 37.828679616,
+          "avg_odds": 39.27969490923265,
+          "median_odds": 38.93147118,
           "max_drawdown_u": 17.0,
           "max_losing_streak": 17
         }
@@ -6148,93 +6193,93 @@
         },
         "E1": {
           "overall": {
-            "n": 9,
-            "wins": 7,
-            "losses": 2,
-            "wr": 0.7777777777777778,
-            "profit_u": 121.864915584,
-            "profit_pln": 243.729831168,
+            "n": 13,
+            "wins": 8,
+            "losses": 5,
+            "wr": 0.6153846153846154,
+            "profit_u": 128.141844584,
+            "profit_pln": 256.283689168,
             "stake_pln": 2.0,
-            "total_staked_pln": 18.0,
-            "roi": 13.540546176,
-            "pf": 61.932457792,
+            "total_staked_pln": 26.0,
+            "roi": 9.857064968000001,
+            "pf": 26.628368916800003,
             "pf_infinite": false,
-            "avg_odds": 18.693083968,
+            "avg_odds": 18.981110543676923,
             "median_odds": 15.8944032,
-            "max_drawdown_u": 2.0,
-            "max_losing_streak": 2
+            "max_drawdown_u": 3.0,
+            "max_losing_streak": 3
           },
           "variants": {
             "TOP3": {
-              "n": 3,
-              "wins": 3,
-              "losses": 0,
-              "wr": 1.0,
-              "profit_u": 25.233504,
-              "profit_pln": 50.467008,
+              "n": 5,
+              "wins": 4,
+              "losses": 1,
+              "wr": 0.8,
+              "profit_u": 33.510433,
+              "profit_pln": 67.020866,
               "stake_pln": 2.0,
-              "total_staked_pln": 6.0,
-              "roi": 8.411168,
-              "pf": null,
-              "pf_infinite": true,
-              "avg_odds": 9.411168,
+              "total_staked_pln": 10.0,
+              "roi": 6.7020865999999995,
+              "pf": 34.510433,
+              "pf_infinite": false,
+              "avg_odds": 9.1611882,
               "median_odds": 8.92944,
-              "max_drawdown_u": 0.0,
-              "max_losing_streak": 0
+              "max_drawdown_u": 1.0,
+              "max_losing_streak": 1
             },
             "TOP4": {
-              "n": 3,
+              "n": 4,
               "wins": 2,
-              "losses": 1,
-              "wr": 0.6666666666666666,
-              "profit_u": 34.1464704,
-              "profit_pln": 68.2929408,
+              "losses": 2,
+              "wr": 0.5,
+              "profit_u": 33.1464704,
+              "profit_pln": 66.2929408,
               "stake_pln": 2.0,
-              "total_staked_pln": 6.0,
-              "roi": 11.382156799999999,
-              "pf": 35.1464704,
+              "total_staked_pln": 8.0,
+              "roi": 8.2866176,
+              "pf": 17.5732352,
               "pf_infinite": false,
-              "avg_odds": 17.03052,
-              "median_odds": 15.8944032,
-              "max_drawdown_u": 1.0,
-              "max_losing_streak": 1
+              "avg_odds": 17.885662177500002,
+              "median_odds": 18.172745955,
+              "max_drawdown_u": 2.0,
+              "max_losing_streak": 2
             },
             "TOP5": {
-              "n": 3,
+              "n": 4,
               "wins": 2,
-              "losses": 1,
-              "wr": 0.6666666666666666,
-              "profit_u": 62.48494118400001,
-              "profit_pln": 124.96988236800001,
+              "losses": 2,
+              "wr": 0.5,
+              "profit_u": 61.48494118400001,
+              "profit_pln": 122.96988236800001,
               "stake_pln": 2.0,
-              "total_staked_pln": 6.0,
-              "roi": 20.828313728,
-              "pf": 63.48494118400001,
+              "total_staked_pln": 8.0,
+              "roi": 15.371235296000002,
+              "pf": 31.742470592000004,
               "pf_infinite": false,
-              "avg_odds": 29.637563904000004,
-              "median_odds": 27.656261568,
-              "max_drawdown_u": 1.0,
-              "max_losing_streak": 1
+              "avg_odds": 32.35146183945,
+              "median_odds": 32.742470592000004,
+              "max_drawdown_u": 2.0,
+              "max_losing_streak": 2
             }
           }
         },
         "E2": {
           "overall": {
-            "n": 9,
+            "n": 7,
             "wins": 0,
-            "losses": 9,
+            "losses": 7,
             "wr": 0.0,
-            "profit_u": -9.0,
-            "profit_pln": -18.0,
+            "profit_u": -7.0,
+            "profit_pln": -14.0,
             "stake_pln": 2.0,
-            "total_staked_pln": 18.0,
+            "total_staked_pln": 14.0,
             "roi": -1.0,
             "pf": 0.0,
             "pf_infinite": false,
-            "avg_odds": 22.93275416586667,
-            "median_odds": 14.702928,
-            "max_drawdown_u": 9.0,
-            "max_losing_streak": 9
+            "avg_odds": 26.666985641828575,
+            "median_odds": 17.8268664,
+            "max_drawdown_u": 7.0,
+            "max_losing_streak": 7
           },
           "variants": {
             "TOP3": {
@@ -6249,44 +6294,44 @@
               "roi": -1.0,
               "pf": 0.0,
               "pf_infinite": false,
-              "avg_odds": 10.254224,
-              "median_odds": 9.636144,
+              "avg_odds": 11.644191999999999,
+              "median_odds": 10.593504,
               "max_drawdown_u": 3.0,
               "max_losing_streak": 3
             },
             "TOP4": {
-              "n": 3,
+              "n": 2,
               "wins": 0,
-              "losses": 3,
+              "losses": 2,
               "wr": 0.0,
-              "profit_u": -3.0,
-              "profit_pln": -6.0,
+              "profit_u": -2.0,
+              "profit_pln": -4.0,
               "stake_pln": 2.0,
-              "total_staked_pln": 6.0,
+              "total_staked_pln": 4.0,
               "roi": -1.0,
               "pf": 0.0,
               "pf_infinite": false,
-              "avg_odds": 20.377323840000003,
-              "median_odds": 17.8268664,
-              "max_drawdown_u": 3.0,
-              "max_losing_streak": 3
+              "avg_odds": 25.74828576,
+              "median_odds": 25.74828576,
+              "max_drawdown_u": 2.0,
+              "max_losing_streak": 2
             },
             "TOP5": {
-              "n": 3,
+              "n": 2,
               "wins": 0,
-              "losses": 3,
+              "losses": 2,
               "wr": 0.0,
-              "profit_u": -3.0,
-              "profit_pln": -6.0,
+              "profit_u": -2.0,
+              "profit_pln": -4.0,
               "stake_pln": 2.0,
-              "total_staked_pln": 6.0,
+              "total_staked_pln": 4.0,
               "roi": -1.0,
               "pf": 0.0,
               "pf_infinite": false,
-              "avg_odds": 38.166714657600004,
-              "median_odds": 31.553553528,
-              "max_drawdown_u": 3.0,
-              "max_losing_streak": 3
+              "avg_odds": 50.119875986400004,
+              "median_odds": 50.119875986400004,
+              "max_drawdown_u": 2.0,
+              "max_losing_streak": 2
             }
           }
         },
@@ -6364,73 +6409,73 @@
         },
         "EC": {
           "overall": {
-            "n": 13,
+            "n": 9,
             "wins": 1,
-            "losses": 12,
-            "wr": 0.07692307692307693,
-            "profit_u": -0.18723499999999937,
-            "profit_pln": -0.37446999999999875,
+            "losses": 8,
+            "wr": 0.1111111111111111,
+            "profit_u": 3.8127650000000006,
+            "profit_pln": 7.625530000000001,
             "stake_pln": 2.0,
-            "total_staked_pln": 26.0,
-            "roi": -0.014402692307692259,
-            "pf": 0.9843970833333334,
+            "total_staked_pln": 18.0,
+            "roi": 0.42364055555555563,
+            "pf": 1.476595625,
             "pf_infinite": false,
-            "avg_odds": 29.183785545076926,
-            "median_odds": 27.80370005,
-            "max_drawdown_u": 10.0,
-            "max_losing_streak": 10
+            "avg_odds": 34.877090498444446,
+            "median_odds": 28.034436150000005,
+            "max_drawdown_u": 6.0,
+            "max_losing_streak": 6
           },
           "variants": {
             "TOP3": {
-              "n": 5,
+              "n": 3,
               "wins": 1,
-              "losses": 4,
-              "wr": 0.2,
-              "profit_u": 7.812765000000001,
-              "profit_pln": 15.625530000000001,
+              "losses": 2,
+              "wr": 0.3333333333333333,
+              "profit_u": 9.812765,
+              "profit_pln": 19.62553,
               "stake_pln": 2.0,
-              "total_staked_pln": 10.0,
-              "roi": 1.562553,
-              "pf": 2.95319125,
+              "total_staked_pln": 6.0,
+              "roi": 3.2709216666666667,
+              "pf": 5.9063825,
               "pf_infinite": false,
-              "avg_odds": 10.969075,
-              "median_odds": 12.812765,
-              "max_drawdown_u": 4.0,
-              "max_losing_streak": 4
+              "avg_odds": 13.359931666666668,
+              "median_odds": 12.919095000000002,
+              "max_drawdown_u": 2.0,
+              "max_losing_streak": 2
             },
             "TOP4": {
-              "n": 4,
+              "n": 3,
               "wins": 0,
-              "losses": 4,
+              "losses": 3,
               "wr": 0.0,
-              "profit_u": -4.0,
-              "profit_pln": -8.0,
+              "profit_u": -3.0,
+              "profit_pln": -6.0,
               "stake_pln": 2.0,
-              "total_staked_pln": 8.0,
+              "total_staked_pln": 6.0,
               "roi": -1.0,
               "pf": 0.0,
               "pf_infinite": false,
-              "avg_odds": 26.272736787500005,
-              "median_odds": 27.919068100000004,
-              "max_drawdown_u": 4.0,
-              "max_losing_streak": 4
+              "avg_odds": 28.99105171666667,
+              "median_odds": 28.034436150000005,
+              "max_drawdown_u": 3.0,
+              "max_losing_streak": 3
             },
             "TOP5": {
-              "n": 4,
+              "n": 3,
               "wins": 0,
-              "losses": 4,
+              "losses": 3,
               "wr": 0.0,
-              "profit_u": -4.0,
-              "profit_pln": -8.0,
+              "profit_u": -3.0,
+              "profit_pln": -6.0,
               "stake_pln": 2.0,
-              "total_staked_pln": 8.0,
+              "total_staked_pln": 6.0,
               "roi": -1.0,
               "pf": 0.0,
               "pf_infinite": false,
-              "avg_odds": 54.86322248400001,
-              "median_odds": 59.63893660725,
-              "max_drawdown_u": 4.0,
-              "max_losing_streak": 4
+              "avg_odds": 62.280288112,
+              "median_odds": 67.5629911215,
+              "max_drawdown_u": 3.0,
+              "max_losing_streak": 3
             }
           }
         },
@@ -6652,145 +6697,145 @@
         },
         "I1": {
           "overall": {
-            "n": 14,
+            "n": 8,
             "wins": 5,
-            "losses": 9,
-            "wr": 0.35714285714285715,
-            "profit_u": 103.27190628999999,
-            "profit_pln": 206.54381257999998,
+            "losses": 3,
+            "wr": 0.625,
+            "profit_u": 109.27190629,
+            "profit_pln": 218.54381258,
             "stake_pln": 2.0,
-            "total_staked_pln": 28.0,
-            "roi": 7.376564735,
-            "pf": 12.474656254444445,
+            "total_staked_pln": 16.0,
+            "roi": 13.65898828625,
+            "pf": 37.423968763333335,
             "pf_infinite": false,
-            "avg_odds": 26.266273377257146,
-            "median_odds": 21.865868310000003,
-            "max_drawdown_u": 6.0,
-            "max_losing_streak": 6
+            "avg_odds": 30.607199988750004,
+            "median_odds": 24.779039670000003,
+            "max_drawdown_u": 3.0,
+            "max_losing_streak": 3
           },
           "variants": {
             "TOP3": {
-              "n": 4,
+              "n": 2,
               "wins": 2,
-              "losses": 2,
-              "wr": 0.5,
-              "profit_u": 20.033933,
-              "profit_pln": 40.067866,
+              "losses": 0,
+              "wr": 1.0,
+              "profit_u": 22.033933,
+              "profit_pln": 44.067866,
               "stake_pln": 2.0,
-              "total_staked_pln": 8.0,
-              "roi": 5.00848325,
-              "pf": 11.0169665,
-              "pf_infinite": false,
-              "avg_odds": 11.20598475,
-              "median_odds": 11.530398000000002,
-              "max_drawdown_u": 2.0,
-              "max_losing_streak": 2
+              "total_staked_pln": 4.0,
+              "roi": 11.0169665,
+              "pf": null,
+              "pf_infinite": true,
+              "avg_odds": 12.0169665,
+              "median_odds": 12.0169665,
+              "max_drawdown_u": 0.0,
+              "max_losing_streak": 0
             },
             "TOP4": {
-              "n": 5,
+              "n": 3,
               "wins": 2,
-              "losses": 3,
-              "wr": 0.4,
-              "profit_u": 41.315962,
-              "profit_pln": 82.631924,
+              "losses": 1,
+              "wr": 0.6666666666666666,
+              "profit_u": 43.315962,
+              "profit_pln": 86.631924,
               "stake_pln": 2.0,
-              "total_staked_pln": 10.0,
-              "roi": 8.2631924,
-              "pf": 14.771987333333334,
+              "total_staked_pln": 6.0,
+              "roi": 14.438654,
+              "pf": 44.315962,
               "pf_infinite": false,
-              "avg_odds": 21.42865434,
-              "median_odds": 20.53433778,
-              "max_drawdown_u": 2.0,
-              "max_losing_streak": 2
+              "avg_odds": 23.17112028,
+              "median_odds": 23.19739884,
+              "max_drawdown_u": 1.0,
+              "max_losing_streak": 1
             },
             "TOP5": {
-              "n": 5,
+              "n": 3,
               "wins": 1,
-              "losses": 4,
-              "wr": 0.2,
-              "profit_u": 41.92201129,
-              "profit_pln": 83.84402258,
+              "losses": 2,
+              "wr": 0.3333333333333333,
+              "profit_u": 43.92201129,
+              "profit_pln": 87.84402258,
               "stake_pln": 2.0,
-              "total_staked_pln": 10.0,
-              "roi": 8.384402258,
-              "pf": 11.4805028225,
+              "total_staked_pln": 6.0,
+              "roi": 14.64067043,
+              "pf": 22.961005645,
               "pf_infinite": false,
-              "avg_odds": 43.15212331632,
-              "median_odds": 46.92201129,
-              "max_drawdown_u": 4.0,
-              "max_losing_streak": 4
+              "avg_odds": 50.43676869,
+              "median_odds": 52.19414739,
+              "max_drawdown_u": 2.0,
+              "max_losing_streak": 2
             }
           }
         },
         "I2": {
           "overall": {
-            "n": 12,
-            "wins": 1,
-            "losses": 11,
-            "wr": 0.08333333333333333,
-            "profit_u": -3.1082339999999995,
-            "profit_pln": -6.216467999999999,
+            "n": 8,
+            "wins": 0,
+            "losses": 8,
+            "wr": 0.0,
+            "profit_u": -8.0,
+            "profit_pln": -16.0,
             "stake_pln": 2.0,
-            "total_staked_pln": 24.0,
-            "roi": -0.25901949999999996,
-            "pf": 0.7174332727272728,
+            "total_staked_pln": 16.0,
+            "roi": -1.0,
+            "pf": 0.0,
             "pf_infinite": false,
-            "avg_odds": 28.31802035,
-            "median_odds": 23.666286,
+            "avg_odds": 31.6747575,
+            "median_odds": 29.2282434,
             "max_drawdown_u": 8.0,
             "max_losing_streak": 8
           },
           "variants": {
             "TOP3": {
-              "n": 4,
-              "wins": 1,
-              "losses": 3,
-              "wr": 0.25,
-              "profit_u": 4.8917660000000005,
-              "profit_pln": 9.783532000000001,
+              "n": 2,
+              "wins": 0,
+              "losses": 2,
+              "wr": 0.0,
+              "profit_u": -2.0,
+              "profit_pln": -4.0,
               "stake_pln": 2.0,
-              "total_staked_pln": 8.0,
-              "roi": 1.2229415000000001,
-              "pf": 2.6305886666666667,
+              "total_staked_pln": 4.0,
+              "roi": -1.0,
+              "pf": 0.0,
               "pf_infinite": false,
-              "avg_odds": 11.451783,
-              "median_odds": 11.104682999999998,
+              "avg_odds": 13.423499999999999,
+              "median_odds": 13.423499999999999,
               "max_drawdown_u": 2.0,
               "max_losing_streak": 2
             },
             "TOP4": {
-              "n": 4,
+              "n": 3,
               "wins": 0,
-              "losses": 4,
+              "losses": 3,
               "wr": 0.0,
-              "profit_u": -4.0,
-              "profit_pln": -8.0,
+              "profit_u": -3.0,
+              "profit_pln": -6.0,
               "stake_pln": 2.0,
-              "total_staked_pln": 8.0,
+              "total_staked_pln": 6.0,
               "roi": -1.0,
               "pf": 0.0,
               "pf_infinite": false,
-              "avg_odds": 24.641897999999998,
-              "median_odds": 23.666286,
-              "max_drawdown_u": 4.0,
-              "max_losing_streak": 4
+              "avg_odds": 26.14362,
+              "median_odds": 27.19584,
+              "max_drawdown_u": 3.0,
+              "max_losing_streak": 3
             },
             "TOP5": {
-              "n": 4,
+              "n": 3,
               "wins": 0,
-              "losses": 4,
+              "losses": 3,
               "wr": 0.0,
-              "profit_u": -4.0,
-              "profit_pln": -8.0,
+              "profit_u": -3.0,
+              "profit_pln": -6.0,
               "stake_pln": 2.0,
-              "total_staked_pln": 8.0,
+              "total_staked_pln": 6.0,
               "roi": -1.0,
               "pf": 0.0,
               "pf_infinite": false,
-              "avg_odds": 48.860380049999996,
-              "median_odds": 47.3210409,
-              "max_drawdown_u": 4.0,
-              "max_losing_streak": 4
+              "avg_odds": 49.3734,
+              "median_odds": 47.3207616,
+              "max_drawdown_u": 3.0,
+              "max_losing_streak": 3
             }
           }
         },
@@ -6940,73 +6985,39 @@
         },
         "SC0": {
           "overall": {
-            "n": 7,
+            "n": 1,
             "wins": 0,
-            "losses": 7,
+            "losses": 1,
             "wr": 0.0,
-            "profit_u": -7.0,
-            "profit_pln": -14.0,
+            "profit_u": -1.0,
+            "profit_pln": -2.0,
             "stake_pln": 2.0,
-            "total_staked_pln": 14.0,
+            "total_staked_pln": 2.0,
             "roi": -1.0,
             "pf": 0.0,
             "pf_infinite": false,
-            "avg_odds": 21.045049439999996,
-            "median_odds": 20.053152,
-            "max_drawdown_u": 7.0,
-            "max_losing_streak": 7
+            "avg_odds": 5.871557999999999,
+            "median_odds": 5.871557999999999,
+            "max_drawdown_u": 1.0,
+            "max_losing_streak": 1
           },
           "variants": {
             "TOP3": {
-              "n": 3,
+              "n": 1,
               "wins": 0,
-              "losses": 3,
+              "losses": 1,
               "wr": 0.0,
-              "profit_u": -3.0,
-              "profit_pln": -6.0,
+              "profit_u": -1.0,
+              "profit_pln": -2.0,
               "stake_pln": 2.0,
-              "total_staked_pln": 6.0,
+              "total_staked_pln": 2.0,
               "roi": -1.0,
               "pf": 0.0,
               "pf_infinite": false,
-              "avg_odds": 8.731436,
-              "median_odds": 9.8784,
-              "max_drawdown_u": 3.0,
-              "max_losing_streak": 3
-            },
-            "TOP4": {
-              "n": 2,
-              "wins": 0,
-              "losses": 2,
-              "wr": 0.0,
-              "profit_u": -2.0,
-              "profit_pln": -4.0,
-              "stake_pln": 2.0,
-              "total_staked_pln": 4.0,
-              "roi": -1.0,
-              "pf": 0.0,
-              "pf_infinite": false,
-              "avg_odds": 20.053152,
-              "median_odds": 20.053152,
-              "max_drawdown_u": 2.0,
-              "max_losing_streak": 2
-            },
-            "TOP5": {
-              "n": 2,
-              "wins": 0,
-              "losses": 2,
-              "wr": 0.0,
-              "profit_u": -2.0,
-              "profit_pln": -4.0,
-              "stake_pln": 2.0,
-              "total_staked_pln": 4.0,
-              "roi": -1.0,
-              "pf": 0.0,
-              "pf_infinite": false,
-              "avg_odds": 40.507367040000005,
-              "median_odds": 40.507367040000005,
-              "max_drawdown_u": 2.0,
-              "max_losing_streak": 2
+              "avg_odds": 5.871557999999999,
+              "median_odds": 5.871557999999999,
+              "max_drawdown_u": 1.0,
+              "max_losing_streak": 1
             }
           }
         },
@@ -7445,8 +7456,8 @@
       },
       "cumulative_profit": [
         {
-          "date": "2026-10-27T14:00:25",
-          "league": "E2",
+          "date": "2026-10-30T14:00:57",
+          "league": "B1",
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
@@ -7454,8 +7465,8 @@
           "cumulative_profit_pln": -2.0
         },
         {
-          "date": "2026-10-27T14:00:25",
-          "league": "E2",
+          "date": "2026-10-30T14:00:57",
+          "league": "B1",
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
@@ -7463,8 +7474,8 @@
           "cumulative_profit_pln": -4.0
         },
         {
-          "date": "2026-10-27T14:00:25",
-          "league": "E2",
+          "date": "2026-10-30T14:00:57",
+          "league": "B1",
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
@@ -7472,8 +7483,8 @@
           "cumulative_profit_pln": -6.0
         },
         {
-          "date": "2026-10-27T14:00:25",
-          "league": "EC",
+          "date": "2026-10-30T14:00:57",
+          "league": "D1",
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
@@ -7481,8 +7492,8 @@
           "cumulative_profit_pln": -8.0
         },
         {
-          "date": "2026-10-27T14:00:25",
-          "league": "EC",
+          "date": "2026-10-30T14:00:57",
+          "league": "D1",
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
@@ -7490,8 +7501,8 @@
           "cumulative_profit_pln": -10.0
         },
         {
-          "date": "2026-10-27T14:00:25",
-          "league": "EC",
+          "date": "2026-10-30T14:00:57",
+          "league": "D1",
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
@@ -7499,8 +7510,8 @@
           "cumulative_profit_pln": -12.0
         },
         {
-          "date": "2026-10-27T14:00:25",
-          "league": "I1",
+          "date": "2026-10-30T14:00:57",
+          "league": "D2",
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
@@ -7508,8 +7519,8 @@
           "cumulative_profit_pln": -14.0
         },
         {
-          "date": "2026-10-27T14:00:25",
-          "league": "I1",
+          "date": "2026-10-30T14:00:57",
+          "league": "D2",
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
@@ -7517,8 +7528,8 @@
           "cumulative_profit_pln": -16.0
         },
         {
-          "date": "2026-10-27T14:00:25",
-          "league": "I1",
+          "date": "2026-10-30T14:00:57",
+          "league": "D2",
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
@@ -7526,8 +7537,8 @@
           "cumulative_profit_pln": -18.0
         },
         {
-          "date": "2026-10-27T14:00:25",
-          "league": "I2",
+          "date": "2026-10-30T14:00:57",
+          "league": "E0",
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
@@ -7535,8 +7546,8 @@
           "cumulative_profit_pln": -20.0
         },
         {
-          "date": "2026-10-27T14:00:25",
-          "league": "I2",
+          "date": "2026-10-30T14:00:57",
+          "league": "E0",
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
@@ -7544,8 +7555,8 @@
           "cumulative_profit_pln": -22.0
         },
         {
-          "date": "2026-10-27T14:00:25",
-          "league": "I2",
+          "date": "2026-10-30T14:00:57",
+          "league": "E0",
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
@@ -7553,220 +7564,13 @@
           "cumulative_profit_pln": -24.0
         },
         {
-          "date": "2026-10-27T14:00:25",
-          "league": "SC0",
-          "variant": "TOP3",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -13.0,
-          "cumulative_profit_pln": -26.0
-        },
-        {
-          "date": "2026-10-27T14:00:25",
-          "league": "SC0",
-          "variant": "TOP4",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -14.0,
-          "cumulative_profit_pln": -28.0
-        },
-        {
-          "date": "2026-10-27T14:00:25",
-          "league": "SC0",
-          "variant": "TOP5",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -15.0,
-          "cumulative_profit_pln": -30.0
-        },
-        {
-          "date": "2026-10-28T08:00:21",
-          "league": "EC",
-          "variant": "TOP3",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -16.0,
-          "cumulative_profit_pln": -32.0
-        },
-        {
-          "date": "2026-10-28T08:00:21",
-          "league": "I1",
-          "variant": "TOP3",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -17.0,
-          "cumulative_profit_pln": -34.0
-        },
-        {
-          "date": "2026-10-28T08:00:21",
-          "league": "I1",
-          "variant": "TOP4",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -18.0,
-          "cumulative_profit_pln": -36.0
-        },
-        {
-          "date": "2026-10-28T08:00:21",
-          "league": "I1",
-          "variant": "TOP5",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -19.0,
-          "cumulative_profit_pln": -38.0
-        },
-        {
-          "date": "2026-10-28T08:00:21",
-          "league": "I2",
-          "variant": "TOP3",
-          "result": "WIN",
-          "profit_u": 7.8917660000000005,
-          "cumulative_profit_u": -11.108234,
-          "cumulative_profit_pln": -22.216468
-        },
-        {
-          "date": "2026-10-28T08:00:21",
-          "league": "SC0",
-          "variant": "TOP3",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -12.108234,
-          "cumulative_profit_pln": -24.216468
-        },
-        {
-          "date": "2026-10-28T08:00:21",
-          "league": "SC0",
-          "variant": "TOP4",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -13.108234,
-          "cumulative_profit_pln": -26.216468
-        },
-        {
-          "date": "2026-10-28T08:00:21",
-          "league": "SC0",
-          "variant": "TOP5",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -14.108234,
-          "cumulative_profit_pln": -28.216468
-        },
-        {
-          "date": "2026-10-30T14:00:57",
-          "league": "B1",
-          "variant": "TOP3",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -15.108234,
-          "cumulative_profit_pln": -30.216468
-        },
-        {
-          "date": "2026-10-30T14:00:57",
-          "league": "B1",
-          "variant": "TOP4",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -16.108234,
-          "cumulative_profit_pln": -32.216468
-        },
-        {
-          "date": "2026-10-30T14:00:57",
-          "league": "B1",
-          "variant": "TOP5",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -17.108234,
-          "cumulative_profit_pln": -34.216468
-        },
-        {
-          "date": "2026-10-30T14:00:57",
-          "league": "D1",
-          "variant": "TOP3",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -18.108234,
-          "cumulative_profit_pln": -36.216468
-        },
-        {
-          "date": "2026-10-30T14:00:57",
-          "league": "D1",
-          "variant": "TOP4",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -19.108234,
-          "cumulative_profit_pln": -38.216468
-        },
-        {
-          "date": "2026-10-30T14:00:57",
-          "league": "D1",
-          "variant": "TOP5",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -20.108234,
-          "cumulative_profit_pln": -40.216468
-        },
-        {
-          "date": "2026-10-30T14:00:57",
-          "league": "D2",
-          "variant": "TOP3",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -21.108234,
-          "cumulative_profit_pln": -42.216468
-        },
-        {
-          "date": "2026-10-30T14:00:57",
-          "league": "D2",
-          "variant": "TOP4",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -22.108234,
-          "cumulative_profit_pln": -44.216468
-        },
-        {
-          "date": "2026-10-30T14:00:57",
-          "league": "D2",
-          "variant": "TOP5",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -23.108234,
-          "cumulative_profit_pln": -46.216468
-        },
-        {
-          "date": "2026-10-30T14:00:57",
-          "league": "E0",
-          "variant": "TOP3",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -24.108234,
-          "cumulative_profit_pln": -48.216468
-        },
-        {
-          "date": "2026-10-30T14:00:57",
-          "league": "E0",
-          "variant": "TOP4",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -25.108234,
-          "cumulative_profit_pln": -50.216468
-        },
-        {
-          "date": "2026-10-30T14:00:57",
-          "league": "E0",
-          "variant": "TOP5",
-          "result": "LOSS",
-          "profit_u": -1.0,
-          "cumulative_profit_u": -26.108234,
-          "cumulative_profit_pln": -52.216468
-        },
-        {
           "date": "2026-10-30T14:00:57",
           "league": "E1",
           "variant": "TOP3",
           "result": "WIN",
           "profit_u": 10.806704,
-          "cumulative_profit_u": -15.30153,
-          "cumulative_profit_pln": -30.60306
+          "cumulative_profit_u": -1.1932960000000001,
+          "cumulative_profit_pln": -2.3865920000000003
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -7774,8 +7578,8 @@
           "variant": "TOP4",
           "result": "WIN",
           "profit_u": 20.2520672,
-          "cumulative_profit_u": 4.950537199999999,
-          "cumulative_profit_pln": 9.901074399999999
+          "cumulative_profit_u": 19.0587712,
+          "cumulative_profit_pln": 38.1175424
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -7783,8 +7587,8 @@
           "variant": "TOP5",
           "result": "WIN",
           "profit_u": 36.828679616,
-          "cumulative_profit_u": 41.779216816,
-          "cumulative_profit_pln": 83.558433632
+          "cumulative_profit_u": 55.887450816,
+          "cumulative_profit_pln": 111.774901632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -7792,8 +7596,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 40.779216816,
-          "cumulative_profit_pln": 81.558433632
+          "cumulative_profit_u": 54.887450816,
+          "cumulative_profit_pln": 109.774901632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -7801,8 +7605,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 39.779216816,
-          "cumulative_profit_pln": 79.558433632
+          "cumulative_profit_u": 53.887450816,
+          "cumulative_profit_pln": 107.774901632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -7810,8 +7614,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 38.779216816,
-          "cumulative_profit_pln": 77.558433632
+          "cumulative_profit_u": 52.887450816,
+          "cumulative_profit_pln": 105.774901632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -7819,8 +7623,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 37.779216816,
-          "cumulative_profit_pln": 75.558433632
+          "cumulative_profit_u": 51.887450816,
+          "cumulative_profit_pln": 103.774901632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -7828,8 +7632,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 36.779216816,
-          "cumulative_profit_pln": 73.558433632
+          "cumulative_profit_u": 50.887450816,
+          "cumulative_profit_pln": 101.774901632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -7837,8 +7641,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 35.779216816,
-          "cumulative_profit_pln": 71.558433632
+          "cumulative_profit_u": 49.887450816,
+          "cumulative_profit_pln": 99.774901632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -7846,8 +7650,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 34.779216816,
-          "cumulative_profit_pln": 69.558433632
+          "cumulative_profit_u": 48.887450816,
+          "cumulative_profit_pln": 97.774901632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -7855,8 +7659,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 33.779216816,
-          "cumulative_profit_pln": 67.558433632
+          "cumulative_profit_u": 47.887450816,
+          "cumulative_profit_pln": 95.774901632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -7864,8 +7668,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 32.779216816,
-          "cumulative_profit_pln": 65.558433632
+          "cumulative_profit_u": 46.887450816,
+          "cumulative_profit_pln": 93.774901632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -7873,8 +7677,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 31.779216816,
-          "cumulative_profit_pln": 63.558433632
+          "cumulative_profit_u": 45.887450816,
+          "cumulative_profit_pln": 91.774901632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -7882,8 +7686,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 30.779216816,
-          "cumulative_profit_pln": 61.558433632
+          "cumulative_profit_u": 44.887450816,
+          "cumulative_profit_pln": 89.774901632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -7891,8 +7695,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 29.779216816,
-          "cumulative_profit_pln": 59.558433632
+          "cumulative_profit_u": 43.887450816,
+          "cumulative_profit_pln": 87.774901632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -7900,8 +7704,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 28.779216816,
-          "cumulative_profit_pln": 57.558433632
+          "cumulative_profit_u": 42.887450816,
+          "cumulative_profit_pln": 85.774901632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -7909,8 +7713,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 27.779216816,
-          "cumulative_profit_pln": 55.558433632
+          "cumulative_profit_u": 41.887450816,
+          "cumulative_profit_pln": 83.774901632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -7918,8 +7722,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 26.779216816,
-          "cumulative_profit_pln": 53.558433632
+          "cumulative_profit_u": 40.887450816,
+          "cumulative_profit_pln": 81.774901632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -7927,8 +7731,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 25.779216816,
-          "cumulative_profit_pln": 51.558433632
+          "cumulative_profit_u": 39.887450816,
+          "cumulative_profit_pln": 79.774901632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -7936,8 +7740,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 24.779216816,
-          "cumulative_profit_pln": 49.558433632
+          "cumulative_profit_u": 38.887450816,
+          "cumulative_profit_pln": 77.774901632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -7945,8 +7749,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 23.779216816,
-          "cumulative_profit_pln": 47.558433632
+          "cumulative_profit_u": 37.887450816,
+          "cumulative_profit_pln": 75.774901632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -7954,8 +7758,8 @@
           "variant": "TOP3",
           "result": "WIN",
           "profit_u": 10.715858,
-          "cumulative_profit_u": 34.495074816,
-          "cumulative_profit_pln": 68.990149632
+          "cumulative_profit_u": 48.603308815999995,
+          "cumulative_profit_pln": 97.20661763199999
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -7963,8 +7767,8 @@
           "variant": "TOP4",
           "result": "WIN",
           "profit_u": 25.3606805,
-          "cumulative_profit_u": 59.855755316,
-          "cumulative_profit_pln": 119.711510632
+          "cumulative_profit_u": 73.963989316,
+          "cumulative_profit_pln": 147.927978632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -7972,8 +7776,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 58.855755316,
-          "cumulative_profit_pln": 117.711510632
+          "cumulative_profit_u": 72.963989316,
+          "cumulative_profit_pln": 145.927978632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -7981,8 +7785,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 57.855755316,
-          "cumulative_profit_pln": 115.711510632
+          "cumulative_profit_u": 71.963989316,
+          "cumulative_profit_pln": 143.927978632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -7990,8 +7794,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 56.855755316,
-          "cumulative_profit_pln": 113.711510632
+          "cumulative_profit_u": 70.963989316,
+          "cumulative_profit_pln": 141.927978632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -7999,8 +7803,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 55.855755316,
-          "cumulative_profit_pln": 111.711510632
+          "cumulative_profit_u": 69.963989316,
+          "cumulative_profit_pln": 139.927978632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -8008,8 +7812,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 54.855755316,
-          "cumulative_profit_pln": 109.711510632
+          "cumulative_profit_u": 68.963989316,
+          "cumulative_profit_pln": 137.927978632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -8017,8 +7821,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 53.855755316,
-          "cumulative_profit_pln": 107.711510632
+          "cumulative_profit_u": 67.963989316,
+          "cumulative_profit_pln": 135.927978632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -8026,8 +7830,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 52.855755316,
-          "cumulative_profit_pln": 105.711510632
+          "cumulative_profit_u": 66.963989316,
+          "cumulative_profit_pln": 133.927978632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -8035,8 +7839,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 51.855755316,
-          "cumulative_profit_pln": 103.711510632
+          "cumulative_profit_u": 65.963989316,
+          "cumulative_profit_pln": 131.927978632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -8044,8 +7848,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 50.855755316,
-          "cumulative_profit_pln": 101.711510632
+          "cumulative_profit_u": 64.963989316,
+          "cumulative_profit_pln": 129.927978632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -8053,8 +7857,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 49.855755316,
-          "cumulative_profit_pln": 99.711510632
+          "cumulative_profit_u": 63.963989315999996,
+          "cumulative_profit_pln": 127.92797863199999
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -8062,8 +7866,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 48.855755316,
-          "cumulative_profit_pln": 97.711510632
+          "cumulative_profit_u": 62.963989315999996,
+          "cumulative_profit_pln": 125.92797863199999
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -8071,8 +7875,8 @@
           "variant": "TOP3",
           "result": "WIN",
           "profit_u": 5.371244000000001,
-          "cumulative_profit_u": 54.226999316000004,
-          "cumulative_profit_pln": 108.45399863200001
+          "cumulative_profit_u": 68.335233316,
+          "cumulative_profit_pln": 136.670466632
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -8080,8 +7884,8 @@
           "variant": "TOP4",
           "result": "WIN",
           "profit_u": 9.63997748,
-          "cumulative_profit_u": 63.866976796,
-          "cumulative_profit_pln": 127.733953592
+          "cumulative_profit_u": 77.975210796,
+          "cumulative_profit_pln": 155.950421592
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -8089,8 +7893,8 @@
           "variant": "TOP5",
           "result": "WIN",
           "profit_u": 14.6407668956,
-          "cumulative_profit_u": 78.5077436916,
-          "cumulative_profit_pln": 157.0154873832
+          "cumulative_profit_u": 92.6159776916,
+          "cumulative_profit_pln": 185.2319553832
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -8098,8 +7902,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 77.5077436916,
-          "cumulative_profit_pln": 155.0154873832
+          "cumulative_profit_u": 91.6159776916,
+          "cumulative_profit_pln": 183.2319553832
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -8107,8 +7911,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 76.5077436916,
-          "cumulative_profit_pln": 153.0154873832
+          "cumulative_profit_u": 90.6159776916,
+          "cumulative_profit_pln": 181.2319553832
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -8116,8 +7920,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 75.5077436916,
-          "cumulative_profit_pln": 151.0154873832
+          "cumulative_profit_u": 89.6159776916,
+          "cumulative_profit_pln": 179.2319553832
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -8125,8 +7929,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 74.5077436916,
-          "cumulative_profit_pln": 149.0154873832
+          "cumulative_profit_u": 88.6159776916,
+          "cumulative_profit_pln": 177.2319553832
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -8134,8 +7938,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 73.5077436916,
-          "cumulative_profit_pln": 147.0154873832
+          "cumulative_profit_u": 87.6159776916,
+          "cumulative_profit_pln": 175.2319553832
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -8143,8 +7947,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 72.5077436916,
-          "cumulative_profit_pln": 145.0154873832
+          "cumulative_profit_u": 86.6159776916,
+          "cumulative_profit_pln": 173.2319553832
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -8152,8 +7956,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 71.5077436916,
-          "cumulative_profit_pln": 143.0154873832
+          "cumulative_profit_u": 85.6159776916,
+          "cumulative_profit_pln": 171.2319553832
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -8161,8 +7965,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 70.5077436916,
-          "cumulative_profit_pln": 141.0154873832
+          "cumulative_profit_u": 84.6159776916,
+          "cumulative_profit_pln": 169.2319553832
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -8170,8 +7974,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 69.5077436916,
-          "cumulative_profit_pln": 139.0154873832
+          "cumulative_profit_u": 83.6159776916,
+          "cumulative_profit_pln": 167.2319553832
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -8179,8 +7983,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 68.5077436916,
-          "cumulative_profit_pln": 137.0154873832
+          "cumulative_profit_u": 82.6159776916,
+          "cumulative_profit_pln": 165.2319553832
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -8188,8 +7992,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 67.5077436916,
-          "cumulative_profit_pln": 135.0154873832
+          "cumulative_profit_u": 81.6159776916,
+          "cumulative_profit_pln": 163.2319553832
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -8197,8 +8001,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 66.5077436916,
-          "cumulative_profit_pln": 133.0154873832
+          "cumulative_profit_u": 80.6159776916,
+          "cumulative_profit_pln": 161.2319553832
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -8206,8 +8010,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 65.5077436916,
-          "cumulative_profit_pln": 131.0154873832
+          "cumulative_profit_u": 79.6159776916,
+          "cumulative_profit_pln": 159.2319553832
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -8215,8 +8019,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 64.5077436916,
-          "cumulative_profit_pln": 129.0154873832
+          "cumulative_profit_u": 78.6159776916,
+          "cumulative_profit_pln": 157.2319553832
         },
         {
           "date": "2026-10-30T14:00:57",
@@ -8224,8 +8028,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 63.5077436916,
-          "cumulative_profit_pln": 127.0154873832
+          "cumulative_profit_u": 77.6159776916,
+          "cumulative_profit_pln": 155.2319553832
         },
         {
           "date": "2026-10-31T08:01:02",
@@ -8233,8 +8037,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 62.5077436916,
-          "cumulative_profit_pln": 125.0154873832
+          "cumulative_profit_u": 76.6159776916,
+          "cumulative_profit_pln": 153.2319553832
         },
         {
           "date": "2026-10-31T08:01:02",
@@ -8242,8 +8046,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 61.5077436916,
-          "cumulative_profit_pln": 123.0154873832
+          "cumulative_profit_u": 75.6159776916,
+          "cumulative_profit_pln": 151.2319553832
         },
         {
           "date": "2026-10-31T08:01:02",
@@ -8251,8 +8055,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 60.5077436916,
-          "cumulative_profit_pln": 121.0154873832
+          "cumulative_profit_u": 74.6159776916,
+          "cumulative_profit_pln": 149.2319553832
         },
         {
           "date": "2026-10-31T08:01:02",
@@ -8260,8 +8064,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 59.5077436916,
-          "cumulative_profit_pln": 119.0154873832
+          "cumulative_profit_u": 73.6159776916,
+          "cumulative_profit_pln": 147.2319553832
         },
         {
           "date": "2026-10-31T08:01:02",
@@ -8269,8 +8073,8 @@
           "variant": "TOP3",
           "result": "WIN",
           "profit_u": 7.92944,
-          "cumulative_profit_u": 67.4371836916,
-          "cumulative_profit_pln": 134.8743673832
+          "cumulative_profit_u": 81.5454176916,
+          "cumulative_profit_pln": 163.0908353832
         },
         {
           "date": "2026-10-31T08:01:02",
@@ -8278,8 +8082,8 @@
           "variant": "TOP4",
           "result": "WIN",
           "profit_u": 14.8944032,
-          "cumulative_profit_u": 82.3315868916,
-          "cumulative_profit_pln": 164.6631737832
+          "cumulative_profit_u": 96.4398208916,
+          "cumulative_profit_pln": 192.8796417832
         },
         {
           "date": "2026-10-31T08:01:02",
@@ -8287,8 +8091,8 @@
           "variant": "TOP5",
           "result": "WIN",
           "profit_u": 26.656261568,
-          "cumulative_profit_u": 108.9878484596,
-          "cumulative_profit_pln": 217.9756969192
+          "cumulative_profit_u": 123.0960824596,
+          "cumulative_profit_pln": 246.1921649192
         },
         {
           "date": "2026-10-31T08:01:02",
@@ -8296,8 +8100,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 107.9878484596,
-          "cumulative_profit_pln": 215.9756969192
+          "cumulative_profit_u": 122.0960824596,
+          "cumulative_profit_pln": 244.1921649192
         },
         {
           "date": "2026-10-31T08:01:02",
@@ -8305,8 +8109,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 106.9878484596,
-          "cumulative_profit_pln": 213.9756969192
+          "cumulative_profit_u": 121.0960824596,
+          "cumulative_profit_pln": 242.1921649192
         },
         {
           "date": "2026-10-31T08:01:02",
@@ -8314,8 +8118,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 105.9878484596,
-          "cumulative_profit_pln": 211.9756969192
+          "cumulative_profit_u": 120.0960824596,
+          "cumulative_profit_pln": 240.1921649192
         },
         {
           "date": "2026-10-31T08:01:02",
@@ -8323,8 +8127,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 104.9878484596,
-          "cumulative_profit_pln": 209.9756969192
+          "cumulative_profit_u": 119.0960824596,
+          "cumulative_profit_pln": 238.1921649192
         },
         {
           "date": "2026-10-31T08:01:02",
@@ -8332,8 +8136,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 103.9878484596,
-          "cumulative_profit_pln": 207.9756969192
+          "cumulative_profit_u": 118.0960824596,
+          "cumulative_profit_pln": 236.1921649192
         },
         {
           "date": "2026-10-31T08:01:02",
@@ -8341,8 +8145,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 102.9878484596,
-          "cumulative_profit_pln": 205.9756969192
+          "cumulative_profit_u": 117.0960824596,
+          "cumulative_profit_pln": 234.1921649192
         },
         {
           "date": "2026-10-31T08:01:02",
@@ -8350,8 +8154,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 101.9878484596,
-          "cumulative_profit_pln": 203.9756969192
+          "cumulative_profit_u": 116.0960824596,
+          "cumulative_profit_pln": 232.1921649192
         },
         {
           "date": "2026-10-31T08:01:02",
@@ -8359,8 +8163,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 100.9878484596,
-          "cumulative_profit_pln": 201.9756969192
+          "cumulative_profit_u": 115.0960824596,
+          "cumulative_profit_pln": 230.1921649192
         },
         {
           "date": "2026-10-31T08:01:02",
@@ -8368,8 +8172,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 99.9878484596,
-          "cumulative_profit_pln": 199.9756969192
+          "cumulative_profit_u": 114.0960824596,
+          "cumulative_profit_pln": 228.1921649192
         },
         {
           "date": "2026-10-31T08:01:02",
@@ -8377,8 +8181,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 98.9878484596,
-          "cumulative_profit_pln": 197.9756969192
+          "cumulative_profit_u": 113.0960824596,
+          "cumulative_profit_pln": 226.1921649192
         },
         {
           "date": "2026-10-31T08:01:02",
@@ -8386,8 +8190,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 97.9878484596,
-          "cumulative_profit_pln": 195.9756969192
+          "cumulative_profit_u": 112.0960824596,
+          "cumulative_profit_pln": 224.1921649192
         },
         {
           "date": "2026-10-31T08:01:02",
@@ -8395,8 +8199,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 96.9878484596,
-          "cumulative_profit_pln": 193.9756969192
+          "cumulative_profit_u": 111.0960824596,
+          "cumulative_profit_pln": 222.1921649192
         },
         {
           "date": "2026-10-31T08:01:02",
@@ -8404,8 +8208,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 95.9878484596,
-          "cumulative_profit_pln": 191.9756969192
+          "cumulative_profit_u": 110.0960824596,
+          "cumulative_profit_pln": 220.1921649192
         },
         {
           "date": "2026-10-31T08:01:02",
@@ -8413,8 +8217,8 @@
           "variant": "TOP4",
           "result": "WIN",
           "profit_u": 8.36572868,
-          "cumulative_profit_u": 104.3535771396,
-          "cumulative_profit_pln": 208.7071542792
+          "cumulative_profit_u": 118.4618111396,
+          "cumulative_profit_pln": 236.9236222792
         },
         {
           "date": "2026-10-31T08:01:02",
@@ -8422,8 +8226,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 103.3535771396,
-          "cumulative_profit_pln": 206.7071542792
+          "cumulative_profit_u": 117.4618111396,
+          "cumulative_profit_pln": 234.9236222792
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8431,8 +8235,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 102.3535771396,
-          "cumulative_profit_pln": 204.7071542792
+          "cumulative_profit_u": 116.4618111396,
+          "cumulative_profit_pln": 232.9236222792
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8440,8 +8244,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 101.3535771396,
-          "cumulative_profit_pln": 202.7071542792
+          "cumulative_profit_u": 115.4618111396,
+          "cumulative_profit_pln": 230.9236222792
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8449,8 +8253,8 @@
           "variant": "TOP3",
           "result": "WIN",
           "profit_u": 6.49736,
-          "cumulative_profit_u": 107.8509371396,
-          "cumulative_profit_pln": 215.7018742792
+          "cumulative_profit_u": 121.9591711396,
+          "cumulative_profit_pln": 243.9183422792
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8458,8 +8262,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 106.8509371396,
-          "cumulative_profit_pln": 213.7018742792
+          "cumulative_profit_u": 120.9591711396,
+          "cumulative_profit_pln": 241.9183422792
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8467,8 +8271,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 105.8509371396,
-          "cumulative_profit_pln": 211.7018742792
+          "cumulative_profit_u": 119.9591711396,
+          "cumulative_profit_pln": 239.9183422792
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8476,8 +8280,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 104.8509371396,
-          "cumulative_profit_pln": 209.7018742792
+          "cumulative_profit_u": 118.9591711396,
+          "cumulative_profit_pln": 237.9183422792
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8485,8 +8289,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 103.8509371396,
-          "cumulative_profit_pln": 207.7018742792
+          "cumulative_profit_u": 117.9591711396,
+          "cumulative_profit_pln": 235.9183422792
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8494,8 +8298,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 102.8509371396,
-          "cumulative_profit_pln": 205.7018742792
+          "cumulative_profit_u": 116.9591711396,
+          "cumulative_profit_pln": 233.9183422792
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8503,8 +8307,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 101.8509371396,
-          "cumulative_profit_pln": 203.7018742792
+          "cumulative_profit_u": 115.9591711396,
+          "cumulative_profit_pln": 231.9183422792
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8512,8 +8316,8 @@
           "variant": "TOP3",
           "result": "WIN",
           "profit_u": 11.812765,
-          "cumulative_profit_u": 113.6637021396,
-          "cumulative_profit_pln": 227.3274042792
+          "cumulative_profit_u": 127.7719361396,
+          "cumulative_profit_pln": 255.5438722792
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8521,8 +8325,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 112.6637021396,
-          "cumulative_profit_pln": 225.3274042792
+          "cumulative_profit_u": 126.7719361396,
+          "cumulative_profit_pln": 253.5438722792
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8530,8 +8334,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 111.6637021396,
-          "cumulative_profit_pln": 223.3274042792
+          "cumulative_profit_u": 125.7719361396,
+          "cumulative_profit_pln": 251.5438722792
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8539,8 +8343,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 110.6637021396,
-          "cumulative_profit_pln": 221.3274042792
+          "cumulative_profit_u": 124.7719361396,
+          "cumulative_profit_pln": 249.5438722792
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8548,8 +8352,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 109.6637021396,
-          "cumulative_profit_pln": 219.3274042792
+          "cumulative_profit_u": 123.7719361396,
+          "cumulative_profit_pln": 247.5438722792
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8557,8 +8361,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 108.6637021396,
-          "cumulative_profit_pln": 217.3274042792
+          "cumulative_profit_u": 122.7719361396,
+          "cumulative_profit_pln": 245.5438722792
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8566,8 +8370,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 107.6637021396,
-          "cumulative_profit_pln": 215.3274042792
+          "cumulative_profit_u": 121.7719361396,
+          "cumulative_profit_pln": 243.5438722792
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8575,8 +8379,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 106.6637021396,
-          "cumulative_profit_pln": 213.3274042792
+          "cumulative_profit_u": 120.7719361396,
+          "cumulative_profit_pln": 241.5438722792
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8584,8 +8388,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 105.6637021396,
-          "cumulative_profit_pln": 211.3274042792
+          "cumulative_profit_u": 119.7719361396,
+          "cumulative_profit_pln": 239.5438722792
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8593,8 +8397,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 104.6637021396,
-          "cumulative_profit_pln": 209.3274042792
+          "cumulative_profit_u": 118.7719361396,
+          "cumulative_profit_pln": 237.5438722792
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8602,8 +8406,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 103.6637021396,
-          "cumulative_profit_pln": 207.3274042792
+          "cumulative_profit_u": 117.7719361396,
+          "cumulative_profit_pln": 235.5438722792
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8611,8 +8415,8 @@
           "variant": "TOP3",
           "result": "WIN",
           "profit_u": 5.371244,
-          "cumulative_profit_u": 109.03494613960001,
-          "cumulative_profit_pln": 218.06989227920002
+          "cumulative_profit_u": 123.1431801396,
+          "cumulative_profit_pln": 246.2863602792
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8620,8 +8424,8 @@
           "variant": "TOP4",
           "result": "WIN",
           "profit_u": 8.36572868,
-          "cumulative_profit_u": 117.40067481960001,
-          "cumulative_profit_pln": 234.80134963920003
+          "cumulative_profit_u": 131.5089088196,
+          "cumulative_profit_pln": 263.0178176392
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8629,8 +8433,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 116.40067481960001,
-          "cumulative_profit_pln": 232.80134963920003
+          "cumulative_profit_u": 130.5089088196,
+          "cumulative_profit_pln": 261.0178176392
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8638,8 +8442,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 115.40067481960001,
-          "cumulative_profit_pln": 230.80134963920003
+          "cumulative_profit_u": 129.5089088196,
+          "cumulative_profit_pln": 259.0178176392
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8647,8 +8451,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 114.40067481960001,
-          "cumulative_profit_pln": 228.80134963920003
+          "cumulative_profit_u": 128.5089088196,
+          "cumulative_profit_pln": 257.0178176392
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8656,8 +8460,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 113.40067481960001,
-          "cumulative_profit_pln": 226.80134963920003
+          "cumulative_profit_u": 127.50890881960001,
+          "cumulative_profit_pln": 255.01781763920002
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8665,8 +8469,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 112.40067481960001,
-          "cumulative_profit_pln": 224.80134963920003
+          "cumulative_profit_u": 126.50890881960001,
+          "cumulative_profit_pln": 253.01781763920002
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8674,8 +8478,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 111.40067481960001,
-          "cumulative_profit_pln": 222.80134963920003
+          "cumulative_profit_u": 125.50890881960001,
+          "cumulative_profit_pln": 251.01781763920002
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8683,8 +8487,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 110.40067481960001,
-          "cumulative_profit_pln": 220.80134963920003
+          "cumulative_profit_u": 124.50890881960001,
+          "cumulative_profit_pln": 249.01781763920002
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8692,8 +8496,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 109.40067481960001,
-          "cumulative_profit_pln": 218.80134963920003
+          "cumulative_profit_u": 123.50890881960001,
+          "cumulative_profit_pln": 247.01781763920002
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8701,8 +8505,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 108.40067481960001,
-          "cumulative_profit_pln": 216.80134963920003
+          "cumulative_profit_u": 122.50890881960001,
+          "cumulative_profit_pln": 245.01781763920002
         },
         {
           "date": "2026-10-31T14:00:53",
@@ -8710,8 +8514,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 107.40067481960001,
-          "cumulative_profit_pln": 214.80134963920003
+          "cumulative_profit_u": 121.50890881960001,
+          "cumulative_profit_pln": 243.01781763920002
         },
         {
           "date": "2026-11-01T08:00:38",
@@ -8719,8 +8523,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 106.40067481960001,
-          "cumulative_profit_pln": 212.80134963920003
+          "cumulative_profit_u": 120.50890881960001,
+          "cumulative_profit_pln": 241.01781763920002
         },
         {
           "date": "2026-11-01T08:00:38",
@@ -8728,8 +8532,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 105.40067481960001,
-          "cumulative_profit_pln": 210.80134963920003
+          "cumulative_profit_u": 119.50890881960001,
+          "cumulative_profit_pln": 239.01781763920002
         },
         {
           "date": "2026-11-01T08:00:38",
@@ -8737,8 +8541,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 104.40067481960001,
-          "cumulative_profit_pln": 208.80134963920003
+          "cumulative_profit_u": 118.50890881960001,
+          "cumulative_profit_pln": 237.01781763920002
         },
         {
           "date": "2026-11-01T08:00:38",
@@ -8746,8 +8550,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 103.40067481960001,
-          "cumulative_profit_pln": 206.80134963920003
+          "cumulative_profit_u": 117.50890881960001,
+          "cumulative_profit_pln": 235.01781763920002
         },
         {
           "date": "2026-11-01T08:00:38",
@@ -8755,8 +8559,8 @@
           "variant": "TOP5",
           "result": "WIN",
           "profit_u": 45.92201129,
-          "cumulative_profit_u": 149.3226861096,
-          "cumulative_profit_pln": 298.6453722192
+          "cumulative_profit_u": 163.4309201096,
+          "cumulative_profit_pln": 326.8618402192
         },
         {
           "date": "2026-11-01T08:00:38",
@@ -8764,8 +8568,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 148.3226861096,
-          "cumulative_profit_pln": 296.6453722192
+          "cumulative_profit_u": 162.4309201096,
+          "cumulative_profit_pln": 324.8618402192
         },
         {
           "date": "2026-11-01T08:00:38",
@@ -8773,8 +8577,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 147.3226861096,
-          "cumulative_profit_pln": 294.6453722192
+          "cumulative_profit_u": 161.4309201096,
+          "cumulative_profit_pln": 322.8618402192
         },
         {
           "date": "2026-11-01T08:00:38",
@@ -8782,8 +8586,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 146.3226861096,
-          "cumulative_profit_pln": 292.6453722192
+          "cumulative_profit_u": 160.4309201096,
+          "cumulative_profit_pln": 320.8618402192
         },
         {
           "date": "2026-11-01T08:00:38",
@@ -8791,8 +8595,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 145.3226861096,
-          "cumulative_profit_pln": 290.6453722192
+          "cumulative_profit_u": 159.4309201096,
+          "cumulative_profit_pln": 318.8618402192
         },
         {
           "date": "2026-11-01T08:00:38",
@@ -8800,8 +8604,8 @@
           "variant": "TOP3",
           "result": "WIN",
           "profit_u": 6.61824,
-          "cumulative_profit_u": 151.9409261096,
-          "cumulative_profit_pln": 303.8818522192
+          "cumulative_profit_u": 166.0491601096,
+          "cumulative_profit_pln": 332.0983202192
         },
         {
           "date": "2026-11-01T08:00:38",
@@ -8809,8 +8613,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 150.9409261096,
-          "cumulative_profit_pln": 301.8818522192
+          "cumulative_profit_u": 165.0491601096,
+          "cumulative_profit_pln": 330.0983202192
         },
         {
           "date": "2026-11-01T08:00:38",
@@ -8818,8 +8622,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 149.9409261096,
-          "cumulative_profit_pln": 299.8818522192
+          "cumulative_profit_u": 164.0491601096,
+          "cumulative_profit_pln": 328.0983202192
         },
         {
           "date": "2026-11-01T08:00:38",
@@ -8827,8 +8631,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 148.9409261096,
-          "cumulative_profit_pln": 297.8818522192
+          "cumulative_profit_u": 163.0491601096,
+          "cumulative_profit_pln": 326.0983202192
         },
         {
           "date": "2026-11-01T08:00:38",
@@ -8836,8 +8640,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 147.9409261096,
-          "cumulative_profit_pln": 295.8818522192
+          "cumulative_profit_u": 162.0491601096,
+          "cumulative_profit_pln": 324.0983202192
         },
         {
           "date": "2026-11-01T08:00:38",
@@ -8845,8 +8649,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 146.9409261096,
-          "cumulative_profit_pln": 293.8818522192
+          "cumulative_profit_u": 161.0491601096,
+          "cumulative_profit_pln": 322.0983202192
         },
         {
           "date": "2026-11-01T08:00:38",
@@ -8854,8 +8658,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 145.9409261096,
-          "cumulative_profit_pln": 291.8818522192
+          "cumulative_profit_u": 160.0491601096,
+          "cumulative_profit_pln": 320.0983202192
         },
         {
           "date": "2026-11-01T08:00:38",
@@ -8863,8 +8667,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 144.9409261096,
-          "cumulative_profit_pln": 289.8818522192
+          "cumulative_profit_u": 159.0491601096,
+          "cumulative_profit_pln": 318.0983202192
         },
         {
           "date": "2026-11-01T14:00:25",
@@ -8872,8 +8676,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 143.9409261096,
-          "cumulative_profit_pln": 287.8818522192
+          "cumulative_profit_u": 158.0491601096,
+          "cumulative_profit_pln": 316.0983202192
         },
         {
           "date": "2026-11-01T14:00:25",
@@ -8881,8 +8685,8 @@
           "variant": "TOP3",
           "result": "WIN",
           "profit_u": 11.318075,
-          "cumulative_profit_u": 155.2590011096,
-          "cumulative_profit_pln": 310.5180022192
+          "cumulative_profit_u": 169.3672351096,
+          "cumulative_profit_pln": 338.7344702192
         },
         {
           "date": "2026-11-01T14:00:25",
@@ -8890,8 +8694,8 @@
           "variant": "TOP4",
           "result": "WIN",
           "profit_u": 18.9552815,
-          "cumulative_profit_u": 174.21428260960002,
-          "cumulative_profit_pln": 348.42856521920004
+          "cumulative_profit_u": 188.3225166096,
+          "cumulative_profit_pln": 376.6450332192
         },
         {
           "date": "2026-11-01T14:00:25",
@@ -8899,8 +8703,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 173.21428260960002,
-          "cumulative_profit_pln": 346.42856521920004
+          "cumulative_profit_u": 187.3225166096,
+          "cumulative_profit_pln": 374.6450332192
         },
         {
           "date": "2026-11-01T14:00:25",
@@ -8908,8 +8712,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 172.21428260960002,
-          "cumulative_profit_pln": 344.42856521920004
+          "cumulative_profit_u": 186.3225166096,
+          "cumulative_profit_pln": 372.6450332192
         },
         {
           "date": "2026-11-01T14:00:25",
@@ -8917,8 +8721,8 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 171.21428260960002,
-          "cumulative_profit_pln": 342.42856521920004
+          "cumulative_profit_u": 185.3225166096,
+          "cumulative_profit_pln": 370.6450332192
         },
         {
           "date": "2026-11-01T14:00:25",
@@ -8926,8 +8730,8 @@
           "variant": "TOP4",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 170.21428260960002,
-          "cumulative_profit_pln": 340.42856521920004
+          "cumulative_profit_u": 184.3225166096,
+          "cumulative_profit_pln": 368.6450332192
         },
         {
           "date": "2026-11-01T14:00:25",
@@ -8935,8 +8739,8 @@
           "variant": "TOP5",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 169.21428260960002,
-          "cumulative_profit_pln": 338.42856521920004
+          "cumulative_profit_u": 183.3225166096,
+          "cumulative_profit_pln": 366.6450332192
         },
         {
           "date": "2026-11-02T08:00:19",
@@ -8944,78 +8748,123 @@
           "variant": "TOP3",
           "result": "LOSS",
           "profit_u": -1.0,
-          "cumulative_profit_u": 168.21428260960002,
-          "cumulative_profit_pln": 336.42856521920004
+          "cumulative_profit_u": 182.3225166096,
+          "cumulative_profit_pln": 364.6450332192
+        },
+        {
+          "date": "2026-11-03T14:00:22",
+          "league": "E1",
+          "variant": "TOP3",
+          "result": "WIN",
+          "profit_u": 9.276929,
+          "cumulative_profit_u": 191.5994456096,
+          "cumulative_profit_pln": 383.1988912192
+        },
+        {
+          "date": "2026-11-03T14:00:22",
+          "league": "E1",
+          "variant": "TOP4",
+          "result": "LOSS",
+          "profit_u": -1.0,
+          "cumulative_profit_u": 190.5994456096,
+          "cumulative_profit_pln": 381.1988912192
+        },
+        {
+          "date": "2026-11-03T14:00:22",
+          "league": "E1",
+          "variant": "TOP5",
+          "result": "LOSS",
+          "profit_u": -1.0,
+          "cumulative_profit_u": 189.5994456096,
+          "cumulative_profit_pln": 379.1988912192
+        },
+        {
+          "date": "2026-11-03T14:00:22",
+          "league": "E2",
+          "variant": "TOP3",
+          "result": "LOSS",
+          "profit_u": -1.0,
+          "cumulative_profit_u": 188.5994456096,
+          "cumulative_profit_pln": 377.1988912192
+        },
+        {
+          "date": "2026-11-04T08:00:16",
+          "league": "E1",
+          "variant": "TOP3",
+          "result": "LOSS",
+          "profit_u": -1.0,
+          "cumulative_profit_u": 187.5994456096,
+          "cumulative_profit_pln": 375.1988912192
         }
       ]
     },
     "LAST_30_DAYS": {
       "overall": {
-        "n": 457,
-        "wins": 41,
-        "losses": 416,
-        "wr": 0.08971553610503283,
-        "profit_u": 93.5344627076,
-        "profit_pln": 187.0689254152,
+        "n": 462,
+        "wins": 42,
+        "losses": 420,
+        "wr": 0.09090909090909091,
+        "profit_u": 98.8113917076,
+        "profit_pln": 197.6227834152,
         "stake_pln": 2.0,
-        "total_staked_pln": 914.0,
-        "roi": 0.20467059673435448,
-        "pf": 1.2248424584317308,
+        "total_staked_pln": 924.0,
+        "roi": 0.21387747122857143,
+        "pf": 1.2352652183514286,
         "pf_infinite": false,
-        "avg_odds": 21.09499520603851,
-        "median_odds": 16.49427022,
+        "avg_odds": 21.059573581202162,
+        "median_odds": 16.48664681,
         "max_drawdown_u": 148.33339859999998,
         "max_losing_streak": 73
       },
       "variants": {
         "TOP3": {
-          "n": 154,
-          "wins": 23,
-          "losses": 131,
-          "wr": 0.14935064935064934,
-          "profit_u": 51.12997700000001,
-          "profit_pln": 102.25995400000002,
+          "n": 157,
+          "wins": 24,
+          "losses": 133,
+          "wr": 0.15286624203821655,
+          "profit_u": 58.406906000000006,
+          "profit_pln": 116.81381200000001,
           "stake_pln": 2.0,
-          "total_staked_pln": 308.0,
-          "roi": 0.33201283766233775,
-          "pf": 1.3903051679389313,
+          "total_staked_pln": 314.0,
+          "roi": 0.3720185095541402,
+          "pf": 1.4391496691729322,
           "pf_infinite": false,
-          "avg_odds": 9.437726616883117,
-          "median_odds": 9.5084825,
+          "avg_odds": 9.436788789808917,
+          "median_odds": 9.53568,
           "max_drawdown_u": 39.838972,
           "max_losing_streak": 21
         },
         "TOP4": {
-          "n": 155,
+          "n": 156,
           "wins": 13,
-          "losses": 142,
-          "wr": 0.08387096774193549,
-          "profit_u": 39.8342899,
-          "profit_pln": 79.6685798,
+          "losses": 143,
+          "wr": 0.08333333333333333,
+          "profit_u": 38.8342899,
+          "profit_pln": 77.6685798,
           "stake_pln": 2.0,
-          "total_staked_pln": 310.0,
-          "roi": 0.2569954187096774,
-          "pf": 1.280523168309859,
+          "total_staked_pln": 312.0,
+          "roi": 0.24893775576923077,
+          "pf": 1.2715684608391606,
           "pf_infinite": false,
-          "avg_odds": 18.4608568043871,
-          "median_odds": 17.969952,
+          "avg_odds": 18.473614701217947,
+          "median_odds": 18.043872,
           "max_drawdown_u": 57.4944266,
           "max_losing_streak": 44
         },
         "TOP5": {
-          "n": 148,
+          "n": 149,
           "wins": 5,
-          "losses": 143,
-          "wr": 0.033783783783783786,
-          "profit_u": 2.570195807600001,
-          "profit_pln": 5.140391615200002,
+          "losses": 144,
+          "wr": 0.03355704697986577,
+          "profit_u": 1.570195807600001,
+          "profit_pln": 3.140391615200002,
           "stake_pln": 2.0,
-          "total_staked_pln": 296.0,
-          "roi": 0.017366187889189196,
-          "pf": 1.0179733972559442,
+          "total_staked_pln": 298.0,
+          "roi": 0.010538226896644303,
+          "pf": 1.0109041375527779,
           "pf_infinite": false,
-          "avg_odds": 35.98358179378108,
-          "median_odds": 35.338118388299996,
+          "avg_odds": 36.01384739010335,
+          "median_odds": 35.54344120799999,
           "max_drawdown_u": 81.477523562,
           "max_losing_streak": 65
         }
@@ -9311,71 +9160,71 @@
         },
         "E1": {
           "overall": {
-            "n": 26,
-            "wins": 10,
-            "losses": 16,
-            "wr": 0.38461538461538464,
-            "profit_u": 149.362347584,
-            "profit_pln": 298.724695168,
+            "n": 30,
+            "wins": 11,
+            "losses": 19,
+            "wr": 0.36666666666666664,
+            "profit_u": 155.639276584,
+            "profit_pln": 311.278553168,
             "stake_pln": 2.0,
-            "total_staked_pln": 52.0,
-            "roi": 5.744705676307692,
-            "pf": 10.335146724,
+            "total_staked_pln": 60.0,
+            "roi": 5.187975886133333,
+            "pf": 9.191540872842106,
             "pf_infinite": false,
-            "avg_odds": 23.999239902,
-            "median_odds": 18.5732352,
+            "avg_odds": 23.416563960260003,
+            "median_odds": 18.172745955,
             "max_drawdown_u": 9.0,
             "max_losing_streak": 9
           },
           "variants": {
             "TOP3": {
-              "n": 9,
-              "wins": 5,
-              "losses": 4,
-              "wr": 0.5555555555555556,
-              "profit_u": 40.87841400000001,
-              "profit_pln": 81.75682800000001,
+              "n": 11,
+              "wins": 6,
+              "losses": 5,
+              "wr": 0.5454545454545454,
+              "profit_u": 49.15534300000001,
+              "profit_pln": 98.31068600000002,
               "stake_pln": 2.0,
-              "total_staked_pln": 18.0,
-              "roi": 4.542046000000001,
-              "pf": 11.2196035,
+              "total_staked_pln": 22.0,
+              "roi": 4.468667545454546,
+              "pf": 10.8310686,
               "pf_infinite": false,
-              "avg_odds": 10.084442444444443,
-              "median_odds": 10.38751,
+              "avg_odds": 9.848401727272726,
+              "median_odds": 10.276929,
               "max_drawdown_u": 2.0,
               "max_losing_streak": 2
             },
             "TOP4": {
-              "n": 9,
+              "n": 10,
               "wins": 3,
-              "losses": 6,
-              "wr": 0.3333333333333333,
-              "profit_u": 50.9989924,
-              "profit_pln": 101.9979848,
+              "losses": 7,
+              "wr": 0.3,
+              "profit_u": 49.9989924,
+              "profit_pln": 99.9979848,
               "stake_pln": 2.0,
-              "total_staked_pln": 18.0,
-              "roi": 5.666554711111111,
-              "pf": 9.499832066666666,
+              "total_staked_pln": 20.0,
+              "roi": 4.9998992399999995,
+              "pf": 8.1427132,
               "pf_infinite": false,
-              "avg_odds": 19.623330413333335,
-              "median_odds": 21.2520672,
+              "avg_odds": 19.706106243,
+              "median_odds": 20.851577955,
               "max_drawdown_u": 3.0,
               "max_losing_streak": 3
             },
             "TOP5": {
-              "n": 8,
+              "n": 9,
               "wins": 2,
-              "losses": 6,
-              "wr": 0.25,
-              "profit_u": 57.48494118400001,
-              "profit_pln": 114.96988236800001,
+              "losses": 7,
+              "wr": 0.2222222222222222,
+              "profit_u": 56.48494118400001,
+              "profit_pln": 112.96988236800001,
               "stake_pln": 2.0,
-              "total_staked_pln": 16.0,
-              "roi": 7.185617648000001,
-              "pf": 10.580823530666668,
+              "total_staked_pln": 18.0,
+              "roi": 6.276104576000001,
+              "pf": 9.069277312,
               "pf_infinite": false,
-              "avg_odds": 44.5762852165,
-              "median_odds": 43.973446083,
+              "avg_odds": 44.122604153088886,
+              "median_odds": 40.870696846,
               "max_drawdown_u": 5.0,
               "max_losing_streak": 5
             }
@@ -9383,39 +9232,39 @@
         },
         "E2": {
           "overall": {
-            "n": 22,
+            "n": 23,
             "wins": 0,
-            "losses": 22,
+            "losses": 23,
             "wr": 0.0,
-            "profit_u": -22.0,
-            "profit_pln": -44.0,
+            "profit_u": -23.0,
+            "profit_pln": -46.0,
             "stake_pln": 2.0,
-            "total_staked_pln": 44.0,
+            "total_staked_pln": 46.0,
             "roi": -1.0,
             "pf": 0.0,
             "pf_infinite": false,
-            "avg_odds": 26.34817497668181,
-            "median_odds": 18.01519371,
-            "max_drawdown_u": 22.0,
-            "max_losing_streak": 22
+            "avg_odds": 25.663189282043476,
+            "median_odds": 17.8268664,
+            "max_drawdown_u": 23.0,
+            "max_losing_streak": 23
           },
           "variants": {
             "TOP3": {
-              "n": 7,
+              "n": 8,
               "wins": 0,
-              "losses": 7,
+              "losses": 8,
               "wr": 0.0,
-              "profit_u": -7.0,
-              "profit_pln": -14.0,
+              "profit_u": -8.0,
+              "profit_pln": -16.0,
               "stake_pln": 2.0,
-              "total_staked_pln": 14.0,
+              "total_staked_pln": 16.0,
               "roi": -1.0,
               "pf": 0.0,
               "pf_infinite": false,
-              "avg_odds": 10.654154285714286,
-              "median_odds": 9.636144,
-              "max_drawdown_u": 7.0,
-              "max_losing_streak": 7
+              "avg_odds": 10.646573,
+              "median_odds": 10.114823999999999,
+              "max_drawdown_u": 8.0,
+              "max_losing_streak": 8
             },
             "TOP4": {
               "n": 7,
@@ -14719,78 +14568,123 @@
           "profit_u": -1.0,
           "cumulative_profit_u": 93.53446270760001,
           "cumulative_profit_pln": 187.06892541520003
+        },
+        {
+          "date": "2026-11-03T14:00:22",
+          "league": "E1",
+          "variant": "TOP3",
+          "result": "WIN",
+          "profit_u": 9.276929,
+          "cumulative_profit_u": 102.81139170760001,
+          "cumulative_profit_pln": 205.62278341520002
+        },
+        {
+          "date": "2026-11-03T14:00:22",
+          "league": "E1",
+          "variant": "TOP4",
+          "result": "LOSS",
+          "profit_u": -1.0,
+          "cumulative_profit_u": 101.81139170760001,
+          "cumulative_profit_pln": 203.62278341520002
+        },
+        {
+          "date": "2026-11-03T14:00:22",
+          "league": "E1",
+          "variant": "TOP5",
+          "result": "LOSS",
+          "profit_u": -1.0,
+          "cumulative_profit_u": 100.81139170760001,
+          "cumulative_profit_pln": 201.62278341520002
+        },
+        {
+          "date": "2026-11-03T14:00:22",
+          "league": "E2",
+          "variant": "TOP3",
+          "result": "LOSS",
+          "profit_u": -1.0,
+          "cumulative_profit_u": 99.81139170760001,
+          "cumulative_profit_pln": 199.62278341520002
+        },
+        {
+          "date": "2026-11-04T08:00:16",
+          "league": "E1",
+          "variant": "TOP3",
+          "result": "LOSS",
+          "profit_u": -1.0,
+          "cumulative_profit_u": 98.81139170760001,
+          "cumulative_profit_pln": 197.62278341520002
         }
       ]
     },
     "THIS_MONTH": {
       "overall": {
-        "n": 26,
-        "wins": 4,
-        "losses": 22,
-        "wr": 0.15384615384615385,
-        "profit_u": 60.813607790000006,
-        "profit_pln": 121.62721558000001,
+        "n": 31,
+        "wins": 5,
+        "losses": 26,
+        "wr": 0.16129032258064516,
+        "profit_u": 66.09053679,
+        "profit_pln": 132.18107358,
         "stake_pln": 2.0,
-        "total_staked_pln": 52.0,
-        "roi": 2.338984915,
-        "pf": 3.764254899545455,
+        "total_staked_pln": 62.0,
+        "roi": 2.1319527996774195,
+        "pf": 3.5419437226923076,
         "pf_infinite": false,
-        "avg_odds": 16.374679483461538,
-        "median_odds": 12.939437639999998,
+        "avg_odds": 16.60812425567097,
+        "median_odds": 12.566914799999996,
         "max_drawdown_u": 8.0,
         "max_losing_streak": 8
       },
       "variants": {
         "TOP3": {
-          "n": 10,
-          "wins": 2,
-          "losses": 8,
-          "wr": 0.2,
-          "profit_u": 9.936315,
-          "profit_pln": 19.87263,
+          "n": 13,
+          "wins": 3,
+          "losses": 10,
+          "wr": 0.23076923076923078,
+          "profit_u": 17.213244000000003,
+          "profit_pln": 34.426488000000006,
           "stake_pln": 2.0,
-          "total_staked_pln": 20.0,
-          "roi": 0.9936315,
-          "pf": 2.242039375,
+          "total_staked_pln": 26.0,
+          "roi": 1.3240956923076925,
+          "pf": 2.7213244000000003,
           "pf_infinite": false,
-          "avg_odds": 7.966192000000001,
-          "median_odds": 7.758167,
+          "avg_odds": 8.294450846153847,
+          "median_odds": 7.898094,
           "max_drawdown_u": 3.0,
           "max_losing_streak": 3
         },
         "TOP4": {
-          "n": 8,
+          "n": 9,
           "wins": 1,
-          "losses": 7,
-          "wr": 0.125,
-          "profit_u": 11.955281500000002,
-          "profit_pln": 23.910563000000003,
+          "losses": 8,
+          "wr": 0.1111111111111111,
+          "profit_u": 10.955281500000002,
+          "profit_pln": 21.910563000000003,
           "stake_pln": 2.0,
-          "total_staked_pln": 16.0,
-          "roi": 1.4944101875000002,
-          "pf": 2.7078973571428575,
+          "total_staked_pln": 18.0,
+          "roi": 1.2172535000000002,
+          "pf": 2.3694101875,
           "pf_infinite": false,
-          "avg_odds": 14.778605265,
-          "median_odds": 13.408850609999998,
+          "avg_odds": 15.408881203333332,
+          "median_odds": 13.50574074,
           "max_drawdown_u": 5.0,
           "max_losing_streak": 5
         },
         "TOP5": {
-          "n": 8,
+          "n": 9,
           "wins": 1,
-          "losses": 7,
-          "wr": 0.125,
-          "profit_u": 38.92201129,
-          "profit_pln": 77.84402258,
+          "losses": 8,
+          "wr": 0.1111111111111111,
+          "profit_u": 37.92201129,
+          "profit_pln": 75.84402258,
           "stake_pln": 2.0,
-          "total_staked_pln": 16.0,
-          "roi": 4.86525141125,
-          "pf": 6.5602873271428574,
+          "total_staked_pln": 18.0,
+          "roi": 4.21355681,
+          "pf": 5.74025141125,
           "pf_infinite": false,
-          "avg_odds": 28.48136305625,
-          "median_odds": 27.81800025,
-          "max_drawdown_u": 6.0,
-          "max_losing_streak": 6
+          "avg_odds": 29.81600667731111,
+          "median_odds": 30.78894126,
+          "max_drawdown_u": 7.0,
+          "max_losing_streak": 7
         }
       },
       "leagues": {
@@ -14882,6 +14776,116 @@
               "pf_infinite": false,
               "avg_odds": 10.7604,
               "median_odds": 10.7604,
+              "max_drawdown_u": 1.0,
+              "max_losing_streak": 1
+            }
+          }
+        },
+        "E1": {
+          "overall": {
+            "n": 4,
+            "wins": 1,
+            "losses": 3,
+            "wr": 0.25,
+            "profit_u": 6.276929000000001,
+            "profit_pln": 12.553858000000002,
+            "stake_pln": 2.0,
+            "total_staked_pln": 8.0,
+            "roi": 1.5692322500000002,
+            "pf": 3.092309666666667,
+            "pf_infinite": false,
+            "avg_odds": 19.62917033895,
+            "median_odds": 15.364008855000002,
+            "max_drawdown_u": 3.0,
+            "max_losing_streak": 3
+          },
+          "variants": {
+            "TOP3": {
+              "n": 2,
+              "wins": 1,
+              "losses": 1,
+              "wr": 0.5,
+              "profit_u": 8.276929,
+              "profit_pln": 16.553858,
+              "stake_pln": 2.0,
+              "total_staked_pln": 4.0,
+              "roi": 4.1384645,
+              "pf": 9.276929,
+              "pf_infinite": false,
+              "avg_odds": 8.7862185,
+              "median_odds": 8.7862185,
+              "max_drawdown_u": 1.0,
+              "max_losing_streak": 1
+            },
+            "TOP4": {
+              "n": 1,
+              "wins": 0,
+              "losses": 1,
+              "wr": 0.0,
+              "profit_u": -1.0,
+              "profit_pln": -2.0,
+              "stake_pln": 2.0,
+              "total_staked_pln": 2.0,
+              "roi": -1.0,
+              "pf": 0.0,
+              "pf_infinite": false,
+              "avg_odds": 20.45108871,
+              "median_odds": 20.45108871,
+              "max_drawdown_u": 1.0,
+              "max_losing_streak": 1
+            },
+            "TOP5": {
+              "n": 1,
+              "wins": 0,
+              "losses": 1,
+              "wr": 0.0,
+              "profit_u": -1.0,
+              "profit_pln": -2.0,
+              "stake_pln": 2.0,
+              "total_staked_pln": 2.0,
+              "roi": -1.0,
+              "pf": 0.0,
+              "pf_infinite": false,
+              "avg_odds": 40.4931556458,
+              "median_odds": 40.4931556458,
+              "max_drawdown_u": 1.0,
+              "max_losing_streak": 1
+            }
+          }
+        },
+        "E2": {
+          "overall": {
+            "n": 1,
+            "wins": 0,
+            "losses": 1,
+            "wr": 0.0,
+            "profit_u": -1.0,
+            "profit_pln": -2.0,
+            "stake_pln": 2.0,
+            "total_staked_pln": 2.0,
+            "roi": -1.0,
+            "pf": 0.0,
+            "pf_infinite": false,
+            "avg_odds": 10.593504,
+            "median_odds": 10.593504,
+            "max_drawdown_u": 1.0,
+            "max_losing_streak": 1
+          },
+          "variants": {
+            "TOP3": {
+              "n": 1,
+              "wins": 0,
+              "losses": 1,
+              "wr": 0.0,
+              "profit_u": -1.0,
+              "profit_pln": -2.0,
+              "stake_pln": 2.0,
+              "total_staked_pln": 2.0,
+              "roi": -1.0,
+              "pf": 0.0,
+              "pf_infinite": false,
+              "avg_odds": 10.593504,
+              "median_odds": 10.593504,
               "max_drawdown_u": 1.0,
               "max_losing_streak": 1
             }
@@ -15596,6 +15600,51 @@
           "profit_u": -1.0,
           "cumulative_profit_u": 60.813607790000006,
           "cumulative_profit_pln": 121.62721558000001
+        },
+        {
+          "date": "2026-11-03T14:00:22",
+          "league": "E1",
+          "variant": "TOP3",
+          "result": "WIN",
+          "profit_u": 9.276929,
+          "cumulative_profit_u": 70.09053679,
+          "cumulative_profit_pln": 140.18107358
+        },
+        {
+          "date": "2026-11-03T14:00:22",
+          "league": "E1",
+          "variant": "TOP4",
+          "result": "LOSS",
+          "profit_u": -1.0,
+          "cumulative_profit_u": 69.09053679,
+          "cumulative_profit_pln": 138.18107358
+        },
+        {
+          "date": "2026-11-03T14:00:22",
+          "league": "E1",
+          "variant": "TOP5",
+          "result": "LOSS",
+          "profit_u": -1.0,
+          "cumulative_profit_u": 68.09053679,
+          "cumulative_profit_pln": 136.18107358
+        },
+        {
+          "date": "2026-11-03T14:00:22",
+          "league": "E2",
+          "variant": "TOP3",
+          "result": "LOSS",
+          "profit_u": -1.0,
+          "cumulative_profit_u": 67.09053679,
+          "cumulative_profit_pln": 134.18107358
+        },
+        {
+          "date": "2026-11-04T08:00:16",
+          "league": "E1",
+          "variant": "TOP3",
+          "result": "LOSS",
+          "profit_u": -1.0,
+          "cumulative_profit_u": 66.09053679,
+          "cumulative_profit_pln": 132.18107358
         }
       ]
     }
