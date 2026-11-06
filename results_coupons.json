@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-05T14:00:31",
+  "generated_at": "2026-11-06T08:00:24",
   "source": "jev_official_slate_coupon_settled.csv",
   "stake_pln": 2.0,
   "coupons": [
@@ -50,8 +50,8 @@
       "official_snapshot": true,
       "legs": 3,
       "won_legs": 0,
-      "lost_legs": 3,
-      "all_settled": true,
+      "lost_legs": 2,
+      "all_settled": false,
       "coupon_result": "LOSS",
       "profit_1u": -1.0,
       "source_file": "20261103_140016_LEAGUE_TOP345_coupons.csv",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T14:00:39",
+  "generated_at": "2026-11-06T08:00:33",
   "summary": {
     "total": 464,
     "win": 42,
@@ -10,6 +10,20 @@
     "TOP5": 149
   },
   "publications": [
+    {
+      "publication_id": "PUB_20261106_080031",
+      "published_at": "2026-11-06T08:00:31",
+      "source_generated_at": "2026-11-06T08:00:28",
+      "coupon_count": 1,
+      "items": [
+        {
+          "league": "E1",
+          "variant": "TOP3",
+          "lock_id": "20261104_080012_E1_TOP3_009f6b28",
+          "composition_fingerprint": "009f6b28673df02f620a730b"
+        }
+      ]
+    },
     {
       "publication_id": "PUB_20261105_140036",
       "published_at": "2026-11-05T14:00:36",
@@ -3934,10 +3948,15 @@
           "publication_id": "PUB_20261105_140036",
           "published_at": "2026-11-05T14:00:36",
           "source_generated_at": "2026-11-05T14:00:34"
+        },
+        {
+          "publication_id": "PUB_20261106_080031",
+          "published_at": "2026-11-06T08:00:31",
+          "source_generated_at": "2026-11-06T08:00:28"
         }
       ],
       "first_published_at": "2026-11-04T08:00:37",
-      "last_published_at": "2026-11-05T14:00:36"
+      "last_published_at": "2026-11-06T08:00:31"
     },
     {
       "lock_id": "20261103_140016_E1_TOP3_a1df2423",
@@ -4153,7 +4172,7 @@
       "status": "LOSS",
       "profit_1u": -1.0,
       "won_legs": 0,
-      "lost_legs": 3,
+      "lost_legs": 2,
       "legs_count": 3,
       "legs": [
         {
