@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-06T14:01:54",
-  "source": "20261106_140122_EXP_FILTERED_TOP2_coupons.csv",
+  "generated_at": "2026-11-07T08:01:13",
+  "source": "20261107_080049_EXP_FILTERED_TOP2_coupons.csv",
   "experimental": true,
   "strategy": {
     "market": "1X2",
@@ -13,206 +13,8 @@
   },
   "coupons": [
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261106_TOP2_001",
-      "coupon_league": "GLOBAL",
-      "coupon_variant": "GLOBAL_FILT_TOP2",
-      "coupon_leg_no": 1,
-      "coupon_slate_date": "2026-11-06",
-      "exp_match_date": "2026-11-06",
-      "exp_league": "I1",
-      "match": "Venezia - Udinese",
-      "market": "1X2",
-      "choice": "HOME",
-      "model_probability": 0.98,
-      "jev_confidence": 0.97,
-      "odds": 2.27,
-      "market_probability": 0.4148338802051069,
-      "edge": 0.5651661197948931,
-      "margin": 0.97,
-      "coupon_combined_odds": 4.3811,
-      "experimental": true,
-      "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
-    },
-    {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261106_TOP2_001",
-      "coupon_league": "GLOBAL",
-      "coupon_variant": "GLOBAL_FILT_TOP2",
-      "coupon_leg_no": 2,
-      "coupon_slate_date": "2026-11-06",
-      "exp_match_date": "2026-11-06",
-      "exp_league": "D2",
-      "match": "Dresden - Greuther Furth",
-      "market": "1X2",
-      "choice": "HOME",
-      "model_probability": 0.98,
-      "jev_confidence": 0.97,
-      "odds": 1.93,
-      "market_probability": 0.4776224687742005,
-      "edge": 0.5023775312257994,
-      "margin": 0.96,
-      "coupon_combined_odds": 4.3811,
-      "experimental": true,
-      "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
-    },
-    {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261106_TOP2_002",
-      "coupon_league": "GLOBAL",
-      "coupon_variant": "GLOBAL_FILT_TOP2",
-      "coupon_leg_no": 1,
-      "coupon_slate_date": "2026-11-06",
-      "exp_match_date": "2026-11-06",
-      "exp_league": "D1",
-      "match": "Hamburg - M'gladbach",
-      "market": "1X2",
-      "choice": "HOME",
-      "model_probability": 1.0,
-      "jev_confidence": 1.0,
-      "odds": 2.33,
-      "market_probability": 0.4029264452486434,
-      "edge": 0.5970735547513566,
-      "margin": 1.0,
-      "coupon_combined_odds": 4.427,
-      "experimental": true,
-      "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
-    },
-    {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261106_TOP2_002",
-      "coupon_league": "GLOBAL",
-      "coupon_variant": "GLOBAL_FILT_TOP2",
-      "coupon_leg_no": 2,
-      "coupon_slate_date": "2026-11-06",
-      "exp_match_date": "2026-11-06",
-      "exp_league": "F2",
-      "match": "Montpellier - Metz",
-      "market": "1X2",
-      "choice": "HOME",
-      "model_probability": 1.0,
-      "jev_confidence": 1.0,
-      "odds": 1.9,
-      "market_probability": 0.4811437690770208,
-      "edge": 0.5188562309229792,
-      "margin": 1.0,
-      "coupon_combined_odds": 4.427,
-      "experimental": true,
-      "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
-    },
-    {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261106_TOP2_003",
-      "coupon_league": "GLOBAL",
-      "coupon_variant": "GLOBAL_FILT_TOP2",
-      "coupon_leg_no": 1,
-      "coupon_slate_date": "2026-11-06",
-      "exp_match_date": "2026-11-06",
-      "exp_league": "F2",
-      "match": "Dunkerque - Guingamp",
-      "market": "1X2",
-      "choice": "AWAY",
-      "model_probability": 1.0,
-      "jev_confidence": 1.0,
-      "odds": 2.32,
-      "market_probability": 0.3930764744227537,
-      "edge": 0.6069235255772463,
-      "margin": 1.0,
-      "coupon_combined_odds": 4.4312,
-      "experimental": true,
-      "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
-    },
-    {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261106_TOP2_003",
-      "coupon_league": "GLOBAL",
-      "coupon_variant": "GLOBAL_FILT_TOP2",
-      "coupon_leg_no": 2,
-      "coupon_slate_date": "2026-11-06",
-      "exp_match_date": "2026-11-06",
-      "exp_league": "D2",
-      "match": "Braunschweig - Cottbus",
-      "market": "1X2",
-      "choice": "HOME",
-      "model_probability": 0.99,
-      "jev_confidence": 0.98,
-      "odds": 1.91,
-      "market_probability": 0.4821351945591044,
-      "edge": 0.5078648054408956,
-      "margin": 0.98,
-      "coupon_combined_odds": 4.4312,
-      "experimental": true,
-      "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
-    },
-    {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261106_TOP2_004",
-      "coupon_league": "GLOBAL",
-      "coupon_variant": "GLOBAL_FILT_TOP2",
-      "coupon_leg_no": 1,
-      "coupon_slate_date": "2026-11-06",
-      "exp_match_date": "2026-11-06",
-      "exp_league": "I2",
-      "match": "Ascoli - Palermo",
-      "market": "1X2",
-      "choice": "AWAY",
-      "model_probability": 1.0,
-      "jev_confidence": 1.0,
-      "odds": 2.17,
-      "market_probability": 0.4242152466367713,
-      "edge": 0.5757847533632287,
-      "margin": 1.0,
-      "coupon_combined_odds": 4.4702,
-      "experimental": true,
-      "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
-    },
-    {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261106_TOP2_004",
-      "coupon_league": "GLOBAL",
-      "coupon_variant": "GLOBAL_FILT_TOP2",
-      "coupon_leg_no": 2,
-      "coupon_slate_date": "2026-11-06",
-      "exp_match_date": "2026-11-06",
-      "exp_league": "N1",
-      "match": "Willem II - Zwolle",
-      "market": "1X2",
-      "choice": "AWAY",
-      "model_probability": 1.0,
-      "jev_confidence": 1.0,
-      "odds": 2.06,
-      "market_probability": 0.4509448330546331,
-      "edge": 0.5490551669453669,
-      "margin": 1.0,
-      "coupon_combined_odds": 4.4702,
-      "experimental": true,
-      "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
-    },
-    {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261106_SINGLE_005",
-      "coupon_league": "GLOBAL",
-      "coupon_variant": "GLOBAL_FILT_SINGLE",
-      "coupon_leg_no": 1,
-      "coupon_slate_date": "2026-11-06",
-      "exp_match_date": "2026-11-06",
-      "exp_league": "F1",
-      "match": "Toulouse - Strasbourg",
-      "market": "1X2",
-      "choice": "HOME",
-      "model_probability": 1.0,
-      "jev_confidence": 1.0,
-      "odds": 2.19,
-      "market_probability": 0.4293277011273555,
-      "edge": 0.5706722988726445,
-      "margin": 1.0,
-      "coupon_combined_odds": 2.19,
-      "experimental": true,
-      "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
-    },
-    {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261107_TOP2_006",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261107_TOP2_001",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 1,
@@ -233,8 +35,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261107_TOP2_006",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261107_TOP2_001",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 2,
@@ -255,8 +57,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261107_TOP2_007",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261107_TOP2_002",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 1,
@@ -277,8 +79,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261107_TOP2_007",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261107_TOP2_002",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 2,
@@ -299,8 +101,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261107_TOP2_008",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261107_TOP2_003",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 1,
@@ -321,8 +123,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261107_TOP2_008",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261107_TOP2_003",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 2,
@@ -343,8 +145,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261107_TOP2_009",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261107_TOP2_004",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 1,
@@ -365,8 +167,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261107_TOP2_009",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261107_TOP2_004",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 2,
@@ -376,19 +178,19 @@
       "match": "Paderborn - Ein Frankfurt",
       "market": "1X2",
       "choice": "AWAY",
-      "model_probability": 0.99,
-      "jev_confidence": 0.98,
+      "model_probability": 0.98,
+      "jev_confidence": 0.97,
       "odds": 2.14,
       "market_probability": 0.4377788486949492,
-      "edge": 0.5522211513050508,
-      "margin": 0.98,
+      "edge": 0.5422211513050508,
+      "margin": 0.96,
       "coupon_combined_odds": 4.4084,
       "experimental": true,
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261107_TOP2_010",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261107_TOP2_005",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 1,
@@ -409,8 +211,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261107_TOP2_010",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261107_TOP2_005",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 2,
@@ -431,8 +233,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261107_TOP2_011",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261107_TOP2_006",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 1,
@@ -453,8 +255,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261107_TOP2_011",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261107_TOP2_006",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 2,
@@ -475,8 +277,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261107_TOP2_012",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261107_TOP2_007",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 1,
@@ -486,19 +288,19 @@
       "match": "Portsmouth - Stoke",
       "market": "1X2",
       "choice": "HOME",
-      "model_probability": 1.0,
-      "jev_confidence": 1.0,
+      "model_probability": 0.99,
+      "jev_confidence": 0.98,
       "odds": 2.31,
       "market_probability": 0.4056854182721123,
-      "edge": 0.5943145817278876,
-      "margin": 1.0,
+      "edge": 0.5843145817278876,
+      "margin": 0.98,
       "coupon_combined_odds": 4.4583,
       "experimental": true,
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261107_TOP2_012",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261107_TOP2_007",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 2,
@@ -519,8 +321,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261107_TOP2_013",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261107_TOP2_008",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 1,
@@ -541,8 +343,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261107_TOP2_013",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261107_TOP2_008",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 2,
@@ -563,8 +365,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261107_TOP2_014",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261107_TOP2_009",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 1,
@@ -585,8 +387,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261107_TOP2_014",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261107_TOP2_009",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 2,
@@ -607,8 +409,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261107_TOP2_015",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261107_TOP2_010",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 1,
@@ -629,8 +431,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261107_TOP2_015",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261107_TOP2_010",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 2,
@@ -651,8 +453,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261107_TOP2_016",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261107_TOP2_011",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 1,
@@ -673,8 +475,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261107_TOP2_016",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261107_TOP2_011",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 2,
@@ -695,8 +497,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261107_TOP2_017",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261107_TOP2_012",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 1,
@@ -717,8 +519,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261107_TOP2_017",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261107_TOP2_012",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 2,
@@ -739,8 +541,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261107_TOP2_018",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261107_TOP2_013",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 1,
@@ -761,8 +563,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261107_TOP2_018",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261107_TOP2_013",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 2,
@@ -783,8 +585,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261108_TOP2_019",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261108_TOP2_014",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 1,
@@ -805,8 +607,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261108_TOP2_019",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261108_TOP2_014",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 2,
@@ -827,8 +629,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261108_TOP2_020",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261108_TOP2_015",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 1,
@@ -849,8 +651,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261108_TOP2_020",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261108_TOP2_015",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 2,
@@ -871,8 +673,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261108_TOP2_021",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261108_TOP2_016",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 1,
@@ -893,8 +695,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261108_TOP2_021",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261108_TOP2_016",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 2,
@@ -915,8 +717,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261108_TOP2_022",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261108_TOP2_017",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 1,
@@ -937,8 +739,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261108_TOP2_022",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261108_TOP2_017",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 2,
@@ -959,8 +761,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261108_TOP2_023",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261108_TOP2_018",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 1,
@@ -981,8 +783,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261108_TOP2_023",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261108_TOP2_018",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 2,
@@ -1003,8 +805,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261108_TOP2_024",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261108_TOP2_019",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 1,
@@ -1025,8 +827,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261108_TOP2_024",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261108_TOP2_019",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 2,
@@ -1047,8 +849,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261108_TOP2_025",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261108_TOP2_020",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 1,
@@ -1069,8 +871,8 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261108_TOP2_025",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261108_TOP2_020",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
       "coupon_leg_no": 2,
@@ -1091,54 +893,10 @@
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     },
     {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261108_TOP2_026",
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261108_TOP2_021",
       "coupon_league": "GLOBAL",
       "coupon_variant": "GLOBAL_FILT_TOP2",
-      "coupon_leg_no": 1,
-      "coupon_slate_date": "2026-11-08",
-      "exp_match_date": "2026-11-08",
-      "exp_league": "I2",
-      "match": "Vicenza - Cremonese",
-      "market": "1X2",
-      "choice": "AWAY",
-      "model_probability": 1.0,
-      "jev_confidence": 1.0,
-      "odds": 2.37,
-      "market_probability": 0.3869907082635772,
-      "edge": 0.6130092917364228,
-      "margin": 1.0,
-      "coupon_combined_odds": 5.6406,
-      "experimental": true,
-      "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
-    },
-    {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261108_TOP2_026",
-      "coupon_league": "GLOBAL",
-      "coupon_variant": "GLOBAL_FILT_TOP2",
-      "coupon_leg_no": 2,
-      "coupon_slate_date": "2026-11-08",
-      "exp_match_date": "2026-11-08",
-      "exp_league": "N1",
-      "match": "Utrecht - Nijmegen",
-      "market": "1X2",
-      "choice": "HOME",
-      "model_probability": 0.98,
-      "jev_confidence": 0.97,
-      "odds": 2.38,
-      "market_probability": 0.3899943450189381,
-      "edge": 0.5900056549810619,
-      "margin": 0.96,
-      "coupon_combined_odds": 5.6406,
-      "experimental": true,
-      "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
-    },
-    {
-      "coupon_run": "20261106_140122",
-      "coupon_id": "EXP_20261106_140122_20261108_SINGLE_027",
-      "coupon_league": "GLOBAL",
-      "coupon_variant": "GLOBAL_FILT_SINGLE",
       "coupon_leg_no": 1,
       "coupon_slate_date": "2026-11-08",
       "exp_match_date": "2026-11-08",
@@ -1152,7 +910,29 @@
       "market_probability": 0.3840488772900374,
       "edge": 0.6159511227099626,
       "margin": 1.0,
-      "coupon_combined_odds": 2.38,
+      "coupon_combined_odds": 5.6406,
+      "experimental": true,
+      "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
+    },
+    {
+      "coupon_run": "20261107_080049",
+      "coupon_id": "EXP_20261107_080049_20261108_TOP2_021",
+      "coupon_league": "GLOBAL",
+      "coupon_variant": "GLOBAL_FILT_TOP2",
+      "coupon_leg_no": 2,
+      "coupon_slate_date": "2026-11-08",
+      "exp_match_date": "2026-11-08",
+      "exp_league": "I2",
+      "match": "Vicenza - Cremonese",
+      "market": "1X2",
+      "choice": "AWAY",
+      "model_probability": 1.0,
+      "jev_confidence": 1.0,
+      "odds": 2.37,
+      "market_probability": 0.3869907082635772,
+      "edge": 0.6130092917364228,
+      "margin": 1.0,
+      "coupon_combined_odds": 5.6406,
       "experimental": true,
       "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
     }
