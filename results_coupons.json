@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-10T08:00:28",
+  "generated_at": "2026-11-10T14:00:22",
   "source": "jev_official_slate_coupon_settled.csv",
   "stake_pln": 2.0,
   "coupons": [
@@ -239,7 +239,7 @@
       "official_snapshot": true,
       "legs": 4,
       "won_legs": 0,
-      "lost_legs": 2,
+      "lost_legs": 3,
       "all_settled": false,
       "coupon_result": "LOSS",
       "profit_1u": -1.0,
@@ -2507,7 +2507,7 @@
       "official_snapshot": true,
       "legs": 5,
       "won_legs": 1,
-      "lost_legs": 2,
+      "lost_legs": 3,
       "all_settled": false,
       "coupon_result": "LOSS",
       "profit_1u": -1.0,
