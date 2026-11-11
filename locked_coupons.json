@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T08:00:32",
+  "generated_at": "2026-11-11T14:00:30",
   "summary": {
     "total": 610,
     "win": 53,
@@ -10,6 +10,13 @@
     "TOP5": 197
   },
   "publications": [
+    {
+      "publication_id": "PUB_20261111_140027",
+      "published_at": "2026-11-11T14:00:27",
+      "source_generated_at": "2026-11-11T14:00:25",
+      "coupon_count": 0,
+      "items": []
+    },
     {
       "publication_id": "PUB_20261111_080029",
       "published_at": "2026-11-11T08:00:29",
