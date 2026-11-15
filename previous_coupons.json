@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-14T08:00:57",
-  "source": "20261114_080028_LEAGUE_TOP345_coupons.csv",
+  "generated_at": "2026-11-14T14:00:52",
+  "source": "20261114_140023_LEAGUE_TOP345_coupons.csv",
   "coupons": [
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "E2",
       "coupon_variant": "TOP3",
       "coupon_leg_no": 1,
@@ -19,7 +19,7 @@
       "coupon_combined_odds": 13.114332
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "E2",
       "coupon_variant": "TOP3",
       "coupon_leg_no": 2,
@@ -35,23 +35,23 @@
       "coupon_combined_odds": 13.114332
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "E2",
       "coupon_variant": "TOP3",
       "coupon_leg_no": 3,
       "match": "Sheffield Weds - Plymouth",
       "market": "1X2",
       "choice": "HOME",
-      "model_probability": 0.97,
-      "jev_confidence": 0.96,
+      "model_probability": 0.98,
+      "jev_confidence": 0.97,
       "odds": 2.28,
       "market_probability": 0.40904459216847,
-      "edge": 0.56095540783153,
-      "margin": 0.95,
+      "edge": 0.57095540783153,
+      "margin": 0.97,
       "coupon_combined_odds": 13.114332
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "E2",
       "coupon_variant": "TOP4",
       "coupon_leg_no": 1,
@@ -67,7 +67,7 @@
       "coupon_combined_odds": 24.261514200000004
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "E2",
       "coupon_variant": "TOP4",
       "coupon_leg_no": 2,
@@ -83,23 +83,23 @@
       "coupon_combined_odds": 24.261514200000004
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "E2",
       "coupon_variant": "TOP4",
       "coupon_leg_no": 3,
       "match": "Sheffield Weds - Plymouth",
       "market": "1X2",
       "choice": "HOME",
-      "model_probability": 0.97,
-      "jev_confidence": 0.96,
+      "model_probability": 0.98,
+      "jev_confidence": 0.97,
       "odds": 2.28,
       "market_probability": 0.40904459216847,
-      "edge": 0.56095540783153,
-      "margin": 0.95,
+      "edge": 0.57095540783153,
+      "margin": 0.97,
       "coupon_combined_odds": 24.261514200000004
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "E2",
       "coupon_variant": "TOP4",
       "coupon_leg_no": 4,
@@ -115,7 +115,7 @@
       "coupon_combined_odds": 24.261514200000004
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "E2",
       "coupon_variant": "TOP5",
       "coupon_leg_no": 1,
@@ -131,7 +131,7 @@
       "coupon_combined_odds": 40.274113572000005
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "E2",
       "coupon_variant": "TOP5",
       "coupon_leg_no": 2,
@@ -147,23 +147,23 @@
       "coupon_combined_odds": 40.274113572000005
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "E2",
       "coupon_variant": "TOP5",
       "coupon_leg_no": 3,
       "match": "Sheffield Weds - Plymouth",
       "market": "1X2",
       "choice": "HOME",
-      "model_probability": 0.97,
-      "jev_confidence": 0.96,
+      "model_probability": 0.98,
+      "jev_confidence": 0.97,
       "odds": 2.28,
       "market_probability": 0.40904459216847,
-      "edge": 0.56095540783153,
-      "margin": 0.95,
+      "edge": 0.57095540783153,
+      "margin": 0.97,
       "coupon_combined_odds": 40.274113572000005
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "E2",
       "coupon_variant": "TOP5",
       "coupon_leg_no": 4,
@@ -179,7 +179,7 @@
       "coupon_combined_odds": 40.274113572000005
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "E2",
       "coupon_variant": "TOP5",
       "coupon_leg_no": 5,
@@ -195,7 +195,7 @@
       "coupon_combined_odds": 40.274113572000005
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "E3",
       "coupon_variant": "TOP3",
       "coupon_leg_no": 1,
@@ -211,7 +211,7 @@
       "coupon_combined_odds": 11.555208
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "E3",
       "coupon_variant": "TOP3",
       "coupon_leg_no": 2,
@@ -227,7 +227,7 @@
       "coupon_combined_odds": 11.555208
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "E3",
       "coupon_variant": "TOP3",
       "coupon_leg_no": 3,
@@ -243,7 +243,7 @@
       "coupon_combined_odds": 11.555208
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "E3",
       "coupon_variant": "TOP4",
       "coupon_leg_no": 1,
@@ -259,7 +259,7 @@
       "coupon_combined_odds": 22.5326556
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "E3",
       "coupon_variant": "TOP4",
       "coupon_leg_no": 2,
@@ -275,7 +275,7 @@
       "coupon_combined_odds": 22.5326556
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "E3",
       "coupon_variant": "TOP4",
       "coupon_leg_no": 3,
@@ -291,23 +291,23 @@
       "coupon_combined_odds": 22.5326556
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "E3",
       "coupon_variant": "TOP4",
       "coupon_leg_no": 4,
       "match": "Fleetwood Town - Tranmere",
       "market": "1X2",
       "choice": "HOME",
-      "model_probability": 0.99,
-      "jev_confidence": 0.98,
+      "model_probability": 1.0,
+      "jev_confidence": 1.0,
       "odds": 1.95,
       "market_probability": 0.4761341805822374,
-      "edge": 0.5138658194177625,
-      "margin": 0.98,
+      "edge": 0.5238658194177626,
+      "margin": 1.0,
       "coupon_combined_odds": 22.5326556
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "E3",
       "coupon_variant": "TOP5",
       "coupon_leg_no": 1,
@@ -320,10 +320,10 @@
       "market_probability": 0.3675790970494134,
       "edge": 0.6024209029505865,
       "margin": 0.94,
-      "coupon_combined_odds": 42.586719084
+      "coupon_combined_odds": 46.86792364800001
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "E3",
       "coupon_variant": "TOP5",
       "coupon_leg_no": 2,
@@ -336,10 +336,10 @@
       "market_probability": 0.4077059113443307,
       "edge": 0.5922940886556693,
       "margin": 1.0,
-      "coupon_combined_odds": 42.586719084
+      "coupon_combined_odds": 46.86792364800001
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "E3",
       "coupon_variant": "TOP5",
       "coupon_leg_no": 3,
@@ -352,42 +352,42 @@
       "market_probability": 0.459192079331033,
       "edge": 0.540807920668967,
       "margin": 1.0,
-      "coupon_combined_odds": 42.586719084
+      "coupon_combined_odds": 46.86792364800001
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "E3",
       "coupon_variant": "TOP5",
       "coupon_leg_no": 4,
       "match": "Fleetwood Town - Tranmere",
       "market": "1X2",
       "choice": "HOME",
-      "model_probability": 0.99,
-      "jev_confidence": 0.98,
+      "model_probability": 1.0,
+      "jev_confidence": 1.0,
       "odds": 1.95,
       "market_probability": 0.4761341805822374,
-      "edge": 0.5138658194177625,
-      "margin": 0.98,
-      "coupon_combined_odds": 42.586719084
+      "edge": 0.5238658194177626,
+      "margin": 1.0,
+      "coupon_combined_odds": 46.86792364800001
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "E3",
       "coupon_variant": "TOP5",
       "coupon_leg_no": 5,
-      "match": "Exeter - Cheltenham",
+      "match": "Crewe - Newport County",
       "market": "1X2",
       "choice": "HOME",
-      "model_probability": 1.0,
-      "jev_confidence": 1.0,
-      "odds": 1.89,
-      "market_probability": 0.4921419393100721,
-      "edge": 0.5078580606899279,
-      "margin": 1.0,
-      "coupon_combined_odds": 42.586719084
+      "model_probability": 0.95,
+      "jev_confidence": 0.92,
+      "odds": 2.08,
+      "market_probability": 0.445689064516643,
+      "edge": 0.5043109354833569,
+      "margin": 0.91,
+      "coupon_combined_odds": 46.86792364800001
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "EC",
       "coupon_variant": "TOP3",
       "coupon_leg_no": 1,
@@ -403,7 +403,7 @@
       "coupon_combined_odds": 7.289323999999999
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "EC",
       "coupon_variant": "TOP3",
       "coupon_leg_no": 2,
@@ -419,7 +419,7 @@
       "coupon_combined_odds": 7.289323999999999
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "EC",
       "coupon_variant": "TOP3",
       "coupon_leg_no": 3,
@@ -435,7 +435,7 @@
       "coupon_combined_odds": 7.289323999999999
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "EC",
       "coupon_variant": "TOP4",
       "coupon_leg_no": 1,
@@ -451,7 +451,7 @@
       "coupon_combined_odds": 12.829210239999998
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "EC",
       "coupon_variant": "TOP4",
       "coupon_leg_no": 2,
@@ -467,7 +467,7 @@
       "coupon_combined_odds": 12.829210239999998
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "EC",
       "coupon_variant": "TOP4",
       "coupon_leg_no": 3,
@@ -483,7 +483,7 @@
       "coupon_combined_odds": 12.829210239999998
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "EC",
       "coupon_variant": "TOP4",
       "coupon_leg_no": 4,
@@ -499,7 +499,7 @@
       "coupon_combined_odds": 12.829210239999998
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "EC",
       "coupon_variant": "TOP5",
       "coupon_leg_no": 1,
@@ -515,7 +515,7 @@
       "coupon_combined_odds": 20.526736384
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "EC",
       "coupon_variant": "TOP5",
       "coupon_leg_no": 2,
@@ -531,7 +531,7 @@
       "coupon_combined_odds": 20.526736384
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "EC",
       "coupon_variant": "TOP5",
       "coupon_leg_no": 3,
@@ -547,7 +547,7 @@
       "coupon_combined_odds": 20.526736384
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "EC",
       "coupon_variant": "TOP5",
       "coupon_leg_no": 4,
@@ -563,7 +563,7 @@
       "coupon_combined_odds": 20.526736384
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "EC",
       "coupon_variant": "TOP5",
       "coupon_leg_no": 5,
@@ -579,7 +579,7 @@
       "coupon_combined_odds": 20.526736384
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC1",
       "coupon_variant": "TOP3",
       "coupon_leg_no": 1,
@@ -595,7 +595,7 @@
       "coupon_combined_odds": 6.776224
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC1",
       "coupon_variant": "TOP3",
       "coupon_leg_no": 2,
@@ -611,7 +611,7 @@
       "coupon_combined_odds": 6.776224
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC1",
       "coupon_variant": "TOP3",
       "coupon_leg_no": 3,
@@ -627,7 +627,7 @@
       "coupon_combined_odds": 6.776224
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC1",
       "coupon_variant": "TOP4",
       "coupon_leg_no": 1,
@@ -643,7 +643,7 @@
       "coupon_combined_odds": 10.164336
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC1",
       "coupon_variant": "TOP4",
       "coupon_leg_no": 2,
@@ -659,7 +659,7 @@
       "coupon_combined_odds": 10.164336
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC1",
       "coupon_variant": "TOP4",
       "coupon_leg_no": 3,
@@ -675,23 +675,23 @@
       "coupon_combined_odds": 10.164336
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC1",
       "coupon_variant": "TOP4",
       "coupon_leg_no": 4,
       "match": "Livingston - Morton",
       "market": "TOTAL_25",
       "choice": "OVER_2_5",
-      "model_probability": 0.89,
-      "jev_confidence": 0.78,
+      "model_probability": 0.88,
+      "jev_confidence": 0.76,
       "odds": 1.5,
       "market_probability": 0.6163682864450128,
-      "edge": 0.2736317135549871,
-      "margin": 0.78,
+      "edge": 0.2636317135549871,
+      "margin": 0.76,
       "coupon_combined_odds": 10.164336
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC2",
       "coupon_variant": "TOP3",
       "coupon_leg_no": 1,
@@ -707,7 +707,7 @@
       "coupon_combined_odds": 9.673704
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC2",
       "coupon_variant": "TOP3",
       "coupon_leg_no": 2,
@@ -723,7 +723,7 @@
       "coupon_combined_odds": 9.673704
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC2",
       "coupon_variant": "TOP3",
       "coupon_leg_no": 3,
@@ -739,7 +739,7 @@
       "coupon_combined_odds": 9.673704
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC2",
       "coupon_variant": "TOP4",
       "coupon_leg_no": 1,
@@ -755,7 +755,7 @@
       "coupon_combined_odds": 15.57466344
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC2",
       "coupon_variant": "TOP4",
       "coupon_leg_no": 2,
@@ -771,7 +771,7 @@
       "coupon_combined_odds": 15.57466344
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC2",
       "coupon_variant": "TOP4",
       "coupon_leg_no": 3,
@@ -787,7 +787,7 @@
       "coupon_combined_odds": 15.57466344
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC2",
       "coupon_variant": "TOP4",
       "coupon_leg_no": 4,
@@ -803,7 +803,7 @@
       "coupon_combined_odds": 15.57466344
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC2",
       "coupon_variant": "TOP5",
       "coupon_leg_no": 1,
@@ -819,7 +819,7 @@
       "coupon_combined_odds": 24.6079682352
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC2",
       "coupon_variant": "TOP5",
       "coupon_leg_no": 2,
@@ -835,7 +835,7 @@
       "coupon_combined_odds": 24.6079682352
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC2",
       "coupon_variant": "TOP5",
       "coupon_leg_no": 3,
@@ -851,7 +851,7 @@
       "coupon_combined_odds": 24.6079682352
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC2",
       "coupon_variant": "TOP5",
       "coupon_leg_no": 4,
@@ -867,7 +867,7 @@
       "coupon_combined_odds": 24.6079682352
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC2",
       "coupon_variant": "TOP5",
       "coupon_leg_no": 5,
@@ -883,7 +883,7 @@
       "coupon_combined_odds": 24.6079682352
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC3",
       "coupon_variant": "TOP3",
       "coupon_leg_no": 1,
@@ -899,26 +899,10 @@
       "coupon_combined_odds": 8.831022999999998
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC3",
       "coupon_variant": "TOP3",
       "coupon_leg_no": 2,
-      "match": "Stirling - Elgin",
-      "market": "1X2",
-      "choice": "AWAY",
-      "model_probability": 1.0,
-      "jev_confidence": 1.0,
-      "odds": 1.99,
-      "market_probability": 0.4521930629473297,
-      "edge": 0.5478069370526703,
-      "margin": 1.0,
-      "coupon_combined_odds": 8.831022999999998
-    },
-    {
-      "coupon_run": "20261114_080028",
-      "coupon_league": "SC3",
-      "coupon_variant": "TOP3",
-      "coupon_leg_no": 3,
       "match": "Edinburgh City - Clyde",
       "market": "1X2",
       "choice": "AWAY",
@@ -931,7 +915,23 @@
       "coupon_combined_odds": 8.831022999999998
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
+      "coupon_league": "SC3",
+      "coupon_variant": "TOP3",
+      "coupon_leg_no": 3,
+      "match": "Stirling - Elgin",
+      "market": "1X2",
+      "choice": "AWAY",
+      "model_probability": 0.99,
+      "jev_confidence": 0.98,
+      "odds": 1.99,
+      "market_probability": 0.4521930629473297,
+      "edge": 0.5378069370526702,
+      "margin": 0.98,
+      "coupon_combined_odds": 8.831022999999998
+    },
+    {
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC3",
       "coupon_variant": "TOP4",
       "coupon_leg_no": 1,
@@ -947,26 +947,10 @@
       "coupon_combined_odds": 16.955564159999994
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC3",
       "coupon_variant": "TOP4",
       "coupon_leg_no": 2,
-      "match": "Stirling - Elgin",
-      "market": "1X2",
-      "choice": "AWAY",
-      "model_probability": 1.0,
-      "jev_confidence": 1.0,
-      "odds": 1.99,
-      "market_probability": 0.4521930629473297,
-      "edge": 0.5478069370526703,
-      "margin": 1.0,
-      "coupon_combined_odds": 16.955564159999994
-    },
-    {
-      "coupon_run": "20261114_080028",
-      "coupon_league": "SC3",
-      "coupon_variant": "TOP4",
-      "coupon_leg_no": 3,
       "match": "Edinburgh City - Clyde",
       "market": "1X2",
       "choice": "AWAY",
@@ -979,7 +963,23 @@
       "coupon_combined_odds": 16.955564159999994
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
+      "coupon_league": "SC3",
+      "coupon_variant": "TOP4",
+      "coupon_leg_no": 3,
+      "match": "Stirling - Elgin",
+      "market": "1X2",
+      "choice": "AWAY",
+      "model_probability": 0.99,
+      "jev_confidence": 0.98,
+      "odds": 1.99,
+      "market_probability": 0.4521930629473297,
+      "edge": 0.5378069370526702,
+      "margin": 0.98,
+      "coupon_combined_odds": 16.955564159999994
+    },
+    {
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC3",
       "coupon_variant": "TOP4",
       "coupon_leg_no": 4,
@@ -995,7 +995,7 @@
       "coupon_combined_odds": 16.955564159999994
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC3",
       "coupon_variant": "TOP5",
       "coupon_leg_no": 1,
@@ -1011,26 +1011,10 @@
       "coupon_combined_odds": 31.19823805439999
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC3",
       "coupon_variant": "TOP5",
       "coupon_leg_no": 2,
-      "match": "Stirling - Elgin",
-      "market": "1X2",
-      "choice": "AWAY",
-      "model_probability": 1.0,
-      "jev_confidence": 1.0,
-      "odds": 1.99,
-      "market_probability": 0.4521930629473297,
-      "edge": 0.5478069370526703,
-      "margin": 1.0,
-      "coupon_combined_odds": 31.19823805439999
-    },
-    {
-      "coupon_run": "20261114_080028",
-      "coupon_league": "SC3",
-      "coupon_variant": "TOP5",
-      "coupon_leg_no": 3,
       "match": "Edinburgh City - Clyde",
       "market": "1X2",
       "choice": "AWAY",
@@ -1043,7 +1027,23 @@
       "coupon_combined_odds": 31.19823805439999
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
+      "coupon_league": "SC3",
+      "coupon_variant": "TOP5",
+      "coupon_leg_no": 3,
+      "match": "Stirling - Elgin",
+      "market": "1X2",
+      "choice": "AWAY",
+      "model_probability": 0.99,
+      "jev_confidence": 0.98,
+      "odds": 1.99,
+      "market_probability": 0.4521930629473297,
+      "edge": 0.5378069370526702,
+      "margin": 0.98,
+      "coupon_combined_odds": 31.19823805439999
+    },
+    {
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC3",
       "coupon_variant": "TOP5",
       "coupon_leg_no": 4,
@@ -1059,7 +1059,7 @@
       "coupon_combined_odds": 31.19823805439999
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SC3",
       "coupon_variant": "TOP5",
       "coupon_leg_no": 5,
@@ -1075,7 +1075,7 @@
       "coupon_combined_odds": 31.19823805439999
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SP2",
       "coupon_variant": "TOP3",
       "coupon_leg_no": 1,
@@ -1088,108 +1088,44 @@
       "market_probability": 0.3917089896620176,
       "edge": 0.5982910103379824,
       "margin": 0.98,
-      "coupon_combined_odds": 11.837826
+      "coupon_combined_odds": 10.162152
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SP2",
       "coupon_variant": "TOP3",
       "coupon_leg_no": 2,
       "match": "Eldense - Sabadell",
       "market": "1X2",
       "choice": "HOME",
-      "model_probability": 0.98,
-      "jev_confidence": 0.97,
+      "model_probability": 0.97,
+      "jev_confidence": 0.96,
       "odds": 2.31,
       "market_probability": 0.3944927763408835,
-      "edge": 0.5855072236591164,
-      "margin": 0.96,
-      "coupon_combined_odds": 11.837826
+      "edge": 0.5755072236591164,
+      "margin": 0.94,
+      "coupon_combined_odds": 10.162152
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SP2",
       "coupon_variant": "TOP3",
       "coupon_leg_no": 3,
-      "match": "Valladolid - Castellon",
-      "market": "1X2",
-      "choice": "AWAY",
-      "model_probability": 0.97,
-      "jev_confidence": 0.96,
-      "odds": 2.19,
-      "market_probability": 0.4186010594113547,
-      "edge": 0.5513989405886452,
-      "margin": 0.94,
-      "coupon_combined_odds": 11.837826
-    },
-    {
-      "coupon_run": "20261114_080028",
-      "coupon_league": "SP2",
-      "coupon_variant": "TOP4",
-      "coupon_leg_no": 1,
-      "match": "Oviedo - Girona",
-      "market": "1X2",
-      "choice": "HOME",
-      "model_probability": 0.99,
-      "jev_confidence": 0.98,
-      "odds": 2.34,
-      "market_probability": 0.3917089896620176,
-      "edge": 0.5982910103379824,
-      "margin": 0.98,
-      "coupon_combined_odds": 22.25511288
-    },
-    {
-      "coupon_run": "20261114_080028",
-      "coupon_league": "SP2",
-      "coupon_variant": "TOP4",
-      "coupon_leg_no": 2,
-      "match": "Eldense - Sabadell",
-      "market": "1X2",
-      "choice": "HOME",
-      "model_probability": 0.98,
-      "jev_confidence": 0.97,
-      "odds": 2.31,
-      "market_probability": 0.3944927763408835,
-      "edge": 0.5855072236591164,
-      "margin": 0.96,
-      "coupon_combined_odds": 22.25511288
-    },
-    {
-      "coupon_run": "20261114_080028",
-      "coupon_league": "SP2",
-      "coupon_variant": "TOP4",
-      "coupon_leg_no": 3,
-      "match": "Valladolid - Castellon",
-      "market": "1X2",
-      "choice": "AWAY",
-      "model_probability": 0.97,
-      "jev_confidence": 0.96,
-      "odds": 2.19,
-      "market_probability": 0.4186010594113547,
-      "edge": 0.5513989405886452,
-      "margin": 0.94,
-      "coupon_combined_odds": 22.25511288
-    },
-    {
-      "coupon_run": "20261114_080028",
-      "coupon_league": "SP2",
-      "coupon_variant": "TOP4",
-      "coupon_leg_no": 4,
       "match": "Mallorca - Cordoba",
       "market": "1X2",
       "choice": "HOME",
-      "model_probability": 0.97,
-      "jev_confidence": 0.96,
+      "model_probability": 0.98,
+      "jev_confidence": 0.97,
       "odds": 1.88,
       "market_probability": 0.4864293267536129,
-      "edge": 0.483570673246387,
-      "margin": 0.95,
-      "coupon_combined_odds": 22.25511288
+      "edge": 0.493570673246387,
+      "margin": 0.97,
+      "coupon_combined_odds": 10.162152
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SP2",
-      "coupon_variant": "TOP5",
+      "coupon_variant": "TOP4",
       "coupon_leg_no": 1,
       "match": "Oviedo - Girona",
       "market": "1X2",
@@ -1200,61 +1136,45 @@
       "market_probability": 0.3917089896620176,
       "edge": 0.5982910103379824,
       "margin": 0.98,
-      "coupon_combined_odds": 38.94644754
+      "coupon_combined_odds": 17.783766
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SP2",
-      "coupon_variant": "TOP5",
+      "coupon_variant": "TOP4",
       "coupon_leg_no": 2,
       "match": "Eldense - Sabadell",
       "market": "1X2",
       "choice": "HOME",
-      "model_probability": 0.98,
-      "jev_confidence": 0.97,
-      "odds": 2.31,
-      "market_probability": 0.3944927763408835,
-      "edge": 0.5855072236591164,
-      "margin": 0.96,
-      "coupon_combined_odds": 38.94644754
-    },
-    {
-      "coupon_run": "20261114_080028",
-      "coupon_league": "SP2",
-      "coupon_variant": "TOP5",
-      "coupon_leg_no": 3,
-      "match": "Valladolid - Castellon",
-      "market": "1X2",
-      "choice": "AWAY",
       "model_probability": 0.97,
       "jev_confidence": 0.96,
-      "odds": 2.19,
-      "market_probability": 0.4186010594113547,
-      "edge": 0.5513989405886452,
+      "odds": 2.31,
+      "market_probability": 0.3944927763408835,
+      "edge": 0.5755072236591164,
       "margin": 0.94,
-      "coupon_combined_odds": 38.94644754
+      "coupon_combined_odds": 17.783766
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SP2",
-      "coupon_variant": "TOP5",
-      "coupon_leg_no": 4,
+      "coupon_variant": "TOP4",
+      "coupon_leg_no": 3,
       "match": "Mallorca - Cordoba",
       "market": "1X2",
       "choice": "HOME",
-      "model_probability": 0.97,
-      "jev_confidence": 0.96,
+      "model_probability": 0.98,
+      "jev_confidence": 0.97,
       "odds": 1.88,
       "market_probability": 0.4864293267536129,
-      "edge": 0.483570673246387,
-      "margin": 0.95,
-      "coupon_combined_odds": 38.94644754
+      "edge": 0.493570673246387,
+      "margin": 0.97,
+      "coupon_combined_odds": 17.783766
     },
     {
-      "coupon_run": "20261114_080028",
+      "coupon_run": "20261114_140023",
       "coupon_league": "SP2",
-      "coupon_variant": "TOP5",
-      "coupon_leg_no": 5,
+      "coupon_variant": "TOP4",
+      "coupon_leg_no": 4,
       "match": "Granada - Las Palmas",
       "market": "1X2",
       "choice": "HOME",
@@ -1264,7 +1184,87 @@
       "market_probability": 0.5213549337260678,
       "edge": 0.4786450662739322,
       "margin": 1.0,
-      "coupon_combined_odds": 38.94644754
+      "coupon_combined_odds": 17.783766
+    },
+    {
+      "coupon_run": "20261114_140023",
+      "coupon_league": "SP2",
+      "coupon_variant": "TOP5",
+      "coupon_leg_no": 1,
+      "match": "Oviedo - Girona",
+      "market": "1X2",
+      "choice": "HOME",
+      "model_probability": 0.99,
+      "jev_confidence": 0.98,
+      "odds": 2.34,
+      "market_probability": 0.3917089896620176,
+      "edge": 0.5982910103379824,
+      "margin": 0.98,
+      "coupon_combined_odds": 28.4540256
+    },
+    {
+      "coupon_run": "20261114_140023",
+      "coupon_league": "SP2",
+      "coupon_variant": "TOP5",
+      "coupon_leg_no": 2,
+      "match": "Eldense - Sabadell",
+      "market": "1X2",
+      "choice": "HOME",
+      "model_probability": 0.97,
+      "jev_confidence": 0.96,
+      "odds": 2.31,
+      "market_probability": 0.3944927763408835,
+      "edge": 0.5755072236591164,
+      "margin": 0.94,
+      "coupon_combined_odds": 28.4540256
+    },
+    {
+      "coupon_run": "20261114_140023",
+      "coupon_league": "SP2",
+      "coupon_variant": "TOP5",
+      "coupon_leg_no": 3,
+      "match": "Mallorca - Cordoba",
+      "market": "1X2",
+      "choice": "HOME",
+      "model_probability": 0.98,
+      "jev_confidence": 0.97,
+      "odds": 1.88,
+      "market_probability": 0.4864293267536129,
+      "edge": 0.493570673246387,
+      "margin": 0.97,
+      "coupon_combined_odds": 28.4540256
+    },
+    {
+      "coupon_run": "20261114_140023",
+      "coupon_league": "SP2",
+      "coupon_variant": "TOP5",
+      "coupon_leg_no": 4,
+      "match": "Granada - Las Palmas",
+      "market": "1X2",
+      "choice": "HOME",
+      "model_probability": 1.0,
+      "jev_confidence": 1.0,
+      "odds": 1.75,
+      "market_probability": 0.5213549337260678,
+      "edge": 0.4786450662739322,
+      "margin": 1.0,
+      "coupon_combined_odds": 28.4540256
+    },
+    {
+      "coupon_run": "20261114_140023",
+      "coupon_league": "SP2",
+      "coupon_variant": "TOP5",
+      "coupon_leg_no": 5,
+      "match": "Eibar - Cadiz",
+      "market": "1X2",
+      "choice": "HOME",
+      "model_probability": 1.0,
+      "jev_confidence": 1.0,
+      "odds": 1.6,
+      "market_probability": 0.5717495649808838,
+      "edge": 0.4282504350191162,
+      "margin": 1.0,
+      "coupon_combined_odds": 28.4540256
     }
   ]
 }

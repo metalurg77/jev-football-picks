@@ -1,15 +1,41 @@
 {
-  "generated_at": "2026-11-14T14:00:58",
+  "generated_at": "2026-11-15T08:00:53",
   "summary": {
-    "total": 637,
+    "total": 640,
     "win": 53,
     "loss": 555,
-    "unsettled": 29,
-    "TOP3": 214,
-    "TOP4": 217,
-    "TOP5": 206
+    "unsettled": 32,
+    "TOP3": 215,
+    "TOP4": 218,
+    "TOP5": 207
   },
   "publications": [
+    {
+      "publication_id": "PUB_20261115_080049",
+      "published_at": "2026-11-15T08:00:49",
+      "source_generated_at": "2026-11-15T08:00:46",
+      "coupon_count": 3,
+      "items": [
+        {
+          "league": "SP2",
+          "variant": "TOP3",
+          "lock_id": "20261115_080018_SP2_TOP3_05f1a70e",
+          "composition_fingerprint": "05f1a70ec7f2a0d793c57c60"
+        },
+        {
+          "league": "SP2",
+          "variant": "TOP4",
+          "lock_id": "20261115_080018_SP2_TOP4_0043cf0b",
+          "composition_fingerprint": "0043cf0bdd2289ea22d3d348"
+        },
+        {
+          "league": "SP2",
+          "variant": "TOP5",
+          "lock_id": "20261115_080018_SP2_TOP5_360486f9",
+          "composition_fingerprint": "360486f9bf76b1959b65d088"
+        }
+      ]
+    },
     {
       "publication_id": "PUB_20261114_140055",
       "published_at": "2026-11-14T14:00:55",
@@ -5501,6 +5527,210 @@
     }
   ],
   "coupons": [
+    {
+      "lock_id": "20261115_080018_SP2_TOP3_05f1a70e",
+      "locked_at": "2026-11-15 08:00:22",
+      "source_run": "20261115_080018",
+      "league": "SP2",
+      "variant": "TOP3",
+      "combined_odds": 6.468000000000001,
+      "status": "UNSETTLED",
+      "profit_1u": null,
+      "won_legs": 0,
+      "lost_legs": 0,
+      "legs_count": 3,
+      "legs": [
+        {
+          "leg_no": 1,
+          "match": "Eldense - Sabadell",
+          "match_date": "2026-11-15",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 2.31,
+          "model_probability": 0.98,
+          "edge": 0.5855072236591164,
+          "margin": 0.96
+        },
+        {
+          "leg_no": 2,
+          "match": "Granada - Las Palmas",
+          "match_date": "2026-11-15",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 1.75,
+          "model_probability": 1.0,
+          "edge": 0.4786450662739322,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 3,
+          "match": "Eibar - Cadiz",
+          "match_date": "2026-11-15",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 1.6,
+          "model_probability": 1.0,
+          "edge": 0.4282504350191162,
+          "margin": 1.0
+        }
+      ],
+      "publications": [
+        {
+          "publication_id": "PUB_20261115_080049",
+          "published_at": "2026-11-15T08:00:49",
+          "source_generated_at": "2026-11-15T08:00:46"
+        }
+      ],
+      "first_published_at": "2026-11-15T08:00:49",
+      "last_published_at": "2026-11-15T08:00:49"
+    },
+    {
+      "lock_id": "20261115_080018_SP2_TOP4_0043cf0b",
+      "locked_at": "2026-11-15 08:00:22",
+      "source_run": "20261115_080018",
+      "league": "SP2",
+      "variant": "TOP4",
+      "combined_odds": 10.219440000000002,
+      "status": "UNSETTLED",
+      "profit_1u": null,
+      "won_legs": 0,
+      "lost_legs": 0,
+      "legs_count": 4,
+      "legs": [
+        {
+          "leg_no": 1,
+          "match": "Eldense - Sabadell",
+          "match_date": "2026-11-15",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 2.31,
+          "model_probability": 0.98,
+          "edge": 0.5855072236591164,
+          "margin": 0.96
+        },
+        {
+          "leg_no": 2,
+          "match": "Granada - Las Palmas",
+          "match_date": "2026-11-15",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 1.75,
+          "model_probability": 1.0,
+          "edge": 0.4786450662739322,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 3,
+          "match": "Eibar - Cadiz",
+          "match_date": "2026-11-15",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 1.6,
+          "model_probability": 1.0,
+          "edge": 0.4282504350191162,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 4,
+          "match": "Albacete - Celta B",
+          "match_date": "2026-11-16",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 1.58,
+          "model_probability": 1.0,
+          "edge": 0.4231646062313495,
+          "margin": 1.0
+        }
+      ],
+      "publications": [
+        {
+          "publication_id": "PUB_20261115_080049",
+          "published_at": "2026-11-15T08:00:49",
+          "source_generated_at": "2026-11-15T08:00:46"
+        }
+      ],
+      "first_published_at": "2026-11-15T08:00:49",
+      "last_published_at": "2026-11-15T08:00:49"
+    },
+    {
+      "lock_id": "20261115_080018_SP2_TOP5_360486f9",
+      "locked_at": "2026-11-15 08:00:22",
+      "source_run": "20261115_080018",
+      "league": "SP2",
+      "variant": "TOP5",
+      "combined_odds": 18.190603200000005,
+      "status": "UNSETTLED",
+      "profit_1u": null,
+      "won_legs": 0,
+      "lost_legs": 0,
+      "legs_count": 5,
+      "legs": [
+        {
+          "leg_no": 1,
+          "match": "Eldense - Sabadell",
+          "match_date": "2026-11-15",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 2.31,
+          "model_probability": 0.98,
+          "edge": 0.5855072236591164,
+          "margin": 0.96
+        },
+        {
+          "leg_no": 2,
+          "match": "Granada - Las Palmas",
+          "match_date": "2026-11-15",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 1.75,
+          "model_probability": 1.0,
+          "edge": 0.4786450662739322,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 3,
+          "match": "Eibar - Cadiz",
+          "match_date": "2026-11-15",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 1.6,
+          "model_probability": 1.0,
+          "edge": 0.4282504350191162,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 4,
+          "match": "Albacete - Celta B",
+          "match_date": "2026-11-16",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 1.58,
+          "model_probability": 1.0,
+          "edge": 0.4231646062313495,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 5,
+          "match": "Tenerife - Ceuta",
+          "match_date": "2026-11-15",
+          "market": "TOTAL_25",
+          "choice": "UNDER_2_5",
+          "odds": 1.78,
+          "model_probability": 0.81,
+          "edge": 0.2897843665768195,
+          "margin": 0.6200000000000001
+        }
+      ],
+      "publications": [
+        {
+          "publication_id": "PUB_20261115_080049",
+          "published_at": "2026-11-15T08:00:49",
+          "source_generated_at": "2026-11-15T08:00:46"
+        }
+      ],
+      "first_published_at": "2026-11-15T08:00:49",
+      "last_published_at": "2026-11-15T08:00:49"
+    },
     {
       "lock_id": "20261114_080028_E2_TOP3_07fce3d0",
       "locked_at": "2026-11-14 08:00:36",
