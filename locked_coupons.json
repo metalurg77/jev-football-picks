@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T08:00:53",
+  "generated_at": "2026-11-15T14:00:38",
   "summary": {
     "total": 640,
     "win": 53,
@@ -10,6 +10,26 @@
     "TOP5": 207
   },
   "publications": [
+    {
+      "publication_id": "PUB_20261115_140035",
+      "published_at": "2026-11-15T14:00:35",
+      "source_generated_at": "2026-11-15T14:00:33",
+      "coupon_count": 2,
+      "items": [
+        {
+          "league": "SP2",
+          "variant": "TOP3",
+          "lock_id": "20261115_080018_SP2_TOP3_05f1a70e",
+          "composition_fingerprint": "05f1a70ec7f2a0d793c57c60"
+        },
+        {
+          "league": "SP2",
+          "variant": "TOP4",
+          "lock_id": "20261115_080018_SP2_TOP4_0043cf0b",
+          "composition_fingerprint": "0043cf0bdd2289ea22d3d348"
+        }
+      ]
+    },
     {
       "publication_id": "PUB_20261115_080049",
       "published_at": "2026-11-15T08:00:49",
@@ -5579,10 +5599,15 @@
           "publication_id": "PUB_20261115_080049",
           "published_at": "2026-11-15T08:00:49",
           "source_generated_at": "2026-11-15T08:00:46"
+        },
+        {
+          "publication_id": "PUB_20261115_140035",
+          "published_at": "2026-11-15T14:00:35",
+          "source_generated_at": "2026-11-15T14:00:33"
         }
       ],
       "first_published_at": "2026-11-15T08:00:49",
-      "last_published_at": "2026-11-15T08:00:49"
+      "last_published_at": "2026-11-15T14:00:35"
     },
     {
       "lock_id": "20261115_080018_SP2_TOP4_0043cf0b",
@@ -5647,10 +5672,15 @@
           "publication_id": "PUB_20261115_080049",
           "published_at": "2026-11-15T08:00:49",
           "source_generated_at": "2026-11-15T08:00:46"
+        },
+        {
+          "publication_id": "PUB_20261115_140035",
+          "published_at": "2026-11-15T14:00:35",
+          "source_generated_at": "2026-11-15T14:00:33"
         }
       ],
       "first_published_at": "2026-11-15T08:00:49",
-      "last_published_at": "2026-11-15T08:00:49"
+      "last_published_at": "2026-11-15T14:00:35"
     },
     {
       "lock_id": "20261115_080018_SP2_TOP5_360486f9",

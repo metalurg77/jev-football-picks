@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-15T08:00:46",
-  "source": "20261115_080018_EXP_FILTERED_TOP2_coupons.csv",
+  "generated_at": "2026-11-15T14:00:33",
+  "source": "20261115_140009_EXP_FILTERED_TOP2_coupons.csv",
   "experimental": true,
   "strategy": {
     "market": "1X2",
@@ -11,28 +11,5 @@
     "margin_min": 0.95,
     "builder": "DISJOINT_BALANCED_TOP2"
   },
-  "coupons": [
-    {
-      "coupon_run": "20261115_080018",
-      "coupon_id": "EXP_20261115_080018_20261115_SINGLE_001",
-      "coupon_league": "GLOBAL",
-      "coupon_variant": "GLOBAL_FILT_SINGLE",
-      "coupon_leg_no": 1,
-      "coupon_slate_date": "2026-11-15",
-      "exp_match_date": "2026-11-15",
-      "exp_league": "SP2",
-      "match": "Eldense - Sabadell",
-      "market": "1X2",
-      "choice": "HOME",
-      "model_probability": 0.98,
-      "jev_confidence": 0.97,
-      "odds": 2.31,
-      "market_probability": 0.3944927763408835,
-      "edge": 0.5855072236591164,
-      "margin": 0.96,
-      "coupon_combined_odds": 2.31,
-      "experimental": true,
-      "experimental_builder": "EXP_FILTERED_DISJOINT_BALANCED_V1"
-    }
-  ]
+  "coupons": []
 }
