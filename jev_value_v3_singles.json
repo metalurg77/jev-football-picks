@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "source": "JEV VALUE AUTO V1 / Football-Data",
-  "generated_at": "2026-11-16T08:02:33+01:00",
+  "generated_at": "2026-11-16T14:00:48+01:00",
   "legs": [
     {
       "key": "2026-10-14|norwich - southampton|1x2|home",
@@ -3147,6 +3147,160 @@
       "choice": "AWAY",
       "market": "1X2",
       "league": "I2",
+      "result": "WIN"
+    },
+    {
+      "key": "2026-11-14|afc wimbledon - blackpool|1x2|away",
+      "date": "2026-11-14",
+      "profit": -1.0,
+      "odds": 2.49,
+      "match": "AFC Wimbledon - Blackpool",
+      "choice": "AWAY",
+      "market": "1X2",
+      "league": "E2",
+      "result": "LOSS"
+    },
+    {
+      "key": "2026-11-14|ayr - raith rvs|1x2|away",
+      "date": "2026-11-14",
+      "profit": -1.0,
+      "odds": 2.08,
+      "match": "Ayr - Raith Rvs",
+      "choice": "AWAY",
+      "market": "1X2",
+      "league": "SC1",
+      "result": "LOSS"
+    },
+    {
+      "key": "2026-11-14|bristol rvs - chesterfield|1x2|away",
+      "date": "2026-11-14",
+      "profit": 1.27,
+      "odds": 2.27,
+      "match": "Bristol Rvs - Chesterfield",
+      "choice": "AWAY",
+      "market": "1X2",
+      "league": "E3",
+      "result": "WIN"
+    },
+    {
+      "key": "2026-11-14|cove rangers - montrose|1x2|home",
+      "date": "2026-11-14",
+      "profit": 1.26,
+      "odds": 2.26,
+      "match": "Cove Rangers - Montrose",
+      "choice": "HOME",
+      "market": "1X2",
+      "league": "SC2",
+      "result": "WIN"
+    },
+    {
+      "key": "2026-11-14|crewe - newport county|1x2|home",
+      "date": "2026-11-14",
+      "profit": -1.0,
+      "odds": 2.08,
+      "match": "Crewe - Newport County",
+      "choice": "HOME",
+      "market": "1X2",
+      "league": "E3",
+      "result": "LOSS"
+    },
+    {
+      "key": "2026-11-14|east fife - peterhead|1x2|home",
+      "date": "2026-11-14",
+      "profit": 1.46,
+      "odds": 2.46,
+      "match": "East Fife - Peterhead",
+      "choice": "HOME",
+      "market": "1X2",
+      "league": "SC2",
+      "result": "WIN"
+    },
+    {
+      "key": "2026-11-14|hartlepool - wealdstone|1x2|home",
+      "date": "2026-11-14",
+      "profit": -1.0,
+      "odds": 2.03,
+      "match": "Hartlepool - Wealdstone",
+      "choice": "HOME",
+      "market": "1X2",
+      "league": "EC",
+      "result": "LOSS"
+    },
+    {
+      "key": "2026-11-14|kelty hearts - stranraer|1x2|away",
+      "date": "2026-11-14",
+      "profit": 1.23,
+      "odds": 2.23,
+      "match": "Kelty Hearts - Stranraer",
+      "choice": "AWAY",
+      "market": "1X2",
+      "league": "SC3",
+      "result": "WIN"
+    },
+    {
+      "key": "2026-11-14|oviedo - girona|1x2|home",
+      "date": "2026-11-14",
+      "profit": -1.0,
+      "odds": 2.34,
+      "match": "Oviedo - Girona",
+      "choice": "HOME",
+      "market": "1X2",
+      "league": "SP2",
+      "result": "LOSS"
+    },
+    {
+      "key": "2026-11-14|sheffield weds - plymouth|1x2|home",
+      "date": "2026-11-14",
+      "profit": 1.28,
+      "odds": 2.28,
+      "match": "Sheffield Weds - Plymouth",
+      "choice": "HOME",
+      "market": "1X2",
+      "league": "E2",
+      "result": "WIN"
+    },
+    {
+      "key": "2026-11-14|swindon - grimsby|1x2|away",
+      "date": "2026-11-14",
+      "profit": 1.02,
+      "odds": 2.02,
+      "match": "Swindon - Grimsby",
+      "choice": "AWAY",
+      "market": "1X2",
+      "league": "E3",
+      "result": "WIN"
+    },
+    {
+      "key": "2026-11-14|valladolid - castellon|1x2|away",
+      "date": "2026-11-14",
+      "profit": 1.19,
+      "odds": 2.19,
+      "match": "Valladolid - Castellon",
+      "choice": "AWAY",
+      "market": "1X2",
+      "league": "SP2",
+      "result": "WIN"
+    },
+    {
+      "key": "2026-11-14|wigan - barnsley|1x2|home",
+      "date": "2026-11-14",
+      "profit": 1.31,
+      "odds": 2.31,
+      "match": "Wigan - Barnsley",
+      "choice": "HOME",
+      "market": "1X2",
+      "league": "E2",
+      "result": "WIN"
+    },
+    {
+      "key": "2026-11-15|eldense - sabadell|1x2|home",
+      "date": "2026-11-15",
+      "profit": 1.31,
+      "odds": 2.31,
+      "match": "Eldense - Sabadell",
+      "choice": "HOME",
+      "market": "1X2",
+      "league": "SP2",
       "result": "WIN"
     }
   ]
