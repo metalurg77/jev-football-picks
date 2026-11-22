@@ -1,15 +1,83 @@
 {
-  "generated_at": "2026-11-22T08:01:05",
+  "generated_at": "2026-11-22T14:00:52",
   "summary": {
-    "total": 767,
+    "total": 775,
     "win": 59,
     "loss": 579,
-    "unsettled": 129,
-    "TOP3": 258,
-    "TOP4": 260,
-    "TOP5": 249
+    "unsettled": 137,
+    "TOP3": 262,
+    "TOP4": 262,
+    "TOP5": 251
   },
   "publications": [
+    {
+      "publication_id": "PUB_20261122_140048",
+      "published_at": "2026-11-22T14:00:48",
+      "source_generated_at": "2026-11-22T14:00:45",
+      "coupon_count": 10,
+      "items": [
+        {
+          "league": "B1",
+          "variant": "TOP3",
+          "lock_id": "20261122_140018_B1_TOP3_fe7bec04",
+          "composition_fingerprint": "fe7bec04c011b7e7de3e0787"
+        },
+        {
+          "league": "G1",
+          "variant": "TOP3",
+          "lock_id": "20261122_140018_G1_TOP3_7c6d5972",
+          "composition_fingerprint": "7c6d597215d3f0c6744c554d"
+        },
+        {
+          "league": "G1",
+          "variant": "TOP4",
+          "lock_id": "20261122_140018_G1_TOP4_2894b54d",
+          "composition_fingerprint": "2894b54d33d2ed187dff952f"
+        },
+        {
+          "league": "G1",
+          "variant": "TOP5",
+          "lock_id": "20261122_140018_G1_TOP5_d4f7ccee",
+          "composition_fingerprint": "d4f7ccee91527e41be888840"
+        },
+        {
+          "league": "I1",
+          "variant": "TOP3",
+          "lock_id": "20261122_140018_I1_TOP3_fb868607",
+          "composition_fingerprint": "fb8686078854a643f2a5fc69"
+        },
+        {
+          "league": "SP1",
+          "variant": "TOP3",
+          "lock_id": "20261122_080025_SP1_TOP3_69257899",
+          "composition_fingerprint": "692578992090af4540d4a245"
+        },
+        {
+          "league": "SP1",
+          "variant": "TOP4",
+          "lock_id": "20261122_080025_SP1_TOP4_45b2b537",
+          "composition_fingerprint": "45b2b537bb3de7adbbab7fb9"
+        },
+        {
+          "league": "SP2",
+          "variant": "TOP3",
+          "lock_id": "20261122_140018_SP2_TOP3_01be92d9",
+          "composition_fingerprint": "01be92d9be5037fefc63d538"
+        },
+        {
+          "league": "SP2",
+          "variant": "TOP4",
+          "lock_id": "20261122_140018_SP2_TOP4_4db0b57e",
+          "composition_fingerprint": "4db0b57e5a25899eea1aba6f"
+        },
+        {
+          "league": "SP2",
+          "variant": "TOP5",
+          "lock_id": "20261122_140018_SP2_TOP5_50dba27c",
+          "composition_fingerprint": "50dba27ceaf279c3c01e3058"
+        }
+      ]
+    },
     {
       "publication_id": "PUB_20261122_080100",
       "published_at": "2026-11-22T08:01:00",
@@ -6867,6 +6935,663 @@
   ],
   "coupons": [
     {
+      "lock_id": "20261122_080025_SP1_TOP3_69257899",
+      "locked_at": "2026-11-22 08:00:31",
+      "source_run": "20261122_080025",
+      "league": "SP1",
+      "variant": "TOP3",
+      "combined_odds": 7.701300000000001,
+      "status": "UNSETTLED",
+      "profit_1u": null,
+      "won_legs": 0,
+      "lost_legs": 0,
+      "legs_count": 3,
+      "legs": [
+        {
+          "leg_no": 1,
+          "match": "Levante - Elche",
+          "match_date": "2026-11-23",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 2.15,
+          "model_probability": 0.98,
+          "edge": 0.5449644958489582,
+          "margin": 0.97
+        },
+        {
+          "leg_no": 2,
+          "match": "Santander - Sociedad",
+          "match_date": "2026-11-22",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 1.99,
+          "model_probability": 1.0,
+          "edge": 0.5286480144337733,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 3,
+          "match": "Osasuna - Malaga",
+          "match_date": "2026-11-22",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 1.8,
+          "model_probability": 0.99,
+          "edge": 0.4694036243156427,
+          "margin": 0.98
+        }
+      ],
+      "publications": [
+        {
+          "publication_id": "PUB_20261122_080100",
+          "published_at": "2026-11-22T08:01:00",
+          "source_generated_at": "2026-11-22T08:00:55"
+        },
+        {
+          "publication_id": "PUB_20261122_140048",
+          "published_at": "2026-11-22T14:00:48",
+          "source_generated_at": "2026-11-22T14:00:45"
+        }
+      ],
+      "first_published_at": "2026-11-22T08:01:00",
+      "last_published_at": "2026-11-22T14:00:48"
+    },
+    {
+      "lock_id": "20261122_080025_SP1_TOP4_45b2b537",
+      "locked_at": "2026-11-22 08:00:31",
+      "source_run": "20261122_080025",
+      "league": "SP1",
+      "variant": "TOP4",
+      "combined_odds": 12.014028,
+      "status": "UNSETTLED",
+      "profit_1u": null,
+      "won_legs": 0,
+      "lost_legs": 0,
+      "legs_count": 4,
+      "legs": [
+        {
+          "leg_no": 1,
+          "match": "Levante - Elche",
+          "match_date": "2026-11-23",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 2.15,
+          "model_probability": 0.98,
+          "edge": 0.5449644958489582,
+          "margin": 0.97
+        },
+        {
+          "leg_no": 2,
+          "match": "Santander - Sociedad",
+          "match_date": "2026-11-22",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 1.99,
+          "model_probability": 1.0,
+          "edge": 0.5286480144337733,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 3,
+          "match": "Osasuna - Malaga",
+          "match_date": "2026-11-22",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 1.8,
+          "model_probability": 0.99,
+          "edge": 0.4694036243156427,
+          "margin": 0.98
+        },
+        {
+          "leg_no": 4,
+          "match": "Getafe - Ath Madrid",
+          "match_date": "2026-11-22",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 1.56,
+          "model_probability": 1.0,
+          "edge": 0.4011628828924068,
+          "margin": 1.0
+        }
+      ],
+      "publications": [
+        {
+          "publication_id": "PUB_20261122_080100",
+          "published_at": "2026-11-22T08:01:00",
+          "source_generated_at": "2026-11-22T08:00:55"
+        },
+        {
+          "publication_id": "PUB_20261122_140048",
+          "published_at": "2026-11-22T14:00:48",
+          "source_generated_at": "2026-11-22T14:00:45"
+        }
+      ],
+      "first_published_at": "2026-11-22T08:01:00",
+      "last_published_at": "2026-11-22T14:00:48"
+    },
+    {
+      "lock_id": "20261122_140018_B1_TOP3_fe7bec04",
+      "locked_at": "2026-11-22 14:00:22",
+      "source_run": "20261122_140018",
+      "league": "B1",
+      "variant": "TOP3",
+      "combined_odds": 3.7463580000000007,
+      "status": "UNSETTLED",
+      "profit_1u": null,
+      "won_legs": 0,
+      "lost_legs": 0,
+      "legs_count": 3,
+      "legs": [
+        {
+          "leg_no": 1,
+          "match": "Kortrijk - St. Gilloise",
+          "match_date": "2026-11-22",
+          "market": "TOTAL_25",
+          "choice": "OVER_2_5",
+          "odds": 1.59,
+          "model_probability": 0.98,
+          "edge": 0.3951436031331593,
+          "margin": 0.96
+        },
+        {
+          "leg_no": 2,
+          "match": "Lommel SK - Standard",
+          "match_date": "2026-11-22",
+          "market": "TOTAL_25",
+          "choice": "OVER_2_5",
+          "odds": 1.54,
+          "model_probability": 0.98,
+          "edge": 0.3758868894601542,
+          "margin": 0.96
+        },
+        {
+          "leg_no": 3,
+          "match": "Anderlecht - Oud-Heverlee Leuven",
+          "match_date": "2026-11-22",
+          "market": "TOTAL_25",
+          "choice": "OVER_2_5",
+          "odds": 1.53,
+          "model_probability": 0.98,
+          "edge": 0.3723076923076923,
+          "margin": 0.96
+        }
+      ],
+      "publications": [
+        {
+          "publication_id": "PUB_20261122_140048",
+          "published_at": "2026-11-22T14:00:48",
+          "source_generated_at": "2026-11-22T14:00:45"
+        }
+      ],
+      "first_published_at": "2026-11-22T14:00:48",
+      "last_published_at": "2026-11-22T14:00:48"
+    },
+    {
+      "lock_id": "20261122_140018_G1_TOP3_7c6d5972",
+      "locked_at": "2026-11-22 14:00:22",
+      "source_run": "20261122_140018",
+      "league": "G1",
+      "variant": "TOP3",
+      "combined_odds": 7.569827999999999,
+      "status": "UNSETTLED",
+      "profit_1u": null,
+      "won_legs": 0,
+      "lost_legs": 0,
+      "legs_count": 3,
+      "legs": [
+        {
+          "leg_no": 1,
+          "match": "Asteras Tripolis - Aris",
+          "match_date": "2026-11-23",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 2.17,
+          "model_probability": 1.0,
+          "edge": 0.5807067038271609,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 2,
+          "match": "Panetolikos - Volos NFC",
+          "match_date": "2026-11-22",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 2.28,
+          "model_probability": 0.95,
+          "edge": 0.5498731933284162,
+          "margin": 0.92
+        },
+        {
+          "leg_no": 3,
+          "match": "PAOK - Kifisia",
+          "match_date": "2026-11-22",
+          "market": "TOTAL_25",
+          "choice": "OVER_2_5",
+          "odds": 1.53,
+          "model_probability": 0.99,
+          "edge": 0.3853488372093023,
+          "margin": 0.98
+        }
+      ],
+      "publications": [
+        {
+          "publication_id": "PUB_20261122_140048",
+          "published_at": "2026-11-22T14:00:48",
+          "source_generated_at": "2026-11-22T14:00:45"
+        }
+      ],
+      "first_published_at": "2026-11-22T14:00:48",
+      "last_published_at": "2026-11-22T14:00:48"
+    },
+    {
+      "lock_id": "20261122_140018_G1_TOP4_2894b54d",
+      "locked_at": "2026-11-22 14:00:22",
+      "source_run": "20261122_140018",
+      "league": "G1",
+      "variant": "TOP4",
+      "combined_odds": 11.12764716,
+      "status": "UNSETTLED",
+      "profit_1u": null,
+      "won_legs": 0,
+      "lost_legs": 0,
+      "legs_count": 4,
+      "legs": [
+        {
+          "leg_no": 1,
+          "match": "Asteras Tripolis - Aris",
+          "match_date": "2026-11-23",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 2.17,
+          "model_probability": 1.0,
+          "edge": 0.5807067038271609,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 2,
+          "match": "Panetolikos - Volos NFC",
+          "match_date": "2026-11-22",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 2.28,
+          "model_probability": 0.95,
+          "edge": 0.5498731933284162,
+          "margin": 0.92
+        },
+        {
+          "leg_no": 3,
+          "match": "PAOK - Kifisia",
+          "match_date": "2026-11-22",
+          "market": "TOTAL_25",
+          "choice": "OVER_2_5",
+          "odds": 1.53,
+          "model_probability": 0.99,
+          "edge": 0.3853488372093023,
+          "margin": 0.98
+        },
+        {
+          "leg_no": 4,
+          "match": "Olympiakos - Iraklis",
+          "match_date": "2026-11-22",
+          "market": "TOTAL_25",
+          "choice": "OVER_2_5",
+          "odds": 1.47,
+          "model_probability": 0.98,
+          "edge": 0.3502770780856423,
+          "margin": 0.96
+        }
+      ],
+      "publications": [
+        {
+          "publication_id": "PUB_20261122_140048",
+          "published_at": "2026-11-22T14:00:48",
+          "source_generated_at": "2026-11-22T14:00:45"
+        }
+      ],
+      "first_published_at": "2026-11-22T14:00:48",
+      "last_published_at": "2026-11-22T14:00:48"
+    },
+    {
+      "lock_id": "20261122_140018_G1_TOP5_d4f7ccee",
+      "locked_at": "2026-11-22 14:00:22",
+      "source_run": "20261122_140018",
+      "league": "G1",
+      "variant": "TOP5",
+      "combined_odds": 16.0238119104,
+      "status": "UNSETTLED",
+      "profit_1u": null,
+      "won_legs": 0,
+      "lost_legs": 0,
+      "legs_count": 5,
+      "legs": [
+        {
+          "leg_no": 1,
+          "match": "Asteras Tripolis - Aris",
+          "match_date": "2026-11-23",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 2.17,
+          "model_probability": 1.0,
+          "edge": 0.5807067038271609,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 2,
+          "match": "Panetolikos - Volos NFC",
+          "match_date": "2026-11-22",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 2.28,
+          "model_probability": 0.95,
+          "edge": 0.5498731933284162,
+          "margin": 0.92
+        },
+        {
+          "leg_no": 3,
+          "match": "PAOK - Kifisia",
+          "match_date": "2026-11-22",
+          "market": "TOTAL_25",
+          "choice": "OVER_2_5",
+          "odds": 1.53,
+          "model_probability": 0.99,
+          "edge": 0.3853488372093023,
+          "margin": 0.98
+        },
+        {
+          "leg_no": 4,
+          "match": "Olympiakos - Iraklis",
+          "match_date": "2026-11-22",
+          "market": "TOTAL_25",
+          "choice": "OVER_2_5",
+          "odds": 1.47,
+          "model_probability": 0.98,
+          "edge": 0.3502770780856423,
+          "margin": 0.96
+        },
+        {
+          "leg_no": 5,
+          "match": "Panathinaikos - OFI Crete",
+          "match_date": "2026-11-22",
+          "market": "TOTAL_25",
+          "choice": "OVER_2_5",
+          "odds": 1.44,
+          "model_probability": 0.97,
+          "edge": 0.3264356435643564,
+          "margin": 0.94
+        }
+      ],
+      "publications": [
+        {
+          "publication_id": "PUB_20261122_140048",
+          "published_at": "2026-11-22T14:00:48",
+          "source_generated_at": "2026-11-22T14:00:45"
+        }
+      ],
+      "first_published_at": "2026-11-22T14:00:48",
+      "last_published_at": "2026-11-22T14:00:48"
+    },
+    {
+      "lock_id": "20261122_140018_I1_TOP3_fb868607",
+      "locked_at": "2026-11-22 14:00:22",
+      "source_run": "20261122_140018",
+      "league": "I1",
+      "variant": "TOP3",
+      "combined_odds": 4.640256,
+      "status": "UNSETTLED",
+      "profit_1u": null,
+      "won_legs": 0,
+      "lost_legs": 0,
+      "legs_count": 3,
+      "legs": [
+        {
+          "leg_no": 1,
+          "match": "Monza - Fiorentina",
+          "match_date": "2026-11-23",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 1.92,
+          "model_probability": 1.0,
+          "edge": 0.5112228485313935,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 2,
+          "match": "Atalanta - Inter",
+          "match_date": "2026-11-22",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 1.59,
+          "model_probability": 1.0,
+          "edge": 0.4083014080510136,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 3,
+          "match": "Milan - Frosinone",
+          "match_date": "2026-11-22",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 1.52,
+          "model_probability": 1.0,
+          "edge": 0.3827314344496162,
+          "margin": 1.0
+        }
+      ],
+      "publications": [
+        {
+          "publication_id": "PUB_20261122_140048",
+          "published_at": "2026-11-22T14:00:48",
+          "source_generated_at": "2026-11-22T14:00:45"
+        }
+      ],
+      "first_published_at": "2026-11-22T14:00:48",
+      "last_published_at": "2026-11-22T14:00:48"
+    },
+    {
+      "lock_id": "20261122_140018_SP2_TOP3_01be92d9",
+      "locked_at": "2026-11-22 14:00:22",
+      "source_run": "20261122_140018",
+      "league": "SP2",
+      "variant": "TOP3",
+      "combined_odds": 7.871999999999999,
+      "status": "UNSETTLED",
+      "profit_1u": null,
+      "won_legs": 0,
+      "lost_legs": 0,
+      "legs_count": 3,
+      "legs": [
+        {
+          "leg_no": 1,
+          "match": "Celta B - Valladolid",
+          "match_date": "2026-11-22",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 2.0,
+          "model_probability": 1.0,
+          "edge": 0.5419251550930558,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 2,
+          "match": "Ceuta - Almeria",
+          "match_date": "2026-11-23",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 1.92,
+          "model_probability": 1.0,
+          "edge": 0.5235051474111034,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 3,
+          "match": "Sp Gijon - Las Palmas",
+          "match_date": "2026-11-22",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 2.05,
+          "model_probability": 0.96,
+          "edge": 0.5140631296171927,
+          "margin": 0.92
+        }
+      ],
+      "publications": [
+        {
+          "publication_id": "PUB_20261122_140048",
+          "published_at": "2026-11-22T14:00:48",
+          "source_generated_at": "2026-11-22T14:00:45"
+        }
+      ],
+      "first_published_at": "2026-11-22T14:00:48",
+      "last_published_at": "2026-11-22T14:00:48"
+    },
+    {
+      "lock_id": "20261122_140018_SP2_TOP4_4db0b57e",
+      "locked_at": "2026-11-22 14:00:22",
+      "source_run": "20261122_140018",
+      "league": "SP2",
+      "variant": "TOP4",
+      "combined_odds": 15.743999999999998,
+      "status": "UNSETTLED",
+      "profit_1u": null,
+      "won_legs": 0,
+      "lost_legs": 0,
+      "legs_count": 4,
+      "legs": [
+        {
+          "leg_no": 1,
+          "match": "Celta B - Valladolid",
+          "match_date": "2026-11-22",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 2.0,
+          "model_probability": 1.0,
+          "edge": 0.5419251550930558,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 2,
+          "match": "Ceuta - Almeria",
+          "match_date": "2026-11-23",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 1.92,
+          "model_probability": 1.0,
+          "edge": 0.5235051474111034,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 3,
+          "match": "Sp Gijon - Las Palmas",
+          "match_date": "2026-11-22",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 2.05,
+          "model_probability": 0.96,
+          "edge": 0.5140631296171927,
+          "margin": 0.92
+        },
+        {
+          "leg_no": 4,
+          "match": "Burgos - Albacete",
+          "match_date": "2026-11-22",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 2.0,
+          "model_probability": 0.95,
+          "edge": 0.492268462997798,
+          "margin": 0.8999999999999999
+        }
+      ],
+      "publications": [
+        {
+          "publication_id": "PUB_20261122_140048",
+          "published_at": "2026-11-22T14:00:48",
+          "source_generated_at": "2026-11-22T14:00:45"
+        }
+      ],
+      "first_published_at": "2026-11-22T14:00:48",
+      "last_published_at": "2026-11-22T14:00:48"
+    },
+    {
+      "lock_id": "20261122_140018_SP2_TOP5_50dba27c",
+      "locked_at": "2026-11-22 14:00:22",
+      "source_run": "20261122_140018",
+      "league": "SP2",
+      "variant": "TOP5",
+      "combined_odds": 27.86688,
+      "status": "UNSETTLED",
+      "profit_1u": null,
+      "won_legs": 0,
+      "lost_legs": 0,
+      "legs_count": 5,
+      "legs": [
+        {
+          "leg_no": 1,
+          "match": "Celta B - Valladolid",
+          "match_date": "2026-11-22",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 2.0,
+          "model_probability": 1.0,
+          "edge": 0.5419251550930558,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 2,
+          "match": "Ceuta - Almeria",
+          "match_date": "2026-11-23",
+          "market": "1X2",
+          "choice": "AWAY",
+          "odds": 1.92,
+          "model_probability": 1.0,
+          "edge": 0.5235051474111034,
+          "margin": 1.0
+        },
+        {
+          "leg_no": 3,
+          "match": "Sp Gijon - Las Palmas",
+          "match_date": "2026-11-22",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 2.05,
+          "model_probability": 0.96,
+          "edge": 0.5140631296171927,
+          "margin": 0.92
+        },
+        {
+          "leg_no": 4,
+          "match": "Burgos - Albacete",
+          "match_date": "2026-11-22",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 2.0,
+          "model_probability": 0.95,
+          "edge": 0.492268462997798,
+          "margin": 0.8999999999999999
+        },
+        {
+          "leg_no": 5,
+          "match": "Girona - Eibar",
+          "match_date": "2026-11-22",
+          "market": "1X2",
+          "choice": "HOME",
+          "odds": 1.77,
+          "model_probability": 1.0,
+          "edge": 0.4824892270328937,
+          "margin": 1.0
+        }
+      ],
+      "publications": [
+        {
+          "publication_id": "PUB_20261122_140048",
+          "published_at": "2026-11-22T14:00:48",
+          "source_generated_at": "2026-11-22T14:00:45"
+        }
+      ],
+      "first_published_at": "2026-11-22T14:00:48",
+      "last_published_at": "2026-11-22T14:00:48"
+    },
+    {
       "lock_id": "20261120_140101_G1_TOP3_bf1d7bee",
       "locked_at": "2026-11-20 14:01:08",
       "source_run": "20261120_140101",
@@ -7803,131 +8528,6 @@
       "last_published_at": "2026-11-22T08:01:00"
     },
     {
-      "lock_id": "20261122_080025_SP1_TOP3_69257899",
-      "locked_at": "2026-11-22 08:00:31",
-      "source_run": "20261122_080025",
-      "league": "SP1",
-      "variant": "TOP3",
-      "combined_odds": 7.701300000000001,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
-      "legs_count": 3,
-      "legs": [
-        {
-          "leg_no": 1,
-          "match": "Levante - Elche",
-          "match_date": "2026-11-23",
-          "market": "1X2",
-          "choice": "HOME",
-          "odds": 2.15,
-          "model_probability": 0.98,
-          "edge": 0.5449644958489582,
-          "margin": 0.97
-        },
-        {
-          "leg_no": 2,
-          "match": "Santander - Sociedad",
-          "match_date": "2026-11-22",
-          "market": "1X2",
-          "choice": "AWAY",
-          "odds": 1.99,
-          "model_probability": 1.0,
-          "edge": 0.5286480144337733,
-          "margin": 1.0
-        },
-        {
-          "leg_no": 3,
-          "match": "Osasuna - Malaga",
-          "match_date": "2026-11-22",
-          "market": "1X2",
-          "choice": "HOME",
-          "odds": 1.8,
-          "model_probability": 0.99,
-          "edge": 0.4694036243156427,
-          "margin": 0.98
-        }
-      ],
-      "publications": [
-        {
-          "publication_id": "PUB_20261122_080100",
-          "published_at": "2026-11-22T08:01:00",
-          "source_generated_at": "2026-11-22T08:00:55"
-        }
-      ],
-      "first_published_at": "2026-11-22T08:01:00",
-      "last_published_at": "2026-11-22T08:01:00"
-    },
-    {
-      "lock_id": "20261122_080025_SP1_TOP4_45b2b537",
-      "locked_at": "2026-11-22 08:00:31",
-      "source_run": "20261122_080025",
-      "league": "SP1",
-      "variant": "TOP4",
-      "combined_odds": 12.014028,
-      "status": "UNSETTLED",
-      "profit_1u": null,
-      "won_legs": 0,
-      "lost_legs": 0,
-      "legs_count": 4,
-      "legs": [
-        {
-          "leg_no": 1,
-          "match": "Levante - Elche",
-          "match_date": "2026-11-23",
-          "market": "1X2",
-          "choice": "HOME",
-          "odds": 2.15,
-          "model_probability": 0.98,
-          "edge": 0.5449644958489582,
-          "margin": 0.97
-        },
-        {
-          "leg_no": 2,
-          "match": "Santander - Sociedad",
-          "match_date": "2026-11-22",
-          "market": "1X2",
-          "choice": "AWAY",
-          "odds": 1.99,
-          "model_probability": 1.0,
-          "edge": 0.5286480144337733,
-          "margin": 1.0
-        },
-        {
-          "leg_no": 3,
-          "match": "Osasuna - Malaga",
-          "match_date": "2026-11-22",
-          "market": "1X2",
-          "choice": "HOME",
-          "odds": 1.8,
-          "model_probability": 0.99,
-          "edge": 0.4694036243156427,
-          "margin": 0.98
-        },
-        {
-          "leg_no": 4,
-          "match": "Getafe - Ath Madrid",
-          "match_date": "2026-11-22",
-          "market": "1X2",
-          "choice": "AWAY",
-          "odds": 1.56,
-          "model_probability": 1.0,
-          "edge": 0.4011628828924068,
-          "margin": 1.0
-        }
-      ],
-      "publications": [
-        {
-          "publication_id": "PUB_20261122_080100",
-          "published_at": "2026-11-22T08:01:00",
-          "source_generated_at": "2026-11-22T08:00:55"
-        }
-      ],
-      "first_published_at": "2026-11-22T08:01:00",
-      "last_published_at": "2026-11-22T08:01:00"
-    },
-    {
       "lock_id": "20261122_080025_SP1_TOP5_95fecf69",
       "locked_at": "2026-11-22 08:00:31",
       "source_run": "20261122_080025",
@@ -8137,7 +8737,7 @@
       "source_run": "20261122_080025",
       "league": "SP2",
       "variant": "TOP5",
-      "combined_odds": 29.598719999999997,
+      "combined_odds": 29.59872,
       "status": "UNSETTLED",
       "profit_1u": null,
       "won_legs": 0,
