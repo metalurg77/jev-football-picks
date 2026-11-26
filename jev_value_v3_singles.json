@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "source": "JEV VALUE AUTO V1 / Football-Data",
-  "generated_at": "2026-11-26T08:01:54+01:00",
+  "generated_at": "2026-11-26T14:00:44+01:00",
   "legs": [
     {
       "key": "2026-10-14|norwich - southampton|1x2|home",
@@ -3939,6 +3939,127 @@
       "choice": "HOME",
       "market": "1X2",
       "league": "F2",
+      "result": "LOSS"
+    },
+    {
+      "key": "2026-11-24|boston utd - barrow|1x2|away",
+      "date": "2026-11-24",
+      "profit": 1.21,
+      "odds": 2.21,
+      "match": "Boston Utd - Barrow",
+      "choice": "AWAY",
+      "market": "1X2",
+      "league": "EC",
+      "result": "WIN"
+    },
+    {
+      "key": "2026-11-24|eastleigh - yeovil|1x2|away",
+      "date": "2026-11-24",
+      "profit": 1.11,
+      "odds": 2.11,
+      "match": "Eastleigh - Yeovil",
+      "choice": "AWAY",
+      "market": "1X2",
+      "league": "EC",
+      "result": "WIN"
+    },
+    {
+      "key": "2026-11-24|forest green - southend|1x2|home",
+      "date": "2026-11-24",
+      "profit": -1.0,
+      "odds": 2.2,
+      "match": "Forest Green - Southend",
+      "choice": "HOME",
+      "market": "1X2",
+      "league": "EC",
+      "result": "LOSS"
+    },
+    {
+      "key": "2026-11-24|vicenza - carrarese|1x2|away",
+      "date": "2026-11-24",
+      "profit": 1.25,
+      "odds": 2.25,
+      "match": "Vicenza - Carrarese",
+      "choice": "AWAY",
+      "market": "1X2",
+      "league": "I2",
+      "result": "WIN"
+    },
+    {
+      "key": "2026-11-24|virtus entella - verona|1x2|away",
+      "date": "2026-11-24",
+      "profit": -1.0,
+      "odds": 2.18,
+      "match": "Virtus Entella - Verona",
+      "choice": "AWAY",
+      "market": "1X2",
+      "league": "I2",
+      "result": "LOSS"
+    },
+    {
+      "key": "2026-11-24|woking - worthing|1x2|home",
+      "date": "2026-11-24",
+      "profit": 1.23,
+      "odds": 2.23,
+      "match": "Woking - Worthing",
+      "choice": "HOME",
+      "market": "1X2",
+      "league": "EC",
+      "result": "WIN"
+    },
+    {
+      "key": "2026-11-25|burnley - birmingham|1x2|away",
+      "date": "2026-11-25",
+      "profit": 1.47,
+      "odds": 2.47,
+      "match": "Burnley - Birmingham",
+      "choice": "AWAY",
+      "market": "1X2",
+      "league": "E1",
+      "result": "WIN"
+    },
+    {
+      "key": "2026-11-25|hartlepool - solihull|1x2|home",
+      "date": "2026-11-25",
+      "profit": 1.06,
+      "odds": 2.06,
+      "match": "Hartlepool - Solihull",
+      "choice": "HOME",
+      "market": "1X2",
+      "league": "EC",
+      "result": "WIN"
+    },
+    {
+      "key": "2026-11-25|padova - sampdoria|1x2|away",
+      "date": "2026-11-25",
+      "profit": 1.47,
+      "odds": 2.47,
+      "match": "Padova - Sampdoria",
+      "choice": "AWAY",
+      "market": "1X2",
+      "league": "I2",
+      "result": "WIN"
+    },
+    {
+      "key": "2026-11-25|stoke - millwall|1x2|home",
+      "date": "2026-11-25",
+      "profit": 1.2,
+      "odds": 2.2,
+      "match": "Stoke - Millwall",
+      "choice": "HOME",
+      "market": "1X2",
+      "league": "E1",
+      "result": "WIN"
+    },
+    {
+      "key": "2026-11-25|watford - blackburn|1x2|home",
+      "date": "2026-11-25",
+      "profit": -1.0,
+      "odds": 2.49,
+      "match": "Watford - Blackburn",
+      "choice": "HOME",
+      "market": "1X2",
+      "league": "E1",
       "result": "LOSS"
     }
   ]
